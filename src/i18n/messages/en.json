@@ -298,16 +298,50 @@
     "description": "Enter any two of the following fields, then click 'Calculate' to get the third value",
     "hero_title": "Professional CPM Calculator",
     "hero_description": "Calculate Cost Per Mille, impressions, and advertising costs with precision. The essential tool for digital marketers and advertisers.",
+    "cpm": {
+      "title": "CPM Calculator",
+      "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns with precision",
+      "label": "Cost Per Thousand Impressions (CPM)",
+      "calculation_description": "To calculate cost per thousand impressions, enter:",
+      "step1": "Total Ad Spend",
+      "step2": "Number of Impressions"
+    },
+    "cpa": {
+      "title": "CPA Calculator",
+      "description": "Calculate Cost Per Action/Acquisition for your marketing campaigns",
+      "label": "Cost Per Action (CPA)",
+      "calculation_description": "To calculate cost per action, enter:",
+      "step1": "Total Ad Spend",
+      "step2": "Number of Actions/Conversions"
+    },
+    "cpc": {
+      "title": "CPC Calculator", 
+      "description": "Calculate Cost Per Click for your advertising campaigns",
+      "label": "Cost Per Click (CPC)",
+      "calculation_description": "To calculate cost per click, enter:",
+      "step1": "Total Ad Spend",
+      "step2": "Number of Clicks"
+    },
+    "ctr": {
+      "title": "CTR Calculator",
+      "description": "Calculate Click-Through Rate to measure ad performance",
+      "label": "Click-Through Rate (CTR)",
+      "calculation_description": "To calculate click-through rate, enter:",
+      "step1": "Number of Clicks",
+      "step2": "Number of Impressions"
+    },
+    "roi": {
+      "title": "ROI Calculator",
+      "description": "Calculate Return on Investment for your marketing campaigns",
+      "label": "Return on Investment (ROI)",
+      "calculation_description": "To calculate ROI, enter:",
+      "step1": "Revenue Generated",
+      "step2": "Total Investment"
+    },
     "total_cost": {
       "label": "Total Ad Spend",
       "description": "To calculate the total cost of an online advertising campaign, enter:",
       "step1": "CPM (Cost Per Thousand Impressions)",
-      "step2": "Number of Impressions"
-    },
-    "cpm": {
-      "label": "Cost Per Thousand Impressions (CPM)",
-      "description": "To calculate cost per thousand impressions, enter:",
-      "step1": "Total Ad Spend",
       "step2": "Number of Impressions"
     },
     "impressions": {

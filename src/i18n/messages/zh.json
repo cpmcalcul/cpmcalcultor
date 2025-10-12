@@ -298,16 +298,50 @@
     "description": "输入以下三个字段中的任意两个，然后点击\"计算\"按钮来获取第三个值",
     "hero_title": "专业CPM计算器",
     "hero_description": "精确计算千次展示成本、展示次数和广告费用。数字营销人员和广告主的必备工具。",
+    "cpm": {
+      "title": "CPM 计算器",
+      "description": "精确计算广告活动的千次展示成本（CPM）",
+      "label": "每千次展示成本（CPM）",
+      "calculation_description": "要计算每千次展示成本，请输入：",
+      "step1": "总广告费用",
+      "step2": "展示次数"
+    },
+    "cpa": {
+      "title": "CPA 计算器",
+      "description": "计算营销活动的每次获客成本/行动成本",
+      "label": "每次行动成本（CPA）",
+      "calculation_description": "要计算每次行动成本，请输入：",
+      "step1": "总广告费用",
+      "step2": "行动/转化次数"
+    },
+    "cpc": {
+      "title": "CPC 计算器", 
+      "description": "计算广告活动的每次点击成本",
+      "label": "每次点击成本（CPC）",
+      "calculation_description": "要计算每次点击成本，请输入：",
+      "step1": "总广告费用",
+      "step2": "点击次数"
+    },
+    "ctr": {
+      "title": "CTR 计算器",
+      "description": "计算点击率以衡量广告效果",
+      "label": "点击率（CTR）",
+      "calculation_description": "要计算点击率，请输入：",
+      "step1": "点击次数",
+      "step2": "展示次数"
+    },
+    "roi": {
+      "title": "ROI 计算器",
+      "description": "计算营销活动的投资回报率",
+      "label": "投资回报率（ROI）",
+      "calculation_description": "要计算投资回报率，请输入：",
+      "step1": "产生的收入",
+      "step2": "总投资"
+    },
     "total_cost": {
       "label": "总广告费用",
       "description": "要计算在线广告活动的总费用，请输入：",
       "step1": "CPM（每千次展示成本）",
-      "step2": "展示次数"
-    },
-    "cpm": {
-      "label": "每千次展示成本（CPM）",
-      "description": "要计算每千次展示成本，请输入：",
-      "step1": "总广告费用",
       "step2": "展示次数"
     },
     "impressions": {

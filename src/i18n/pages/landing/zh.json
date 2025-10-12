@@ -25,44 +25,32 @@
             {
               "title": "CPM计算器",
               "description": "为您的广告活动计算千次展示成本",
-              "url": "/tools/cpm",
+              "url": "/tools/cpm-calculator",
               "icon": "RiCalculatorLine"
             },
             {
-              "title": "展示次数计算器", 
-              "description": "有效计算覆盖面和展示次数",
-              "url": "/tools/impressions",
-              "icon": "RiEyeLine"
+              "title": "CPA计算器", 
+              "description": "计算每次获客成本/行动成本",
+              "url": "/tools/cpa-calculator",
+              "icon": "RiUserAddLine"
             },
             {
-              "title": "剪切工具",
-              "description": "剪切和编辑您的广告素材",
-              "url": "/tools/cutting",
-              "icon": "RiScissorsLine"
+              "title": "CPC计算器",
+              "description": "计算广告的每次点击成本", 
+              "url": "/tools/cpc-calculator",
+              "icon": "RiCursorLine"
             },
             {
-              "title": "预算规划器",
-              "description": "规划您的广告预算和支出", 
-              "url": "/tools/budget",
-              "icon": "RiMoneyDollarCircleLine"
-            },
-            {
-              "title": "活动分析",
-              "description": "分析活动绩效指标",
-              "url": "/tools/analytics", 
-              "icon": "RiBarChartLine"
+              "title": "CTR计算器",
+              "description": "计算点击率指标",
+              "url": "/tools/ctr-calculator", 
+              "icon": "RiMouseLine"
             },
             {
               "title": "ROI计算器",
               "description": "计算活动的投资回报率",
-              "url": "/tools/roi",
+              "url": "/tools/roi-calculator",
               "icon": "RiTrendingUpLine"
-            },
-            {
-              "title": "报告",
-              "description": "生成详细的活动报告",
-              "url": "/tools/reports",
-              "icon": "RiFileTextLine"
             }
           ]
         },

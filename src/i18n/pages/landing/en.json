@@ -25,38 +25,32 @@
             {
               "title": "CPM Calculator",
               "description": "Calculate Cost Per Mille for your campaigns",
-              "url": "/tools/cpm",
+              "url": "/tools/cpm-calculator",
               "icon": "RiCalculatorLine"
             },
             {
-              "title": "Impression Calculator", 
-              "description": "Calculate reach and impressions effectively",
-              "url": "/tools/impressions",
-              "icon": "RiEyeLine"
+              "title": "CPA Calculator", 
+              "description": "Calculate Cost Per Action/Acquisition",
+              "url": "/tools/cpa-calculator",
+              "icon": "RiUserAddLine"
             },
             {
-              "title": "Budget Planner",
-              "description": "Plan your advertising budget and spend", 
-              "url": "/tools/budget",
-              "icon": "RiMoneyDollarCircleLine"
+              "title": "CPC Calculator",
+              "description": "Calculate Cost Per Click for advertising", 
+              "url": "/tools/cpc-calculator",
+              "icon": "RiCursorLine"
             },
             {
-              "title": "Campaign Analytics",
-              "description": "Analyze campaign performance metrics",
-              "url": "/tools/analytics", 
-              "icon": "RiBarChartLine"
+              "title": "CTR Calculator",
+              "description": "Calculate Click-Through Rate metrics",
+              "url": "/tools/ctr-calculator", 
+              "icon": "RiMouseLine"
             },
             {
               "title": "ROI Calculator",
               "description": "Calculate return on investment for campaigns",
-              "url": "/tools/roi",
+              "url": "/tools/roi-calculator",
               "icon": "RiTrendingUpLine"
-            },
-            {
-              "title": "Reports",
-              "description": "Generate detailed campaign reports",
-              "url": "/tools/reports",
-              "icon": "RiFileTextLine"
             }
           ]
         },
