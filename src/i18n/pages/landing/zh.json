@@ -1,21 +1,21 @@
 {
-  "template": "shipany-template-one",
+  "template": "cpm-calculator",
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "CPM计算器",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "CPM计算器"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "功能特点",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
+          "title": "计算器",
+          "url": "/#calculator",
+          "icon": "RiCalculatorLine"
         },
         {
           "title": "工具",
@@ -23,40 +23,46 @@
           "icon": "RiToolsLine",
           "children": [
             {
-              "title": "英雄区工具",
-              "description": "为您的落地页创建引人注目的英雄区",
-              "url": "/tools/hero",
-              "icon": "RiFlameLine"
+              "title": "CPM计算器",
+              "description": "为您的广告活动计算千次展示成本",
+              "url": "/tools/cpm",
+              "icon": "RiCalculatorLine"
             },
             {
-              "title": "功能展示工具", 
-              "description": "有效展示您的产品功能",
-              "url": "/tools/features",
+              "title": "展示次数计算器", 
+              "description": "有效计算覆盖面和展示次数",
+              "url": "/tools/impressions",
+              "icon": "RiEyeLine"
+            },
+            {
+              "title": "剪切工具",
+              "description": "剪切和编辑您的广告素材",
+              "url": "/tools/cutting",
               "icon": "RiScissorsLine"
             },
             {
-              "title": "定价工具",
-              "description": "展示定价计划和套餐", 
-              "url": "/tools/pricing",
+              "title": "预算规划器",
+              "description": "规划您的广告预算和支出", 
+              "url": "/tools/budget",
               "icon": "RiMoneyDollarCircleLine"
             },
             {
-              "title": "客户评价",
-              "description": "客户评论和推荐",
-              "url": "/tools/testimonials", 
-              "icon": "RiThumbUpLine"
+              "title": "活动分析",
+              "description": "分析活动绩效指标",
+              "url": "/tools/analytics", 
+              "icon": "RiBarChartLine"
             },
             {
-              "title": "常见问题工具",
-              "description": "常见问题解答部分",
-              "url": "/tools/faq",
-              "icon": "RiQuestionLine"
+              "title": "ROI计算器",
+              "description": "计算活动的投资回报率",
+              "url": "/tools/roi",
+              "icon": "RiTrendingUpLine"
             },
             {
-              "title": "联系工具",
-              "description": "联系表单和信息",
-              "url": "/tools/contact",
-              "icon": "RiMailLine"
+              "title": "报告",
+              "description": "生成详细的活动报告",
+              "url": "/tools/reports",
+              "icon": "RiFileTextLine"
             }
           ]
         },
@@ -76,7 +82,7 @@
           "icon": "RiArticleLine"
         },
         {
-          "title": "术语表",
+          "title": "营销术语",
           "url": "/glossary",
           "icon": "RiBookmark3Line"
         },
@@ -94,9 +100,9 @@
     },
     "buttons": [
       {
-        "title": "获取 ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "计算CPM",
+        "url": "/calculator",
+        "target": "_self",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
       }

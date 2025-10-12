@@ -1,6 +1,6 @@
-# ShipAny Template One
+# CPM Calculator
 
-Ship Any AI SaaS Startups in hours.
+Professional CPM (Cost Per Mille) calculator for digital marketing and advertising campaigns.
 
 ![preview](preview.png)
 
@@ -9,7 +9,7 @@ Ship Any AI SaaS Startups in hours.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/shipanyai/shipany-template-one.git
+git clone https://github.com/cpmcalcul/cpmcalcultor.git
 ```
 
 2. Install dependencies
@@ -26,7 +26,6 @@ cp .env.example .env.development
 
 **Important**: You need to set up the following environment variables:
 
-- `REPLICATE_API_TOKEN`: Get your API token from [Replicate](https://replicate.com/account/api-tokens)
 - `DATABASE_URL`: Your database connection string
 - `NEXTAUTH_SECRET`: Your NextAuth secret key
 
@@ -36,18 +35,15 @@ cp .env.example .env.development
 pnpm dev
 ```
 
-## AI Workstation Features
+## CPM Calculator Features
 
-The AI Workstation integrates with Replicate's Flux-Kontext model for advanced image editing and generation:
+A comprehensive toolkit for marketing professionals and advertisers:
 
-- **Image Enhancement**: Upload images and enhance them with AI
-- **Prompt-based Editing**: Use text prompts to guide image modifications
-- **Credit System**: Each generation costs 5 credits
-- **Real-time Processing**: Powered by Replicate's AI models
-
-### Replicate Configuration
-
-To use the AI Workstation, you need:
+- **CPM Calculation**: Calculate Cost Per Mille for advertising campaigns
+- **Impression Calculator**: Estimate reach and impressions
+- **Budget Planning**: Plan advertising budgets effectively
+- **Campaign Analytics**: Track and analyze campaign performance
+- **Multi-platform Support**: Calculate CPM for various advertising platforms
 
 1. A Replicate account
 2. API token from [Replicate Dashboard](https://replicate.com/account/api-tokens)

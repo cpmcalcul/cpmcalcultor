@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "Ship Any AI SaaS Startups in hours | ShipAny",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups, Ship Fast with a variety of templates and components.",
-    "keywords": "ShipAny, AI SaaS Boilerplate, NextJS Boilerplate"
+    "title": "Professional CPM Calculator | Calculate Cost Per Mille | CPM Calculator",
+    "description": "Free CPM Calculator for digital marketing campaigns. Calculate Cost Per Mille, impressions, and advertising costs easily. Essential tool for marketers and advertisers.",
+    "keywords": "CPM Calculator, Cost Per Mille, Digital Marketing, Advertising Calculator, Marketing Tools"
   },
   "user": {
     "sign_in": "Sign In",
@@ -12,7 +12,7 @@
     "my_orders": "My Orders",
     "user_center": "User Center",
     "admin_system": "Admin System",
-    "ai_workstation": "AI Workstation"
+    "cpm_calculator": "CPM Calculator"
   },
   "sign_modal": {
     "sign_in_title": "Sign In",
@@ -89,8 +89,8 @@
     }
   },
   "blog": {
-    "title": "Blog",
-    "description": "News, resources, and updates about ShipAny",
+    "title": "Marketing Blog",
+    "description": "Digital marketing insights, CPM tips, and advertising strategies",
     "read_more_text": "Read More",
     "no_content": "No content",
     "all": "All",
@@ -243,17 +243,17 @@
   },
   "hero_switcher": {
     "component_one": {
-      "brand_name": "SHIPANY",
-      "title": "Make Your AI SaaS Product in a weekend",
-      "description": "The complete Next.js boilerplate for building profitable SaaS, ",
-      "subdescription": "Explore, create, and innovate with cutting-edge AI applications.packed with AI, auth, payments, i18n, newsletter, dashboard, blog, docs, blocks, themes, SEO and more.",
-      "button_text": "Get MiSaaS",
+      "brand_name": "CPM CALCULATOR",
+      "title": "Calculate CPM Like a Pro",
+      "description": "The ultimate CPM calculator for digital marketers and advertisers. ",
+      "subdescription": "Calculate Cost Per Mille, plan budgets, and optimize your advertising campaigns with precision.",
+      "button_text": "Calculate CPM",
       "see_demo": "See Demo"
     },
     "control_panel": {
-      "title": "Image Upload",
-      "description": "Upload an image to use as a reference, maximum {maxImages} images allowed",
-      "upload_button": "Upload Image",
+      "title": "Campaign Calculator",
+      "description": "Enter your campaign data to calculate CPM and other metrics",
+      "upload_button": "Upload Data",
       "file_types": "We accept .jpeg, .jpg, .png, .webp formats up to 24MB.",
       "max_images_reached": "Maximum {maxImages} images reached",
       "remove": "Remove",

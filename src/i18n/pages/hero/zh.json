@@ -1,47 +1,47 @@
 {
   "hero_switcher": {
     "component_one": {
-      "title": "一个周末构建您的AI SaaS产品",
-      "description": "完整的Next.js模板，用于构建盈利的SaaS，集成AI、身份验证、支付、国际化、新闻通讯、仪表板、博客、文档、组件、主题、SEO等。",
-      "button_text": "获取MiSaaS",
+      "title": "精确计算CPM成本",
+      "description": "专为数字营销人员、广告主和代理商打造的终极千次展示成本计算器。以专业精度计算CPM、展示次数和活动成本。",
+      "button_text": "计算CPM",
       "see_demo": "查看演示"
     },
     "control_panel": {
-      "title": "图片上传",
-      "description": "上传图片作为参考，最多允许{maxImages}张图片",
-      "upload_button": "上传图片",
-      "file_types": "我们接受 .jpeg、.jpg、.png、.webp 格式，最大24MB。",
-      "max_images_reached": "已达到最大{maxImages}张图片限制",
+      "title": "活动数据输入",
+      "description": "输入您的活动数据来计算CPM和其他广告指标",
+      "upload_button": "导入活动数据",
+      "file_types": "我们接受 .csv、.xlsx、.json 格式的活动数据文件。",
+      "max_images_reached": "已达到最大{maxImages}个文件限制",
       "remove": "移除",
-      "images_count": "{count} / {max} 张图片",
-      "prompt_title": "提示词",
-      "prompt_description": "描述您想要在图片中更改的内容",
-      "prompt_placeholder": "例如：将背景更改为蓝天",
-      "aspect_ratio_title": "宽高比",
-      "aspect_ratio_description": "选择您想要使用的宽高比",
-      "output_count_title": "输出数量",
-      "output_count_description": "选择您想要的输出数量",
-      "generate_button": "生成图片 ✨{count}",
-      "back_button": "← 返回 hero-one"
+      "images_count": "{count} / {max} 个文件",
+      "prompt_title": "活动详情",
+      "prompt_description": "输入您的活动信息以进行CPM计算",
+      "prompt_placeholder": "示例：展示广告活动，100万次展示，5000元预算",
+      "aspect_ratio_title": "报告格式",
+      "aspect_ratio_description": "选择您偏好的报告格式",
+      "output_count_title": "报告数量",
+      "output_count_description": "选择您想要生成的计算报告数量",
+      "generate_button": "生成CPM报告 ✨{count}",
+      "back_button": "← 返回计算器"
     },
     "preview_carousel": {
-      "title": "预览画廊",
+      "title": "CPM报告展示",
       "number": "3",
-      "description": "预览您的AI生成转换效果",
-      "no_images": "暂无图片显示",
-      "download_all": "下载所有图片",
-      "share": "分享",
-      "save_gallery": "保存到画廊",
+      "description": "预览您计算的CPM报告和分析结果",
+      "no_images": "没有报告可显示",
+      "download_all": "下载全部报告",
+      "share": "分享结果",
+      "save_gallery": "保存到仪表板",
       "image_count": "{current} / {total}",
       "alt_text": {
-        "professional_headshot_1": "专业头像 1",
-        "professional_headshot_2": "专业头像 2",
-        "professional_headshot_3": "专业头像 3"
+        "professional_headshot_1": "CPM计算报告 1",
+        "professional_headshot_2": "活动分析报告 2", 
+        "professional_headshot_3": "性能指标报告 3"
       },
       "image_titles": {
-        "convert_linkedin": "转换为LinkedIn头像",
-        "professional_portrait": "专业肖像",
-        "business_headshot": "商务头像"
+        "convert_linkedin": "标准CPM报告",
+        "professional_portrait": "详细分析",
+        "business_headshot": "性能摘要"
       }
     },
     "mode_indicator": {

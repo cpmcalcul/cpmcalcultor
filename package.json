@@ -1,9 +1,9 @@
 {
-  "name": "shipany-template-one",
-  "version": "2.6.0",
+  "name": "cpm-calculator",
+  "version": "1.0.0",
   "private": true,
-  "author": "idoubi",
-  "homepage": "https://shipany.ai",
+  "author": "cpmcalcul",
+  "homepage": "https://cpmcalculator.ai",
   "scripts": {
     "dev": "cross-env NODE_NO_WARNINGS=1 next dev --turbopack",
     "build": "next build",

@@ -1,21 +1,21 @@
 {
-  "template": "shipany-template-one",
+  "template": "cpm-calculator",
   "theme": "light",
   "header": {
     "brand": {
-      "title": "ShipAny",
+      "title": "CPM Calculator",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "CPM Calculator"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "Features",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
+          "title": "Calculator",
+          "url": "/#calculator",
+          "icon": "RiCalculatorLine"
         },
         {
           "title": "Tools",
@@ -23,40 +23,40 @@
           "icon": "RiToolsLine",
           "children": [
             {
-              "title": "Hero Tools",
-              "description": "Eye-catching hero sections for your landing page",
-              "url": "/tools/hero",
-              "icon": "RiFlameLine"
+              "title": "CPM Calculator",
+              "description": "Calculate Cost Per Mille for your campaigns",
+              "url": "/tools/cpm",
+              "icon": "RiCalculatorLine"
             },
             {
-              "title": "Features Tools", 
-              "description": "Showcase your product features effectively",
-              "url": "/tools/features",
-              "icon": "RiScissorsLine"
+              "title": "Impression Calculator", 
+              "description": "Calculate reach and impressions effectively",
+              "url": "/tools/impressions",
+              "icon": "RiEyeLine"
             },
             {
-              "title": "Pricing Tools",
-              "description": "Display pricing plans and packages", 
-              "url": "/tools/pricing",
+              "title": "Budget Planner",
+              "description": "Plan your advertising budget and spend", 
+              "url": "/tools/budget",
               "icon": "RiMoneyDollarCircleLine"
             },
             {
-              "title": "Testimonials",
-              "description": "Customer reviews and testimonials",
-              "url": "/tools/testimonials", 
-              "icon": "RiThumbUpLine"
+              "title": "Campaign Analytics",
+              "description": "Analyze campaign performance metrics",
+              "url": "/tools/analytics", 
+              "icon": "RiBarChartLine"
             },
             {
-              "title": "FAQ Tools",
-              "description": "Frequently asked questions section",
-              "url": "/tools/faq",
-              "icon": "RiQuestionLine"
+              "title": "ROI Calculator",
+              "description": "Calculate return on investment for campaigns",
+              "url": "/tools/roi",
+              "icon": "RiTrendingUpLine"
             },
             {
-              "title": "Contact Tools",
-              "description": "Contact forms and information",
-              "url": "/tools/contact",
-              "icon": "RiMailLine"
+              "title": "Reports",
+              "description": "Generate detailed campaign reports",
+              "url": "/tools/reports",
+              "icon": "RiFileTextLine"
             }
           ]
         },
@@ -66,7 +66,7 @@
           "icon": "RiMoneyDollarCircleLine"
         },
         {
-          "title": "Showcase",
+          "title": "Examples",
           "url": "/showcase",
           "icon": "RiApps2Line"
         },
@@ -76,7 +76,7 @@
           "icon": "RiArticleLine"
         },
         {
-          "title": "Glossary",
+          "title": "Marketing Terms",
           "url": "/glossary",
           "icon": "RiBookmark3Line"
         },
@@ -94,9 +94,9 @@
     },
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
-        "target": "_blank",
+        "title": "Calculate CPM",
+        "url": "/calculator",
+        "target": "_self",
         "variant": "link",
         "icon": "RiArrowRightUpLine"
       }

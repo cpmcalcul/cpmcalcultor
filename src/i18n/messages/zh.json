@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "title": "几小时内构建任何 AI SaaS 创业项目 | ShipAny",
-    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，提供各种模板和组件，帮助您快速启动。",
-    "keywords": "ShipAny, AI SaaS 模板, NextJS 模板"
+    "title": "专业CPM计算器 | 千次展示成本计算 | CPM计算工具",
+    "description": "免费的CPM计算器，专为数字营销活动设计。轻松计算千次展示成本、展示次数和广告费用。营销人员和广告主的必备工具。",
+    "keywords": "CPM计算器, 千次展示成本, 数字营销, 广告计算器, 营销工具"
   },
   "user": {
     "sign_in": "登录",
@@ -12,7 +12,7 @@
     "my_orders": "我的订单",
     "user_center": "用户中心",
     "admin_system": "管理后台",
-    "ai_workstation": "AI工作台"
+    "cpm_calculator": "CPM计算器"
   },
   "sign_modal": {
     "sign_in_title": "登录",
@@ -89,8 +89,8 @@
     }
   },
   "blog": {
-    "title": "博客",
-    "description": "关于 ShipAny 的新闻、资源和更新",
+    "title": "营销博客",
+    "description": "数字营销洞察、CPM技巧和广告策略",
     "read_more_text": "阅读更多",
     "no_content": "暂无内容",
     "all": "全部",

@@ -1,47 +1,47 @@
 {
   "hero_switcher": {
     "component_one": {
-      "title": "Make Your AI SaaS Product in a weekend",
-      "description": "The complete Next.js boilerplate for building profitable SaaS, packed with AI, auth, payments, i18n, newsletter, dashboard, blog, docs, blocks, themes, SEO and more.",
-      "button_text": "Get MiSaaS",
+      "title": "Calculate CPM with Precision",
+      "description": "The ultimate Cost Per Mille calculator for digital marketers, advertisers, and agencies. Calculate CPM, impressions, and campaign costs with professional accuracy.",
+      "button_text": "Calculate CPM",
       "see_demo": "See Demo"
     },
     "control_panel": {
-      "title": "Image Upload",
-      "description": "Upload an image to use as a reference, maximum {maxImages} images allowed",
-      "upload_button": "Upload Image",
-      "file_types": "We accept .jpeg, .jpg, .png, .webp formats up to 24MB.",
-      "max_images_reached": "Maximum {maxImages} images reached",
+      "title": "Campaign Data Input",
+      "description": "Enter your campaign data to calculate CPM and other advertising metrics",
+      "upload_button": "Import Campaign Data",
+      "file_types": "We accept .csv, .xlsx, .json formats for campaign data.",
+      "max_images_reached": "Maximum {maxImages} files reached",
       "remove": "Remove",
-      "images_count": "{count} / {max} images",
-      "prompt_title": "Prompt",
-      "prompt_description": "Describe what you want to change in the image",
-      "prompt_placeholder": "Example: Change the background to a blue sky",
-      "aspect_ratio_title": "Aspect Ratio",
-      "aspect_ratio_description": "Choose the aspect ratio you want to use",
-      "output_count_title": "Number of Outputs",
-      "output_count_description": "Choose the number of outputs you want",
-      "generate_button": "Generate Images ✨{count}",
-      "back_button": "← Return to hero-one"
+      "images_count": "{count} / {max} files",
+      "prompt_title": "Campaign Details",
+      "prompt_description": "Enter your campaign information for CPM calculation",
+      "prompt_placeholder": "Example: Display campaign, 1M impressions, $500 budget",
+      "aspect_ratio_title": "Report Format",
+      "aspect_ratio_description": "Choose the report format you prefer",
+      "output_count_title": "Number of Reports",
+      "output_count_description": "Choose the number of calculation reports you want",
+      "generate_button": "Generate CPM Report ✨{count}",
+      "back_button": "← Return to Calculator"
     },
     "preview_carousel": {
-      "title": "Preview Gallery",
+      "title": "CPM Report Gallery",
       "number": "3",
-      "description": "Preview your AI-generated transformations",
-      "no_images": "No images to display",
-      "download_all": "Download All Images",
-      "share": "Share",
-      "save_gallery": "Save to Gallery",
+      "description": "Preview your calculated CPM reports and analytics",
+      "no_images": "No reports to display",
+      "download_all": "Download All Reports",
+      "share": "Share Results",
+      "save_gallery": "Save to Dashboard",
       "image_count": "{current} of {total}",
       "alt_text": {
-        "professional_headshot_1": "Professional headshot 1",
-        "professional_headshot_2": "Professional headshot 2", 
-        "professional_headshot_3": "Professional headshot 3"
+        "professional_headshot_1": "CPM calculation report 1",
+        "professional_headshot_2": "Campaign analytics report 2", 
+        "professional_headshot_3": "Performance metrics report 3"
       },
       "image_titles": {
-        "convert_linkedin": "Convert to LinkedIn profile",
-        "professional_portrait": "Professional portrait",
-        "business_headshot": "Business headshot"
+        "convert_linkedin": "Standard CPM Report",
+        "professional_portrait": "Detailed Analytics",
+        "business_headshot": "Performance Summary"
       }
     },
     "mode_indicator": {
