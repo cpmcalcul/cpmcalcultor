@@ -1,0 +1,467 @@
+{
+  "metadata": {
+    "title": "几小时内构建任何 AI SaaS 创业项目 | ShipAny",
+    "description": "ShipAny 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，提供各种模板和组件，帮助您快速启动。",
+    "keywords": "ShipAny, AI SaaS 模板, NextJS 模板"
+  },
+  "user": {
+    "sign_in": "登录",
+    "sign_out": "退出登录",
+    "credits": "额度",
+    "api_keys": "API 密钥",
+    "my_orders": "我的订单",
+    "user_center": "用户中心",
+    "admin_system": "管理后台",
+    "ai_workstation": "AI工作台"
+  },
+  "sign_modal": {
+    "sign_in_title": "登录",
+    "sign_in_description": "登录您的账户",
+    "sign_up_title": "注册",
+    "sign_up_description": "创建新账户",
+    "email_title": "邮箱",
+    "email_placeholder": "请输入您的邮箱",
+    "password_title": "密码",
+    "password_placeholder": "请输入您的密码",
+    "forgot_password": "忘记密码？",
+    "or": "或",
+    "continue": "继续",
+    "no_account": "还没有账户？",
+    "email_sign_in": "使用邮箱登录",
+    "google_sign_in": "使用 Google 登录",
+    "github_sign_in": "使用 GitHub 登录",
+    "close_title": "关闭",
+    "cancel_title": "取消"
+  },
+  "my_orders": {
+    "title": "我的订单",
+    "description": "在 ShipAny 上购买的订单。",
+    "no_orders": "未找到订单",
+    "tip": "",
+    "activate_order": "激活订单",
+    "actived": "已激活",
+    "join_discord": "加入 Discord",
+    "read_docs": "阅读文档",
+    "table": {
+      "order_no": "订单号",
+      "email": "邮箱",
+      "product_name": "产品名称",
+      "amount": "金额",
+      "paid_at": "支付时间",
+      "github_username": "GitHub 用户名",
+      "status": "状态",
+      "manage_billing": "管理账单",
+      "interval": "周期",
+      "interval_month": "月付",
+      "interval_year": "年付",
+      "interval_one_time": "一次性"
+    }
+  },
+  "my_credits": {
+    "title": "我的积分",
+    "left_tip": "剩余积分: {left_credits}",
+    "no_credits": "没有积分记录",
+    "recharge": "充值",
+    "table": {
+      "trans_no": "交易号",
+      "trans_type": "交易类型",
+      "credits": "积分",
+      "updated_at": "更新时间",
+      "status": "状态",
+      "expired_at": "过期时间",
+      "created_at": "创建时间"
+    }
+  },
+  "api_keys": {
+    "title": "API 密钥",
+    "tip": "请妥善保管您的 API 密钥，避免泄露",
+    "no_api_keys": "没有 API 密钥",
+    "create_api_key": "创建 API 密钥",
+    "table": {
+      "name": "名称",
+      "key": "密钥",
+      "created_at": "创建时间"
+    },
+    "form": {
+      "name": "名称",
+      "name_placeholder": "API 密钥名称",
+      "submit": "提交"
+    }
+  },
+  "blog": {
+    "title": "博客",
+    "description": "关于 ShipAny 的新闻、资源和更新",
+    "read_more_text": "阅读更多",
+    "no_content": "暂无内容",
+    "all": "全部",
+    "category": "分类",
+    "author": "作者"
+  },
+  "my_invites": {
+    "title": "我的邀请",
+    "description": "查看您的邀请记录",
+    "no_invites": "未找到邀请记录",
+    "my_invite_link": "我的邀请链接",
+    "edit_invite_link": "编辑邀请链接",
+    "copy_invite_link": "复制邀请链接",
+    "invite_code": "邀请码",
+    "invite_tip": "每邀请 1 位朋友购买 ShipAny，奖励 $50。",
+    "invite_balance": "邀请奖励余额",
+    "total_invite_count": "总邀请人数",
+    "total_paid_count": "已充值人数",
+    "total_award_amount": "总奖励金额",
+    "update_invite_code": "设置邀请码",
+    "update_invite_code_tip": "输入你的自定义邀请码",
+    "update_invite_button": "保存",
+    "no_orders": "你需要先购买过 ShipAny 才能邀请朋友",
+    "no_affiliates": "你暂无邀请朋友的权限，请联系我们申请开通。",
+    "table": {
+      "invite_time": "邀请时间",
+      "invite_user": "邀请用户",
+      "status": "状态",
+      "reward_percent": "奖励比例",
+      "reward_amount": "奖励金额",
+      "pending": "已注册，未支付",
+      "completed": "已支付"
+    }
+  },
+  "feedback": {
+    "title": "反馈",
+    "description": "我们很乐意听取您对产品的看法或如何改进产品体验。",
+    "submit": "提交",
+    "loading": "提交中...",
+    "contact_tip": "其他联系方式",
+    "rating_tip": "您对 ShipAny 的看法如何？",
+    "placeholder": "在这里留下您的反馈..."
+  },
+  "ai_workstation": {
+    "title": "AI工作台",
+    "description": "使用人工智能技术进行图像编辑、修复和生成。上传图像并描述您想要的效果，AI将为您创造出令人惊叹的结果。",
+    "image_upload": {
+      "title": "图像（可选）",
+      "url_button": "URL",
+      "hide_url": "隐藏URL",
+      "url_placeholder": "https://example.com/image.jpg",
+      "url_help": "输入图像URL并按回车或点击+按钮添加",
+      "drag_drop": "拖放或浏览",
+      "drop_here": "将图像拖放到此处",
+      "file_types": "PNG、JPG、JPEG或WEBP（每个最大10MB）",
+      "multiple_support": "支持多张图像",
+      "add_more": "添加更多",
+      "clear_all": "清除全部",
+      "images_selected": "个图像已选择"
+    },
+    "prompt": {
+      "title": "提示词",
+      "translate": "翻译",
+      "placeholder": "描述您希望图像看起来的样子...",
+      "templates": {
+        "restore_image": "修复图像",
+        "change_haircut": "改变发型",
+        "portrait_series": "肖像系列",
+        "remove_background": "移除背景"
+      }
+    },
+    "dimensions": {
+      "title": "图像尺寸",
+      "match_input": "匹配输入"
+    },
+    "model": {
+      "title": "模型",
+      "description": "选择要使用的模型"
+    },
+    "count": {
+      "title": "图像数量",
+      "description": "选择要生成的图像数量"
+    },
+    "watermark": {
+      "title": "水印"
+    },
+    "generate": {
+      "button": "生成 5 积分",
+      "generating": "生成中...",
+      "stages": {
+        "analyzing": "分析图像...",
+        "understanding": "理解提示词...",
+        "initializing": "初始化AI模型...",
+        "generating": "生成图像变体...",
+        "applying": "应用编辑效果...",
+        "processing": "处理完成...",
+        "complete": "完成！",
+        "preparing": "准备生成..."
+      }
+    },
+    "results": {
+      "title": "结果",
+      "description": "修改后的图像结果将在此处显示。",
+      "time_label": "结果时间",
+      "time_estimate": "30秒 - 1分钟",
+      "regenerate": "重新生成",
+      "clear": "清除",
+      "download": "下载",
+      "before_after_tip": "拖拽中间线条来对比 Before/After",
+      "comparison_title": "对比效果",
+      "generation_results_title": "生成结果", 
+      "model_label": "模型",
+      "aspect_label": "宽高比",
+      "seed_label": "种子",
+      "steps_label": "步骤",
+      "generated_label": "生成时间",
+      "prompt_label": "提示词"
+    },
+    "errors": {
+      "no_prompt_or_image": "请上传图像或输入提示词来生成结果。",
+      "generation_failed": "生成失败，请重试。",
+      "insufficient_credits": "积分不足，请先充值",
+      "insufficient_credits_detailed": "积分不足或加载失败，需要 {credits} 积分才能生成图像。请先刷新积分或充值。",
+      "invalid_url": "无法从URL加载图像。请检查URL并重试。",
+      "frequent_submissions": "请勿频繁提交，请稍后再试",
+      "credits_loading_failed": "积分加载失败，请检查网络连接",
+      "network_error": "网络错误，请稍后重试"
+    },
+    "credits": {
+      "current_credits": "当前积分",
+      "loading_failed": "加载失败",
+      "refresh": "刷新",
+      "insufficient_button": "积分不足（需要 {credits} 积分）",
+      "loading_failed_refresh": "积分加载失败，请刷新",
+      "insufficient_recharge": "积分不足，请先充值获取更多积分",
+      "go_recharge": "前往充值",
+      "reload": "重新加载"
+    }
+  },
+  "navigation": {
+    "home": "首页",
+    "search": "搜索", 
+    "create": "创建",
+    "discover": "发现",
+    "activity": "动态",
+    "favorites": "收藏",
+    "cart": "购物车",
+    "profile": "我的",
+    "account": "账户"
+  },
+  "hero_switcher": {
+    "component_one": {
+      "brand_name": "SHIPANY",
+      "title": "一个周末构建您的AI SaaS产品",
+      "description": "完整的Next.js模板，用于构建盈利的SaaS，集",
+      "subdescription": "探索、创建和创新，使用前沿的AI应用程序。成AI、身份验证、支付、国际化、新闻通讯、仪表板、博客、文档、组件、主题、SEO等。",
+      "button_text": "获取MiSaaS",
+      "see_demo": "查看演示"
+    },
+    "control_panel": {
+      "title": "图片上传",
+      "description": "上传图片作为参考，最多允许{maxImages}张图片",
+      "upload_button": "上传图片",
+      "file_types": "我们接受 .jpeg、.jpg、.png、.webp 格式，最大24MB。",
+      "max_images_reached": "已达到最大{maxImages}张图片限制",
+      "remove": "移除",
+      "images_count": "{count} / {max} 张图片",
+      "prompt_title": "提示词",
+      "prompt_description": "描述您想要在图片中更改的内容",
+      "prompt_placeholder": "例如：将背景更改为蓝天",
+      "aspect_ratio_title": "宽高比",
+      "aspect_ratio_description": "选择您想要使用的宽高比",
+      "output_count_title": "输出数量",
+      "output_count_description": "选择您想要的输出数量",
+      "generate_button": "生成图片 ✨{count}",
+      "back_button": "← 返回 hero-one"
+    },
+    "preview_carousel": {
+      "title": "预览画廊",
+      "number": "3",
+      "description": "预览您的AI生成转换效果",
+      "no_images": "暂无图片显示",
+      "download_all": "下载所有图片",
+      "share": "分享",
+      "save_gallery": "保存到画廊",
+      "image_count": "{current} / {total}",
+      "alt_text": {
+        "professional_headshot_1": "专业头像 1",
+        "professional_headshot_2": "专业头像 2",
+        "professional_headshot_3": "专业头像 3"
+      },
+      "image_titles": {
+        "convert_linkedin": "转换为LinkedIn头像",
+        "professional_portrait": "专业肖像",
+        "business_headshot": "商务头像"
+      }
+    },
+    "mode_indicator": {
+      "mode": "模式",
+      "current_mode": "{mode}"
+    }
+  },
+  "aero_section": {
+    "tabs": {
+      "chat": "聊天模式",
+      "veo": "Veo 3 视频",
+      "gemini": "Gemini Flash 图像",
+      "text_video": "文本转视频",
+      "image_video": "图像转视频",
+      "text_image": "文本转图像",
+      "image_image": "图像转图像",
+      "text_music": "文本转音乐",
+      "text_speech": "文本转语音"
+    },
+    "content": {
+      "chat": {
+        "title": "SuperMaker AI 助手",
+        "subtitle": "使用先进AI技术的智能对话",
+        "description": "体验下一代AI对话。通过我们先进的AI聊天界面获得创意协助、技术指导和创新解决方案。",
+        "placeholder": "询问我任何关于您创意项目的问题..."
+      },
+      "veo": {
+        "title": "Veo 3 AI 视频生成器",
+        "subtitle": "使用Google最新AI模型创建专业视频",
+        "description": "使用Google突破性的Veo 3模型生成令人惊叹的高质量视频。以前所未有的真实感将您的想法转化为电影杰作。",
+        "placeholder": "描述您想要使用Veo 3创建的视频..."
+      },
+      "gemini": {
+        "title": "Gemini Flash 图像生成器",
+        "subtitle": "使用Google Gemini进行闪电般快速的图像创建",
+        "description": "使用Gemini Flash以闪电般的速度创建、编辑和增强图像。体验AI图像生成中质量与速度的完美结合。",
+        "placeholder": "描述您想要使用Gemini Flash生成的图像..."
+      },
+      "text_video": {
+        "title": "AI 文本转视频生成器",
+        "subtitle": "将文字转化为电影体验",
+        "description": "将您的书面想法转化为引人入胜的视频内容。我们先进的AI理解上下文并创建完美匹配您愿景的视频。",
+        "placeholder": "写下您想要转化为视频的故事或场景..."
+      },
+      "image_video": {
+        "title": "AI 图像转视频生成器",
+        "subtitle": "用运动为静态图像注入生命",
+        "description": "用真实的运动和效果为您的图像制作动画。通过智能运动预测将静态照片转化为动态视频内容。",
+        "placeholder": "描述您希望图像如何移动和制作动画..."
+      },
+      "text_image": {
+        "title": "AI 文本转图像生成器",
+        "subtitle": "从文本描述创建令人惊叹的视觉效果",
+        "description": "从简单的文本提示生成美丽、高分辨率的图像。从照片般真实的场景到艺术插图，让您的想象力变为现实。",
+        "placeholder": "详细描述您想要创建的图像..."
+      },
+      "image_image": {
+        "title": "AI 图像转图像生成器",
+        "subtitle": "使用AI转换和增强您的图像",
+        "description": "使用先进的AI编辑、转换和增强现有图像。改变风格、修改内容或完全重新想象您的视觉资产。",
+        "placeholder": "描述您希望如何转换图像..."
+      },
+      "text_music": {
+        "title": "AI 音乐生成器",
+        "subtitle": "从文本描述创作原创音乐",
+        "description": "创建自定义配乐、旋律和完整的音乐作品。从环境音景到完整的管弦乐作品，使用AI进行创作。",
+        "placeholder": "描述您想要的音乐风格、情绪和乐器..."
+      },
+      "text_speech": {
+        "title": "AI 语音生成器",
+        "subtitle": "从文本进行自然语音合成",
+        "description": "将文本转换为具有情感和表现力的逼真语音。为叙述、对话和配音选择各种语音和语言。",
+        "placeholder": "输入您想要转换为自然语音的文本..."
+      }
+    },
+    "ui": {
+      "add_image": "添加图像",
+      "send": "发送",
+      "hints": "提示：",
+      "change_background": "更换背景"
+    },
+    "hints": {
+      "video": {
+        "short_film": "短片",
+        "animate_scene": "场景动画",
+        "style_transfer": "风格转换",
+        "add_bgm": "添加背景音乐",
+        "remove_objects": "移除对象"
+      },
+      "image": {
+        "artistic_style": "艺术风格",
+        "remove_background": "移除背景",
+        "enhance_quality": "提升质量",
+        "photo_realistic": "照片真实",
+        "color_grading": "色彩分级"
+      },
+      "audio": {
+        "bgm_composer": "背景音乐作曲",
+        "soundtrack": "配乐",
+        "voice_clone": "语音克隆",
+        "audio_effects": "音频效果",
+        "noise_removal": "噪音移除"
+      }
+    }
+  },
+  "feature0": {
+    "title": "精选创作",
+    "description": "精心挑选的最佳示例，展示Nano Banana的强大功能",
+    "pause_rotation": "暂停自动旋转",
+    "start_rotation": "开启自动旋转",
+    "auto_rotating": "自动旋转中",
+    "scroll_hint": "滚动或拖拽探索",
+    "swipe_hint": "移动端滑动"
+  },
+  "select_style": {
+    "title": "选择风格",
+    "description": "为你的图片变换选择一个风格",
+    "more_styles": "更多风格在下方"
+  },
+  "comments": {
+    "title": "评论",
+    "all_comments": "所有评论",
+    "no_comments": "暂无评论",
+    "be_first": "成为第一个评论的人！",
+    "leave_comment": "发表评论",
+    "reply_to": "回复 {author}",
+    "reply": "回复",
+    "show_replies": "显示回复",
+    "hide_replies": "隐藏回复",
+    "load_more": "加载更多评论",
+    "loading": "加载中...",
+    "submitting": "提交中...",
+    "submit": "提交评论",
+    "cancel": "取消",
+    "comment": "评论",
+    "comment_placeholder": "分享你的想法...",
+    "name": "姓名",
+    "name_placeholder": "你的姓名",
+    "email": "邮箱",
+    "email_placeholder": "你的邮箱@example.com",
+    "website": "网站",
+    "website_placeholder": "https://你的网站.com",
+    "optional": "可选",
+    "content_required": "评论内容不能为空",
+    "guest_info_required": "游客评论需要填写姓名和邮箱",
+    "submitted_successfully": "评论提交成功！",
+    "submit_error": "评论提交失败",
+    "fetch_error": "加载评论失败"
+  },
+  "pages": {
+    "glossary": {
+      "glossary": {
+        "metadata": {
+          "title": "AI 术语表 - 全面的AI术语词典 | ShipAny",
+          "description": "探索我们全面的AI术语表，包含关键人工智能术语、概念和技术的定义。适合初学者和专家使用。"
+        },
+        "page": {
+          "title": "AI 术语表",
+          "subtitle": "AI术语和概念的全面定义",
+          "readMore": "阅读更多",
+          "noResults": "未找到符合您条件的术语",
+          "synonyms": "同义词"
+        },
+        "admin": {
+          "title": "术语表管理",
+          "newTerm": "新建术语",
+          "slug": "别名",
+          "termTitle": "术语标题",
+          "status": "状态",
+          "updated": "更新时间",
+          "actions": "操作",
+          "published": "已发布",
+          "draft": "草稿",
+          "edit": "编辑"
+        }
+      }
+    }
+  }
+}

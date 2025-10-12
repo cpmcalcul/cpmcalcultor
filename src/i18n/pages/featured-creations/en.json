@@ -1,0 +1,25 @@
+{
+  "featuredCreations": {
+    "title": "Featured Creations",
+    "description": "Discover amazing projects built with our platform. Get inspired and start building your own.",
+    "viewAllText": "View All Creations",
+    "viewAllHref": "/showcase",
+    "scrollInstruction": "Scroll or drag to browse",
+    "mobileInstruction": "Swipe to browse",
+    "keyboardInstruction": "Use arrow keys to navigate",
+    "badges": {
+      "featured": "Featured",
+      "new": "New"
+    },
+    "stats": {
+      "rating": "Rating",
+      "views": "Views",
+      "downloads": "Downloads",
+      "likes": "Likes"
+    },
+    "actions": {
+      "view": "View",
+      "preview": "Preview"
+    }
+  }
+}

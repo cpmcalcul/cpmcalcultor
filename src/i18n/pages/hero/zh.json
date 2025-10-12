@@ -1,0 +1,52 @@
+{
+  "hero_switcher": {
+    "component_one": {
+      "title": "一个周末构建您的AI SaaS产品",
+      "description": "完整的Next.js模板，用于构建盈利的SaaS，集成AI、身份验证、支付、国际化、新闻通讯、仪表板、博客、文档、组件、主题、SEO等。",
+      "button_text": "获取MiSaaS",
+      "see_demo": "查看演示"
+    },
+    "control_panel": {
+      "title": "图片上传",
+      "description": "上传图片作为参考，最多允许{maxImages}张图片",
+      "upload_button": "上传图片",
+      "file_types": "我们接受 .jpeg、.jpg、.png、.webp 格式，最大24MB。",
+      "max_images_reached": "已达到最大{maxImages}张图片限制",
+      "remove": "移除",
+      "images_count": "{count} / {max} 张图片",
+      "prompt_title": "提示词",
+      "prompt_description": "描述您想要在图片中更改的内容",
+      "prompt_placeholder": "例如：将背景更改为蓝天",
+      "aspect_ratio_title": "宽高比",
+      "aspect_ratio_description": "选择您想要使用的宽高比",
+      "output_count_title": "输出数量",
+      "output_count_description": "选择您想要的输出数量",
+      "generate_button": "生成图片 ✨{count}",
+      "back_button": "← 返回 hero-one"
+    },
+    "preview_carousel": {
+      "title": "预览画廊",
+      "number": "3",
+      "description": "预览您的AI生成转换效果",
+      "no_images": "暂无图片显示",
+      "download_all": "下载所有图片",
+      "share": "分享",
+      "save_gallery": "保存到画廊",
+      "image_count": "{current} / {total}",
+      "alt_text": {
+        "professional_headshot_1": "专业头像 1",
+        "professional_headshot_2": "专业头像 2",
+        "professional_headshot_3": "专业头像 3"
+      },
+      "image_titles": {
+        "convert_linkedin": "转换为LinkedIn头像",
+        "professional_portrait": "专业肖像",
+        "business_headshot": "商务头像"
+      }
+    },
+    "mode_indicator": {
+      "mode": "模式",
+      "current_mode": "{mode}"
+    }
+  }
+}

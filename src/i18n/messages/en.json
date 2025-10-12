@@ -1,0 +1,468 @@
+{
+  "metadata": {
+    "title": "Ship Any AI SaaS Startups in hours | ShipAny",
+    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups, Ship Fast with a variety of templates and components.",
+    "keywords": "ShipAny, AI SaaS Boilerplate, NextJS Boilerplate"
+  },
+  "user": {
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "credits": "Credits",
+    "api_keys": "API Keys",
+    "my_orders": "My Orders",
+    "user_center": "User Center",
+    "admin_system": "Admin System",
+    "ai_workstation": "AI Workstation"
+  },
+  "sign_modal": {
+    "sign_in_title": "Sign In",
+    "sign_in_description": "Sign in to your account",
+    "sign_up_title": "Sign Up",
+    "sign_up_description": "Create an account",
+    "email_title": "Email",
+    "email_placeholder": "Input your email here",
+    "password_title": "Password",
+    "password_placeholder": "Input your password here",
+    "forgot_password": "Forgot password?",
+    "or": "Or",
+    "continue": "Continue",
+    "no_account": "Don't have an account?",
+    "email_sign_in": "Sign in with Email",
+    "google_sign_in": "Sign in with Google",
+    "github_sign_in": "Sign in with GitHub",
+    "close_title": "Close",
+    "cancel_title": "Cancel"
+  },
+  "my_orders": {
+    "title": "My Orders",
+    "description": "orders paid with ShipAny.",
+    "no_orders": "No orders found",
+    "tip": "",
+    "activate_order": "Activate Order",
+    "actived": "Activated",
+    "join_discord": "Join Discord",
+    "read_docs": "Read Docs",
+    "table": {
+      "order_no": "Order No",
+      "email": "Email",
+      "product_name": "Product Name",
+      "amount": "Amount",
+      "paid_at": "Paid At",
+      "github_username": "GitHub Username",
+      "status": "Status",
+      "manage_billing": "Manage Billing",
+      "interval": "Interval",
+      "interval_month": "Monthly",
+      "interval_year": "Annually",
+      "interval_one_time": "One-Time"
+    }
+  },
+  "my_credits": {
+    "title": "My Credits",
+    "left_tip": "left credits: {left_credits}",
+    "no_credits": "No credits records",
+    "recharge": "Recharge",
+    "table": {
+      "trans_no": "Trans No",
+      "trans_type": "Trans Type",
+      "credits": "Credits",
+      "updated_at": "Updated At",
+      "status": "Status",
+      "expired_at": "Expired At",
+      "created_at": "Created At"
+    }
+  },
+  "api_keys": {
+    "title": "API Keys",
+    "tip": "Please keep your apikey safe to avoid leaks",
+    "no_api_keys": "No API Keys",
+    "create_api_key": "Create API Key",
+    "table": {
+      "name": "Name",
+      "key": "Key",
+      "created_at": "Created At"
+    },
+    "form": {
+      "name": "Name",
+      "name_placeholder": "API Key Name",
+      "submit": "Submit"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "description": "News, resources, and updates about ShipAny",
+    "read_more_text": "Read More",
+    "no_content": "No content",
+    "all": "All",
+    "category": "Category",
+    "author": "Author"
+  },
+  "my_invites": {
+    "title": "My Invites",
+    "description": "View your invite records",
+    "no_invites": "No invite records found",
+    "my_invite_link": "My Invite Link",
+    "edit_invite_link": "Edit Invite Link",
+    "copy_invite_link": "Copy Invite Link",
+    "invite_code": "Invite Code",
+    "invite_tip": "Invite 1 friend to buy ShipAny, reward $50.",
+    "invite_balance": "Invite Reward Balance",
+    "total_invite_count": "Total Invite Count",
+    "total_paid_count": "Total Paid Count",
+    "total_award_amount": "Total Award Amount",
+    "update_invite_code": "Set Invite Code",
+    "update_invite_code_tip": "Input your custom invite code",
+    "update_invite_button": "Save",
+    "no_orders": "You can't invite others before you bought ShipAny",
+    "no_affiliates": "You're not allowed to invite others, please contact us to apply for permission.",
+    "table": {
+      "invite_time": "Invite Time",
+      "invite_user": "Invite User",
+      "status": "Status",
+      "reward_percent": "Reward Percent",
+      "reward_amount": "Reward Amount",
+      "pending": "Pending",
+      "completed": "Completed"
+    }
+  },
+  "feedback": {
+    "title": "Feedback",
+    "description": "We'd love to hear what went well or how we can improve the product experience.",
+    "submit": "Submit",
+    "loading": "Submitting...",
+    "contact_tip": "Other ways to contact us",
+    "rating_tip": "How do you feel about ShipAny?",
+    "placeholder": "Leave your words here..."
+  },
+  "ai_workstation": {
+    "title": "AI Workstation",
+    "description": "Use artificial intelligence technology for image editing, restoration, and generation. Upload images and describe the effects you want, and AI will create amazing results for you.",
+    "image_upload": {
+      "title": "Image (Optional)",
+      "url_button": "URL",
+      "hide_url": "Hide URL",
+      "url_placeholder": "https://example.com/image.jpg",
+      "url_help": "Enter image URL and press Enter or click the + button to add",
+      "drag_drop": "Drag & drop or browse",
+      "drop_here": "Drop image here",
+      "file_types": "PNG, JPG, JPEG or WEBP (max 10MB each)",
+      "multiple_support": "Support multiple images",
+      "add_more": "Add more",
+      "clear_all": "Clear all",
+      "images_selected": "images selected"
+    },
+    "prompt": {
+      "title": "Prompt",
+      "translate": "Translate",
+      "placeholder": "Describe how your image should look like...",
+      "templates": {
+        "restore_image": "Restore Image",
+        "change_haircut": "Change Haircut",
+        "portrait_series": "Portrait Series",
+        "remove_background": "Remove Background"
+      }
+    },
+    "dimensions": {
+      "title": "Image Dimensions",
+      "match_input": "Match Input"
+    },
+    "model": {
+      "title": "Model",
+      "description": "Select the model to use"
+    },
+    "count": {
+      "title": "Number of Images",
+      "description": "Select how many images to generate"
+    },
+    "watermark": {
+      "title": "Watermark"
+    },
+    "generate": {
+      "button": "Generate 5 Credits",
+      "generating": "Generating...",
+      "stages": {
+        "analyzing": "Analyzing image...",
+        "understanding": "Understanding prompt...",
+        "initializing": "Initializing AI model...",
+        "generating": "Generating variations...",
+        "applying": "Applying edits...",
+        "processing": "Processing complete...",
+        "complete": "Complete!",
+        "preparing": "Preparing generation..."
+      }
+    },
+    "results": {
+      "title": "Results",
+      "description": "The modified image results will appear here.",
+      "time_label": "Result Time",
+      "time_estimate": "30s - 1min",
+      "regenerate": "Regenerate",
+      "clear": "Clear",
+      "download": "Download",
+      "before_after_tip": "Drag the center line to compare Before/After",
+      "comparison_title": "Comparison Effect",
+      "generation_results_title": "Generation Results",
+      "model_label": "Model",
+      "aspect_label": "Aspect",
+      "seed_label": "Seed",
+      "steps_label": "Steps",
+      "generated_label": "Generated",
+      "prompt_label": "Prompt"
+    },
+    "errors": {
+      "no_prompt_or_image": "Please upload an image or enter a prompt to generate results.",
+      "generation_failed": "Generation failed. Please try again.",
+      "insufficient_credits": "Insufficient credits, please recharge first",
+      "insufficient_credits_detailed": "Insufficient credits or loading failed, {credits} credits required to generate images. Please refresh credits or recharge first.",
+      "invalid_url": "Failed to load image from URL. Please check the URL and try again.",
+      "frequent_submissions": "Please do not submit too frequently, try again later",
+      "credits_loading_failed": "Credits loading failed, please check network connection",
+      "network_error": "Network error, please try again later"
+    },
+    "credits": {
+      "current_credits": "Current Credits",
+      "loading_failed": "Loading failed",
+      "refresh": "Refresh",
+      "insufficient_button": "Insufficient credits (requires {credits} credits)",
+      "loading_failed_refresh": "Credits loading failed, please refresh",
+      "insufficient_recharge": "Insufficient credits, please recharge to get more credits",
+      "go_recharge": "Go to Recharge",
+      "reload": "Reload"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "search": "Search",
+    "create": "Create",
+    "discover": "Discover",
+    "activity": "Activity",
+    "favorites": "Favorites",
+    "cart": "Cart",
+    "profile": "Profile",
+    "account": "Account"
+  },
+  "hero_switcher": {
+    "component_one": {
+      "brand_name": "SHIPANY",
+      "title": "Make Your AI SaaS Product in a weekend",
+      "description": "The complete Next.js boilerplate for building profitable SaaS, ",
+      "subdescription": "Explore, create, and innovate with cutting-edge AI applications.packed with AI, auth, payments, i18n, newsletter, dashboard, blog, docs, blocks, themes, SEO and more.",
+      "button_text": "Get MiSaaS",
+      "see_demo": "See Demo"
+    },
+    "control_panel": {
+      "title": "Image Upload",
+      "description": "Upload an image to use as a reference, maximum {maxImages} images allowed",
+      "upload_button": "Upload Image",
+      "file_types": "We accept .jpeg, .jpg, .png, .webp formats up to 24MB.",
+      "max_images_reached": "Maximum {maxImages} images reached",
+      "remove": "Remove",
+      "images_count": "{count} / {max} images",
+      "prompt_title": "Prompt",
+      "prompt_description": "Describe what you want to change in the image",
+      "prompt_placeholder": "Example: Change the background to a blue sky",
+      "aspect_ratio_title": "Aspect Ratio",
+      "aspect_ratio_description": "Choose the aspect ratio you want to use",
+      "output_count_title": "Number of Outputs",
+      "output_count_description": "Choose the number of outputs you want",
+      "generate_button": "Generate Images ✨{count}",
+      "back_button": "← Return to hero-one"
+    },
+    "preview_carousel": {
+      "title": "Preview Gallery",
+      "number": "3",
+      "description": "Preview your AI-generated transformations",
+      "no_images": "No images to display",
+      "download_all": "Download All Images",
+      "share": "Share",
+      "save_gallery": "Save to Gallery",
+      "image_count": "{current} of {total}",
+      "alt_text": {
+        "professional_headshot_1": "Professional headshot 1",
+        "professional_headshot_2": "Professional headshot 2", 
+        "professional_headshot_3": "Professional headshot 3"
+      },
+      "image_titles": {
+        "convert_linkedin": "Convert to LinkedIn profile",
+        "professional_portrait": "Professional portrait",
+        "business_headshot": "Business headshot"
+      }
+    },
+    "mode_indicator": {
+      "mode": "Mode",
+      "current_mode": "{mode}"
+    }
+  },
+  "aero_section": {
+    "tabs": {
+      "chat": "Chat Mode",
+      "veo": "Veo 3 Video",
+      "gemini": "Gemini Flash Image",
+      "text_video": "Text to Video",
+      "image_video": "Image to Video",
+      "text_image": "Text to Image",
+      "image_image": "Image to Image",
+      "text_music": "Text to Music",
+      "text_speech": "Text to Speech"
+    },
+    "content": {
+      "chat": {
+        "title": "SuperMaker AI Assistant",
+        "subtitle": "Intelligent Conversations with Advanced AI Technology",
+        "description": "Experience next-generation AI conversations. Get creative assistance, technical guidance, and innovative solutions through our advanced AI chat interface.",
+        "placeholder": "Ask me anything about your creative projects..."
+      },
+      "veo": {
+        "title": "Veo 3 AI Video Generator",
+        "subtitle": "Create Professional Videos with Google's Latest AI Model",
+        "description": "Generate stunning, high-quality videos using Google's breakthrough Veo 3 model. Transform your ideas into cinematic masterpieces with unprecedented realism.",
+        "placeholder": "Describe the video you want to create with Veo 3..."
+      },
+      "gemini": {
+        "title": "Gemini Flash Image Generator",
+        "subtitle": "Lightning-Fast Image Creation with Google's Gemini",
+        "description": "Create, edit, and enhance images at blazing speed with Gemini Flash. Experience the perfect blend of quality and speed in AI image generation.",
+        "placeholder": "Describe the image you want to generate with Gemini Flash..."
+      },
+      "text_video": {
+        "title": "AI Text-to-Video Generator",
+        "subtitle": "Transform Words into Cinematic Experiences",
+        "description": "Convert your written ideas into compelling video content. Our advanced AI understands context and creates videos that perfectly match your vision.",
+        "placeholder": "Write a story or scene you want to turn into a video..."
+      },
+      "image_video": {
+        "title": "AI Image-to-Video Generator",
+        "subtitle": "Bring Static Images to Life with Motion",
+        "description": "Animate your images with realistic motion and effects. Transform still photographs into dynamic video content with intelligent movement prediction.",
+        "placeholder": "Describe how you want your image to move and animate..."
+      },
+      "text_image": {
+        "title": "AI Text-to-Image Generator",
+        "subtitle": "Create Stunning Visuals from Text Descriptions",
+        "description": "Generate beautiful, high-resolution images from simple text prompts. From photorealistic scenes to artistic illustrations, bring your imagination to life.",
+        "placeholder": "Describe the image you want to create in detail..."
+      },
+      "image_image": {
+        "title": "AI Image-to-Image Generator",
+        "subtitle": "Transform and Enhance Your Images with AI",
+        "description": "Edit, transform, and enhance existing images using advanced AI. Change styles, modify content, or completely reimagine your visual assets.",
+        "placeholder": "Describe how you want to transform your image..."
+      },
+      "text_music": {
+        "title": "AI Music Generator",
+        "subtitle": "Compose Original Music from Text Descriptions",
+        "description": "Create custom soundtracks, melodies, and complete musical compositions. From ambient soundscapes to full orchestral pieces, compose with AI.",
+        "placeholder": "Describe the music style, mood, and instruments you want..."
+      },
+      "text_speech": {
+        "title": "AI Voice Generator",
+        "subtitle": "Natural-Sounding Voice Synthesis from Text",
+        "description": "Convert text into lifelike speech with emotion and expression. Choose from various voices and languages for narration, dialogue, and voiceovers.",
+        "placeholder": "Enter the text you want to convert to natural speech..."
+      }
+    },
+    "ui": {
+      "add_image": "Add Image",
+      "send": "Send",
+      "hints": "Hints:",
+      "change_background": "Change Background"
+    },
+    "hints": {
+      "video": {
+        "short_film": "Short Film",
+        "animate_scene": "Animate Scene",
+        "style_transfer": "Style Transfer",
+        "add_bgm": "Add BGM",
+        "remove_objects": "Remove Objects"
+      },
+      "image": {
+        "artistic_style": "Artistic Style",
+        "remove_background": "Remove Background",
+        "enhance_quality": "Enhance Quality",
+        "photo_realistic": "Photo Realistic",
+        "color_grading": "Color Grading"
+      },
+      "audio": {
+        "bgm_composer": "BGM Composer",
+        "soundtrack": "Soundtrack",
+        "voice_clone": "Voice Clone",
+        "audio_effects": "Audio Effects",
+        "noise_removal": "Noise Removal"
+      }
+    }
+  },
+  "feature0": {
+    "title": "Featured Creations",
+    "description": "Handpicked best examples showcasing Nano Banana's capabilities",
+    "pause_rotation": "Pause Auto Rotation",
+    "start_rotation": "Start Auto Rotation",
+    "auto_rotating": "Auto Rotating",
+    "scroll_hint": "Scroll or drag to explore",
+    "swipe_hint": "Swipe on mobile"
+  },
+  "select_style": {
+    "title": "Select Style",
+    "description": "Choose a style for your photo transformation",
+    "more_styles": "More Styles Below"
+  },
+  "comments": {
+    "title": "Comments",
+    "all_comments": "All Comments",
+    "no_comments": "No comments yet",
+    "be_first": "Be the first to leave a comment!",
+    "leave_comment": "Leave a Comment",
+    "reply_to": "Reply to {author}",
+    "reply": "Reply",
+    "show_replies": "Show Replies",
+    "hide_replies": "Hide Replies",
+    "load_more": "Load More Comments",
+    "loading": "Loading...",
+    "submitting": "Submitting...",
+    "submit": "Submit Comment",
+    "cancel": "Cancel",
+    "comment": "Comment",
+    "comment_placeholder": "Share your thoughts...",
+    "name": "Name",
+    "name_placeholder": "Your name",
+    "email": "Email",
+    "email_placeholder": "your.email@example.com",
+    "website": "Website",
+    "website_placeholder": "https://yourwebsite.com",
+    "optional": "optional",
+    "content_required": "Comment content is required",
+    "guest_info_required": "Name and email are required for guest comments",
+    "submitted_successfully": "Comment submitted successfully!",
+    "submit_error": "Failed to submit comment",
+    "fetch_error": "Failed to load comments"
+  },
+  "pages": {
+    "glossary": {
+      "glossary": {
+        "metadata": {
+          "title": "AI Glossary - Comprehensive AI Terms Dictionary | ShipAny",
+          "description": "Explore our comprehensive AI glossary with definitions of key artificial intelligence terms, concepts, and technologies. Perfect for beginners and experts alike."
+        },
+        "page": {
+          "title": "AI Glossary",
+          "subtitle": "Comprehensive definitions of AI terms and concepts",
+          "readMore": "Read more",
+          "noResults": "No terms found matching your criteria",
+          "synonyms": "Synonyms"
+        },
+        "admin": {
+          "title": "Glossary Management",
+          "newTerm": "New Term",
+          "slug": "Slug",
+          "termTitle": "Term Title",
+          "status": "Status",
+          "updated": "Updated",
+          "actions": "Actions",
+          "published": "Published",
+          "draft": "Draft",
+          "edit": "Edit"
+        }
+      }
+    }
+  }
+}
+

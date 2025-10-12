@@ -1,0 +1,24 @@
+{
+  "featuredCreations": {
+    "title": "精选作品",
+    "description": "探索使用我们平台构建的惊人项目。获得灵感，开始构建属于你的作品。",
+    "viewAllText": "查看所有作品",
+    "viewAllHref": "/showcase",
+    "scrollInstruction": "滚动或拖拽浏览",
+    "mobileInstruction": "滑动浏览",
+    "badges": {
+      "featured": "精选",
+      "new": "新品"
+    },
+    "stats": {
+      "rating": "评分",
+      "views": "浏览量",
+      "downloads": "下载量",
+      "likes": "点赞数"
+    },
+    "actions": {
+      "view": "查看",
+      "preview": "预览"
+    }
+  }
+}
