@@ -35,7 +35,7 @@
   },
   "my_orders": {
     "title": "我的订单",
-    "description": "在 ShipAny 上购买的订单。",
+    "description": "在 CPM Calculator 上购买的订单。",
     "no_orders": "未找到订单",
     "tip": "",
     "activate_order": "激活订单",
@@ -105,7 +105,7 @@
     "edit_invite_link": "编辑邀请链接",
     "copy_invite_link": "复制邀请链接",
     "invite_code": "邀请码",
-    "invite_tip": "每邀请 1 位朋友购买 ShipAny，奖励 $50。",
+    "invite_tip": "每邀请 1 位朋友购买 CPM Calculator，奖励 $50。",
     "invite_balance": "邀请奖励余额",
     "total_invite_count": "总邀请人数",
     "total_paid_count": "已充值人数",
@@ -113,7 +113,7 @@
     "update_invite_code": "设置邀请码",
     "update_invite_code_tip": "输入你的自定义邀请码",
     "update_invite_button": "保存",
-    "no_orders": "你需要先购买过 ShipAny 才能邀请朋友",
+    "no_orders": "你需要先购买过 CPM Calculator 才能邀请朋友",
     "no_affiliates": "你暂无邀请朋友的权限，请联系我们申请开通。",
     "table": {
       "invite_time": "邀请时间",
@@ -131,7 +131,7 @@
     "submit": "提交",
     "loading": "提交中...",
     "contact_tip": "其他联系方式",
-    "rating_tip": "您对 ShipAny 的看法如何？",
+    "rating_tip": "您对 CPM Calculator 的看法如何？",
     "placeholder": "在这里留下您的反馈..."
   },
   "ai_workstation": {
@@ -243,7 +243,7 @@
   },
   "hero_switcher": {
     "component_one": {
-      "brand_name": "SHIPANY",
+      "brand_name": "CPM Calculator",
       "title": "一个周末构建您的AI SaaS产品",
       "description": "完整的Next.js模板，用于构建盈利的SaaS，集",
       "subdescription": "探索、创建和创新，使用前沿的AI应用程序。成AI、身份验证、支付、国际化、新闻通讯、仪表板、博客、文档、组件、主题、SEO等。",
@@ -291,6 +291,67 @@
     "mode_indicator": {
       "mode": "模式",
       "current_mode": "{mode}"
+    }
+  },
+  "calculator": {
+    "title": "CPM 计算器",
+    "description": "输入以下三个字段中的任意两个，然后点击\"计算\"按钮来获取第三个值",
+    "hero_title": "专业CPM计算器",
+    "hero_description": "精确计算千次展示成本、展示次数和广告费用。数字营销人员和广告主的必备工具。",
+    "total_cost": {
+      "label": "总广告费用",
+      "description": "要计算在线广告活动的总费用，请输入：",
+      "step1": "CPM（每千次展示成本）",
+      "step2": "展示次数"
+    },
+    "cpm": {
+      "label": "每千次展示成本（CPM）",
+      "description": "要计算每千次展示成本，请输入：",
+      "step1": "总广告费用",
+      "step2": "展示次数"
+    },
+    "impressions": {
+      "label": "展示次数",
+      "description": "要计算您的预算可以获得的展示次数，请输入：",
+      "step1": "总广告费用",
+      "step2": "CPM（每千次展示成本）"
+    },
+    "buttons": {
+      "reset": "重新开始",
+      "calculate": "计算"
+    },
+    "placeholders": {
+      "total_cost": "1000",
+      "cpm": "10",
+      "impressions": "100000"
+    },
+    "currency_label": "选择货币",
+    "error_min_fields": "请至少填写两个字段",
+    "results": {
+      "title": "计算结果",
+      "total_cost_label": "总广告费用",
+      "cpm_label": "CPM",
+      "impressions_label": "展示次数"
+    }
+  },
+  "cpm_features": {
+    "title": "强大的CPM计算功能",
+    "description": "您需要的一切功能，用于计算、分析和优化数字广告活动。",
+    "calculate": {
+      "title": "精确计算",
+      "description": "为任何广告活动以专业精度计算CPM、展示次数和总成本。"
+    },
+    "optimize": {
+      "title": "活动优化",
+      "description": "找到成本和覆盖面之间的最佳平衡，最大化您的广告投资回报率。"
+    },
+    "analyze": {
+      "title": "性能分析",
+      "description": "通过详细的指标和洞察分析您的活动表现，以便做出更好的决策。"
+    },
+    "report": {
+      "title": "详细报告",
+      "description": "生成包含所有关键指标的综合报告，与利益相关者和客户分享。"
     }
   },
   "aero_section": {
@@ -439,7 +500,7 @@
     "glossary": {
       "glossary": {
         "metadata": {
-          "title": "AI 术语表 - 全面的AI术语词典 | ShipAny",
+          "title": "AI 术语表 - 全面的AI术语词典 | CPM Calculator",
           "description": "探索我们全面的AI术语表，包含关键人工智能术语、概念和技术的定义。适合初学者和专家使用。"
         },
         "page": {

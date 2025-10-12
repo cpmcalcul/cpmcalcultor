@@ -108,7 +108,7 @@
   "hero": {
     "title": "Ship Any AI Startups in hours, not days",
     "highlight_text": "Ship Any",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "description": "CPM Calculator is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
     "announcement": {
       "label": "2025",
       "title": "🎉 Happy New Year",
@@ -126,7 +126,7 @@
       {
         "title": "Read Document",
         "icon": "RiBookOpenLine",
-        "url": "https://docs.shipany.ai",
+        "url": "https://docs.CPM Calculator.ai",
         "target": "_blank",
         "variant": "outline"
       }
@@ -135,7 +135,7 @@
     "show_badge": false
   },
   "branding": {
-    "title": "ShipAny is built on the shoulders of giants",
+    "title": "CPM Calculator is built on the shoulders of giants",
     "items": [
       {
         "title": "Next.js",
@@ -176,9 +176,9 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "What is ShipAny",
+    "title": "What is CPM Calculator",
     "label": "Introduce",
-    "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "description": "CPM Calculator is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -202,7 +202,7 @@
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose ShipAny",
+    "title": "Why Choose CPM Calculator",
     "label": "Benefits",
     "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
     "items": [
@@ -212,11 +212,11 @@
         "icon": "RiNextjsFill",
         "image": {
           "src": "/imgs/features/2.png",
-          "alt": "Before using ShipAny"
+          "alt": "Before using CPM Calculator"
         },
         "afterImage": {
           "src": "/imgs/features/2-after.png",
-          "alt": "After using ShipAny"
+          "alt": "After using CPM Calculator"
         }
       },
       {
@@ -249,7 +249,7 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with ShipAny",
+    "title": "How to Launch with CPM Calculator",
     "description": "Get your AI SaaS startup running in three simple steps:",
     "image": {
       "src": "/imgs/features/1.png"
@@ -258,15 +258,15 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Get ShipAny",
-        "description": "Buy ShipAny with a one-time payment. Check your email for the code and documentation.",
+        "title": "Get CPM Calculator",
+        "description": "Buy CPM Calculator with a one-time payment. Check your email for the code and documentation.",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
         "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of ShipAny. Start building your AI SaaS startup.",
+        "description": "Read the documentation and clone the code of CPM Calculator. Start building your AI SaaS startup.",
         "image": {
           "src": "/imgs/features/6.png"
         }
@@ -289,7 +289,7 @@
   },
   "feature": {
     "name": "feature",
-    "title": "Key Features of ShipAny",
+    "title": "Key Features of CPM Calculator",
     "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
     "items": [
       {
@@ -327,7 +327,7 @@
   "stats": {
     "name": "stats",
     "label": "Stats",
-    "title": "People Love ShipAny",
+    "title": "People Love CPM Calculator",
     "description": "for it's easy to use and fast to ship.",
     "icon": "FaRegHeart",
     "items": [
@@ -351,14 +351,14 @@
   "testimonial": {
     "name": "testimonial",
     "label": "Testimonial",
-    "title": "What Users Say About ShipAny",
-    "description": "Hear from developers and founders who launched their AI startups with ShipAny.",
+    "title": "What Users Say About CPM Calculator",
+    "description": "Hear from developers and founders who launched their AI startups with CPM Calculator.",
     "icon": "GoThumbsup",
     "items": [
       {
         "title": "David Chen",
         "label": "Founder of AIWallpaper.shop",
-        "description": "ShipAny saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
+        "description": "CPM Calculator saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
         "image": {
           "src": "/imgs/users/1.png"
         }
@@ -374,7 +374,7 @@
       {
         "title": "Marcus Thompson",
         "label": "Solo Developer",
-        "description": "As a solo developer, ShipAny gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
+        "description": "As a solo developer, CPM Calculator gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
         "image": {
           "src": "/imgs/users/3.png"
         }
@@ -390,7 +390,7 @@
       {
         "title": "James Wilson",
         "label": "Tech Lead at GPTs.works",
-        "description": "ShipAny's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
+        "description": "CPM Calculator's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
         "image": {
           "src": "/imgs/users/5.png"
         }
@@ -398,7 +398,7 @@
       {
         "title": "Anna Zhang",
         "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! ShipAny's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
+        "description": "From idea to launch in 3 days! CPM Calculator's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
         "image": {
           "src": "/imgs/users/6.png"
         }
@@ -408,49 +408,49 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About ShipAny",
+    "title": "Frequently Asked Questions About CPM Calculator",
     "description": "Have another question? Contact us on Discord or by email.",
     "items": [
       {
-        "title": "What exactly is ShipAny and how does it work?",
-        "description": "ShipAny is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "title": "What exactly is CPM Calculator and how does it work?",
+        "description": "CPM Calculator is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
       },
       {
-        "title": "Do I need advanced technical skills to use ShipAny?",
-        "description": "While basic programming knowledge is helpful, ShipAny is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "Do I need advanced technical skills to use CPM Calculator?",
+        "description": "While basic programming knowledge is helpful, CPM Calculator is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
       },
       {
-        "title": "What types of AI SaaS can I build with ShipAny?",
-        "description": "ShipAny supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "What types of AI SaaS can I build with CPM Calculator?",
+        "description": "CPM Calculator supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
       },
       {
-        "title": "How long does it typically take to launch with ShipAny?",
-        "description": "With ShipAny, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "How long does it typically take to launch with CPM Calculator?",
+        "description": "With CPM Calculator, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
       },
       {
-        "title": "What's included in the ShipAny infrastructure?",
-        "description": "ShipAny provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "title": "What's included in the CPM Calculator infrastructure?",
+        "description": "CPM Calculator provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
       },
       {
         "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All ShipAny templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "description": "Absolutely! All CPM Calculator templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with ShipAny.",
+    "title": "Professional CPM Calculator",
+    "description": " Calculate Cost Per Mille",
     "buttons": [
       {
-        "title": "Get ShipAny",
-        "url": "https://shipany.ai",
+        "title": "Get CPM Calculator",
+        "url": "https://CPM Calculator.ai",
         "target": "_blank",
         "icon": "GoArrowUpRight"
       },
       {
         "title": "Read Document",
-        "url": "https://docs.shipany.ai",
+        "url": "https://docs.CPM Calculator.ai",
         "target": "_blank",
         "variant": "outline"
       }
@@ -460,7 +460,7 @@
     "name": "pricing",
     "label": "Pricing",
     "title": "Pricing",
-    "description": "Get all features of ShipAny, Ship your AI SaaS startups fast.",
+    "description": "Get all features of CPM Calculator, Ship your AI SaaS startups fast.",
     "groups": [
       {
         "name": "one-time",
@@ -501,12 +501,12 @@
         "is_featured": false,
         "tip": "Pay once. Build unlimited projects!",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "starter",
-        "product_name": "ShipAny Boilerplate Starter",
+        "product_name": "CPM Calculator Boilerplate Starter",
         "credits": 100,
         "valid_months": 1,
         "group": "one-time"
@@ -536,12 +536,12 @@
         "is_featured": true,
         "tip": "Pay once. Build unlimited projects!",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard",
-        "product_name": "ShipAny Boilerplate Standard",
+        "product_name": "CPM Calculator Boilerplate Standard",
         "credits": 200,
         "valid_months": 3,
         "group": "one-time"
@@ -569,12 +569,12 @@
         "is_featured": false,
         "tip": "Pay once. Build unlimited projects!",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium",
-        "product_name": "ShipAny Boilerplate Premium",
+        "product_name": "CPM Calculator Boilerplate Premium",
         "credits": 300,
         "valid_months": 12,
         "group": "one-time"
@@ -601,12 +601,12 @@
         "is_featured": false,
         "tip": "Pay monthly. Build unlimited projects!",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "starter-monthly",
-        "product_name": "ShipAny Boilerplate Starter Monthly",
+        "product_name": "CPM Calculator Boilerplate Starter Monthly",
         "credits": 100,
         "valid_months": 1,
         "group": "monthly"
@@ -635,12 +635,12 @@
         "is_featured": true,
         "tip": "Pay monthly. Ship Fast with your SaaS Startups.",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard-monthly",
-        "product_name": "ShipAny Boilerplate Standard Monthly",
+        "product_name": "CPM Calculator Boilerplate Standard Monthly",
         "credits": 200,
         "valid_months": 1,
         "group": "monthly"
@@ -667,12 +667,12 @@
         "is_featured": false,
         "tip": "Pay monthly. Ship Any AI SaaS Startups.",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium-monthly",
-        "product_name": "ShipAny Boilerplate Premium Monthly",
+        "product_name": "CPM Calculator Boilerplate Premium Monthly",
         "credits": 300,
         "valid_months": 1,
         "group": "monthly"
@@ -699,12 +699,12 @@
         "is_featured": false,
         "tip": "Pay annually. Build unlimited projects!",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "starter-yearly",
-        "product_name": "ShipAny Boilerplate Starter Annually",
+        "product_name": "CPM Calculator Boilerplate Starter Annually",
         "credits": 1200,
         "valid_months": 12,
         "group": "yearly"
@@ -733,12 +733,12 @@
         "is_featured": true,
         "tip": "Pay annually. Ship Fast with your SaaS Startups.",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard-yearly",
-        "product_name": "ShipAny Boilerplate Standard Annually",
+        "product_name": "CPM Calculator Boilerplate Standard Annually",
         "credits": 2400,
         "valid_months": 12,
         "group": "yearly"
@@ -765,12 +765,12 @@
         "is_featured": false,
         "tip": "Pay annually. Ship Any AI SaaS Startups.",
         "button": {
-          "title": "Get ShipAny",
+          "title": "Get CPM Calculator",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium-yearly",
-        "product_name": "ShipAny Boilerplate Premium Annually",
+        "product_name": "CPM Calculator Boilerplate Premium Annually",
         "credits": 3600,
         "valid_months": 12,
         "group": "yearly"
@@ -780,15 +780,15 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "ShipAny",
-      "description": "ShipAny is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "title": "CPM Calculator",
+      "description": "CPM Calculator is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
       "logo": {
         "src": "/logo.png",
-        "alt": "ShipAny"
+        "alt": "CPM Calculator"
       },
       "url": "/"
     },
-    "copyright": "© 2025 • ShipAny All rights reserved.",
+    "copyright": "© 2025 • CPM Calculator All rights reserved.",
     "nav": {
       "items": [
         {
@@ -816,17 +816,17 @@
           "children": [
             {
               "title": "Documents",
-              "url": "https://docs.shipany.ai",
+              "url": "https://docs.CPM Calculator.ai",
               "target": "_blank"
             },
             {
               "title": "Components",
-              "url": "https://shipany.ai/components",
+              "url": "https://CPM Calculator.ai/components",
               "target": "_blank"
             },
             {
               "title": "Templates",
-              "url": "https://shipany.ai/templates",
+              "url": "https://CPM Calculator.ai/templates",
               "target": "_blank"
             }
           ]
@@ -858,13 +858,13 @@
         {
           "title": "X",
           "icon": "RiTwitterXFill",
-          "url": "https://x.com/shipanyai",
+          "url": "https://x.com/CPM Calculatorai",
           "target": "_blank"
         },
         {
           "title": "Github",
           "icon": "RiGithubFill",
-          "url": "https://github.com/shipanyai",
+          "url": "https://github.com/CPM Calculatorai",
           "target": "_blank"
         },
         {
@@ -876,7 +876,7 @@
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@shipany.codes",
+          "url": "mailto:support@CPM Calculator.codes",
           "target": "_self"
         }
       ]

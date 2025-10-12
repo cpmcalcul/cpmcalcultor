@@ -15,8 +15,11 @@ import FeaturedCreations from "@/components/blocks/featured-creations";
 import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
+import { CPMCalculator } from "@/components/blocks/calculator/CPMCalculator";
+import { CPMFeatures } from "@/components/blocks/calculator/CPMFeatures";
 import { getLandingPage } from "@/services/page";
 import { setRequestLocale } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 
 export const revalidate = 60;
 export const dynamic = "force-static";
@@ -50,6 +53,7 @@ export default async function LandingPage({
   setRequestLocale(locale);
 
   const page = await getLandingPage(locale);
+  const t = await getTranslations({ locale, namespace: "calculator" });
 
   // 可以通过环境变量或配置来切换Hero组件
   const useNewHero = process.env.NODE_ENV === 'development'; // 开发环境使用新Hero组件
@@ -60,6 +64,21 @@ export default async function LandingPage({
       
       {/* AeroSection - 新的第一屏组件 */}
       {/* <AeroSection /> */}
+      
+      {/* CPM Calculator - 第一屏 */}
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-blue-50 dark:from-orange-950/20 dark:to-blue-950/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-blue-600 bg-clip-text text-transparent">
+              {t('hero_title')}
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              {t('hero_description')}
+            </p>
+          </div>
+          <CPMCalculator />
+        </div>
+      </section>
       
       {/* 新的Hero切换组件 - 可以通过配置开启 */}
       {useNewHero ? (

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { Label } from "@/components/ui/label";
 import {
   Select,
@@ -30,10 +31,12 @@ interface CurrencySelectorProps {
 }
 
 export function CurrencySelector({ currency, onCurrencyChange }: CurrencySelectorProps) {
+  const t = useTranslations('calculator');
+  
   return (
     <div className="w-48">
       <Label htmlFor="currency" className="text-sm mb-2 block">
-        选择货币
+        {t('currency_label')}
       </Label>
       <Select
         value={currency.code}

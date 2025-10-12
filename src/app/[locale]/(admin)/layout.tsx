@@ -22,10 +22,10 @@ export default async function AdminLayout({
 
   const sidebar: Sidebar = {
     brand: {
-      title: "ShipAny",
+      title: "CPM Calculator",
       logo: {
         src: "/logo.png",
-        alt: "ShipAny",
+        alt: "CPM Calculator",
       },
       url: "/admin",
     },
@@ -86,19 +86,19 @@ export default async function AdminLayout({
       items: [
         {
           title: "Documents",
-          url: "https://docs.shipany.ai",
+          url: "https://docs.CPM Calculator.ai",
           target: "_blank",
           icon: "RiFileTextLine",
         },
         {
           title: "Blocks",
-          url: "https://shipany.ai/blocks",
+          url: "https://CPM Calculator.ai/blocks",
           target: "_blank",
           icon: "RiDashboardLine",
         },
         {
           title: "Showcases",
-          url: "https://shipany.ai/showcase",
+          url: "https://CPM Calculator.ai/showcase",
           target: "_blank",
           icon: "RiAppsLine",
         },
@@ -114,7 +114,7 @@ export default async function AdminLayout({
         },
         {
           title: "Github",
-          url: "https://github.com/shipanyai/shipany-template-one",
+          url: "https://github.com/CPM Calculatorai/CPM Calculator-template-one",
           target: "_blank",
           icon: "RiGithubLine",
         },
@@ -126,7 +126,7 @@ export default async function AdminLayout({
         },
         {
           title: "X",
-          url: "https://x.com/shipanyai",
+          url: "https://x.com/CPM Calculatorai",
           target: "_blank",
           icon: "RiTwitterLine",
         },
