@@ -1,4 +1,4 @@
-import { CPMCalculator } from "@/components/blocks/calculator/CPMCalculator";
+import { CPMCalculator } from "@/components/blocks/calculator/CPM/CPMCalculator";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 

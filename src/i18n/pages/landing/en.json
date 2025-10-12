@@ -97,7 +97,7 @@
     ],
     "show_sign": true,
     "show_theme": true,
-    "show_locale": true
+    "show_locale": false
   },
   "hero": {
     "title": "Ship Any AI Startups in hours, not days",

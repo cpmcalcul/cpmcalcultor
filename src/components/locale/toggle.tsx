@@ -9,13 +9,18 @@ import {
 import { useParams, usePathname, useRouter } from "next/navigation";
 
 import { MdLanguage } from "react-icons/md";
-import { localeNames } from "@/i18n/locale";
+import { localeNames, locales } from "@/i18n/locale";
 
 export default function ({ isIcon = false }: { isIcon?: boolean }) {
   const params = useParams();
   const locale = params.locale as string;
   const router = useRouter();
   const pathname = usePathname();
+
+  // If only one locale is available, don't render the toggle
+  if (locales.length <= 1) {
+    return null;
+  }
 
   const handleSwitchLanguage = (value: string) => {
     if (value !== locale) {

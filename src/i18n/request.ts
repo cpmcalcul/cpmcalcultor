@@ -31,11 +31,17 @@ export default getRequestConfig(async ({ requestLocale }) => {
       // Featured Creations page translations
       const featuredCreationsMessages = (await import(`./pages/featured-creations/${locale.toLowerCase()}.json`)).default;
 
+      // Tools page translations
+      const toolsCpmMessages = (await import(`./pages/tools/cpm/${locale.toLowerCase()}.json`)).default;
+
       pageTranslations = {
         pages: {
           discord: discordMessages,
           glossary: glossaryMessages,
           featuredCreations: featuredCreationsMessages
+        },
+        tools: {
+          cpm: toolsCpmMessages
         }
       };
     } catch (pageError) {
@@ -60,12 +66,16 @@ export default getRequestConfig(async ({ requestLocale }) => {
       const discordMessages = (await import(`./pages/discord/en.json`)).default;
       const glossaryMessages = (await import(`./pages/glossary/en.json`)).default;
       const featuredCreationsMessages = (await import(`./pages/featured-creations/en.json`)).default;
+      const toolsCpmMessages = (await import(`./pages/tools/cpm/en.json`)).default;
 
       fallbackPageTranslations = {
         pages: {
           discord: discordMessages,
           glossary: glossaryMessages,
           featuredCreations: featuredCreationsMessages
+        },
+        tools: {
+          cpm: toolsCpmMessages
         }
       };
     } catch {
