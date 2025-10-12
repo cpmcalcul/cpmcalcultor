@@ -15,14 +15,14 @@ export interface Currency {
 }
 
 export const CURRENCIES: Currency[] = [
-  { code: "CNY", symbol: "¥", name: "人民币 (CNY)" },
-  { code: "USD", symbol: "$", name: "美元 (USD)" },
-  { code: "EUR", symbol: "€", name: "欧元 (EUR)" },
-  { code: "GBP", symbol: "£", name: "英镑 (GBP)" },
-  { code: "JPY", symbol: "¥", name: "日元 (JPY)" },
-  { code: "KRW", symbol: "₩", name: "韩元 (KRW)" },
-  { code: "HKD", symbol: "HK$", name: "港币 (HKD)" },
-  { code: "SGD", symbol: "S$", name: "新加坡元 (SGD)" },
+  { code: "CNY", symbol: "¥", name: "(CNY)" },
+  { code: "USD", symbol: "$", name: "(USD)" },
+  { code: "EUR", symbol: "€", name: "(EUR)" },
+  { code: "GBP", symbol: "£", name: "(GBP)" },
+  { code: "JPY", symbol: "¥", name: "(JPY)" },
+  { code: "KRW", symbol: "₩", name: "(KRW)" },
+  { code: "HKD", symbol: "HK$", name: "(HKD)" },
+  { code: "SGD", symbol: "S$", name: "(SGD)" },
 ];
 
 interface CurrencySelectorProps {

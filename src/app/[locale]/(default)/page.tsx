@@ -9,7 +9,7 @@ import Feature2 from "@/components/blocks/feature2";
 import Feature3 from "@/components/blocks/feature3";
 import Hero from "@/components/blocks/hero/Hero/index";
 import HeroSection from "@/components/blocks/hero/HeroSection";
-// import AeroSection from "@/components/blocks/aero/AeroSection";
+import AeroSection from "@/components/blocks/aero/AeroSection";
 // import Pricing from "@/components/blocks/pricing";
 import FeaturedCreations from "@/components/blocks/featured-creations";
 import Showcase from "@/components/blocks/showcase";
@@ -63,9 +63,9 @@ export default async function LandingPage({
       {/* <BackgroundGlow /> */}
       
       {/* AeroSection - 新的第一屏组件 */}
-      {/* <AeroSection /> */}
+      <AeroSection />
       
-      {/* CPM Calculator - 第一屏 */}
+      {/* CPM Calculator - 第一屏
       <section className="py-20 bg-gradient-to-br from-orange-50 to-blue-50 dark:from-orange-950/20 dark:to-blue-950/20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -78,7 +78,7 @@ export default async function LandingPage({
           </div>
           <CPMCalculator />
         </div>
-      </section>
+      </section> */}
       
       {/* 新的Hero切换组件 - 可以通过配置开启 */}
       {useNewHero ? (
