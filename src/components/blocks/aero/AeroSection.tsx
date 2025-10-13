@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from "react";
-import { useLocale } from "next-intl";
 import AeroTabs from "./AeroTabs";
 import AeroContent from "./AeroContent";
 import AeroInput from "./AeroInput";
@@ -10,8 +9,7 @@ import VideoBackground from "./VideoBackground";
 import { useActiveTab } from "@/hooks/useActiveTab";
 
 const AeroSection = () => {
-  const locale = useLocale();
-  const { activeTab, activeTabId, switchTab, isTransitioning, allTabs } = useActiveTab(locale);
+  const { activeTab, activeTabId, switchTab, isTransitioning, allTabs } = useActiveTab();
   const [inputValue, setInputValue] = useState("");
 
   return (

@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { CPACalculator } from "@/components/blocks/calculator/CPACalculator";
+import { CPACalculator } from "@/components/blocks/calculator/CPA/CPACalculator";
 
 export default function CPACalculatorPage() {
   const t = useTranslations();

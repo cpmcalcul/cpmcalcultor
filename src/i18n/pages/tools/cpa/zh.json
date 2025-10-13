@@ -1,0 +1,36 @@
+{
+  "page": {
+    "title": "CPM Calculator - Calculate Cost Per Mille",
+    "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns with precision. Essential tool for digital marketers and advertisers."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about CPM calculations and digital advertising metrics",
+    "items": [
+      {
+        "title": "What is CPM in digital advertising?",
+        "description": "CPM (Cost Per Mille) is the cost an advertiser pays for one thousand impressions on their advertisement. It's a standard metric used in digital advertising to measure the cost efficiency of campaigns."
+      },
+      {
+        "title": "How do you calculate CPM?",
+        "description": "CPM is calculated by dividing the total advertising cost by the number of impressions, then multiplying by 1,000. Formula: CPM = (Total Cost / Impressions) × 1,000"
+      },
+      {
+        "title": "What's a good CPM rate?",
+        "description": "A good CPM varies by industry, platform, and target audience. Generally, CPM rates between $1-$10 are considered reasonable, but premium placements or niche audiences may command higher rates."
+      },
+      {
+        "title": "Why is CPM important for advertisers?",
+        "description": "CPM helps advertisers compare the cost efficiency of different advertising channels, optimize their media buying, and budget effectively for brand awareness campaigns."
+      },
+      {
+        "title": "What's the difference between CPM and CPC?",
+        "description": "CPM charges for impressions (views), while CPC (Cost Per Click) charges for actual clicks. CPM is better for brand awareness, while CPC is better for performance-driven campaigns."
+      },
+      {
+        "title": "How can I improve my CPM rates?",
+        "description": "Improve CPM by targeting more specific audiences, creating higher-quality ad content, choosing optimal ad placements, and testing different ad formats to increase engagement."
+      }
+    ]
+  }
+}

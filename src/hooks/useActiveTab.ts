@@ -1,11 +1,13 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
+import { useTranslations } from 'next-intl';
 import { TabContent, getTabContent } from '@/types/aero';
 
-export const useActiveTab = (locale: string = 'en') => {
+export const useActiveTab = () => {
+  const t = useTranslations();
   const [activeTabId, setActiveTabId] = useState<string>('chat');
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const tabsContent = getTabContent(locale);
+  const tabsContent = useMemo(() => getTabContent(t), [t]);
   const activeTab = tabsContent.find(tab => tab.id === activeTabId) || tabsContent[0];
 
   const switchTab = useCallback((tabId: string) => {

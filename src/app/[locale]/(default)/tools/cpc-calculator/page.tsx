@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { CPCCalculator } from "@/components/blocks/calculator/CPCCalculator";
+import { CPCCalculator } from "@/components/blocks/calculator/CPC/CPCCalculator";
 
 export default function CPCCalculatorPage() {
   const t = useTranslations();

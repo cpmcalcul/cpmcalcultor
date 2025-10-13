@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { ROICalculator } from "@/components/blocks/calculator/ROICalculator";
+import { ROICalculator } from "@/components/blocks/calculator/ROI/ROICalculator";
 
 export default function ROICalculatorPage() {
   const t = useTranslations();

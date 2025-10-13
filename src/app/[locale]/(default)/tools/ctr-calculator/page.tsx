@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { CTRCalculator } from "@/components/blocks/calculator/CTRCalculator";
+import { CTRCalculator } from "@/components/blocks/calculator/CTR/CTRCalculator";
 
 export default function CTRCalculatorPage() {
   const t = useTranslations();
