@@ -70,3 +70,99 @@
 - [ ] 添加工具分类筛选功能
 - [ ] 实现收藏数据持久化（localStorage/数据库）
 - [ ] 添加工具排序选项（最新、最热、A-Z）
+
+---
+
+## 2025-10-13 (Session 3 - Landing Page Copy Update)
+
+### Plan
+
+- [x] 更新 landing page 中 "How CPM Calculator works" 部分文案
+- [x] 修改 src/i18n/pages/landing/en.json 中的 works_section 内容
+- [x] 同步更新 src/i18n/pages/landing/zh.json 中文版本
+- [x] 检查页面显示效果
+
+### Done
+
+- [x] 更新英文版 usage section 标题和描述
+- [x] 重写四个步骤内容，从模板使用改为 CPM 计算工具使用流程
+- [x] 同步更新中文版所有文案
+- [x] 保持图片路径和结构不变
+
+**修改的文件**:
+
+- [src/i18n/pages/landing/en.json:251-290](src/i18n/pages/landing/en.json#L251-L290) - 英文版 usage section
+- [src/i18n/pages/landing/zh.json:244-282](src/i18n/pages/landing/zh.json#L244-L282) - 中文版 usage section
+
+**关键改动**:
+
+- 标题: "How CPM Calculator works" → 强调工具功能而非模板
+- 描述: 从"启动项目"改为"计算广告成本并优化营销活动"
+- 步骤1: "Enter Your Campaign Data" - 输入广告成本和展示数据
+- 步骤2: "Get Instant CPM Results" - 使用公式计算 CPM
+- 步骤3: "Analyze & Compare Metrics" - 分析对比 CPC/CPA 等指标
+- 步骤4: "Optimize Your Campaigns" - 利用洞察优化营销策略
+
+### Next
+
+- [ ] 验证页面显示效果是否符合预期
+- [ ] 考虑更新配套图片以更好匹配新文案
+
+---
+
+## 2025-10-13 (Session 4 - CTR Calculator i18n)
+
+### Plan
+
+- [x] 检查 tools/ctr-calculator 页面中的硬编码中文文本
+- [x] 移除或替换所有中文硬编码为英文或 i18n 翻译
+- [x] 确保英文页面完全不显示中文内容
+- [x] 测试页面显示
+
+### Done
+
+- [x] 添加 CTR/CVR 计算器完整翻译到 src/i18n/messages/en.json
+- [x] 添加 CTR/CVR 计算器完整翻译到 src/i18n/messages/zh.json
+- [x] 重构 CTRCalculator 组件使用 useTranslations hook
+- [x] 移除所有硬编码的中文文本（标题、标签、描述、按钮、错误提示）
+- [x] 确保英文和中文页面都正确显示对应语言
+
+**修改的文件**:
+
+- [src/i18n/messages/en.json:325-353](src/i18n/messages/en.json#L325-L353) - 添加 calculator.ctr 翻译
+- [src/i18n/messages/zh.json:325-353](src/i18n/messages/zh.json#L325-L353) - 添加 calculator.ctr 翻译
+- [src/components/blocks/calculator/CTR/CTRCalculator.tsx](src/components/blocks/calculator/CTR/CTRCalculator.tsx) - 完全重构使用 i18n
+
+**关键改动**:
+
+- **英文翻译新增**:
+  - CTR Calculator: card_title, card_description, clicks_label, impressions_label, ctr_label, ctr_formula
+  - CVR Calculator: cvr_card_title, conversions_label, cvr_clicks_label, cvr_label, cvr_formula
+  - Error messages: error_min_fields, error_zero_impressions, error_zero_clicks
+
+- **组件重构**:
+  - 导入 `useTranslations` from next-intl
+  - 使用 `t("calculator.ctr.*")` 替换所有硬编码中文
+  - 使用 `tButtons("calculator.buttons.*")` 获取按钮文本
+  - 所有 UI 文本、标签、描述、错误提示全部国际化
+
+**移除的硬编码中文**:
+- ❌ "CTR 计算器" → ✅ t("card_title")
+- ❌ "点击次数" → ✅ t("clicks_label")
+- ❌ "展示次数" → ✅ t("impressions_label")
+- ❌ "点击率（CTR）" → ✅ t("ctr_label")
+- ❌ "公式：CTR = ..." → ✅ t("ctr_formula")
+- ❌ "CVR 计算器" → ✅ t("cvr_card_title")
+- ❌ "转化次数" → ✅ t("conversions_label")
+- ❌ "转化率（CVR）" → ✅ t("cvr_label")
+- ❌ "重新开始" → ✅ tButtons("reset")
+- ❌ "计算" → ✅ tButtons("calculate")
+- ❌ "请至少填写两个字段" → ✅ t("error_min_fields")
+- ❌ "展示次数不能为0" → ✅ t("error_zero_impressions")
+- ❌ "点击次数不能为0" → ✅ t("error_zero_clicks")
+
+### Next
+
+- [ ] 验证英文页面不再显示任何中文内容
+- [ ] 测试计算器功能在两种语言下都正常工作
+- [ ] 考虑对其他计算器页面（CPA/CPC/ROI）进行相同处理

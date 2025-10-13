@@ -85,7 +85,7 @@ const defaultCreations: Creation[] = [
     tags: ["AI", "Chat", "Real-time"],
     featured: false,
     new: true,
-    href: "/showcase/ai-chat-app"
+    href: "/tools/cpc-calculator"
   },
   {
     id: "4",

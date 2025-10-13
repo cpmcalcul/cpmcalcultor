@@ -243,8 +243,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "如何使用 CPM Calculator 启动项目",
-    "description": "通过三个简单步骤启动您的 cpm calculator 创业项目：",
+    "title": "CPM 计算器如何工作",
+    "description": "通过三个简单步骤计算您的广告成本并优化您的营销活动：",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -252,29 +252,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "获取 CPM Calculator",
-        "description": "一次性付款购买 CPM Calculator。查收邮件获取代码和文档。",
+        "title": "输入您的营销活动数据",
+        "description": "输入您的总广告费用和营销活动产生的展示次数。我们的计算器支持任何货币和展示次数。",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "开始您的项目",
-        "description": "阅读文档并克隆 CPM Calculator 代码。开始构建您的 cpm calculator 创业项目。",
+        "title": "即时获取 CPM 结果",
+        "description": "我们的工具使用行业标准公式即时计算您的 CPM：（费用 ÷ 展示次数）× 1,000。实时查看详细分析。",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "定制您的项目",
-        "description": "使用您的数据和内容修改模板。满足特定的 AI 功能需求。",
+        "title": "分析和比较指标",
+        "description": "查看您的 CPM 以及其他关键指标,如 CPC 和 CPA。了解您的千次展示成本与行业基准的对比情况。",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "部署到生产环境",
-        "description": "通过几个步骤将项目部署到生产环境，立即开始服务客户。",
+        "title": "优化您的营销活动",
+        "description": "利用这些洞察调整您的定位、创意和竞价策略。在保持或提高营销活动效果的同时降低您的 CPM。",
         "image": {
           "src": "/imgs/features/8.png"
         }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -19,6 +20,9 @@ interface CVRValues {
 }
 
 export function CTRCalculator() {
+  const t = useTranslations("calculator.ctr");
+  const tButtons = useTranslations("calculator.buttons");
+
   const [ctrValues, setCtrValues] = useState<CTRValues>({
     clicks: "",
     impressions: "",
@@ -53,24 +57,24 @@ export function CTRCalculator() {
     ].filter(Boolean);
 
     if (filledFields.length < 2) {
-      alert("请至少填写两个字段");
+      alert(t("error_min_fields"));
       return;
     }
 
     if (!ctrValues.ctr) {
-      // 计算 CTR: CTR = (Clicks / Impressions) × 100
+      // Calculate CTR: CTR = (Clicks / Impressions) × 100
       if (impressions === 0) {
-        alert("展示次数不能为0");
+        alert(t("error_zero_impressions"));
         return;
       }
       const newCtr = (clicks / impressions) * 100;
       setCtrValues((prev) => ({ ...prev, ctr: newCtr.toFixed(2) }));
     } else if (!ctrValues.clicks) {
-      // 计算点击数: Clicks = Impressions × (CTR / 100)
+      // Calculate clicks: Clicks = Impressions × (CTR / 100)
       const newClicks = impressions * (ctr / 100);
       setCtrValues((prev) => ({ ...prev, clicks: newClicks.toFixed(0) }));
     } else {
-      // 计算展示数: Impressions = Clicks / (CTR / 100)
+      // Calculate impressions: Impressions = Clicks / (CTR / 100)
       const newImpressions = clicks / (ctr / 100);
       setCtrValues((prev) => ({ ...prev, impressions: newImpressions.toFixed(0) }));
     }
@@ -88,24 +92,24 @@ export function CTRCalculator() {
     ].filter(Boolean);
 
     if (filledFields.length < 2) {
-      alert("请至少填写两个字段");
+      alert(t("error_min_fields"));
       return;
     }
 
     if (!cvrValues.cvr) {
-      // 计算 CVR: CVR = (Conversions / Clicks) × 100
+      // Calculate CVR: CVR = (Conversions / Clicks) × 100
       if (clicks === 0) {
-        alert("点击次数不能为0");
+        alert(t("error_zero_clicks"));
         return;
       }
       const newCvr = (conversions / clicks) * 100;
       setCvrValues((prev) => ({ ...prev, cvr: newCvr.toFixed(2) }));
     } else if (!cvrValues.conversions) {
-      // 计算转化数: Conversions = Clicks × (CVR / 100)
+      // Calculate conversions: Conversions = Clicks × (CVR / 100)
       const newConversions = clicks * (cvr / 100);
       setCvrValues((prev) => ({ ...prev, conversions: newConversions.toFixed(0) }));
     } else {
-      // 计算点击数: Clicks = Conversions / (CVR / 100)
+      // Calculate clicks: Clicks = Conversions / (CVR / 100)
       const newClicks = conversions / (cvr / 100);
       setCvrValues((prev) => ({ ...prev, clicks: newClicks.toFixed(0) }));
     }
@@ -121,24 +125,24 @@ export function CTRCalculator() {
 
   return (
     <div className="space-y-8">
-      {/* CTR 计算器 */}
+      {/* CTR Calculator */}
       <Card className="w-full max-w-3xl mx-auto shadow-lg">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold">CTR 计算器</CardTitle>
+          <CardTitle className="text-3xl font-bold">{t("card_title")}</CardTitle>
           <CardDescription className="text-base mt-2">
-            计算点击率、点击次数或展示次数
+            {t("card_description")}
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-8">
-          {/* 点击次数 */}
+          {/* Number of Clicks */}
           <div className="space-y-3">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="clicks-ctr" className="text-lg font-semibold">
-                  点击次数
+                  {t("clicks_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  广告获得的点击次数
+                  {t("clicks_description")}
                 </p>
               </div>
               <div className="w-40">
@@ -154,15 +158,15 @@ export function CTRCalculator() {
             </div>
           </div>
 
-          {/* 展示次数 */}
+          {/* Number of Impressions */}
           <div className="space-y-3">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="impressions" className="text-lg font-semibold">
-                  展示次数
+                  {t("impressions_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  广告的总展示次数
+                  {t("impressions_description")}
                 </p>
               </div>
               <div className="w-40">
@@ -183,13 +187,13 @@ export function CTRCalculator() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="ctr" className="text-lg font-semibold">
-                  点击率（CTR）
+                  {t("ctr_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  点击率百分比
+                  {t("ctr_description")}
                 </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  公式：CTR = (点击次数 / 展示次数) × 100%
+                  {t("ctr_formula")}
                 </p>
               </div>
               <div className="w-40">
@@ -210,7 +214,7 @@ export function CTRCalculator() {
             </div>
           </div>
 
-          {/* 按钮 */}
+          {/* Buttons */}
           <div className="flex gap-4 pt-4">
             <Button
               onClick={resetCTR}
@@ -218,37 +222,37 @@ export function CTRCalculator() {
               size="lg"
               className="flex-1 h-12"
             >
-              重新开始
+              {tButtons("reset")}
             </Button>
             <Button
               onClick={calculateCTR}
               size="lg"
               className="flex-1 h-12 bg-orange-600 hover:bg-orange-700"
             >
-              计算
+              {tButtons("calculate")}
             </Button>
           </div>
         </CardContent>
       </Card>
 
-      {/* CVR 计算器 */}
+      {/* CVR Calculator */}
       <Card className="w-full max-w-3xl mx-auto shadow-lg">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold">CVR 计算器</CardTitle>
+          <CardTitle className="text-3xl font-bold">{t("cvr_card_title")}</CardTitle>
           <CardDescription className="text-base mt-2">
-            计算转化率、转化次数或点击次数
+            {t("cvr_card_description")}
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-8">
-          {/* 转化次数 */}
+          {/* Number of Conversions */}
           <div className="space-y-3">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="conversions" className="text-lg font-semibold">
-                  转化次数
+                  {t("conversions_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  广告带来的转化次数
+                  {t("conversions_description")}
                 </p>
               </div>
               <div className="w-40">
@@ -264,15 +268,15 @@ export function CTRCalculator() {
             </div>
           </div>
 
-          {/* 点击次数 */}
+          {/* Number of Clicks */}
           <div className="space-y-3">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="clicks-cvr" className="text-lg font-semibold">
-                  点击次数
+                  {t("cvr_clicks_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  广告获得的点击次数
+                  {t("cvr_clicks_description")}
                 </p>
               </div>
               <div className="w-40">
@@ -293,13 +297,13 @@ export function CTRCalculator() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="cvr" className="text-lg font-semibold">
-                  转化率（CVR）
+                  {t("cvr_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  转化率百分比
+                  {t("cvr_description")}
                 </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  公式：CVR = (转化次数 / 点击次数) × 100%
+                  {t("cvr_formula")}
                 </p>
               </div>
               <div className="w-40">
@@ -320,7 +324,7 @@ export function CTRCalculator() {
             </div>
           </div>
 
-          {/* 按钮 */}
+          {/* Buttons */}
           <div className="flex gap-4 pt-4">
             <Button
               onClick={resetCVR}
@@ -328,14 +332,14 @@ export function CTRCalculator() {
               size="lg"
               className="flex-1 h-12"
             >
-              重新开始
+              {tButtons("reset")}
             </Button>
             <Button
               onClick={calculateCVR}
               size="lg"
               className="flex-1 h-12 bg-orange-600 hover:bg-orange-700"
             >
-              计算
+              {tButtons("calculate")}
             </Button>
           </div>
         </CardContent>

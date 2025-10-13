@@ -250,8 +250,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with CPM Calculator",
-    "description": "Get your cpm calculator startup running in three simple steps:",
+    "title": "How CPM Calculator Works",
+    "description": "Calculate your advertising costs in three simple steps and optimize your campaigns:",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -259,29 +259,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Get CPM Calculator",
-        "description": "Buy CPM Calculator with a one-time payment. Check your email for the code and documentation.",
+        "title": "Enter Your Campaign Data",
+        "description": "Input your total ad cost and the number of impressions your campaign generated. Our calculator accepts any currency and impression count.",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of CPM Calculator. Start building your cpm calculator startup.",
+        "title": "Get Instant CPM Results",
+        "description": "Our tool instantly calculates your CPM using the industry-standard formula: (Cost ÷ Impressions) × 1,000. See the breakdown in real-time.",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "Analyze & Compare Metrics",
+        "description": "Review your CPM alongside other key metrics like CPC and CPA. Understand how your cost per thousand impressions compares to industry benchmarks.",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
+        "title": "Optimize Your Campaigns",
+        "description": "Use the insights to adjust your targeting, creative, and bidding strategy. Lower your CPM while maintaining or improving campaign performance.",
         "image": {
           "src": "/imgs/features/8.png"
         }
@@ -290,38 +290,38 @@
   },
   "feature": {
     "name": "feature",
-    "title": "Key Features of CPM Calculator",
-    "description": "Everything you need to launch your cpm calculator startup quickly and efficiently.",
+    "title": "Why Our CPM Calculator is a Game-Changer",
+    "description": "Go beyond simple calculations. Our tool is packed with features designed to give you a strategic edge in your marketing campaigns.",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
+        "title": "Dual-Mode Smart Calculator",
+        "description": "Instantly calculate CPM, Cost, or Impressions. Just fill in any two fields, and our tool intelligently calculates the third for you—no formula needed.",
+        "icon": "RiCalculatorLine"
       },
       {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
+        "title": "Industry Benchmarks",
+        "description": "Stop guessing if your CPM is good. Compare your results against up-to-date industry averages to understand your true performance.",
+        "icon": "RiBarChartGroupedLine"
       },
       {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
+        "title": "All-in-One Marketing Dashboard",
+        "description": "Calculate more than just CPM. Our integrated dashboard also includes a CPC, CPA, and CTR calculator for a complete view of your campaign health.",
+        "icon": "RiDashboardLine"
       },
       {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
+        "title": "Actionable Optimization Tips",
+        "description": "Receive AI-powered, data-driven suggestions on how to lower your costs and improve your campaign's performance based on your results.",
+        "icon": "RiLightbulbFlashLine"
       },
       {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
+        "title": "Profitability Analysis",
+        "description": "Connect your costs to outcomes. Our built-in ROI calculator helps you understand the real return on your ad spend and make smarter budget decisions.",
+        "icon": "RiLineChartLine"
       },
       {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
-        "icon": "RiRobot2Line"
+        "title": "Export & Share Reports",
+        "description": "Easily export your calculations and analysis into a clean PDF report to share with your team or clients, proving the value of your work.",
+        "icon": "RiShareForwardLine"
       }
     ]
   },
