@@ -775,7 +775,7 @@
     "name": "footer",
     "brand": {
       "title": "CPM Calculator",
-      "description": "CPM Calculator is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "description": "Use our professional CPM calculator to easily perform your CPM calculation. This tool helps you calculate the CPM and understand the CPM formula in action. Beyond a simple CPM calc, it also includes a free CPC calculator and other marketing metrics for a complete analysis.",
       "logo": {
         "src": "/logo.png",
         "alt": "CPM Calculator"
@@ -786,11 +786,11 @@
     "nav": {
       "items": [
         {
-          "title": "About",
+          "title": "TOOLS",
           "children": [
             {
-              "title": "Features",
-              "url": "/#feature",
+              "title": "CPM Calculator",
+              "url": "/tools/cpm-calculator",
               "target": "_self"
             },
             {

@@ -531,6 +531,21 @@
     "fetch_error": "加载评论失败"
   },
   "pages": {
+    "tools": {
+      "title": "所有工具",
+      "subtitle": "探索我们全套的AI驱动创意工具",
+      "search_placeholder": "搜索工具...",
+      "trending_title": "热门工具",
+      "trending_subtitle": "本周最受欢迎的工具",
+      "favorites_hint_title": "收藏您喜欢的工具",
+      "favorites_hint_description": "点击任何工具上的星标图标将其添加到收藏夹",
+      "results_found": "找到 {count} 个匹配 \"{query}\" 的工具",
+      "no_results_title": "未找到工具",
+      "no_results_description": "尝试调整搜索或浏览所有工具",
+      "clear_search": "清除搜索",
+      "view_tool": "查看工具",
+      "usage_count": "{count} 次使用"
+    },
     "glossary": {
       "glossary": {
         "metadata": {

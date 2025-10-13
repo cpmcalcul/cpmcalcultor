@@ -51,7 +51,7 @@ const defaultCreations: Creation[] = [
     tags: ["React", "TypeScript", "Analytics"],
     featured: true,
     new: false,
-    href: "/showcase/ai-ecommerce-dashboard"
+    href: "/tools/cpm-calculator"
   },
   {
     id: "2",
