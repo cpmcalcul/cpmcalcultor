@@ -1,7 +1,7 @@
 # Repository Guidelines & Development Standards
 
 ## Project Overview
-This is **CPM Calculator ** - a Next.js 15 full-stack AI SaaS application template designed to ship AI startups quickly. The template includes complete authentication, payment systems, AI integration, and content management capabilities.
+This is **CPM Calculator ** - a Next.js 15 full-stack cpm calculator application template designed to ship AI startups quickly. The template includes complete authentication, payment systems, AI integration, and content management capabilities.
 
 ## Project Structure & Module Organization
 - `src/app/`: Next.js App Router with internationalized routing (`[locale]/`)

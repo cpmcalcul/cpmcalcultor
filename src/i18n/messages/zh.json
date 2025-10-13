@@ -244,7 +244,7 @@
   "hero_switcher": {
     "component_one": {
       "brand_name": "CPM Calculator",
-      "title": "一个周末构建您的AI SaaS产品",
+      "title": "一个周末构建您的cpm calculator产品",
       "description": "完整的Next.js模板，用于构建盈利的SaaS，集",
       "subdescription": "探索、创建和创新，使用前沿的AI应用程序。成AI、身份验证、支付、国际化、新闻通讯、仪表板、博客、文档、组件、主题、SEO等。",
       "button_text": "获取MiSaaS",

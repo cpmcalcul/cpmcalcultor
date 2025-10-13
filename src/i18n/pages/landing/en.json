@@ -50,7 +50,13 @@
               "title": "ROI Calculator",
               "description": "Calculate return on investment for campaigns",
               "url": "/tools/roi-calculator",
-              "icon": "RiTrendingUpLine"
+              "icon": "RiExchangeDollarLine"
+            },
+            {
+              "title": "YouTube CPM Calculator",
+              "description": "Calculate return on investment for campaigns",
+              "url": "/tools/youtube-cpm-calculator",
+              "icon": "RiYoutubeLine"
             }
           ]
         },
@@ -100,9 +106,9 @@
     "show_locale": false
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "CPM Calculator is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "cpm calculator AI Startups in hours, not days",
+    "highlight_text": "cpm calculator",
+    "description": "CPM Calculator is a NextJS boilerplate for building cpm calculator startups.<br/>Ship Fast with a variety of templates and components.",
     "announcement": {
       "label": "2025",
       "title": "🎉 Happy New Year",
@@ -172,24 +178,25 @@
     "name": "introduce",
     "title": "What is CPM Calculator",
     "label": "Introduce",
-    "description": "CPM Calculator is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "description": "CPM Calculator is a NextJS boilerplate for building cpm calculator startups. Built in a variety of templates and components.",
     "image": {
-      "src": "/imgs/features/1.png"
+      "src": "/imgs/features/1.png",
+      "alt": "CPM Calculator – Instant CPM calculation with formula visualization"
     },
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
+          "title": "Instant CPM Calculation",
+          "description": "Quickly compute CPM from impressions and cost with precise rounding.",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
+          "title": "CPM Formula Visualization",
+          "description": "See the CPM formula and step-by-step breakdown for better understanding.",
         "icon": "RiDatabase2Line"
       },
       {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
+          "title": "Campaign Optimization Tips",
+          "description": "Get insights to lower CPM and compare with CPC/CPA for smarter budgeting.",
         "icon": "RiCloudyFill"
       }
     ]
@@ -198,11 +205,11 @@
     "name": "benefit",
     "title": "Why Choose CPM Calculator",
     "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "description": "This version emphasizes the tool's comprehensive nature, positioning it as the only calculator a marketer will ever need.",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
+        "title": "The Only Marketing Calculator You'll Ever Need",
+        "description": "Our Professional CPM Calculator is engineered to be your central hub for all ad metrics. While other tools offer just a basic cpm calc, we provide a complete suite. Effortlessly calculate the cpm with our intuitive interface, which simplifies every cpm calculation and helps you visualize the cpm formula. But we don't stop there. With an integrated CPC calculator and a full range of analytics, you get a holistic view of your campaign's performance, all in one place.",
         "icon": "RiNextjsFill",
         "image": {
           "src": "/imgs/features/2.png",
@@ -214,8 +221,8 @@
         }
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
+        "title": "Master Your Metrics with Absolute Clarity",
+        "description": "Tired of confusing spreadsheets and complex formulas? Our tool demystifies the entire process. It’s more than just a CPM calculator; it’s a learning platform. We guide you to calculate the cpm accurately every time, making any cpm calculation feel effortless. Forget trying to remember the exact cpm formula—our tool does the heavy lifting. Whether you need a quick cpm calc or a deep dive using our built-in CPC calculator, we provide the clarity you need to make confident, data-driven decisions.",
         "icon": "RiClapperboardAiLine",
         "image": {
           "src": "/imgs/features/3.png",
@@ -227,8 +234,8 @@
         }
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
+        "title": "Gain Your Unfair Advantage",
+        "description": "our competitors are using basic tools; it's time you upgraded. Our Professional CPM Calculator is your secret weapon for smarter ad spending. While they're struggling with a simple cpm calc, you'll be performing a sophisticated cpm calculation in seconds. Our platform doesn't just help you calculate the cpm; it reveals what's behind the numbers, making the cpm formula work for you. With our advanced CPC calculator and strategic insights, you won't just be participating in the market—you'll be outsmarting it.",
         "icon": "RiCodeFill",
         "image": {
           "src": "/imgs/features/4.png",
@@ -244,7 +251,7 @@
   "usage": {
     "name": "usage",
     "title": "How to Launch with CPM Calculator",
-    "description": "Get your AI SaaS startup running in three simple steps:",
+    "description": "Get your cpm calculator startup running in three simple steps:",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -260,7 +267,7 @@
       },
       {
         "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of CPM Calculator. Start building your AI SaaS startup.",
+        "description": "Read the documentation and clone the code of CPM Calculator. Start building your cpm calculator startup.",
         "image": {
           "src": "/imgs/features/6.png"
         }
@@ -284,7 +291,7 @@
   "feature": {
     "name": "feature",
     "title": "Key Features of CPM Calculator",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "description": "Everything you need to launch your cpm calculator startup quickly and efficiently.",
     "items": [
       {
         "title": "Next.js Boilerplate",
@@ -322,7 +329,7 @@
     "name": "stats",
     "label": "Stats",
     "title": "People Love CPM Calculator",
-    "description": "for it's easy to use and fast to ship.",
+    "description": "All-in-One Power of Marketing Calculator Tools.",
     "icon": "FaRegHeart",
     "items": [
       {
@@ -336,9 +343,9 @@
         "description": "Components"
       },
       {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
+        "title": "Marketing Calculator",
+        "label": "6",
+        "description": "Tools"
       }
     ]
   },
@@ -407,14 +414,14 @@
     "items": [
       {
         "title": "What exactly is CPM Calculator and how does it work?",
-        "description": "CPM Calculator is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "description": "CPM Calculator is a comprehensive NextJS boilerplate designed specifically for building cpm calculator startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
       },
       {
         "title": "Do I need advanced technical skills to use CPM Calculator?",
         "description": "While basic programming knowledge is helpful, CPM Calculator is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
       },
       {
-        "title": "What types of AI SaaS can I build with CPM Calculator?",
+        "title": "What types of cpm calculator can I build with CPM Calculator?",
         "description": "CPM Calculator supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
       },
       {
@@ -454,7 +461,7 @@
     "name": "pricing",
     "label": "Pricing",
     "title": "Pricing",
-    "description": "Get all features of CPM Calculator, Ship your AI SaaS startups fast.",
+    "description": "Get all features of CPM Calculator, Ship your cpm calculator startups fast.",
     "groups": [
       {
         "name": "one-time",
@@ -542,7 +549,7 @@
       },
       {
         "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
+        "description": "cpm calculator cpm calculator Startups.",
         "features_title": "Everything in Standard, plus",
         "features": [
           "300 credits, valid for 1 year",
@@ -641,7 +648,7 @@
       },
       {
         "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
+        "description": "cpm calculator cpm calculator Startups.",
         "features_title": "Everything in Standard, plus",
         "features": [
           "300 credits, valid for 1 month",
@@ -659,7 +666,7 @@
         "original_price": "$299",
         "unit": "/ month",
         "is_featured": false,
-        "tip": "Pay monthly. Ship Any AI SaaS Startups.",
+        "tip": "Pay monthly. cpm calculator cpm calculator Startups.",
         "button": {
           "title": "Get CPM Calculator",
           "url": "/#pricing",
@@ -739,7 +746,7 @@
       },
       {
         "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
+        "description": "cpm calculator cpm calculator Startups.",
         "features_title": "Everything in Standard, plus",
         "features": [
           "300 credits, valid for 1 year",
@@ -757,7 +764,7 @@
         "original_price": "$249",
         "unit": "/ month",
         "is_featured": false,
-        "tip": "Pay annually. Ship Any AI SaaS Startups.",
+        "tip": "Pay annually. cpm calculator cpm calculator Startups.",
         "button": {
           "title": "Get CPM Calculator",
           "url": "/#pricing",

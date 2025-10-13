@@ -240,8 +240,8 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                           >
                             <img
                               src="/imgs/cnpay.png"
-                              alt="CNPay Chinese payment gateway logo for AI SaaS subscription billing and credit purchases"
-                              title="CNPay Chinese payment gateway logo for AI SaaS subscription billing and credit purchases"
+                              alt="CNPay Chinese payment gateway logo for cpm calculator subscription billing and credit purchases"
+                              title="CNPay Chinese payment gateway logo for cpm calculator subscription billing and credit purchases"
                               className="w-20 h-10 rounded-lg"
                             />
                           </div>

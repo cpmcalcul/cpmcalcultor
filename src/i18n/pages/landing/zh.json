@@ -102,7 +102,7 @@
   "hero": {
     "title": "几小时内快速构建 AI 创业项目，而不是几天",
     "highlight_text": "快速构建",
-    "description": "CPM Calculator 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。<br/>通过丰富的模板和组件快速启动。",
+    "description": "CPM Calculator 是一个用于构建 cpm calculator 创业项目的 NextJS 模板。<br/>通过丰富的模板和组件快速启动。",
     "announcement": {
       "label": "2025",
       "title": "🎉 新年快乐",
@@ -172,14 +172,14 @@
     "name": "introduce",
     "title": "什么是 CPM Calculator",
     "label": "介绍",
-    "description": "CPM Calculator 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，内置多种模板和组件。",
+    "description": "CPM Calculator 是一个用于构建 cpm calculator 创业项目的 NextJS 模板，内置多种模板和组件。",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
         "title": "即用型模板",
-        "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。",
+        "description": "从数十个生产就绪的 cpm calculator 模板中选择，快速启动您的项目。",
         "icon": "RiNextjsFill"
       },
       {
@@ -189,7 +189,7 @@
       },
       {
         "title": "快速部署",
-        "description": "在几小时内将您的 AI SaaS 应用部署到生产环境，而不是几天。",
+        "description": "在几小时内将您的 cpm calculator 应用部署到生产环境，而不是几天。",
         "icon": "RiCloudyFill"
       }
     ]
@@ -215,7 +215,7 @@
       },
       {
         "title": "丰富的模板库",
-        "description": "选择各种 AI SaaS 模板来启动您的项目 - 聊天机器人、图像生成等。",
+        "description": "选择各种 cpm calculator 模板来启动您的项目 - 聊天机器人、图像生成等。",
         "icon": "RiClapperboardAiLine",
         "image": {
           "src": "/imgs/features/3.png",
@@ -244,7 +244,7 @@
   "usage": {
     "name": "usage",
     "title": "如何使用 CPM Calculator 启动项目",
-    "description": "通过三个简单步骤启动您的 AI SaaS 创业项目：",
+    "description": "通过三个简单步骤启动您的 cpm calculator 创业项目：",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -260,7 +260,7 @@
       },
       {
         "title": "开始您的项目",
-        "description": "阅读文档并克隆 CPM Calculator 代码。开始构建您的 AI SaaS 创业项目。",
+        "description": "阅读文档并克隆 CPM Calculator 代码。开始构建您的 cpm calculator 创业项目。",
         "image": {
           "src": "/imgs/features/6.png"
         }
@@ -284,7 +284,7 @@
   "feature": {
     "name": "feature",
     "title": "CPM Calculator 核心功能",
-    "description": "快速高效启动 AI SaaS 创业所需的一切。",
+    "description": "快速高效启动 cpm calculator 创业所需的一切。",
     "items": [
       {
         "title": "Next.js 模板",
@@ -407,14 +407,14 @@
     "items": [
       {
         "title": "CPM Calculator 究竟是什么，它是如何工作的？",
-        "description": "CPM Calculator 是一个专门为构建 AI SaaS 创业项目设计的综合性 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
+        "description": "CPM Calculator 是一个专门为构建 cpm calculator 创业项目设计的综合性 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。"
       },
       {
         "title": "使用 CPM Calculator 需要高级技术技能吗？",
         "description": "虽然基本的编程知识会有帮助，但 CPM Calculator 设计得非常开发者友好。我们的模板和文档使您即使不是 AI 或云基础设施专家也能轻松入门。"
       },
       {
-        "title": "我可以用 CPM Calculator 构建什么类型的 AI SaaS？",
+        "title": "我可以用 CPM Calculator 构建什么类型的 cpm calculator？",
         "description": "CPM Calculator 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖流行用例，如 AI 聊天机器人、内容生成器、图像处理应用等。"
       },
       {
@@ -433,7 +433,7 @@
   },
   "cta": {
     "name": "cta",
-    "title": "启动您的第一个 AI SaaS 创业项目",
+    "title": "启动您的第一个 cpm calculator 创业项目",
     "description": "从这里开始，使用 CPM Calculator 启动。",
     "buttons": [
       {
@@ -454,7 +454,7 @@
     "name": "pricing",
     "label": "定价",
     "title": "定价",
-    "description": "获取 CPM Calculator 的所有功能，快速启动您的 AI SaaS 项目。",
+    "description": "获取 CPM Calculator 的所有功能，快速启动您的 cpm calculator 项目。",
     "groups": [
       {
         "name": "one-time",
@@ -542,7 +542,7 @@
       },
       {
         "title": "高级版",
-        "description": "启动任何 AI SaaS 创业项目。",
+        "description": "启动任何 cpm calculator 创业项目。",
         "features_title": "包含标准版所有功能，另加",
         "features": [
           "300 积分，有效期 1 年",
@@ -641,7 +641,7 @@
       },
       {
         "title": "高级版",
-        "description": "启动任何 AI SaaS 创业项目。",
+        "description": "启动任何 cpm calculator 创业项目。",
         "features_title": "包含标准版所有功能，另加",
         "features": [
           "300 积分，有效期 1 个月",
@@ -659,7 +659,7 @@
         "original_price": "$299",
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "月付，启动任何 AI SaaS 创业项目。",
+        "tip": "月付，启动任何 cpm calculator 创业项目。",
         "button": {
           "title": "获取 CPM Calculator",
           "url": "/#pricing",
@@ -739,7 +739,7 @@
       },
       {
         "title": "高级版",
-        "description": "启动任何 AI SaaS 创业项目。",
+        "description": "启动任何 cpm calculator 创业项目。",
         "features_title": "包含标准版所有功能，另加",
         "features": [
           "300 积分，有效期 1 年",
@@ -757,7 +757,7 @@
         "original_price": "$249",
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "年付，启动任何 AI SaaS 创业项目。",
+        "tip": "年付，启动任何 cpm calculator 创业项目。",
         "button": {
           "title": "获取 CPM Calculator",
           "url": "/#pricing",
@@ -775,7 +775,7 @@
     "name": "footer",
     "brand": {
       "title": "CPM Calculator",
-      "description": "CPM Calculator 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。通过丰富的模板和组件快速启动。",
+      "description": "CPM Calculator 是一个用于构建 cpm calculator 创业项目的 NextJS 模板。通过丰富的模板和组件快速启动。",
       "logo": {
         "src": "/logo.png",
         "alt": "CPM Calculator"

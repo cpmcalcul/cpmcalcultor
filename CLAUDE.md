@@ -66,7 +66,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Architecture
 
-This is a **CPM Calculator Template One** - a Next.js 15 full-stack AI SaaS application template designed to ship AI startups quickly.
+This is a **CPM Calculator Template One** - a Next.js 15 full-stack cpm calculator application template designed to ship AI startups quickly.
 
 ### Core Stack
 - **Framework**: Next.js 15 with App Router and Turbopack
@@ -259,7 +259,7 @@ The application uses PostgreSQL with Drizzle ORM and includes these main tables:
 
 ## Project Template Information
 
-This is **CPM Calculator Template One** - a production-ready AI SaaS boilerplate designed to help developers ship AI startups quickly. The template includes:
+This is **CPM Calculator Template One** - a production-ready cpm calculator boilerplate designed to help developers ship AI startups quickly. The template includes:
 
 - Complete authentication and user management system
 - Stripe payment integration with subscription and credit systems

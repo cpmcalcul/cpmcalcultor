@@ -38,8 +38,8 @@ interface FeaturedCreationsProps {
 const defaultCreations: Creation[] = [
   {
     id: "1",
-    title: "AI-Powered E-commerce Dashboard",
-    description: "A modern dashboard with real-time analytics, inventory management, and AI-driven insights for online stores.",
+    title: "CPM Calculator",
+    description: "Master your ad spend with the ultimate Professional CPM Calculator. Effortlessly calculate the CPM and demystify the CPM formula with our intuitive tool.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center",
     category: "Dashboard",
     author: "Sarah Chen",
@@ -55,8 +55,8 @@ const defaultCreations: Creation[] = [
   },
   {
     id: "2",
-    title: "SaaS Landing Page Kit",
-    description: "Complete landing page template with 15+ sections, optimized for conversions and built with modern technologies.",
+    title: "CPA Calculator",
+    description: "A free and easy-to-use CPA Calculator to instantly determine your Cost Per Acquisition. Simply enter your total campaign cost and total conversions to accurately calculate your CPA and measure your marketing effectiveness.",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
     category: "Landing Page",
     author: "Alex Rodriguez",
@@ -68,12 +68,12 @@ const defaultCreations: Creation[] = [
     tags: ["Next.js", "TailwindCSS", "SaaS"],
     featured: true,
     new: true,
-    href: "/showcase/saas-landing-kit"
+    href: "/tools/cpa-calculator"
   },
   {
     id: "3",
-    title: "AI Chat Application",
-    description: "Real-time chat app with AI assistant integration, file sharing, and advanced message threading capabilities.",
+    title: "CPC Calculator",
+    description: "Accurately calculate your Cost Per Click (CPC) with our powerful ad spend calculator. Understand the CPC formula, analyze your campaign costs, and see how it impacts your overall budget. Ideal for Google Ads, Facebook Ads, and all PPC platforms.",
     image: "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=600&h=400&fit=crop&crop=center",
     category: "Application",
     author: "Emily Zhang",
@@ -89,7 +89,7 @@ const defaultCreations: Creation[] = [
   },
   {
     id: "4",
-    title: "Financial Analytics Platform",
+    title: "CTR Calculator",
     description: "Comprehensive financial tracking and analytics platform with beautiful charts and automated reporting features.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&crop=center",
     category: "Finance",
@@ -102,12 +102,12 @@ const defaultCreations: Creation[] = [
     tags: ["Finance", "Analytics", "Charts"],
     featured: true,
     new: false,
-    href: "/showcase/financial-platform"
+    href: "/tools/ctr-calculator"
   },
   {
     id: "5",
-    title: "Project Management Tool",
-    description: "Collaborative project management dashboard with team coordination, task tracking, and timeline visualization.",
+    title: "ROI Calculator",
+    description: "Calculate your Return on Investment (ROI) with our professional business calculator. Make informed financial decisions by accurately measuring the profitability of your marketing campaigns, stock investments, or business projects. Understand your gains and optimize your strategy for higher returns.",
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
     category: "Productivity",
     author: "Lisa Wang",
@@ -119,12 +119,12 @@ const defaultCreations: Creation[] = [
     tags: ["Management", "Teams", "Productivity"],
     featured: false,
     new: false,
-    href: "/showcase/project-management"
+    href: "/tools/roi-calculator"
   },
   {
     id: "6",
-    title: "AI Image Generator",
-    description: "Advanced AI-powered image generation tool with customizable styles, prompts, and high-quality output options.",
+    title: "YouTube CPM Calculator",
+    description: "Curious how much top YouTubers really make? Use our YouTube CPM Calculator to unlock your channel's earning potential. Go beyond subscribers and views—get a realistic estimate of your ad revenue, understand what drives your income, and learn how to boost your CPM for higher earnings.",
     image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=400&fit=crop&crop=center",
     category: "AI Tools",
     author: "David Park",
@@ -136,7 +136,7 @@ const defaultCreations: Creation[] = [
     tags: ["AI", "Image", "Generator"],
     featured: true,
     new: true,
-    href: "/showcase/ai-image-generator"
+    href: "/tools/youtube-cpm-calculator"
   }
 ];
 

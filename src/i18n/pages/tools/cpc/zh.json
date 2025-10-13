@@ -3,7 +3,7 @@
     "name": "pricing",
     "label": "定价",
     "title": "定价",
-    "description": "获取 CPM Calculator 的所有功能，快速启动您的 AI SaaS 项目。",
+    "description": "获取 CPM Calculator 的所有功能，快速启动您的 cpm calculator 项目。",
     "groups": [
       {
         "name": "one-time",
@@ -91,7 +91,7 @@
       },
       {
         "title": "高级版",
-        "description": "启动任何 AI SaaS 创业项目。",
+        "description": "启动任何 cpm calculator 创业项目。",
         "features_title": "包含标准版所有功能，另加",
         "features": [
           "300 积分，有效期 1 年",
@@ -190,7 +190,7 @@
       },
       {
         "title": "高级版",
-        "description": "启动任何 AI SaaS 创业项目。",
+        "description": "启动任何 cpm calculator 创业项目。",
         "features_title": "包含标准版所有功能，另加",
         "features": [
           "300 积分，有效期 1 个月",
@@ -208,7 +208,7 @@
         "original_price": "$299",
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "月付，启动任何 AI SaaS 创业项目。",
+        "tip": "月付，启动任何 cpm calculator 创业项目。",
         "button": {
           "title": "获取 CPM Calculator",
           "url": "/#pricing",
@@ -288,7 +288,7 @@
       },
       {
         "title": "高级版",
-        "description": "启动任何 AI SaaS 创业项目。",
+        "description": "启动任何 cpm calculator 创业项目。",
         "features_title": "包含标准版所有功能，另加",
         "features": [
           "300 积分，有效期 1 年",
@@ -306,7 +306,7 @@
         "original_price": "$249",
         "unit": "/ 月",
         "is_featured": false,
-        "tip": "年付，启动任何 AI SaaS 创业项目。",
+        "tip": "年付，启动任何 cpm calculator 创业项目。",
         "button": {
           "title": "获取 CPM Calculator",
           "url": "/#pricing",

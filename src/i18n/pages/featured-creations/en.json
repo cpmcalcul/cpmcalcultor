@@ -1,9 +1,9 @@
 {
   "featuredCreations": {
-    "title": "Featured Creations",
-    "description": "Discover amazing projects built with our platform. Get inspired and start building your own.",
+    "title": "Other CPM Calculator Tools",
+    "description": "CPM Calculator | cpa-calculator | cpc-calculator | ctr-calculator | roi-calculator | youtube-cpm-calculator",
     "viewAllText": "View All Creations",
-    "viewAllHref": "/showcase",
+    "viewAllHref": "/tools",
     "scrollInstruction": "Scroll or drag to browse",
     "mobileInstruction": "Swipe to browse",
     "keyboardInstruction": "Use arrow keys to navigate",

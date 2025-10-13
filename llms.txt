@@ -1,9 +1,9 @@
 # https://mksaas.com llms.txt
 
-- [AI SaaS Development](https://mksaas.com/): Create your AI SaaS product quickly with MkSaaS.
+- [cpm calculator Development](https://mksaas.com/): Create your cpm calculator product quickly with MkSaaS.
 - [SaaS Pricing Plans](https://mksaas.com/pricing): Affordable lifetime SaaS plans with extensive features and support.
-- [MkSaaS Blog](https://mksaas.com/blog): Latest updates and tutorials on building AI SaaS websites.
-- [MkSaaS Documentation](https://mksaas.com/docs): Comprehensive guide for building AI SaaS websites using MkSaaS.
+- [MkSaaS Blog](https://mksaas.com/blog): Latest updates and tutorials on building cpm calculator websites.
+- [MkSaaS Documentation](https://mksaas.com/docs): Comprehensive guide for building cpm calculator websites using MkSaaS.
 - [Contact Us](https://mksaas.com/contact): Get in touch for business plan inquiries and support.
 - [Join Our Newsletter](https://mksaas.com/waitlist): Subscribe for updates on product news and features.
 - [MkSaaS Changelog](https://mksaas.com/changelog): Stay updated with MkSaaS product changes and features.
@@ -16,7 +16,7 @@
 - [MkSaaS Blog Updates](https://mksaas.com/blog/category/general): Latest updates and insights on MkSaaS and its features.
 - [MkSaaS Tutorials](https://mksaas.com/blog/category/tutorial): Explore various tutorials and guides on MkSaaS.
 - [MkSaaS FAQ Page](https://mksaas.com/blog/faq): Find answers to common questions about MkSaaS services.
-- [MkSaaS Overview](https://mksaas.com/blog/what-is-mksaas): Comprehensive guide to building AI SaaS websites with MkSaaS.
+- [MkSaaS Overview](https://mksaas.com/blog/what-is-mksaas): Comprehensive guide to building cpm calculator websites with MkSaaS.
 - [AI Features Setup](https://mksaas.com/docs/ai): Guide to set up AI features with OpenAI and DeepSeek.
 - [MkSaaS Analytics Guide](https://mksaas.com/docs/analytics): Set up and use analytics tools for MkSaaS websites.
 - [MkSaaS Authentication Guide](https://mksaas.com/docs/auth): Comprehensive guide for setting up authentication in MkSaaS.

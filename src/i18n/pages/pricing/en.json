@@ -3,7 +3,7 @@
     "name": "pricing",
     "label": "Pricing",
     "title": "Pricing",
-    "description": "Get all features of CPM Calculator, Ship your AI SaaS startups fast.",
+    "description": "Get all features of CPM Calculator, Ship your cpm calculator startups fast.",
     "groups": [
       {
         "name": "one-time",
@@ -91,7 +91,7 @@
       },
       {
         "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
+        "description": "cpm calculator cpm calculator Startups.",
         "features_title": "Everything in Standard, plus",
         "features": [
           "300 credits, valid for 1 year",
@@ -190,7 +190,7 @@
       },
       {
         "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
+        "description": "cpm calculator cpm calculator Startups.",
         "features_title": "Everything in Standard, plus",
         "features": [
           "300 credits, valid for 1 month",
@@ -208,7 +208,7 @@
         "original_price": "$299",
         "unit": "/ month",
         "is_featured": false,
-        "tip": "Pay monthly. Ship Any AI SaaS Startups.",
+        "tip": "Pay monthly. cpm calculator cpm calculator Startups.",
         "button": {
           "title": "Get CPM Calculator",
           "url": "/#pricing",
@@ -288,7 +288,7 @@
       },
       {
         "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
+        "description": "cpm calculator cpm calculator Startups.",
         "features_title": "Everything in Standard, plus",
         "features": [
           "300 credits, valid for 1 year",
@@ -306,7 +306,7 @@
         "original_price": "$249",
         "unit": "/ month",
         "is_featured": false,
-        "tip": "Pay annually. Ship Any AI SaaS Startups.",
+        "tip": "Pay annually. cpm calculator cpm calculator Startups.",
         "button": {
           "title": "Get CPM Calculator",
           "url": "/#pricing",

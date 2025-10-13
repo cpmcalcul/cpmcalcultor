@@ -75,7 +75,7 @@ Hero组件已完全集成next-intl多语言系统，支持以下语言：
 {
   "hero_switcher": {
     "component_one": {
-      "title": "Make Your AI SaaS Product in a weekend",
+      "title": "Make Your cpm calculator Product in a weekend",
       "description": "...",
       "button_text": "Get MiSaaS"
     }
@@ -86,7 +86,7 @@ Hero组件已完全集成next-intl多语言系统，支持以下语言：
 {
   "hero_switcher": {
     "component_one": {
-      "title": "一个周末构建您的AI SaaS产品",
+      "title": "一个周末构建您的cpm calculator产品",
       "description": "...",
       "button_text": "获取MiSaaS"
     }

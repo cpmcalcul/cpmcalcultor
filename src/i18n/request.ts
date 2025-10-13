@@ -28,7 +28,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       // Glossary page translations
       const glossaryMessages = (await import(`./pages/glossary/${locale.toLowerCase()}.json`)).default;
 
-      // Featured Creations page translations
+      // other calculator tools page translations
       const featuredCreationsMessages = (await import(`./pages/featured-creations/${locale.toLowerCase()}.json`)).default;
 
       // Tools page translations

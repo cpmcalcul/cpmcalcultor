@@ -30,7 +30,7 @@ export default function ComponentOne({
 
   // 模型logo列表
   const modelLogos = [
-    { src: '/imgs/ComponentOne/ComponentOne-01.svg', alt: 'OpenAI GPT artificial intelligence language model logo for AI SaaS development' },
+    { src: '/imgs/ComponentOne/ComponentOne-01.svg', alt: 'OpenAI GPT artificial intelligence language model logo for cpm calculator development' },
     { src: '/imgs/ComponentOne/ComponentOne-02.svg', alt: 'Anthropic Claude AI assistant model logo for conversational AI applications' },
     { src: '/imgs/ComponentOne/ComponentOne-03.svg', alt: 'Google Gemini multimodal AI model logo for text image video generation' },
     { src: '/imgs/ComponentOne/ComponentOne-04.svg', alt: 'Stability AI diffusion model logo for AI image generation and art creation' },
@@ -228,7 +228,7 @@ export default function ComponentOne({
 // 预设变体
 export const ComponentOneVariants = {
   default: {
-    title: 'Make Your AI SaaS Product in a weekend',
+    title: 'Make Your cpm calculator Product in a weekend',
     description: 'The complete Next.js boilerplate for building profitable SaaS, packed with AI, auth, payments, i18n, newsletter, dashboard, blog, docs, blocks, themes, SEO and more.',
     subdescription: 'Explore, create, and innovate with cutting-edge AI applications.',
     buttonText: 'Get MiSaaS',
