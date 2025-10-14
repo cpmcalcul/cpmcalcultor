@@ -1,8 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 // import AIWorkstation from "@/components/ui/ai-workstation";
-import HappyUsers from "../happy-users";
-import HeroBg from "../bg";
+import HappyUsers from "../hero/happy-users";
+import HeroBg from "../hero/bg";
 import { Hero as HeroType } from "@/types/blocks/hero";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/navigation";
@@ -21,17 +21,22 @@ export default function Hero({ hero }: { hero: HeroType }) {
   return (
     <>
       <HeroBg />
-      <section className="py-24 min-h-screen flex items-center">
-        <div className="container">
-          <div className="grid lg:grid-cols-2 gap-0 items-center min-h-[600px] relative">
+      <section className="py-32 min-h-screen flex items-center bg-gradient-to-br from-background via-muted/10 to-background relative overflow-hidden">
+        {/* Background decoration */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-30" />
+        <div className="absolute top-1/4 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-float-delayed" />
+        
+        <div className="container relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[600px] relative">
             {/* Left Content */}
             <div className="flex flex-col justify-center relative z-0">
               {hero.show_badge && (
-                <div className="flex items-center justify-start mb-8">
+                <div className="flex items-center justify-start mb-10 animate-float">
                   <img
                     src="/imgs/badges/phdaily.svg"
                     alt="phdaily"
-                    className="h-10 object-cover"
+                    className="h-12 object-cover shadow-lg hover:shadow-xl transition-shadow duration-300"
                   />
                 </div>
               )}
@@ -40,52 +45,52 @@ export default function Hero({ hero }: { hero: HeroType }) {
                 {hero.announcement && (
                   <Link
                     href={hero.announcement.url as any}
-                    className="mb-6 inline-flex items-center gap-3 rounded-full border px-3 py-2 text-sm hover:bg-slate-800/50 transition-colors"
+                    className="mb-8 inline-flex items-center gap-4 rounded-full border border-border/50 px-6 py-3 text-sm bg-card/50 backdrop-blur-sm hover:bg-card/80 hover:border-primary/30 hover:shadow-md transition-all duration-300"
                   >
                     {hero.announcement.label && (
-                      <Badge className="bg-primary/10 text-primary border-primary/20">
+                      <Badge className="bg-gradient-to-r from-primary/10 to-primary/5 text-primary border-primary/20 px-3 py-1 text-xs font-medium">
                         {hero.announcement.label}
                       </Badge>
                     )}
-                    {hero.announcement.title}
+                    <span className="text-foreground/90 font-medium">{hero.announcement.title}</span>
                   </Link>
                 )}
 
                 {texts && texts.length > 1 ? (
-                  <h1 className="mb-6 text-balance text-4xl font-bold lg:text-6xl xl:text-7xl leading-tight">
+                  <h1 className="mb-8 text-balance text-5xl font-bold lg:text-6xl xl:text-7xl leading-tight bg-gradient-to-r from-foreground to-foreground/90 bg-clip-text">
                     {texts[0]}
-                    <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    <span className="bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
                       {highlightText}
                     </span>
                     {texts[1]}
                   </h1>
                 ) : (
-                  <h1 className="mb-6 text-balance text-4xl font-bold lg:text-6xl xl:text-7xl leading-tight">
+                  <h1 className="mb-8 text-balance text-5xl font-bold lg:text-6xl xl:text-7xl leading-tight bg-gradient-to-r from-foreground to-foreground/90 bg-clip-text">
                     {hero.title}
                   </h1>
                 )}
 
                 <p
-                  className="mb-8 max-w-lg text-muted-foreground text-lg lg:text-xl leading-relaxed"
+                  className="mb-12 max-w-lg text-muted-foreground text-xl lg:text-2xl leading-relaxed"
                   dangerouslySetInnerHTML={{ __html: hero.description || "" }}
                 />
                 
                 {hero.buttons && (
-                  <div className="mb-6 flex flex-col gap-4 sm:flex-row">
+                  <div className="mb-8 flex flex-col gap-6 sm:flex-row">
                     {hero.buttons.map((item, i) => {
                       return (
                         <Link
                           key={i}
                           href={item.url as any}
                           target={item.target || ""}
-                          className="flex items-center"
+                          className="flex items-center group"
                         >
                           <Button
-                            className="w-full sm:w-auto px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                            className="w-full sm:w-auto px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 group-hover:scale-105 bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary/80"
                             size="lg"
                             variant={item.variant || "default"}
                           >
-                            {item.icon && <Icon name={item.icon} className="mr-2" />}
+                            {item.icon && <Icon name={item.icon} className="mr-3 size-5" />}
                             {item.title}
                           </Button>
                         </Link>
@@ -95,7 +100,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
                 )}
                 
                 {hero.tip && (
-                  <p className="mb-6 text-sm text-muted-foreground bg-slate-800/30 inline-block px-4 py-2 rounded-full border border-slate-700/30">
+                  <p className="mb-8 text-base text-foreground/80 bg-gradient-to-r from-primary/10 to-primary/5 inline-block px-6 py-3 rounded-full border border-primary/20 backdrop-blur-sm shadow-sm">
                     {hero.tip}
                   </p>
                 )}
@@ -109,9 +114,16 @@ export default function Hero({ hero }: { hero: HeroType }) {
             </div>
 
             {/* Right Content - AI Workstation */}
-            <div className="flex items-center justify-end h-full relative">
+            <div className="flex items-center justify-end h-full relative animate-float-delayed">
               <div className="h-[500px] flex items-center">
-                {/* <AIWorkstation /> */}
+                <div className="w-full h-full bg-gradient-to-br from-card/50 to-card/20 backdrop-blur-sm border border-border/50 rounded-2xl shadow-2xl p-8 flex items-center justify-center">
+                  <div className="text-center text-muted-foreground">
+                    <div className="w-24 h-24 bg-primary/10 rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <Icon name="calculator" className="w-12 h-12 text-primary" />
+                    </div>
+                    <p className="text-lg font-medium">Tool Preview</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
