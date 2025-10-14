@@ -242,7 +242,7 @@ export async function incrementDownloadCount(uuid: string) {
 The storage system is already configured in `src/lib/storage.ts`. Use it for file uploads:
 
 **Environment Variables (`.env.local`):**
-```env
+```bash
 STORAGE_ENDPOINT="https://your-endpoint.r2.cloudflarestorage.com"
 STORAGE_ACCESS_KEY="your-access-key"
 STORAGE_SECRET_KEY="your-secret-key"
@@ -603,7 +603,7 @@ export async function POST(request: NextRequest) {
 #### AI Provider Management
 
 **Environment Variables for AI Providers:**
-```env
+```bash
 # Kling AI
 KLING_ACCESS_KEY="your-kling-access-key"
 KLING_SECRET_KEY="your-kling-secret-key"

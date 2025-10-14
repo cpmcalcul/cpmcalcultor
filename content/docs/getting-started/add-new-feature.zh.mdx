@@ -242,7 +242,7 @@ export async function incrementDownloadCount(uuid: string) {
 存储系统已在 `src/lib/storage.ts` 中配置好。使用它进行文件上传：
 
 **环境变量 (`.env.local`)**：
-```env
+```bash
 STORAGE_ENDPOINT="https://your-endpoint.r2.cloudflarestorage.com"
 STORAGE_ACCESS_KEY="your-access-key"
 STORAGE_SECRET_KEY="your-secret-key"
@@ -603,7 +603,7 @@ export async function POST(request: NextRequest) {
 #### AI 提供商管理
 
 **AI 提供商的环境变量:**
-```env
+```bash
 # Kling AI
 KLING_ACCESS_KEY="your-kling-access-key"
 KLING_SECRET_KEY="your-kling-secret-key"
