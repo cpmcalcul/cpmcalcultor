@@ -24,6 +24,48 @@
     "reset_button": "重新开始",
     "calculate_button": "计算"
   },
+  "features": {
+    "title": "强大的 ROI 分析功能",
+    "description": "您需要的一切工具来衡量和优化营销投资回报",
+    "calculate": {
+      "title": "快速计算",
+      "description": "使用智能计算器即时计算 ROI、收入或成本"
+    },
+    "optimize": {
+      "title": "优化回报",
+      "description": "识别高绩效营销活动并最大化您的 ROI"
+    },
+    "analyze": {
+      "title": "跟踪绩效",
+      "description": "监控 ROI 趋势并做出数据驱动的投资决策"
+    },
+    "report": {
+      "title": "生成洞察",
+      "description": "创建全面的 ROI 报告用于利益相关者演示"
+    }
+  },
+  "showcase": {
+    "badge": "工作原理",
+    "title": "最大化您的营销 ROI",
+    "description": "我们的 ROI 计算器帮助您做出更明智的投资决策并证明营销活动的价值",
+    "image_url": "/images/roi-showcase.png",
+    "image_alt": "ROI 计算器仪表板",
+    "benefits": [
+      "在几秒钟内计算精确的 ROI 百分比",
+      "比较跨渠道的营销活动绩效",
+      "基于投资水平预测收入",
+      "做出数据驱动的预算分配决策",
+      "向利益相关者展示营销价值"
+    ]
+  },
+  "cta": {
+    "title": "准备好优化您的营销 ROI 了吗？",
+    "description": "立即开始使用我们的免费工具计算和改善您的投资回报",
+    "primary_button": "尝试更多工具",
+    "secondary_button": "查看文档",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
+  },
   "faq": {
     "title": "常见问题",
     "description": "关于 ROI 计算和投资分析的常见问题",

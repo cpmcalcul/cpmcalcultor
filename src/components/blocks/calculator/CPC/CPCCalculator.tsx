@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -14,6 +15,7 @@ interface CalculatorValues {
 }
 
 export function CPCCalculator() {
+  const t = useTranslations("tools.cpc.calculator");
   const [values, setValues] = useState<CalculatorValues>({
     totalCost: "",
     cpc: "",
@@ -39,7 +41,7 @@ export function CPCCalculator() {
     ].filter(Boolean);
 
     if (filledFields.length < 2) {
-      alert("请至少填写两个字段");
+      alert(t("error_min_fields"));
       return;
     }
 
@@ -67,9 +69,9 @@ export function CPCCalculator() {
       <CardHeader>
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
-            <CardTitle className="text-3xl font-bold">CPC 计算器</CardTitle>
+            <CardTitle className="text-3xl font-bold">{t("title")}</CardTitle>
             <CardDescription className="text-base mt-2">
-              计算每次点击成本、总费用或点击次数
+              {t("description")}
             </CardDescription>
           </div>
           <CurrencySelector currency={currency} onCurrencyChange={setCurrency} />
@@ -81,14 +83,14 @@ export function CPCCalculator() {
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="totalCost" className="text-lg font-semibold">
-                总广告费用
+                {t("fields.total_cost.label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                计算广告活动的总费用，请输入：
+                {t("fields.total_cost.description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>CPC（每次点击成本）</li>
-                <li>点击次数</li>
+                <li>{t("fields.total_cost.step1")}</li>
+                <li>{t("fields.total_cost.step2")}</li>
               </ol>
             </div>
             <div className="w-40">
@@ -99,7 +101,7 @@ export function CPCCalculator() {
                 <Input
                   id="totalCost"
                   type="text"
-                  placeholder="1000"
+                  placeholder={t("fields.total_cost.placeholder")}
                   value={values.totalCost}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange("totalCost", e.target.value)}
                   className="text-lg h-12 pl-8"
@@ -114,14 +116,14 @@ export function CPCCalculator() {
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="cpc" className="text-lg font-semibold">
-                每次点击成本（CPC）
+                {t("fields.cpc.label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                计算每次点击的成本，请输入：
+                {t("fields.cpc.description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>总广告费用</li>
-                <li>点击次数</li>
+                <li>{t("fields.cpc.step1")}</li>
+                <li>{t("fields.cpc.step2")}</li>
               </ol>
             </div>
             <div className="w-40">
@@ -132,7 +134,7 @@ export function CPCCalculator() {
                 <Input
                   id="cpc"
                   type="text"
-                  placeholder="5"
+                  placeholder={t("fields.cpc.placeholder")}
                   value={values.cpc}
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange("cpc", e.target.value)}
                   className="text-lg h-12 pl-8"
@@ -147,21 +149,21 @@ export function CPCCalculator() {
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="clicks" className="text-lg font-semibold">
-                点击次数
+                {t("fields.clicks.label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                计算广告获得的点击次数，请输入：
+                {t("fields.clicks.description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>总广告费用</li>
-                <li>CPC（每次点击成本）</li>
+                <li>{t("fields.clicks.step1")}</li>
+                <li>{t("fields.clicks.step2")}</li>
               </ol>
             </div>
             <div className="w-40">
               <Input
                 id="clicks"
                 type="text"
-                placeholder="1000"
+                placeholder={t("fields.clicks.placeholder")}
                 value={values.clicks}
                 onChange={(e: React.ChangeEvent<HTMLInputElement>) => handleInputChange("clicks", e.target.value)}
                 className="text-lg h-12"
@@ -178,14 +180,14 @@ export function CPCCalculator() {
             size="lg"
             className="flex-1 h-12"
           >
-            重新开始
+            {t("buttons.reset")}
           </Button>
           <Button
             onClick={calculate}
             size="lg"
             className="flex-1 h-12 bg-orange-600 hover:bg-orange-700"
           >
-            计算
+            {t("buttons.calculate")}
           </Button>
         </div>
       </CardContent>

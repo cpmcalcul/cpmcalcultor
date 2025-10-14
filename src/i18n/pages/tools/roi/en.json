@@ -24,6 +24,48 @@
     "reset_button": "Reset",
     "calculate_button": "Calculate"
   },
+  "features": {
+    "title": "Powerful ROI Analysis Features",
+    "description": "Everything you need to measure and optimize your marketing investment returns",
+    "calculate": {
+      "title": "Quick Calculation",
+      "description": "Instantly calculate ROI, revenue, or cost with our smart calculator"
+    },
+    "optimize": {
+      "title": "Optimize Returns",
+      "description": "Identify high-performing campaigns and maximize your ROI"
+    },
+    "analyze": {
+      "title": "Track Performance",
+      "description": "Monitor ROI trends and make data-driven investment decisions"
+    },
+    "report": {
+      "title": "Generate Insights",
+      "description": "Create comprehensive ROI reports for stakeholder presentations"
+    }
+  },
+  "showcase": {
+    "badge": "How It Works",
+    "title": "Maximize Your Marketing ROI",
+    "description": "Our ROI calculator helps you make smarter investment decisions and prove the value of your marketing campaigns",
+    "image_url": "/images/roi-showcase.png",
+    "image_alt": "ROI Calculator Dashboard",
+    "benefits": [
+      "Calculate precise ROI percentages in seconds",
+      "Compare campaign performance across channels",
+      "Forecast revenue based on investment levels",
+      "Make data-driven budget allocation decisions",
+      "Demonstrate marketing value to stakeholders"
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Marketing ROI?",
+    "description": "Start calculating and improving your return on investment today with our free tools",
+    "primary_button": "Try More Tools",
+    "secondary_button": "View Documentation",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "description": "Common questions about ROI calculations and investment analysis",

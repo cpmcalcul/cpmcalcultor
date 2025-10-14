@@ -1,323 +1,38 @@
 {
-  "pricing": {
-    "name": "pricing",
-    "label": "Pricing",
-    "title": "Pricing",
-    "description": "Get all features of CPM Calculator, Ship your cpm calculator startups fast.",
-    "groups": [
-      {
-        "name": "one-time",
-        "title": "Pay as you go"
+  "page": {
+    "title": "CPC Calculator - Calculate Cost Per Click",
+    "description": "Calculate Cost Per Click (CPC) for your advertising campaigns. Essential tool for performance marketing and paid advertising optimization."
+  },
+  "calculator": {
+    "title": "CPC Calculator",
+    "description": "Calculate cost per click, total cost, or number of clicks",
+    "fields": {
+      "total_cost": {
+        "label": "Total Ad Spend",
+        "description": "To calculate the total cost of your advertising campaign, enter:",
+        "step1": "CPC (Cost Per Click)",
+        "step2": "Number of Clicks",
+        "placeholder": "1000"
       },
-      {
-        "name": "monthly",
-        "title": "Monthly",
-        "is_featured": true,
-        "label": "save 15%"
+      "cpc": {
+        "label": "Cost Per Click (CPC)",
+        "description": "To calculate the cost per click, enter:",
+        "step1": "Total Ad Spend",
+        "step2": "Number of Clicks",
+        "placeholder": "5"
       },
-      {
-        "name": "yearly",
-        "title": "Annually"
+      "clicks": {
+        "label": "Number of Clicks",
+        "description": "To calculate the number of clicks your campaign received, enter:",
+        "step1": "Total Ad Spend",
+        "step2": "CPC (Cost Per Click)",
+        "placeholder": "1000"
       }
-    ],
-    "items": [
-      {
-        "title": "Starter",
-        "description": "Get started with your first SaaS startup.",
-        "features_title": "Includes",
-        "features": [
-          "100 credits, valid for 1 month",
-          "NextJS boilerplate",
-          "SEO-friendly structure",
-          "Payment with Stripe",
-          "Data storage with Supabase",
-          "Google Oauth & One-Tap Login",
-          "i18n support"
-        ],
-        "interval": "one-time",
-        "amount": 9900,
-        "cn_amount": 69900,
-        "currency": "USD",
-        "price": "$99",
-        "original_price": "$199",
-        "unit": "one-time",
-        "is_featured": false,
-        "tip": "Pay once. Build unlimited projects!",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "starter",
-        "product_name": "CPM Calculator Boilerplate Starter",
-        "credits": 100,
-        "valid_months": 1,
-        "group": "one-time"
-      },
-      {
-        "title": "Standard",
-        "description": "Ship Fast with your SaaS Startups.",
-        "label": "Popular",
-        "features_title": "Everything in Starter, plus",
-        "features": [
-          "200 credits, valid for 3 month",
-          "Deploy with Vercel or Cloudflare",
-          "Generation of Privacy & Terms",
-          "Google Analytics Integration",
-          "Google Search Console Integration",
-          "Discord community",
-          "Technical support for your first ship",
-          "Lifetime updates"
-        ],
-        "interval": "one-time",
-        "amount": 19900,
-        "cn_amount": 139900,
-        "currency": "USD",
-        "price": "$199",
-        "original_price": "$299",
-        "unit": "one-time",
-        "is_featured": true,
-        "tip": "Pay once. Build unlimited projects!",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "standard",
-        "product_name": "CPM Calculator Boilerplate Standard",
-        "credits": 200,
-        "valid_months": 3,
-        "group": "one-time"
-      },
-      {
-        "title": "Premium",
-        "description": "cpm calculator cpm calculator Startups.",
-        "features_title": "Everything in Standard, plus",
-        "features": [
-          "300 credits, valid for 1 year",
-          "Business Functions with AI",
-          "User Center",
-          "Credits System",
-          "API Sales for your SaaS",
-          "Admin System",
-          "Priority Technical Support"
-        ],
-        "interval": "one-time",
-        "amount": 29900,
-        "cn_amount": 199900,
-        "currency": "USD",
-        "price": "$299",
-        "original_price": "$399",
-        "unit": "one-time",
-        "is_featured": false,
-        "tip": "Pay once. Build unlimited projects!",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "premium",
-        "product_name": "CPM Calculator Boilerplate Premium",
-        "credits": 300,
-        "valid_months": 12,
-        "group": "one-time"
-      },
-      {
-        "title": "Starter",
-        "description": "Get started with your first SaaS startup.",
-        "features_title": "Includes",
-        "features": [
-          "100 credits, valid for 1 month",
-          "NextJS boilerplate",
-          "SEO-friendly structure",
-          "Payment with Stripe",
-          "Data storage with Supabase",
-          "Google Oauth & One-Tap Login",
-          "i18n support"
-        ],
-        "interval": "month",
-        "amount": 8900,
-        "currency": "USD",
-        "price": "$89",
-        "original_price": "$99",
-        "unit": "/ month",
-        "is_featured": false,
-        "tip": "Pay monthly. Build unlimited projects!",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "starter-monthly",
-        "product_name": "CPM Calculator Boilerplate Starter Monthly",
-        "credits": 100,
-        "valid_months": 1,
-        "group": "monthly"
-      },
-      {
-        "title": "Standard",
-        "description": "Ship Fast with your SaaS Startups.",
-        "label": "Popular",
-        "features_title": "Everything in Starter, plus",
-        "features": [
-          "200 credits, valid for 1 month",
-          "Deploy with Vercel or Cloudflare",
-          "Generation of Privacy & Terms",
-          "Google Analytics Integration",
-          "Google Search Console Integration",
-          "Discord community",
-          "Technical support for your first ship",
-          "Lifetime updates"
-        ],
-        "interval": "month",
-        "amount": 16900,
-        "currency": "USD",
-        "price": "$169",
-        "original_price": "$199",
-        "unit": "/ month",
-        "is_featured": true,
-        "tip": "Pay monthly. Ship Fast with your SaaS Startups.",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "standard-monthly",
-        "product_name": "CPM Calculator Boilerplate Standard Monthly",
-        "credits": 200,
-        "valid_months": 1,
-        "group": "monthly"
-      },
-      {
-        "title": "Premium",
-        "description": "cpm calculator cpm calculator Startups.",
-        "features_title": "Everything in Standard, plus",
-        "features": [
-          "300 credits, valid for 1 month",
-          "Business Functions with AI",
-          "User Center",
-          "Credits System",
-          "API Sales for your SaaS",
-          "Admin System",
-          "Priority Technical Support"
-        ],
-        "interval": "month",
-        "amount": 24900,
-        "currency": "USD",
-        "price": "$249",
-        "original_price": "$299",
-        "unit": "/ month",
-        "is_featured": false,
-        "tip": "Pay monthly. cpm calculator cpm calculator Startups.",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "premium-monthly",
-        "product_name": "CPM Calculator Boilerplate Premium Monthly",
-        "credits": 300,
-        "valid_months": 1,
-        "group": "monthly"
-      },
-      {
-        "title": "Starter",
-        "description": "Get started with your first SaaS startup.",
-        "features_title": "Includes",
-        "features": [
-          "100 credits, valid for 1 year",
-          "NextJS boilerplate",
-          "SEO-friendly structure",
-          "Payment with Stripe",
-          "Data storage with Supabase",
-          "Google Oauth & One-Tap Login",
-          "i18n support"
-        ],
-        "interval": "year",
-        "amount": 82800,
-        "currency": "USD",
-        "price": "$69",
-        "original_price": "$89",
-        "unit": "/ month",
-        "is_featured": false,
-        "tip": "Pay annually. Build unlimited projects!",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "starter-yearly",
-        "product_name": "CPM Calculator Boilerplate Starter Annually",
-        "credits": 1200,
-        "valid_months": 12,
-        "group": "yearly"
-      },
-      {
-        "title": "Standard",
-        "description": "Ship Fast with your SaaS Startups.",
-        "label": "Popular",
-        "features_title": "Everything in Starter, plus",
-        "features": [
-          "200 credits, valid for 1 year",
-          "Deploy with Vercel or Cloudflare",
-          "Generation of Privacy & Terms",
-          "Google Analytics Integration",
-          "Google Search Console Integration",
-          "Discord community",
-          "Technical support for your first ship",
-          "Lifetime updates"
-        ],
-        "interval": "year",
-        "amount": 154800,
-        "currency": "USD",
-        "price": "$129",
-        "original_price": "$169",
-        "unit": "/ month",
-        "is_featured": true,
-        "tip": "Pay annually. Ship Fast with your SaaS Startups.",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "standard-yearly",
-        "product_name": "CPM Calculator Boilerplate Standard Annually",
-        "credits": 2400,
-        "valid_months": 12,
-        "group": "yearly"
-      },
-      {
-        "title": "Premium",
-        "description": "cpm calculator cpm calculator Startups.",
-        "features_title": "Everything in Standard, plus",
-        "features": [
-          "300 credits, valid for 1 year",
-          "Business Functions with AI",
-          "User Center",
-          "Credits System",
-          "API Sales for your SaaS",
-          "Admin System",
-          "Priority Technical Support"
-        ],
-        "interval": "year",
-        "amount": 226800,
-        "currency": "USD",
-        "price": "$189",
-        "original_price": "$249",
-        "unit": "/ month",
-        "is_featured": false,
-        "tip": "Pay annually. cpm calculator cpm calculator Startups.",
-        "button": {
-          "title": "Get CPM Calculator",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "premium-yearly",
-        "product_name": "CPM Calculator Boilerplate Premium Annually",
-        "credits": 3600,
-        "valid_months": 12,
-        "group": "yearly"
-      }
-    ]
+    },
+    "buttons": {
+      "reset": "Reset",
+      "calculate": "Calculate"
+    },
+    "error_min_fields": "Please fill in at least two fields"
   }
 }

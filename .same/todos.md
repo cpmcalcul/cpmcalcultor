@@ -110,6 +110,129 @@
 
 ---
 
+## 2025-10-14 (Session 6 - Tool Page Common Components)
+
+### Plan
+
+- [x] Analyze existing tool page structures (CPM, CPA, ROI calculators)
+- [x] Design reusable component architecture for tool pages
+- [x] Create ToolFeatures component (4-card feature grid)
+- [x] Create ToolShowcase component (benefits list + image)
+- [x] Create ToolFAQ component (accordion FAQ section)
+- [x] Create ToolCTA component (call-to-action with 2 buttons)
+- [x] Update ROI translation files with complete sections (features, showcase, cta, faq)
+- [x] Create comprehensive README documentation
+- [x] Create example page showing component usage
+
+### Done
+
+- [x] Created 4 reusable tool page components in `src/components/blocks/tools/`
+- [x] Each component accepts namespace prop for i18n flexibility
+- [x] Updated ROI translation files (en.json and zh.json) with complete structure
+- [x] Created detailed README.md with usage examples and translation templates
+- [x] Created example page demonstrating all components together
+
+**Created Files**:
+
+- [src/components/blocks/tools/ToolFeatures.tsx](src/components/blocks/tools/ToolFeatures.tsx) - Feature cards component
+- [src/components/blocks/tools/ToolShowcase.tsx](src/components/blocks/tools/ToolShowcase.tsx) - Benefits showcase component
+- [src/components/blocks/tools/ToolFAQ.tsx](src/components/blocks/tools/ToolFAQ.tsx) - FAQ accordion component
+- [src/components/blocks/tools/ToolCTA.tsx](src/components/blocks/tools/ToolCTA.tsx) - Call-to-action component
+- [src/components/blocks/tools/README.md](src/components/blocks/tools/README.md) - Complete documentation
+- [src/app/[locale]/(default)/tools/roi-calculator/page.example.tsx](src/app/[locale]/(default)/tools/roi-calculator/page.example.tsx) - Usage example
+
+**Modified Files**:
+
+- [src/i18n/pages/tools/roi/en.json](src/i18n/pages/tools/roi/en.json) - Added features, showcase, cta sections
+- [src/i18n/pages/tools/roi/zh.json](src/i18n/pages/tools/roi/zh.json) - Added features, showcase, cta sections
+
+**Component Architecture**:
+
+```
+ToolFeatures
+├── Props: namespace, features[]
+├── Translation keys: title, description, [feature].title, [feature].description
+└── Features: 4-card grid, customizable icons and colors
+
+ToolShowcase
+├── Props: namespace
+├── Translation keys: badge, title, description, image_url, image_alt, benefits[]
+└── Features: Left-right layout, benefit list with checkmarks, image display
+
+ToolFAQ
+├── Props: namespace
+├── Translation keys: title, description, items[]{title, description}
+└── Features: Accordion UI, expandable Q&A items
+
+ToolCTA
+├── Props: namespace
+├── Translation keys: title, description, primary_button, secondary_button, primary_link, secondary_link
+└── Features: Gradient background, two action buttons
+```
+
+**Translation Structure** (per tool):
+
+```json
+{
+  "page": { "title", "description" },
+  "calculator": { /* calculator-specific */ },
+  "features": { "title", "description", "*.title", "*.description" },
+  "showcase": { "badge", "title", "description", "image_url", "image_alt", "benefits[]" },
+  "cta": { "title", "description", "primary_button", "secondary_button", "primary_link", "secondary_link" },
+  "faq": { "title", "description", "items[]" }
+}
+```
+
+**Key Benefits**:
+
+- ✅ **Modular**: Each component is independent and reusable
+- ✅ **Translation Isolation**: Each tool has separate JSON files (避免单个文件过大)
+- ✅ **Type Safety**: TypeScript props ensure correct usage
+- ✅ **Consistency**: All tool pages share same visual design
+- ✅ **Flexibility**: Components can be used selectively
+- ✅ **i18n Support**: Full English/Chinese translation support
+
+**Usage Pattern**:
+
+```typescript
+// In any tool page:
+<ToolFeatures namespace="tools.roi.features" features={[...]} />
+<ToolShowcase namespace="tools.roi.showcase" />
+<ToolFAQ namespace="tools.roi.faq" />
+<ToolCTA namespace="tools.roi.cta" />
+```
+
+### Next
+
+- [ ] Apply common components to existing tool pages (CPA, CPC, CTR calculators)
+- [ ] Create placeholder images for showcase sections
+- [ ] Test responsive design on mobile devices
+- [ ] Consider creating ToolPageLayout wrapper component for consistent structure
+
+**⚠️ Important Fix Applied:**
+
+修复了 next-intl 的键名错误。next-intl 不允许在 JSON 键中使用点号 `.`，因为点号会被解释为嵌套结构。
+
+- ❌ 错误格式: `"calculate.title": "Quick Calculation"`
+- ✅ 正确格式: `"calculate": { "title": "Quick Calculation" }`
+
+**修改的文件**:
+- [src/i18n/pages/tools/roi/en.json](src/i18n/pages/tools/roi/en.json) - 将 features 改为嵌套结构
+- [src/i18n/pages/tools/roi/zh.json](src/i18n/pages/tools/roi/zh.json) - 将 features 改为嵌套结构
+- [src/components/blocks/tools/ToolFeatures.tsx](src/components/blocks/tools/ToolFeatures.tsx) - 更新组件使用 `key` prop
+- [src/components/blocks/tools/README.md](src/components/blocks/tools/README.md) - 更新文档示例
+
+**组件使用变化**:
+```typescript
+// 旧方式（错误）
+{ icon: Calculator, titleKey: "calculate.title", descriptionKey: "calculate.description", color: "text-blue-600" }
+
+// 新方式（正确）
+{ icon: Calculator, key: "calculate", color: "text-blue-600" }
+```
+
+---
+
 ## 2025-10-14 (Session 5 - ROI Calculator i18n)
 
 ### Plan
