@@ -4,6 +4,8 @@ import { ToolFeatures } from "@/components/blocks/tools/ToolFeatures";
 import { ToolShowcase } from "@/components/blocks/tools/ToolShowcase";
 import { ToolFAQ } from "@/components/blocks/tools/ToolFAQ";
 import { ToolCTA } from "@/components/blocks/tools/ToolCTA";
+import { ToolFeatures2 } from "@/components/blocks/tools/ToolFeatures2";
+import { ToolPageHero } from "@/components/blocks/tools/ToolPageHero";
 
 export default function ROICalculatorPage() {
   const t = useTranslations("tools.roi.page");
@@ -32,19 +34,34 @@ export default function ROICalculatorPage() {
     },
   ];
 
+  // Items for ToolFeatures2 (must include before/after images)
+  const features2 = [
+    {
+      icon: "calculator" as const,
+      key: "calculate",
+      beforeImage: "/imgs/features/5.png",
+      afterImage: "/imgs/features/6.png",
+    },
+    {
+      icon: "target" as const,
+      key: "optimize",
+      beforeImage: "/imgs/features/2.png",
+      afterImage: "/imgs/features/2-after.png",
+    },
+    {
+      icon: "trending" as const,
+      key: "analyze",
+      beforeImage: "/imgs/features/3.png",
+      afterImage: "/imgs/features/3-after.png",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/50 to-background">
       <div className="container mx-auto px-4 py-8">
         {/* Hero Section */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            {t("title")}
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t("description")}
-          </p>
-        </div>
-
+        <ToolPageHero namespace="tools.roi.hero" />
+        
         {/* Calculator Section */}
         <div className="max-w-4xl mx-auto mb-16">
           <ROICalculator />
@@ -55,6 +72,12 @@ export default function ROICalculatorPage() {
 
         {/* Showcase Section */}
         <ToolShowcase namespace="tools.roi.showcase" />
+
+        {/* Features2 Section */}
+        <ToolFeatures2 namespace="tools.roi.features2" items={features2} />
+
+
+
 
         {/* FAQ Section */}
         <ToolFAQ namespace="tools.roi.faq" />

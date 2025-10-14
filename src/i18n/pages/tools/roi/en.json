@@ -95,5 +95,53 @@
         "description": "Improve ROI by targeting more qualified audiences, optimizing conversion rates, reducing acquisition costs, improving customer lifetime value, testing different channels, and continuously analyzing performance data."
       }
     ]
+  },
+  "hero": {
+    "badge": "ROI Analysis",
+    "title": "ROI Calculator",
+    "subtitle": "Calculate and optimize your marketing return on investment",
+    "description": "Make data-driven decisions with precise ROI calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  },
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience ROI Analysis Like Never Before",
+    "description": "Interactive features that help you visualize and understand your marketing ROI in real-time",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right to see before and after effects",
+    "items": {
+      "calculate": {
+        "title": "Quick Calculation",
+        "description": "Instantly calculate ROI metrics with clear step-by-step breakdown"
+      },
+      "optimize": {
+        "title": "Optimize Returns",
+        "description": "Discover improvement opportunities and reduce costs to boost ROI"
+      },
+      "analyze": {
+        "title": "Trend Analysis",
+        "description": "Visualize ROI trends and compare scenarios for better decisions"
+      },
+      "realtime": {
+        "title": "Real-time Calculations",
+        "description": "Get instant ROI calculations as you input your data with live updates and visualizations"
+      },
+      "comparison": {
+        "title": "Campaign Comparison",
+        "description": "Compare ROI across multiple campaigns side by side to identify your best performers"
+      },
+      "forecasting": {
+        "title": "ROI Forecasting",
+        "description": "Predict future returns based on historical data and investment scenarios"
+      },
+      "insights": {
+        "title": "Smart Insights",
+        "description": "AI-powered recommendations to improve your marketing ROI and optimize spending"
+      }
+    }
   }
 }

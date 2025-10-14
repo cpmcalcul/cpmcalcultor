@@ -95,5 +95,41 @@
         "description": "通过定位更合格的受众、优化转化率、降低获取成本、提高客户终身价值、测试不同渠道以及持续分析性能数据来提高 ROI。"
       }
     ]
+  },
+  "hero": {
+    "badge": "ROI 分析",
+    "title": "ROI 计算器",
+    "subtitle": "计算和优化您的营销投资回报率",
+    "description": "通过精确的 ROI 计算做出数据驱动的决策",
+    "cta_primary": "开始计算",
+    "cta_secondary": "了解更多"
+  },
+  "features2": {
+    "label": "高级功能",
+    "title": "前所未有的 ROI 分析体验",
+    "description": "交互式功能帮助您实时可视化和理解营销 ROI",
+    "hover_tip": "点击查看对比",
+    "slider_before_alt": "优化前",
+    "slider_after_alt": "优化后",
+    "slider_hover_title": "拖动比较",
+    "slider_hover_description": "左右拖动滑块查看前后效果对比",
+    "items": {
+      "realtime": {
+        "title": "实时计算",
+        "description": "输入数据即可获得即时 ROI 计算，实时更新和可视化展示"
+      },
+      "comparison": {
+        "title": "活动对比",
+        "description": "并排比较多个活动的 ROI，识别表现最佳的营销活动"
+      },
+      "forecasting": {
+        "title": "ROI 预测",
+        "description": "基于历史数据和投资场景预测未来回报"
+      },
+      "insights": {
+        "title": "智能洞察",
+        "description": "AI 驱动的建议帮助您提高营销 ROI 并优化支出"
+      }
+    }
   }
 }

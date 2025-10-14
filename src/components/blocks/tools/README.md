@@ -118,6 +118,107 @@
 }
 ```
 
+### 5. ToolPageHero
+
+工具页面的 Hero 区域，包含徽章、标题、副标题和两个 CTA 按钮。
+
+**Props:**
+- `namespace: string` - i18n 命名空间（例如：`"tools.roi.hero"`）
+
+**翻译结构示例:**
+```json
+{
+  "hero": {
+    "badge": "ROI Analysis",
+    "title": "ROI Calculator",
+    "subtitle": "Calculate and optimize your marketing return on investment",
+    "description": "Make data-driven decisions with precise ROI calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  }
+}
+```
+
+**视觉特点:**
+- 渐变背景效果
+- 动画进入效果（淡入 + 上移）
+- 响应式布局
+- 主按钮和次按钮样式对比
+
+### 6. ToolFeatures2
+
+高级功能展示组件，包含交互式对比滑块和动画效果。这是一个复杂的交互组件，适合展示"前后对比"类型的功能。
+
+**Props:**
+- `namespace: string` - i18n 命名空间（例如：`"tools.roi.features2"`）
+- `items: Features2Item[]` - 功能列表数组
+
+**Features2Item 结构:**
+```typescript
+{
+  icon: "calculator" | "trending" | "target" | "chart" | "zap" | "shield" | "users" | "award" | "check" | "sparkles",
+  key: string,              // 嵌套对象的 key（例如："realtime", "comparison"）
+  beforeImage: string,      // 对比前的图片路径
+  afterImage: string        // 对比后的图片路径
+}
+```
+
+**可用图标:**
+- 包含 ToolFeatures 所有图标，外加：
+  - `"check"` - CheckCircle2 图标（勾选）
+  - `"sparkles"` - Sparkles 图标（闪光）
+
+**翻译结构示例:**
+```json
+{
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience ROI Analysis Like Never Before",
+    "description": "Interactive features that help you visualize...",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right...",
+    "items": {
+      "realtime": {
+        "title": "Real-time Calculations",
+        "description": "Get instant ROI calculations as you input..."
+      },
+      "comparison": {
+        "title": "Campaign Comparison",
+        "description": "Compare ROI across multiple campaigns..."
+      },
+      "forecasting": {
+        "title": "ROI Forecasting",
+        "description": "Predict future returns based on historical data..."
+      },
+      "insights": {
+        "title": "Smart Insights",
+        "description": "AI-powered recommendations to improve..."
+      }
+    }
+  }
+}
+```
+
+**交互特性:**
+- ✅ 自动轮播（8秒间隔切换功能）
+- ✅ 鼠标悬停效果（卡片高亮、缩放、边框渐变）
+- ✅ 点击反馈动画（缩放脉冲效果）
+- ✅ 进度指示器（底部圆点导航）
+- ✅ Before/After 滑块（可拖动对比图片）
+- ✅ 活跃状态指示器（动画脉冲点）
+- ✅ 渐进式内容展示（错开入场动画）
+- ✅ 悬停提示信息
+- ✅ 当前功能标签叠加层
+
+**使用建议:**
+- 适合展示工具的视觉效果改进
+- 需要准备"前后对比"图片（before/after images）
+- 建议功能数量：2-4个（最佳体验）
+- 图片尺寸建议：宽高比 4:3 或 16:9，高度至少 500px
+
 ## 完整使用示例
 
 ### 1. 创建翻译文件
@@ -159,7 +260,9 @@ pageTranslations = {
 ```typescript
 import { useTranslations } from "next-intl";
 import { YourCalculator } from "@/components/blocks/calculator/...";
+import { ToolPageHero } from "@/components/blocks/tools/ToolPageHero";
 import { ToolFeatures } from "@/components/blocks/tools/ToolFeatures";
+import { ToolFeatures2 } from "@/components/blocks/tools/ToolFeatures2";
 import { ToolShowcase } from "@/components/blocks/tools/ToolShowcase";
 import { ToolFAQ } from "@/components/blocks/tools/ToolFAQ";
 import { ToolCTA } from "@/components/blocks/tools/ToolCTA";
@@ -179,23 +282,60 @@ export default function ToolPage() {
       key: "optimize",
       color: "text-green-600",
     },
-    // ... more features
+    {
+      icon: "chart" as const,
+      key: "analyze",
+      color: "text-purple-600",
+    },
+    {
+      icon: "award" as const,
+      key: "report",
+      color: "text-orange-600",
+    },
+  ];
+
+  // ToolFeatures2 需要 before/after 图片
+  const advancedFeatures = [
+    {
+      icon: "zap" as const,
+      key: "realtime",
+      beforeImage: "/images/roi-before-1.png",
+      afterImage: "/images/roi-after-1.png",
+    },
+    {
+      icon: "users" as const,
+      key: "comparison",
+      beforeImage: "/images/roi-before-2.png",
+      afterImage: "/images/roi-after-2.png",
+    },
+    {
+      icon: "trending" as const,
+      key: "forecasting",
+      beforeImage: "/images/roi-before-3.png",
+      afterImage: "/images/roi-after-3.png",
+    },
+    {
+      icon: "sparkles" as const,
+      key: "insights",
+      beforeImage: "/images/roi-before-4.png",
+      afterImage: "/images/roi-after-4.png",
+    },
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/50 to-background">
-      <div className="container mx-auto px-4 py-8">
-        {/* Hero Section */}
-        <div className="text-center mb-8">
-          <h1>{t("title")}</h1>
-          <p>{t("description")}</p>
-        </div>
+      {/* Hero Section */}
+      <ToolPageHero namespace="tools.roi.hero" />
 
+      <div className="container mx-auto px-4 py-8">
         {/* Calculator */}
         <YourCalculator />
 
-        {/* Features */}
+        {/* Features (基础) */}
         <ToolFeatures namespace="tools.roi.features" features={features} />
+
+        {/* Features2 (高级交互) */}
+        <ToolFeatures2 namespace="tools.roi.features2" items={advancedFeatures} />
 
         {/* Showcase */}
         <ToolShowcase namespace="tools.roi.showcase" />
@@ -222,6 +362,14 @@ export default function ToolPage() {
   "calculator": {
     // 计算器特定的翻译
   },
+  "hero": {
+    "badge": "Badge text",
+    "title": "Main title",
+    "subtitle": "Subtitle text",
+    "description": "Description text",
+    "cta_primary": "Primary button text",
+    "cta_secondary": "Secondary button text"
+  },
   "features": {
     "title": "Main title",
     "description": "Subtitle",
@@ -240,6 +388,34 @@ export default function ToolPage() {
     "report": {
       "title": "Feature 4 title",
       "description": "Feature 4 description"
+    }
+  },
+  "features2": {
+    "label": "Section label",
+    "title": "Main title",
+    "description": "Subtitle",
+    "hover_tip": "Hover tip text (optional)",
+    "slider_before_alt": "Before image alt text",
+    "slider_after_alt": "After image alt text",
+    "slider_hover_title": "Slider hover title (optional)",
+    "slider_hover_description": "Slider hover description (optional)",
+    "items": {
+      "realtime": {
+        "title": "Feature 1 title",
+        "description": "Feature 1 description"
+      },
+      "comparison": {
+        "title": "Feature 2 title",
+        "description": "Feature 2 description"
+      },
+      "forecasting": {
+        "title": "Feature 3 title",
+        "description": "Feature 3 description"
+      },
+      "insights": {
+        "title": "Feature 4 title",
+        "description": "Feature 4 description"
+      }
     }
   },
   "showcase": {
@@ -300,10 +476,34 @@ A: Next.js Server Components 不能将 React 组件（如 Lucide 图标）直接
 
 **Q: 如何添加新的图标？**
 
-A: 在 `ToolFeatures.tsx` 的 `ICON_MAP` 中添加新的图标映射：
+A: 在 `ToolFeatures.tsx` 或 `ToolFeatures2.tsx` 的 `ICON_MAP` 中添加新的图标映射：
 ```typescript
 const ICON_MAP: Record<string, LucideIcon> = {
   // 现有图标...
   newIcon: NewIconComponent,
 };
 ```
+
+**Q: ToolFeatures 和 ToolFeatures2 有什么区别？**
+
+A:
+
+- **ToolFeatures**: 简单的4卡片网格布局，适合快速展示功能要点
+- **ToolFeatures2**: 高级交互组件，包含：
+  - Before/After 对比滑块
+  - 自动轮播和手动切换
+  - 复杂的悬停和点击动画
+  - 进度指示器
+  - 适合展示视觉效果改进或功能对比
+
+选择建议：如果只需要展示功能列表，使用 ToolFeatures；如果需要展示"前后对比"效果，使用 ToolFeatures2。
+
+**Q: 如何准备 ToolFeatures2 的对比图片？**
+
+A:
+
+1. 创建"优化前"和"优化后"的截图或设计图
+2. 保持相同的宽高比（推荐 4:3 或 16:9）
+3. 建议尺寸：至少 800x600px，高度不低于 500px
+4. 保存到 `public/images/` 目录
+5. 文件命名建议：`[tool-name]-before-[number].png` 和 `[tool-name]-after-[number].png`

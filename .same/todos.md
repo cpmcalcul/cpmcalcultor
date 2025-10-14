@@ -209,6 +209,137 @@ ToolCTA
 - [ ] Test responsive design on mobile devices
 - [ ] Consider creating ToolPageLayout wrapper component for consistent structure
 
+---
+
+## 2025-10-14 (Session 7 - ToolFeatures2 & ToolPageHero Integration)
+
+### Plan
+
+- [x] Refactor ToolFeatures2.tsx to use modular i18n system
+- [x] Create ToolPageHero.tsx for hero section
+- [x] Preserve all animations and interactions in ToolFeatures2
+- [x] Add translation examples for hero and features2 sections
+- [x] Update README.md with complete documentation for new components
+
+### Done
+
+- [x] Refactored ToolFeatures2 component to use namespace-based translations
+- [x] Created ToolPageHero component for consistent hero sections
+- [x] Preserved all visual features and animations in ToolFeatures2:
+  - Auto-rotation (8 second intervals)
+  - Hover effects (card scaling, border gradients)
+  - Click feedback animations
+  - Progress indicators
+  - Before/after slider interaction
+  - Active state indicators
+  - Staggered entrance animations
+- [x] Added hero and features2 sections to ROI translation files
+- [x] Updated README.md with comprehensive documentation
+
+**Created Files**:
+
+- [src/components/blocks/tools/ToolPageHero.tsx](src/components/blocks/tools/ToolPageHero.tsx) - Hero section component
+- Modified: [src/components/blocks/tools/ToolFeatures2.tsx](src/components/blocks/tools/ToolFeatures2.tsx) - Refactored for modularity
+
+**Modified Files**:
+
+- [src/i18n/pages/tools/roi/en.json](src/i18n/pages/tools/roi/en.json) - Added hero and features2 sections
+- [src/i18n/pages/tools/roi/zh.json](src/i18n/pages/tools/roi/zh.json) - Added hero and features2 sections
+- [src/components/blocks/tools/README.md](src/components/blocks/tools/README.md) - Added documentation for components 5 & 6
+
+**Component Architecture**:
+
+```
+ToolPageHero
+├── Props: namespace
+├── Translation keys: badge, title, subtitle, description, cta_primary, cta_secondary
+└── Features: Gradient background, animated entrance, responsive layout
+
+ToolFeatures2
+├── Props: namespace, items[]
+├── Features2Item: { icon, key, beforeImage, afterImage }
+├── Translation keys: label, title, description, hover_tip, slider_*, items.*.title, items.*.description
+└── Features:
+    - Auto-rotation (8s interval)
+    - Before/after slider with drag interaction
+    - Hover effects (scale, borders, shadows)
+    - Click animations
+    - Progress indicators
+    - Active state pulse indicators
+    - Staggered entrance animations
+```
+
+**Icon Mapping Fix**:
+
+Fixed Server Component serialization error by using icon name strings instead of passing React components:
+
+```typescript
+// ✅ Correct way - Pass string names
+const items = [
+  { icon: "zap" as const, key: "realtime", beforeImage: "...", afterImage: "..." }
+];
+
+// ❌ Wrong way - Cannot pass components from Server to Client
+const items = [
+  { icon: Zap, key: "realtime", ... } // Error!
+];
+```
+
+**Translation Structure Added**:
+
+```json
+{
+  "hero": {
+    "badge": "ROI Analysis",
+    "title": "ROI Calculator",
+    "subtitle": "Calculate and optimize your marketing return on investment",
+    "description": "Make data-driven decisions with precise ROI calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  },
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience ROI Analysis Like Never Before",
+    "description": "Interactive features that help you visualize...",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right...",
+    "items": {
+      "realtime": { "title": "Real-time Calculations", "description": "..." },
+      "comparison": { "title": "Campaign Comparison", "description": "..." },
+      "forecasting": { "title": "ROI Forecasting", "description": "..." },
+      "insights": { "title": "Smart Insights", "description": "..." }
+    }
+  }
+}
+```
+
+**README Documentation Updates**:
+
+- Added section 5: ToolPageHero (props, translation structure, visual features)
+- Added section 6: ToolFeatures2 (props, Features2Item structure, available icons, translation structure, interactive features, usage suggestions)
+- Updated usage example to include both new components
+- Updated translation template with hero and features2 sections
+- Added FAQ entries:
+  - Q: ToolFeatures vs ToolFeatures2 differences
+  - Q: How to prepare before/after images for ToolFeatures2
+
+**Key Benefits**:
+
+- ✅ **Complex Interactions Preserved**: All animations and user interactions work exactly as before
+- ✅ **Modular Design**: Both components now use namespace-based translations
+- ✅ **Comprehensive Documentation**: Complete usage guide with examples
+- ✅ **Type Safety**: Proper TypeScript interfaces for all props
+- ✅ **Reusable**: Can be used across all tool pages with different content
+
+### Next
+
+- [ ] Create example tool page using all 6 components (including ToolFeatures2 and ToolPageHero)
+- [ ] Test ToolFeatures2 with actual before/after images
+- [ ] Validate auto-rotation and slider interactions on different devices
+
 **⚠️ Important Fix Applied:**
 
 修复了 next-intl 的键名错误。next-intl 不允许在 JSON 键中使用点号 `.`，因为点号会被解释为嵌套结构。
