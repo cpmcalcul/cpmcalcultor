@@ -1,7 +1,34 @@
 {
-  "page": {
+  "hero": {
     "title": "CPM Calculator - Calculate Cost Per Mille",
-    "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns with precision. Essential tool for digital marketers and advertisers."
+    "subtitle": "Calculate Cost Per Mille (CPM) for your advertising campaigns with precision. Essential tool for digital marketers and advertisers.",
+    "description": "Get accurate CPM calculations to optimize your advertising spend and measure campaign performance effectively."
+  },
+  "features": {
+    "title": "Powerful CPM Analysis Features",
+    "description": "Everything you need to calculate and analyze your Cost Per Mille metrics",
+    "calculate": {
+      "title": "Instant CPM Calculation",
+      "description": "Calculate CPM instantly with our easy-to-use calculator. Just enter your cost and impressions."
+    },
+    "analyze": {
+      "title": "Performance Analysis",
+      "description": "Analyze your advertising performance with detailed CPM insights and recommendations."
+    },
+    "optimize": {
+      "title": "Campaign Optimization",
+      "description": "Get suggestions to optimize your campaigns and improve cost efficiency."
+    },
+    "report": {
+      "title": "Detailed Reporting",
+      "description": "Generate comprehensive reports with CPM analysis and performance metrics."
+    }
+  },
+  "cta": {
+    "title": "Ready to optimize your advertising costs?",
+    "description": "Start using our CPM calculator today and make data-driven decisions for your advertising campaigns.",
+    "primary_button": "Start Calculating",
+    "secondary_button": "Learn More About CPM"
   },
   "faq": {
     "title": "Frequently Asked Questions",
