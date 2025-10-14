@@ -1,25 +1,23 @@
-import { useTranslations } from "next-intl";
+import ToolPage, { ToolPagePresets, type FeatureItem } from "@/components/blocks/tools";
 import { CPACalculator } from "@/components/blocks/calculator/CPA/CPACalculator";
 
 export default function CPACalculatorPage() {
-  const t = useTranslations();
+  // 定义CPA计算器的功能特性数据
+  const featuresData: FeatureItem[] = [
+    { icon: "calculator", key: "calculate", color: "red" },
+    { icon: "trending", key: "analyze", color: "blue" },
+    { icon: "target", key: "optimize", color: "purple" },
+  ];
+
+  // 使用简单预设配置，包含 Hero + Features + FAQ
+  const config = ToolPagePresets.simple("tools.cpa", featuresData);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/50 to-background">
-      <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            {t("calculator.cpa.title")}
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t("calculator.cpa.description")}
-          </p>
-        </div>
-        
-        <div className="max-w-4xl mx-auto">
-          <CPACalculator />
-        </div>
+    <ToolPage config={config}>
+      {/* 插入CPA计算器组件作为主要内容 */}
+      <div className="max-w-4xl mx-auto">
+        <CPACalculator />
       </div>
-    </div>
+    </ToolPage>
   );
 }
