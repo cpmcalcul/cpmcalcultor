@@ -1,0 +1,157 @@
+{
+  "page": {
+    "title": "CTR Calculator - Calculate Click-Through Rate",
+    "description": "Calculate Click-Through Rate (CTR) and Conversion Rate (CVR) for your marketing campaigns. Essential tool for measuring ad performance and user engagement."
+  },
+  "calculator": {
+    "ctr": {
+      "card_title": "CTR Calculator",
+      "card_description": "Calculate click-through rate, clicks, or impressions",
+      "clicks_label": "Number of Clicks",
+      "clicks_description": "Total number of clicks received on your ads",
+      "impressions_label": "Number of Impressions",
+      "impressions_description": "Total number of times your ads were displayed",
+      "ctr_label": "Click-Through Rate (CTR)",
+      "ctr_description": "Calculate click-through rate (percentage)",
+      "ctr_formula": "Formula: CTR = (Clicks / Impressions) × 100%",
+      "error_min_fields": "Please fill in at least two fields",
+      "error_zero_impressions": "Impressions cannot be 0"
+    },
+    "cvr": {
+      "card_title": "CVR Calculator",
+      "card_description": "Calculate conversion rate, conversions, or clicks",
+      "conversions_label": "Number of Conversions",
+      "conversions_description": "Total number of conversions from your ads",
+      "cvr_clicks_label": "Number of Clicks",
+      "cvr_clicks_description": "Total number of clicks that led to conversions",
+      "cvr_label": "Conversion Rate (CVR)",
+      "cvr_description": "Calculate conversion rate (percentage)",
+      "cvr_formula": "Formula: CVR = (Conversions / Clicks) × 100%",
+      "error_zero_clicks": "Clicks cannot be 0"
+    },
+    "buttons": {
+      "reset": "Reset",
+      "calculate": "Calculate"
+    }
+  },
+  "features": {
+    "title": "Powerful CTR & CVR Analysis Features",
+    "description": "Everything you need to measure and optimize your ad performance and conversion rates",
+    "calculate": {
+      "title": "Quick Calculation",
+      "description": "Instantly calculate CTR, CVR, clicks, impressions, or conversions with our smart calculator"
+    },
+    "optimize": {
+      "title": "Optimize Performance",
+      "description": "Identify high-performing campaigns and maximize your click-through and conversion rates"
+    },
+    "analyze": {
+      "title": "Track Performance",
+      "description": "Monitor CTR and CVR trends and make data-driven advertising decisions"
+    },
+    "report": {
+      "title": "Generate Insights",
+      "description": "Create comprehensive CTR and CVR reports for stakeholder presentations"
+    }
+  },
+  "showcase": {
+    "badge": "How It Works",
+    "title": "Optimize Your Click-Through and Conversion Rates",
+    "description": "Our CTR and CVR calculator helps you make smarter advertising decisions and prove the effectiveness of your marketing campaigns",
+    "image_url": "/images/ctr-showcase.png",
+    "image_alt": "CTR & CVR Calculator Dashboard",
+    "benefits": [
+      "Calculate precise CTR and CVR percentages in seconds",
+      "Compare ad performance across channels and campaigns",
+      "Forecast clicks and conversions based on impression levels",
+      "Make data-driven budget allocation decisions",
+      "Demonstrate advertising effectiveness to stakeholders"
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Click-Through and Conversion Rates?",
+    "description": "Start calculating and improving your CTR and CVR today with our free tools",
+    "primary_button": "Try More Tools",
+    "secondary_button": "View Documentation",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about CTR and CVR calculations and ad performance analysis",
+    "items": [
+      {
+        "title": "What is CTR in marketing?",
+        "description": "CTR (Click-Through Rate) measures how often people click on your ads after seeing them. It's calculated as (Clicks / Impressions) × 100%. A higher CTR indicates more engaging and relevant ads."
+      },
+      {
+        "title": "How do you calculate CTR?",
+        "description": "CTR is calculated using the formula: CTR = (Clicks / Impressions) × 100%. For example, if your ad gets 100 clicks from 10,000 impressions, your CTR is 1%."
+      },
+      {
+        "title": "What's a good CTR for marketing campaigns?",
+        "description": "A good CTR varies by industry and platform. Generally, CTRs between 1-3% are considered good for search ads, while display ads typically have lower CTRs (0.5-1%). Mobile ads often have higher CTRs than desktop."
+      },
+      {
+        "title": "What is CVR and why is it important?",
+        "description": "CVR (Conversion Rate) measures how many clicks result in desired actions (purchases, sign-ups, etc.). It's calculated as (Conversions / Clicks) × 100%. CVR helps evaluate the quality of traffic and landing page effectiveness."
+      },
+      {
+        "title": "What's the difference between CTR and CVR?",
+        "description": "CTR measures ad engagement (clicks per impression), while CVR measures conversion effectiveness (conversions per click). CTR shows how compelling your ads are, while CVR shows how well your landing pages convert visitors."
+      },
+      {
+        "title": "How can I improve my CTR and CVR?",
+        "description": "Improve CTR by writing compelling ad copy, using relevant keywords, and testing different ad formats. Improve CVR by optimizing landing pages, reducing load times, improving user experience, and ensuring clear call-to-actions."
+      }
+    ]
+  },
+  "hero": {
+    "badge": "CTR & CVR Analysis",
+    "title": "CTR & CVR Calculator",
+    "subtitle": "Calculate and optimize your click-through and conversion rates",
+    "description": "Make data-driven decisions with precise CTR and CVR calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  },
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience CTR & CVR Analysis Like Never Before",
+    "description": "Interactive features that help you visualize and understand your ad performance in real-time",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right to see before and after effects",
+    "items": {
+      "calculate": {
+        "title": "Quick Calculation",
+        "description": "Instantly calculate CTR and CVR metrics with clear step-by-step breakdown"
+      },
+      "optimize": {
+        "title": "Optimize Performance",
+        "description": "Discover improvement opportunities and boost your click-through and conversion rates"
+      },
+      "analyze": {
+        "title": "Trend Analysis",
+        "description": "Visualize CTR and CVR trends and compare scenarios for better decisions"
+      },
+      "realtime": {
+        "title": "Real-time Calculations",
+        "description": "Get instant CTR and CVR calculations as you input your data with live updates and visualizations"
+      },
+      "comparison": {
+        "title": "Campaign Comparison",
+        "description": "Compare CTR and CVR across multiple campaigns side by side to identify your best performers"
+      },
+      "forecasting": {
+        "title": "Performance Forecasting",
+        "description": "Predict future clicks and conversions based on historical data and impression scenarios"
+      },
+      "insights": {
+        "title": "Smart Insights",
+        "description": "AI-powered recommendations to improve your ad performance and optimize CTR and CVR"
+      }
+    }
+  }
+}

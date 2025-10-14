@@ -1,38 +1,158 @@
 {
   "page": {
     "title": "CPC Calculator - Calculate Cost Per Click",
-    "description": "Calculate Cost Per Click (CPC) for your advertising campaigns. Essential tool for performance marketing and paid advertising optimization."
+    "description": "Calculate Cost Per Click (CPC) for your marketing campaigns. Essential tool for measuring click costs and ad efficiency."
   },
   "calculator": {
     "title": "CPC Calculator",
-    "description": "Calculate cost per click, total cost, or number of clicks",
+    "description": "Calculate cost per click, total cost, or clicks",
     "fields": {
       "total_cost": {
-        "label": "Total Ad Spend",
-        "description": "To calculate the total cost of your advertising campaign, enter:",
+        "label": "Total Ad Cost",
+        "description": "Calculate total cost of the ad campaign, please enter:",
         "step1": "CPC (Cost Per Click)",
-        "step2": "Number of Clicks",
-        "placeholder": "1000"
+        "step2": "Number of clicks",
+        "placeholder": "5000"
       },
       "cpc": {
         "label": "Cost Per Click (CPC)",
-        "description": "To calculate the cost per click, enter:",
-        "step1": "Total Ad Spend",
-        "step2": "Number of Clicks",
-        "placeholder": "5"
+        "description": "Calculate cost per click, please enter:",
+        "step1": "Total ad cost",
+        "step2": "Number of clicks",
+        "placeholder": "2.50"
       },
       "clicks": {
         "label": "Number of Clicks",
-        "description": "To calculate the number of clicks your campaign received, enter:",
-        "step1": "Total Ad Spend",
+        "description": "Calculate number of clicks from ads, please enter:",
+        "step1": "Total ad cost",
         "step2": "CPC (Cost Per Click)",
-        "placeholder": "1000"
+        "placeholder": "2000"
       }
     },
+    "error_min_fields": "Please fill in at least two fields",
     "buttons": {
       "reset": "Reset",
       "calculate": "Calculate"
+    }
+  },
+  "features": {
+    "title": "Powerful CPC Analysis Features",
+    "description": "Everything you need to measure and optimize your cost per click",
+    "calculate": {
+      "title": "Quick Calculation",
+      "description": "Instantly calculate CPC, total cost, or clicks with our smart calculator"
     },
-    "error_min_fields": "Please fill in at least two fields"
+    "optimize": {
+      "title": "Optimize Costs",
+      "description": "Identify high-performing campaigns and minimize your CPC"
+    },
+    "analyze": {
+      "title": "Track Performance",
+      "description": "Monitor CPC trends and make data-driven click decisions"
+    },
+    "report": {
+      "title": "Generate Insights",
+      "description": "Create comprehensive CPC reports for stakeholder presentations"
+    }
+  },
+  "showcase": {
+    "badge": "How It Works",
+    "title": "Optimize Your Cost Per Click",
+    "description": "Our CPC calculator helps you make smarter click decisions and prove the efficiency of your marketing campaigns",
+    "image_url": "/images/cpc-showcase.png",
+    "image_alt": "CPC Calculator Dashboard",
+    "benefits": [
+      "Calculate precise CPC values in seconds",
+      "Compare click costs across channels",
+      "Forecast clicks based on budget levels",
+      "Make data-driven budget allocation decisions",
+      "Demonstrate marketing efficiency to stakeholders"
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Cost Per Click?",
+    "description": "Start calculating and improving your click costs today with our free tools",
+    "primary_button": "Try More Tools",
+    "secondary_button": "View Documentation",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about CPC calculations and click cost analysis",
+    "items": [
+      {
+        "title": "What is CPC in marketing?",
+        "description": "CPC (Cost Per Click) measures how much you pay for each click on your ads. It's calculated by dividing total ad spend by the number of clicks. Lower CPC means more efficient ad spending."
+      },
+      {
+        "title": "How do you calculate CPC?",
+        "description": "CPC is calculated using the formula: CPC = Total Ad Cost / Number of Clicks. For example, if you spend $5,000 on ads and get 2,000 clicks, your CPC is $2.50 per click."
+      },
+      {
+        "title": "What's a good CPC for marketing campaigns?",
+        "description": "A good CPC varies by industry, competition, and campaign goals. Generally, CPCs between $0.50-$3.00 are common, but this depends on your target audience, keywords, and campaign objectives."
+      },
+      {
+        "title": "Why is CPC important for businesses?",
+        "description": "CPC helps businesses evaluate the efficiency of their ad spending, compare different campaigns and channels, optimize budgets, and make data-driven decisions about where to invest their advertising dollars."
+      },
+      {
+        "title": "What's the difference between CPC and CPM?",
+        "description": "CPC (Cost Per Click) measures cost per click, while CPM (Cost Per Mille) measures cost per 1,000 impressions. CPC is better for measuring engagement, while CPM is better for measuring reach and brand awareness."
+      },
+      {
+        "title": "How can I improve my CPC?",
+        "description": "Improve CPC by targeting more qualified audiences, improving ad relevance scores, optimizing landing pages, using negative keywords, testing different ad creatives, and continuously analyzing and optimizing your campaigns."
+      }
+    ]
+  },
+  "hero": {
+    "badge": "CPC Analysis",
+    "title": "CPC Calculator",
+    "subtitle": "Calculate and optimize your cost per click",
+    "description": "Make data-driven decisions with precise CPC calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  },
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience CPC Analysis Like Never Before",
+    "description": "Interactive features that help you visualize and understand your cost per click in real-time",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right to see before and after effects",
+    "items": {
+      "calculate": {
+        "title": "Quick Calculation",
+        "description": "Instantly calculate CPC metrics with clear step-by-step breakdown"
+      },
+      "optimize": {
+        "title": "Optimize Costs",
+        "description": "Discover improvement opportunities and reduce click costs"
+      },
+      "analyze": {
+        "title": "Trend Analysis",
+        "description": "Visualize CPC trends and compare scenarios for better decisions"
+      },
+      "realtime": {
+        "title": "Real-time Calculations",
+        "description": "Get instant CPC calculations as you input your data with live updates and visualizations"
+      },
+      "comparison": {
+        "title": "Campaign Comparison",
+        "description": "Compare CPC across multiple campaigns side by side to identify your best performers"
+      },
+      "forecasting": {
+        "title": "CPC Forecasting",
+        "description": "Predict future click costs based on historical data and budget scenarios"
+      },
+      "insights": {
+        "title": "Smart Insights",
+        "description": "AI-powered recommendations to improve your marketing efficiency and optimize click costs"
+      }
+    }
   }
 }

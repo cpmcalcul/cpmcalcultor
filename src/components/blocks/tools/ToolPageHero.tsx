@@ -24,9 +24,15 @@ export function ToolPageHero({ namespace, showCTA = false }: ToolPageHeroProps) 
         <div className="max-w-5xl mx-auto text-center">
           {/* Badge */}
           {t.has("badge") && (
-            <Badge className="mb-8 text-sm font-medium bg-gradient-to-r from-primary/10 to-primary/5 text-primary border-primary/20 px-4 py-2 animate-float">
-              {t("badge")}
-            </Badge>
+            <div className="mb-8 flex justify-center">
+              <Badge className="relative text-sm font-semibold bg-gradient-to-r from-primary via-primary/90 to-primary/80 text-white drop-shadow-2xl border-2 border-primary/30 px-6 py-3 rounded-full animate-float shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group overflow-hidden">
+                {/* Shimmer effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                {/* Glow effect */}
+                <div className="absolute inset-0 rounded-full bg-primary/20 blur-sm -z-10 animate-pulse" />
+                <span className="relative z-10">{t("badge")}</span>
+              </Badge>
+            </div>
           )}
 
           {/* Title */}

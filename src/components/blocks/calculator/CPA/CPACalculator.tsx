@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -14,6 +15,8 @@ interface CalculatorValues {
 }
 
 export function CPACalculator() {
+  const t = useTranslations("tools.cpa.calculator");
+  
   const [values, setValues] = useState<CalculatorValues>({
     totalCost: "",
     cpa: "",
@@ -39,7 +42,7 @@ export function CPACalculator() {
     ].filter(Boolean);
 
     if (filledFields.length < 2) {
-      alert("请至少填写两个字段");
+      alert(t("error_min_fields"));
       return;
     }
 
@@ -67,28 +70,28 @@ export function CPACalculator() {
       <CardHeader>
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
-            <CardTitle className="text-3xl font-bold">CPA 计算器</CardTitle>
+            <CardTitle className="text-3xl font-bold">{t("card_title")}</CardTitle>
             <CardDescription className="text-base mt-2">
-              计算每次转化成本、总费用或转化次数
+              {t("card_description")}
             </CardDescription>
           </div>
           <CurrencySelector currency={currency} onCurrencyChange={setCurrency} />
         </div>
       </CardHeader>
       <CardContent className="space-y-8">
-        {/* 总广告费用 */}
+        {/* Total Ad Cost */}
         <div className="space-y-3">
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="totalCost" className="text-lg font-semibold">
-                总广告费用
+                {t("total_cost_label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                计算广告活动的总费用，请输入：
+                {t("total_cost_description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>CPA（每次转化成本）</li>
-                <li>转化次数</li>
+                <li>{t("total_cost_hint_1")}</li>
+                <li>{t("total_cost_hint_2")}</li>
               </ol>
             </div>
             <div className="w-40">
@@ -114,14 +117,14 @@ export function CPACalculator() {
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="cpa" className="text-lg font-semibold">
-                每次转化成本（CPA）
+                {t("cpa_label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                计算每次转化的成本，请输入：
+                {t("cpa_description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>总广告费用</li>
-                <li>转化次数</li>
+                <li>{t("cpa_hint_1")}</li>
+                <li>{t("cpa_hint_2")}</li>
               </ol>
             </div>
             <div className="w-40">
@@ -142,19 +145,19 @@ export function CPACalculator() {
           </div>
         </div>
 
-        {/* 转化次数 */}
+        {/* Conversions */}
         <div className="space-y-3">
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="conversions" className="text-lg font-semibold">
-                转化次数
+                {t("conversions_label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                计算广告带来的转化次数，请输入：
+                {t("conversions_description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>总广告费用</li>
-                <li>CPA（每次转化成本）</li>
+                <li>{t("conversions_hint_1")}</li>
+                <li>{t("conversions_hint_2")}</li>
               </ol>
             </div>
             <div className="w-40">
@@ -170,7 +173,7 @@ export function CPACalculator() {
           </div>
         </div>
 
-        {/* 按钮 */}
+        {/* Buttons */}
         <div className="flex gap-4 pt-4">
           <Button
             onClick={reset}
@@ -178,14 +181,14 @@ export function CPACalculator() {
             size="lg"
             className="flex-1 h-12"
           >
-            重新开始
+            {t("reset_button")}
           </Button>
           <Button
             onClick={calculate}
             size="lg"
             className="flex-1 h-12 bg-orange-600 hover:bg-orange-700"
           >
-            计算
+            {t("calculate_button")}
           </Button>
         </div>
       </CardContent>

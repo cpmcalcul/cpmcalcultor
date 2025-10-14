@@ -1,36 +1,145 @@
 {
   "page": {
-    "title": "CPM Calculator - Calculate Cost Per Mille",
-    "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns with precision. Essential tool for digital marketers and advertisers."
+    "title": "CPA Calculator - Calculate Cost Per Acquisition",
+    "description": "Calculate Cost Per Acquisition (CPA) for your marketing campaigns. Essential tool for measuring campaign efficiency and conversion costs."
+  },
+  "calculator": {
+    "card_title": "CPA Calculator",
+    "card_description": "Calculate cost per acquisition, total cost, or conversions",
+    "total_cost_label": "Total Ad Cost",
+    "total_cost_description": "Calculate total cost of the ad campaign, please enter:",
+    "total_cost_hint_1": "CPA (Cost Per Acquisition)",
+    "total_cost_hint_2": "Number of conversions",
+    "cpa_label": "Cost Per Acquisition (CPA)",
+    "cpa_description": "Calculate cost per conversion, please enter:",
+    "cpa_hint_1": "Total ad cost",
+    "cpa_hint_2": "Number of conversions",
+    "conversions_label": "Number of Conversions",
+    "conversions_description": "Calculate number of conversions from ads, please enter:",
+    "conversions_hint_1": "Total ad cost",
+    "conversions_hint_2": "CPA (Cost Per Acquisition)",
+    "error_min_fields": "Please fill in at least two fields",
+    "reset_button": "Reset",
+    "calculate_button": "Calculate"
+  },
+  "features": {
+    "title": "Powerful CPA Analysis Features",
+    "description": "Everything you need to measure and optimize your cost per acquisition",
+    "calculate": {
+      "title": "Quick Calculation",
+      "description": "Instantly calculate CPA, total cost, or conversions with our smart calculator"
+    },
+    "optimize": {
+      "title": "Optimize Costs",
+      "description": "Identify high-performing campaigns and minimize your CPA"
+    },
+    "analyze": {
+      "title": "Track Performance",
+      "description": "Monitor CPA trends and make data-driven acquisition decisions"
+    },
+    "report": {
+      "title": "Generate Insights",
+      "description": "Create comprehensive CPA reports for stakeholder presentations"
+    }
+  },
+  "showcase": {
+    "badge": "How It Works",
+    "title": "Optimize Your Cost Per Acquisition",
+    "description": "Our CPA calculator helps you make smarter acquisition decisions and prove the efficiency of your marketing campaigns",
+    "image_url": "/images/cpa-showcase.png",
+    "image_alt": "CPA Calculator Dashboard",
+    "benefits": [
+      "Calculate precise CPA values in seconds",
+      "Compare acquisition costs across channels",
+      "Forecast conversions based on budget levels",
+      "Make data-driven budget allocation decisions",
+      "Demonstrate marketing efficiency to stakeholders"
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Cost Per Acquisition?",
+    "description": "Start calculating and improving your acquisition costs today with our free tools",
+    "primary_button": "Try More Tools",
+    "secondary_button": "View Documentation",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "description": "Common questions about CPM calculations and digital advertising metrics",
+    "description": "Common questions about CPA calculations and acquisition cost analysis",
     "items": [
       {
-        "title": "What is CPM in digital advertising?",
-        "description": "CPM (Cost Per Mille) is the cost an advertiser pays for one thousand impressions on their advertisement. It's a standard metric used in digital advertising to measure the cost efficiency of campaigns."
+        "title": "What is CPA in marketing?",
+        "description": "CPA (Cost Per Acquisition) measures how much you spend to acquire one customer or conversion. It's calculated by dividing total ad spend by the number of conversions. Lower CPA means more efficient customer acquisition."
       },
       {
-        "title": "How do you calculate CPM?",
-        "description": "CPM is calculated by dividing the total advertising cost by the number of impressions, then multiplying by 1,000. Formula: CPM = (Total Cost / Impressions) × 1,000"
+        "title": "How do you calculate CPA?",
+        "description": "CPA is calculated using the formula: CPA = Total Ad Cost / Number of Conversions. For example, if you spend $5,000 on ads and get 100 conversions, your CPA is $50 per conversion."
       },
       {
-        "title": "What's a good CPM rate?",
-        "description": "A good CPM varies by industry, platform, and target audience. Generally, CPM rates between $1-$10 are considered reasonable, but premium placements or niche audiences may command higher rates."
+        "title": "What's a good CPA for marketing campaigns?",
+        "description": "A good CPA varies by industry, product value, and profit margins. Generally, your CPA should be lower than your customer lifetime value (CLV). A CPA that's 20-30% of your CLV is often considered healthy."
       },
       {
-        "title": "Why is CPM important for advertisers?",
-        "description": "CPM helps advertisers compare the cost efficiency of different advertising channels, optimize their media buying, and budget effectively for brand awareness campaigns."
+        "title": "Why is CPA important for businesses?",
+        "description": "CPA helps businesses evaluate the efficiency of their customer acquisition, compare different marketing channels, optimize ad spend, and make data-driven decisions about budget allocation and campaign scaling."
       },
       {
-        "title": "What's the difference between CPM and CPC?",
-        "description": "CPM charges for impressions (views), while CPC (Cost Per Click) charges for actual clicks. CPM is better for brand awareness, while CPC is better for performance-driven campaigns."
+        "title": "What's the difference between CPA and CPC?",
+        "description": "CPA (Cost Per Acquisition) measures cost per conversion/customer, while CPC (Cost Per Click) measures cost per click on your ads. CPA is more valuable as it directly relates to business outcomes, while CPC is just an intermediate metric."
       },
       {
-        "title": "How can I improve my CPM rates?",
-        "description": "Improve CPM by targeting more specific audiences, creating higher-quality ad content, choosing optimal ad placements, and testing different ad formats to increase engagement."
+        "title": "How can I improve my CPA?",
+        "description": "Improve CPA by targeting more qualified audiences, optimizing landing pages for conversions, improving ad relevance scores, testing different ad creatives, using retargeting campaigns, and continuously analyzing and optimizing your funnel."
       }
     ]
+  },
+  "hero": {
+    "badge": "CPA Analysis",
+    "title": "CPA Calculator",
+    "subtitle": "Calculate and optimize your cost per acquisition",
+    "description": "Make data-driven decisions with precise CPA calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  },
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience CPA Analysis Like Never Before",
+    "description": "Interactive features that help you visualize and understand your cost per acquisition in real-time",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right to see before and after effects",
+    "items": {
+      "calculate": {
+        "title": "Quick Calculation",
+        "description": "Instantly calculate CPA metrics with clear step-by-step breakdown"
+      },
+      "optimize": {
+        "title": "Optimize Costs",
+        "description": "Discover improvement opportunities and reduce acquisition costs"
+      },
+      "analyze": {
+        "title": "Trend Analysis",
+        "description": "Visualize CPA trends and compare scenarios for better decisions"
+      },
+      "realtime": {
+        "title": "Real-time Calculations",
+        "description": "Get instant CPA calculations as you input your data with live updates and visualizations"
+      },
+      "comparison": {
+        "title": "Campaign Comparison",
+        "description": "Compare CPA across multiple campaigns side by side to identify your best performers"
+      },
+      "forecasting": {
+        "title": "CPA Forecasting",
+        "description": "Predict future acquisition costs based on historical data and budget scenarios"
+      },
+      "insights": {
+        "title": "Smart Insights",
+        "description": "AI-powered recommendations to improve your marketing efficiency and optimize acquisition costs"
+      }
+    }
   }
 }

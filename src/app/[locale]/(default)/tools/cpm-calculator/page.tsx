@@ -1,34 +1,89 @@
 import { useTranslations } from "next-intl";
 import { CPMCalculator } from "@/components/blocks/calculator/CPM/CPMCalculator";
-import { CPMFeatures } from "@/components/blocks/calculator/CPM/CPMFeatures";
-import { CPMFaq } from "@/components/blocks/calculator/CPM/CPMFaq";
+import { ToolFeatures } from "@/components/blocks/tools/ToolFeatures";
+import { ToolShowcase } from "@/components/blocks/tools/ToolShowcase";
+import { ToolFAQ } from "@/components/blocks/tools/ToolFAQ";
+import { ToolCTA } from "@/components/blocks/tools/ToolCTA";
+import { ToolFeatures2 } from "@/components/blocks/tools/ToolFeatures2";
+import { ToolPageHero } from "@/components/blocks/tools/ToolPageHero";
 
 export default function CPMCalculatorPage() {
   const t = useTranslations("tools.cpm.page");
 
+  // Define features with icon names (not components)
+  const features = [
+    {
+      icon: "calculator" as const,
+      key: "calculate",
+      color: "text-blue-600",
+    },
+    {
+      icon: "target" as const,
+      key: "optimize",
+      color: "text-green-600",
+    },
+    {
+      icon: "trending" as const,
+      key: "analyze",
+      color: "text-purple-600",
+    },
+    {
+      icon: "chart" as const,
+      key: "report",
+      color: "text-orange-600",
+    },
+  ];
+
+  // Items for ToolFeatures2 (must include before/after images)
+  const features2 = [
+    {
+      icon: "calculator" as const,
+      key: "calculate",
+      beforeImage: "/imgs/features/5.png",
+      afterImage: "/imgs/features/6.png",
+    },
+    {
+      icon: "target" as const,
+      key: "optimize",
+      beforeImage: "/imgs/features/2.png",
+      afterImage: "/imgs/features/2-after.png",
+    },
+    {
+      icon: "trending" as const,
+      key: "analyze",
+      beforeImage: "/imgs/features/3.png",
+      afterImage: "/imgs/features/3-after.png",
+    },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-muted/50 to-background">
       <div className="container mx-auto px-4 py-8">
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-            {t("title")}
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t("description")}
-          </p>
-        </div>
+        {/* Hero Section */}
+        <ToolPageHero namespace="tools.cpm.hero" />
         
-        <div className="max-w-4xl mx-auto">
+        {/* Calculator Section */}
+        <div className="max-w-4xl mx-auto mb-16">
           <CPMCalculator />
         </div>
-        
-        <div className="mt-16">
-          <CPMFeatures />
-        </div>
-        
-        <div className="mt-16">
-          <CPMFaq />
-        </div>
+
+        {/* Features Section */}
+        <ToolFeatures namespace="tools.cpm.features" features={features} />
+
+        {/* Showcase Section */}
+        <ToolShowcase namespace="tools.cpm.showcase" />
+
+        {/* Features2 Section */}
+        <ToolFeatures2 namespace="tools.cpm.features2" items={features2} />
+
+
+
+
+        {/* FAQ Section */}
+        <ToolFAQ namespace="tools.cpm.faq" />
+
+        {/* CTA Section */}
+        <ToolCTA namespace="tools.cpm.cta" />
       </div>
     </div>
   );

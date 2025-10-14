@@ -20,8 +20,9 @@ interface CVRValues {
 }
 
 export function CTRCalculator() {
-  const t = useTranslations("calculator.ctr");
-  const tButtons = useTranslations("calculator.buttons");
+  const t = useTranslations("tools.ctr.calculator.ctr");
+  const tCvr = useTranslations("tools.ctr.calculator.cvr");
+  const tButtons = useTranslations("tools.ctr.calculator.buttons");
 
   const [ctrValues, setCtrValues] = useState<CTRValues>({
     clicks: "",
@@ -92,14 +93,14 @@ export function CTRCalculator() {
     ].filter(Boolean);
 
     if (filledFields.length < 2) {
-      alert(t("error_min_fields"));
+      alert(tCvr("error_min_fields"));
       return;
     }
 
     if (!cvrValues.cvr) {
       // Calculate CVR: CVR = (Conversions / Clicks) × 100
       if (clicks === 0) {
-        alert(t("error_zero_clicks"));
+        alert(tCvr("error_zero_clicks"));
         return;
       }
       const newCvr = (conversions / clicks) * 100;
@@ -238,9 +239,9 @@ export function CTRCalculator() {
       {/* CVR Calculator */}
       <Card className="w-full max-w-3xl mx-auto shadow-lg">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold">{t("cvr_card_title")}</CardTitle>
+          <CardTitle className="text-3xl font-bold">{tCvr("card_title")}</CardTitle>
           <CardDescription className="text-base mt-2">
-            {t("cvr_card_description")}
+            {tCvr("card_description")}
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-8">
@@ -249,10 +250,10 @@ export function CTRCalculator() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="conversions" className="text-lg font-semibold">
-                  {t("conversions_label")}
+                  {tCvr("conversions_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  {t("conversions_description")}
+                  {tCvr("conversions_description")}
                 </p>
               </div>
               <div className="w-40">
@@ -273,10 +274,10 @@ export function CTRCalculator() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="clicks-cvr" className="text-lg font-semibold">
-                  {t("cvr_clicks_label")}
+                  {tCvr("cvr_clicks_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  {t("cvr_clicks_description")}
+                  {tCvr("cvr_clicks_description")}
                 </p>
               </div>
               <div className="w-40">
@@ -297,13 +298,13 @@ export function CTRCalculator() {
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 space-y-2">
                 <Label htmlFor="cvr" className="text-lg font-semibold">
-                  {t("cvr_label")}
+                  {tCvr("cvr_label")}
                 </Label>
                 <p className="text-sm text-muted-foreground">
-                  {t("cvr_description")}
+                  {tCvr("cvr_description")}
                 </p>
                 <p className="text-xs text-muted-foreground mt-2">
-                  {t("cvr_formula")}
+                  {tCvr("cvr_formula")}
                 </p>
               </div>
               <div className="w-40">

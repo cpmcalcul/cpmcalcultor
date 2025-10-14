@@ -1,0 +1,147 @@
+{
+  "page": {
+    "title": "Youtube CPM Calculator - Calculate Return on Investment",
+    "description": "Calculate Return on Investment (Youtube CPM) for your marketing campaigns. Essential tool for measuring campaign profitability and marketing efficiency."
+  },
+  "calculator": {
+    "card_title": "Youtube CPM Calculator",
+    "card_description": "Calculate return on investment, revenue, or cost",
+    "revenue_label": "Total Revenue",
+    "revenue_description": "Total revenue generated from the campaign, please enter:",
+    "revenue_hint_1": "Investment cost",
+    "revenue_hint_2": "Return on Investment (Youtube CPM)",
+    "cost_label": "Investment Cost",
+    "cost_description": "Total investment cost for the campaign, please enter:",
+    "cost_hint_1": "Total revenue",
+    "cost_hint_2": "Return on Investment (Youtube CPM)",
+    "Youtube CPM_label": "Return on Investment (Youtube CPM)",
+    "Youtube CPM_description": "Calculate return on investment (percentage), please enter:",
+    "Youtube CPM_hint_1": "Total revenue",
+    "Youtube CPM_hint_2": "Investment cost",
+    "Youtube CPM_formula": "Formula: Youtube CPM = ((Revenue - Cost) / Cost) × 100%",
+    "error_min_fields": "Please fill in at least two fields",
+    "error_zero_cost": "Investment cost cannot be 0",
+    "reset_button": "Reset",
+    "calculate_button": "Calculate"
+  },
+  "features": {
+    "title": "Powerful Youtube CPM Analysis Features",
+    "description": "Everything you need to measure and optimize your marketing investment returns",
+    "calculate": {
+      "title": "Quick Calculation",
+      "description": "Instantly calculate Youtube CPM, revenue, or cost with our smart calculator"
+    },
+    "optimize": {
+      "title": "Optimize Returns",
+      "description": "Identify high-performing campaigns and maximize your Youtube CPM"
+    },
+    "analyze": {
+      "title": "Track Performance",
+      "description": "Monitor Youtube CPM trends and make data-driven investment decisions"
+    },
+    "report": {
+      "title": "Generate Insights",
+      "description": "Create comprehensive Youtube CPM reports for stakeholder presentations"
+    }
+  },
+  "showcase": {
+    "badge": "How It Works",
+    "title": "Maximize Your Marketing Youtube CPM",
+    "description": "Our Youtube CPM calculator helps you make smarter investment decisions and prove the value of your marketing campaigns",
+    "image_url": "/images/Youtube CPM-showcase.png",
+    "image_alt": "Youtube CPM Calculator Dashboard",
+    "benefits": [
+      "Calculate precise Youtube CPM percentages in seconds",
+      "Compare campaign performance across channels",
+      "Forecast revenue based on investment levels",
+      "Make data-driven budget allocation decisions",
+      "Demonstrate marketing value to stakeholders"
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Marketing Youtube CPM?",
+    "description": "Start calculating and improving your return on investment today with our free tools",
+    "primary_button": "Try More Tools",
+    "secondary_button": "View Documentation",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about Youtube CPM calculations and investment analysis",
+    "items": [
+      {
+        "title": "What is Youtube CPM in marketing?",
+        "description": "Youtube CPM (Return on Investment) measures the profitability of your marketing investments by comparing revenue generated to costs incurred. A positive Youtube CPM means you're earning more than you're spending."
+      },
+      {
+        "title": "How do you calculate Youtube CPM?",
+        "description": "Youtube CPM is calculated using the formula: Youtube CPM = ((Revenue - Cost) / Cost) × 100%. For example, if you spend $5,000 and generate $10,000 in revenue, your Youtube CPM is 100%."
+      },
+      {
+        "title": "What's a good Youtube CPM for marketing campaigns?",
+        "description": "A good Youtube CPM varies by industry and campaign type. Generally, a 5:1 ratio (500% Youtube CPM) is considered strong, meaning for every $1 spent, you earn $5 back. However, acceptable Youtube CPM depends on your business goals and profit margins."
+      },
+      {
+        "title": "Why is Youtube CPM important for businesses?",
+        "description": "Youtube CPM helps businesses evaluate the effectiveness of their marketing investments, compare different campaigns, allocate budgets efficiently, and make data-driven decisions about future marketing strategies."
+      },
+      {
+        "title": "What's the difference between Youtube CPM and ROAS?",
+        "description": "Youtube CPM measures overall profitability by considering all costs and profits, while ROAS (Return on Ad Spend) focuses specifically on revenue generated per dollar spent on advertising. ROAS is a subset of Youtube CPM focused on ad spending."
+      },
+      {
+        "title": "How can I improve my marketing Youtube CPM?",
+        "description": "Improve Youtube CPM by targeting more qualified audiences, optimizing conversion rates, reducing acquisition costs, improving customer lifetime value, testing different channels, and continuously analyzing performance data."
+      }
+    ]
+  },
+  "hero": {
+    "badge": "Youtube CPM Analysis",
+    "title": "Youtube CPM Calculator",
+    "subtitle": "Calculate and optimize your marketing return on investment",
+    "description": "Make data-driven decisions with precise Youtube CPM calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  },
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience Youtube CPM Analysis Like Never Before",
+    "description": "Interactive features that help you visualize and understand your marketing Youtube CPM in real-time",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right to see before and after effects",
+    "items": {
+      "calculate": {
+        "title": "Quick Calculation",
+        "description": "Instantly calculate Youtube CPM metrics with clear step-by-step breakdown"
+      },
+      "optimize": {
+        "title": "Optimize Returns",
+        "description": "Discover improvement opportunities and reduce costs to boost Youtube CPM"
+      },
+      "analyze": {
+        "title": "Trend Analysis",
+        "description": "Visualize Youtube CPM trends and compare scenarios for better decisions"
+      },
+      "realtime": {
+        "title": "Real-time Calculations",
+        "description": "Get instant Youtube CPM calculations as you input your data with live updates and visualizations"
+      },
+      "comparison": {
+        "title": "Campaign Comparison",
+        "description": "Compare Youtube CPM across multiple campaigns side by side to identify your best performers"
+      },
+      "forecasting": {
+        "title": "Youtube CPM Forecasting",
+        "description": "Predict future returns based on historical data and investment scenarios"
+      },
+      "insights": {
+        "title": "Smart Insights",
+        "description": "AI-powered recommendations to improve your marketing Youtube CPM and optimize spending"
+      }
+    }
+  }
+}

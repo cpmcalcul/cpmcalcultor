@@ -1,7 +1,7 @@
 {
   "page": {
-    "title": "CPC计算器 - 计算每次点击成本",
-    "description": "计算广告活动的每次点击成本（CPC）。效果营销和付费广告优化的必备工具。"
+    "title": "CPC 计算器 - 计算每次点击成本",
+    "description": "计算营销活动的每次点击成本 (CPC)。衡量点击成本和广告效率的必备工具。"
   },
   "calculator": {
     "title": "CPC 计算器",
@@ -12,27 +12,147 @@
         "description": "计算广告活动的总费用，请输入：",
         "step1": "CPC（每次点击成本）",
         "step2": "点击次数",
-        "placeholder": "1000"
+        "placeholder": "5000"
       },
       "cpc": {
         "label": "每次点击成本（CPC）",
         "description": "计算每次点击的成本，请输入：",
         "step1": "总广告费用",
         "step2": "点击次数",
-        "placeholder": "5"
+        "placeholder": "2.50"
       },
       "clicks": {
         "label": "点击次数",
-        "description": "计算广告获得的点击次数，请输入：",
+        "description": "计算广告带来的点击次数，请输入：",
         "step1": "总广告费用",
         "step2": "CPC（每次点击成本）",
-        "placeholder": "1000"
+        "placeholder": "2000"
       }
     },
+    "error_min_fields": "请至少填写两个字段",
     "buttons": {
       "reset": "重新开始",
       "calculate": "计算"
+    }
+  },
+  "features": {
+    "title": "强大的 CPC 分析功能",
+    "description": "您需要的一切工具来衡量和优化每次点击成本",
+    "calculate": {
+      "title": "快速计算",
+      "description": "使用智能计算器即时计算 CPC、总费用或点击次数"
     },
-    "error_min_fields": "请至少填写两个字段"
+    "optimize": {
+      "title": "优化成本",
+      "description": "识别高绩效营销活动并最小化您的 CPC"
+    },
+    "analyze": {
+      "title": "跟踪绩效",
+      "description": "监控 CPC 趋势并做出数据驱动的点击决策"
+    },
+    "report": {
+      "title": "生成洞察",
+      "description": "创建全面的 CPC 报告用于利益相关者演示"
+    }
+  },
+  "showcase": {
+    "badge": "工作原理",
+    "title": "优化您的每次点击成本",
+    "description": "我们的 CPC 计算器帮助您做出更明智的点击决策并证明营销活动的效率",
+    "image_url": "/images/cpc-showcase.png",
+    "image_alt": "CPC 计算器仪表板",
+    "benefits": [
+      "在几秒钟内计算精确的 CPC 数值",
+      "比较跨渠道的点击成本",
+      "基于预算水平预测点击次数",
+      "做出数据驱动的预算分配决策",
+      "向利益相关者展示营销效率"
+    ]
+  },
+  "cta": {
+    "title": "准备好优化您的每次点击成本了吗？",
+    "description": "立即开始使用我们的免费工具计算和改善您的点击成本",
+    "primary_button": "尝试更多工具",
+    "secondary_button": "查看文档",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 CPC 计算和点击成本分析的常见问题",
+    "items": [
+      {
+        "title": "什么是营销中的 CPC?",
+        "description": "CPC(每次点击成本)衡量您为广告的每次点击支付多少费用。它通过总广告支出除以点击次数来计算。较低的 CPC 意味着更高效的广告支出。"
+      },
+      {
+        "title": "如何计算 CPC?",
+        "description": "CPC 使用公式计算: CPC = 总广告费用 / 点击次数。例如,如果您在广告上花费 5,000 美元并获得 2,000 次点击,您的 CPC 是每次点击 2.50 美元。"
+      },
+      {
+        "title": "营销活动的良好 CPC 是多少?",
+        "description": "良好的 CPC 因行业、竞争和活动目标而异。一般来说,CPC 在 0.50-3.00 美元之间是常见的,但这取决于您的目标受众、关键词和活动目标。"
+      },
+      {
+        "title": "为什么 CPC 对企业很重要?",
+        "description": "CPC 帮助企业评估广告支出的效率,比较不同的活动和渠道,优化预算,并就广告投资做出数据驱动的决策。"
+      },
+      {
+        "title": "CPC 和 CPM 有什么区别?",
+        "description": "CPC(每次点击成本)衡量每次点击的成本,而 CPM(每千次展示成本)衡量每 1,000 次展示的成本。CPC 更适合衡量参与度,而 CPM 更适合衡量覆盖范围和品牌知名度。"
+      },
+      {
+        "title": "如何提高营销 CPC?",
+        "description": "通过定位更合格的受众、提高广告相关性分数、优化着陆页、使用否定关键词、测试不同的广告创意以及持续分析和优化您的活动来提高 CPC。"
+      }
+    ]
+  },
+  "hero": {
+    "badge": "CPC 分析",
+    "title": "CPC 计算器",
+    "subtitle": "计算和优化您的每次点击成本",
+    "description": "通过精确的 CPC 计算做出数据驱动的决策",
+    "cta_primary": "开始计算",
+    "cta_secondary": "了解更多"
+  },
+  "features2": {
+    "label": "高级功能",
+    "title": "前所未有的 CPC 分析体验",
+    "description": "交互式功能帮助您实时可视化和理解每次点击成本",
+    "hover_tip": "点击查看对比",
+    "slider_before_alt": "优化前",
+    "slider_after_alt": "优化后",
+    "slider_hover_title": "拖动比较",
+    "slider_hover_description": "左右拖动滑块查看前后效果对比",
+    "items": {
+      "calculate": {
+        "title": "快速计算",
+        "description": "即时计算 CPC 指标，清晰的分步分解"
+      },
+      "optimize": {
+        "title": "优化成本",
+        "description": "发现改进机会并降低点击成本"
+      },
+      "analyze": {
+        "title": "趋势分析",
+        "description": "可视化 CPC 趋势并比较场景以做出更好的决策"
+      },
+      "realtime": {
+        "title": "实时计算",
+        "description": "输入数据即可获得即时 CPC 计算，实时更新和可视化展示"
+      },
+      "comparison": {
+        "title": "活动对比",
+        "description": "并排比较多个活动的 CPC，识别表现最佳的营销活动"
+      },
+      "forecasting": {
+        "title": "CPC 预测",
+        "description": "基于历史数据和预算场景预测未来点击成本"
+      },
+      "insights": {
+        "title": "智能洞察",
+        "description": "AI 驱动的建议帮助您提高营销效率并优化点击成本"
+      }
+    }
   }
 }

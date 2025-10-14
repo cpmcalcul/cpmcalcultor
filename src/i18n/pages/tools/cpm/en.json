@@ -1,36 +1,147 @@
 {
   "page": {
-    "title": "CPM Calculator - Calculate Cost Per Mille",
-    "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns with precision. Essential tool for digital marketers and advertisers."
+    "title": "CPM Calculator - Calculate Return on Investment",
+    "description": "Calculate Return on Investment (CPM) for your marketing campaigns. Essential tool for measuring campaign profitability and marketing efficiency."
+  },
+  "calculator": {
+    "card_title": "CPM Calculator",
+    "card_description": "Calculate return on investment, revenue, or cost",
+    "revenue_label": "Total Revenue",
+    "revenue_description": "Total revenue generated from the campaign, please enter:",
+    "revenue_hint_1": "Investment cost",
+    "revenue_hint_2": "Return on Investment (CPM)",
+    "cost_label": "Investment Cost",
+    "cost_description": "Total investment cost for the campaign, please enter:",
+    "cost_hint_1": "Total revenue",
+    "cost_hint_2": "Return on Investment (CPM)",
+    "CPM_label": "Return on Investment (CPM)",
+    "CPM_description": "Calculate return on investment (percentage), please enter:",
+    "CPM_hint_1": "Total revenue",
+    "CPM_hint_2": "Investment cost",
+    "CPM_formula": "Formula: CPM = ((Revenue - Cost) / Cost) × 100%",
+    "error_min_fields": "Please fill in at least two fields",
+    "error_zero_cost": "Investment cost cannot be 0",
+    "reset_button": "Reset",
+    "calculate_button": "Calculate"
+  },
+  "features": {
+    "title": "Powerful CPM Analysis Features",
+    "description": "Everything you need to measure and optimize your marketing investment returns",
+    "calculate": {
+      "title": "Quick Calculation",
+      "description": "Instantly calculate CPM, revenue, or cost with our smart calculator"
+    },
+    "optimize": {
+      "title": "Optimize Returns",
+      "description": "Identify high-performing campaigns and maximize your CPM"
+    },
+    "analyze": {
+      "title": "Track Performance",
+      "description": "Monitor CPM trends and make data-driven investment decisions"
+    },
+    "report": {
+      "title": "Generate Insights",
+      "description": "Create comprehensive CPM reports for stakeholder presentations"
+    }
+  },
+  "showcase": {
+    "badge": "How It Works",
+    "title": "Maximize Your Marketing CPM",
+    "description": "Our CPM calculator helps you make smarter investment decisions and prove the value of your marketing campaigns",
+    "image_url": "/images/CPM-showcase.png",
+    "image_alt": "CPM Calculator Dashboard",
+    "benefits": [
+      "Calculate precise CPM percentages in seconds",
+      "Compare campaign performance across channels",
+      "Forecast revenue based on investment levels",
+      "Make data-driven budget allocation decisions",
+      "Demonstrate marketing value to stakeholders"
+    ]
+  },
+  "cta": {
+    "title": "Ready to Optimize Your Marketing CPM?",
+    "description": "Start calculating and improving your return on investment today with our free tools",
+    "primary_button": "Try More Tools",
+    "secondary_button": "View Documentation",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "description": "Common questions about CPM calculations and digital advertising metrics",
+    "description": "Common questions about CPM calculations and investment analysis",
     "items": [
       {
-        "title": "What is CPM in digital advertising?",
-        "description": "CPM (Cost Per Mille) is the cost an advertiser pays for one thousand impressions on their advertisement. It's a standard metric used in digital advertising to measure the cost efficiency of campaigns."
+        "title": "What is CPM in marketing?",
+        "description": "CPM (Return on Investment) measures the profitability of your marketing investments by comparing revenue generated to costs incurred. A positive CPM means you're earning more than you're spending."
       },
       {
         "title": "How do you calculate CPM?",
-        "description": "CPM is calculated by dividing the total advertising cost by the number of impressions, then multiplying by 1,000. Formula: CPM = (Total Cost / Impressions) × 1,000"
+        "description": "CPM is calculated using the formula: CPM = ((Revenue - Cost) / Cost) × 100%. For example, if you spend $5,000 and generate $10,000 in revenue, your CPM is 100%."
       },
       {
-        "title": "What's a good CPM rate?",
-        "description": "A good CPM varies by industry, platform, and target audience. Generally, CPM rates between $1-$10 are considered reasonable, but premium placements or niche audiences may command higher rates."
+        "title": "What's a good CPM for marketing campaigns?",
+        "description": "A good CPM varies by industry and campaign type. Generally, a 5:1 ratio (500% CPM) is considered strong, meaning for every $1 spent, you earn $5 back. However, acceptable CPM depends on your business goals and profit margins."
       },
       {
-        "title": "Why is CPM important for advertisers?",
-        "description": "CPM helps advertisers compare the cost efficiency of different advertising channels, optimize their media buying, and budget effectively for brand awareness campaigns."
+        "title": "Why is CPM important for businesses?",
+        "description": "CPM helps businesses evaluate the effectiveness of their marketing investments, compare different campaigns, allocate budgets efficiently, and make data-driven decisions about future marketing strategies."
       },
       {
-        "title": "What's the difference between CPM and CPC?",
-        "description": "CPM charges for impressions (views), while CPC (Cost Per Click) charges for actual clicks. CPM is better for brand awareness, while CPC is better for performance-driven campaigns."
+        "title": "What's the difference between CPM and ROAS?",
+        "description": "CPM measures overall profitability by considering all costs and profits, while ROAS (Return on Ad Spend) focuses specifically on revenue generated per dollar spent on advertising. ROAS is a subset of CPM focused on ad spending."
       },
       {
-        "title": "How can I improve my CPM rates?",
-        "description": "Improve CPM by targeting more specific audiences, creating higher-quality ad content, choosing optimal ad placements, and testing different ad formats to increase engagement."
+        "title": "How can I improve my marketing CPM?",
+        "description": "Improve CPM by targeting more qualified audiences, optimizing conversion rates, reducing acquisition costs, improving customer lifetime value, testing different channels, and continuously analyzing performance data."
       }
     ]
+  },
+  "hero": {
+    "badge": "CPM Analysis",
+    "title": "CPM Calculator",
+    "subtitle": "Calculate and optimize your marketing return on investment",
+    "description": "Make data-driven decisions with precise CPM calculations",
+    "cta_primary": "Start Calculating",
+    "cta_secondary": "Learn More"
+  },
+  "features2": {
+    "label": "Advanced Features",
+    "title": "Experience CPM Analysis Like Never Before",
+    "description": "Interactive features that help you visualize and understand your marketing CPM in real-time",
+    "hover_tip": "Click to see the comparison",
+    "slider_before_alt": "Before optimization",
+    "slider_after_alt": "After optimization",
+    "slider_hover_title": "Drag to Compare",
+    "slider_hover_description": "Drag the slider left and right to see before and after effects",
+    "items": {
+      "calculate": {
+        "title": "Quick Calculation",
+        "description": "Instantly calculate CPM metrics with clear step-by-step breakdown"
+      },
+      "optimize": {
+        "title": "Optimize Returns",
+        "description": "Discover improvement opportunities and reduce costs to boost CPM"
+      },
+      "analyze": {
+        "title": "Trend Analysis",
+        "description": "Visualize CPM trends and compare scenarios for better decisions"
+      },
+      "realtime": {
+        "title": "Real-time Calculations",
+        "description": "Get instant CPM calculations as you input your data with live updates and visualizations"
+      },
+      "comparison": {
+        "title": "Campaign Comparison",
+        "description": "Compare CPM across multiple campaigns side by side to identify your best performers"
+      },
+      "forecasting": {
+        "title": "CPM Forecasting",
+        "description": "Predict future returns based on historical data and investment scenarios"
+      },
+      "insights": {
+        "title": "Smart Insights",
+        "description": "AI-powered recommendations to improve your marketing CPM and optimize spending"
+      }
+    }
   }
 }

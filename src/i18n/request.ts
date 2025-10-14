@@ -35,7 +35,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
       const toolsCpmMessages = (await import(`./pages/tools/cpm/${locale.toLowerCase()}.json`)).default;
       const toolsCpcMessages = (await import(`./pages/tools/cpc/${locale.toLowerCase()}.json`)).default;
       const toolsRoiMessages = (await import(`./pages/tools/roi/${locale.toLowerCase()}.json`)).default;
-
+      const toolsCtrMessages = (await import(`./pages/tools/ctr/${locale.toLowerCase()}.json`)).default;
+      const toolsCpaMessages = (await import(`./pages/tools/cpa/${locale.toLowerCase()}.json`)).default;
+      const toolsYoutubeCpmMessages = (await import(`./pages/tools/youtubecpm/${locale.toLowerCase()}.json`)).default;
       pageTranslations = {
         pages: {
           discord: discordMessages,
@@ -45,7 +47,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
         tools: {
           cpm: toolsCpmMessages,
           cpc: toolsCpcMessages,
-          roi: toolsRoiMessages
+          roi: toolsRoiMessages,
+          ctr: toolsCtrMessages,
+          "youtubecpm": toolsYoutubeCpmMessages,
+          "cpa": toolsCpaMessages
         }
       };
     } catch (pageError) {
@@ -73,7 +78,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
       const toolsCpmMessages = (await import(`./pages/tools/cpm/en.json`)).default;
       const toolsCpcMessages = (await import(`./pages/tools/cpc/en.json`)).default;
       const toolsRoiMessages = (await import(`./pages/tools/roi/en.json`)).default;
-
+      const toolsCtrMessages = (await import(`./pages/tools/ctr/en.json`)).default;
+      const toolsYoutubeCpmMessages = (await import(`./pages/tools/youtubecpm/en.json`)).default;
+      const toolsCpaMessages = (await import(`./pages/tools/cpa/en.json`)).default;
       fallbackPageTranslations = {
         pages: {
           discord: discordMessages,
@@ -83,7 +90,10 @@ export default getRequestConfig(async ({ requestLocale }) => {
         tools: {
           cpm: toolsCpmMessages,
           cpc: toolsCpcMessages,
-          roi: toolsRoiMessages
+          roi: toolsRoiMessages,
+          ctr: toolsCtrMessages,
+          "youtubecpm": toolsYoutubeCpmMessages,
+          "cpa": toolsCpaMessages
         }
       };
     } catch {

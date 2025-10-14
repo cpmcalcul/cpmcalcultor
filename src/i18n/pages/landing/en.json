@@ -13,11 +13,6 @@
     "nav": {
       "items": [
         {
-          "title": "Calculator",
-          "url": "/#calculator",
-          "icon": "RiCalculatorLine"
-        },
-        {
           "title": "Tools",
           "url": "/tools",
           "icon": "RiToolsLine",
@@ -61,12 +56,7 @@
           ]
         },
         {
-          "title": "Pricing",
-          "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
-        },
-        {
-          "title": "Examples",
+          "title": "Showcase",
           "url": "/showcase",
           "icon": "RiApps2Line"
         },
@@ -95,7 +85,7 @@
     "buttons": [
       {
         "title": "Calculate CPM",
-        "url": "/calculator",
+        "url": "/tools/cpm-calculator",
         "target": "_self",
         "variant": "link",
         "icon": "RiArrowRightUpLine"

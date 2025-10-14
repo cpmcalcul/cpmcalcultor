@@ -1,36 +1,145 @@
 {
   "page": {
-    "title": "CPM Calculator - Calculate Cost Per Mille",
-    "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns with precision. Essential tool for digital marketers and advertisers."
+    "title": "CPA 计算器 - 计算每次转化成本",
+    "description": "计算营销活动的每次转化成本 (CPA)。衡量营销活动效率和转化成本的必备工具。"
+  },
+  "calculator": {
+    "card_title": "CPA 计算器",
+    "card_description": "计算每次转化成本、总费用或转化次数",
+    "total_cost_label": "总广告费用",
+    "total_cost_description": "计算广告活动的总费用，请输入：",
+    "total_cost_hint_1": "CPA（每次转化成本）",
+    "total_cost_hint_2": "转化次数",
+    "cpa_label": "每次转化成本（CPA）",
+    "cpa_description": "计算每次转化的成本，请输入：",
+    "cpa_hint_1": "总广告费用",
+    "cpa_hint_2": "转化次数",
+    "conversions_label": "转化次数",
+    "conversions_description": "计算广告带来的转化次数，请输入：",
+    "conversions_hint_1": "总广告费用",
+    "conversions_hint_2": "CPA（每次转化成本）",
+    "error_min_fields": "请至少填写两个字段",
+    "reset_button": "重新开始",
+    "calculate_button": "计算"
+  },
+  "features": {
+    "title": "强大的 CPA 分析功能",
+    "description": "您需要的一切工具来衡量和优化每次转化成本",
+    "calculate": {
+      "title": "快速计算",
+      "description": "使用智能计算器即时计算 CPA、总费用或转化次数"
+    },
+    "optimize": {
+      "title": "优化成本",
+      "description": "识别高绩效营销活动并最小化您的 CPA"
+    },
+    "analyze": {
+      "title": "跟踪绩效",
+      "description": "监控 CPA 趋势并做出数据驱动的获客决策"
+    },
+    "report": {
+      "title": "生成洞察",
+      "description": "创建全面的 CPA 报告用于利益相关者演示"
+    }
+  },
+  "showcase": {
+    "badge": "工作原理",
+    "title": "优化您的每次转化成本",
+    "description": "我们的 CPA 计算器帮助您做出更明智的获客决策并证明营销活动的效率",
+    "image_url": "/images/cpa-showcase.png",
+    "image_alt": "CPA 计算器仪表板",
+    "benefits": [
+      "在几秒钟内计算精确的 CPA 数值",
+      "比较跨渠道的获客成本",
+      "基于预算水平预测转化次数",
+      "做出数据驱动的预算分配决策",
+      "向利益相关者展示营销效率"
+    ]
+  },
+  "cta": {
+    "title": "准备好优化您的每次转化成本了吗？",
+    "description": "立即开始使用我们的免费工具计算和改善您的获客成本",
+    "primary_button": "尝试更多工具",
+    "secondary_button": "查看文档",
+    "primary_link": "/tools",
+    "secondary_link": "/docs"
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "description": "Common questions about CPM calculations and digital advertising metrics",
+    "title": "常见问题",
+    "description": "关于 CPA 计算和获客成本分析的常见问题",
     "items": [
       {
-        "title": "What is CPM in digital advertising?",
-        "description": "CPM (Cost Per Mille) is the cost an advertiser pays for one thousand impressions on their advertisement. It's a standard metric used in digital advertising to measure the cost efficiency of campaigns."
+        "title": "什么是营销中的 CPA?",
+        "description": "CPA(每次转化成本)衡量您获得一个客户或转化需要花费多少。它通过总广告支出除以转化次数来计算。较低的 CPA 意味着更高效的客户获取。"
       },
       {
-        "title": "How do you calculate CPM?",
-        "description": "CPM is calculated by dividing the total advertising cost by the number of impressions, then multiplying by 1,000. Formula: CPM = (Total Cost / Impressions) × 1,000"
+        "title": "如何计算 CPA?",
+        "description": "CPA 使用公式计算: CPA = 总广告费用 / 转化次数。例如,如果您在广告上花费 5,000 美元并获得 100 次转化,您的 CPA 是每次转化 50 美元。"
       },
       {
-        "title": "What's a good CPM rate?",
-        "description": "A good CPM varies by industry, platform, and target audience. Generally, CPM rates between $1-$10 are considered reasonable, but premium placements or niche audiences may command higher rates."
+        "title": "营销活动的良好 CPA 是多少?",
+        "description": "良好的 CPA 因行业、产品价值和利润率而异。一般来说,您的 CPA 应该低于客户终身价值(CLV)。CPA 是 CLV 的 20-30% 通常被认为是健康的。"
       },
       {
-        "title": "Why is CPM important for advertisers?",
-        "description": "CPM helps advertisers compare the cost efficiency of different advertising channels, optimize their media buying, and budget effectively for brand awareness campaigns."
+        "title": "为什么 CPA 对企业很重要?",
+        "description": "CPA 帮助企业评估客户获取的效率,比较不同的营销渠道,优化广告支出,并就预算分配和活动扩展做出数据驱动的决策。"
       },
       {
-        "title": "What's the difference between CPM and CPC?",
-        "description": "CPM charges for impressions (views), while CPC (Cost Per Click) charges for actual clicks. CPM is better for brand awareness, while CPC is better for performance-driven campaigns."
+        "title": "CPA 和 CPC 有什么区别?",
+        "description": "CPA(每次转化成本)衡量每次转化/客户的成本,而 CPC(每次点击成本)衡量广告点击的成本。CPA 更有价值,因为它直接关系到业务结果,而 CPC 只是一个中间指标。"
       },
       {
-        "title": "How can I improve my CPM rates?",
-        "description": "Improve CPM by targeting more specific audiences, creating higher-quality ad content, choosing optimal ad placements, and testing different ad formats to increase engagement."
+        "title": "如何提高营销 CPA?",
+        "description": "通过定位更合格的受众、优化转化着陆页、提高广告相关性分数、测试不同的广告创意、使用再营销活动以及持续分析和优化您的漏斗来提高 CPA。"
       }
     ]
+  },
+  "hero": {
+    "badge": "CPA 分析",
+    "title": "CPA 计算器",
+    "subtitle": "计算和优化您的每次转化成本",
+    "description": "通过精确的 CPA 计算做出数据驱动的决策",
+    "cta_primary": "开始计算",
+    "cta_secondary": "了解更多"
+  },
+  "features2": {
+    "label": "高级功能",
+    "title": "前所未有的 CPA 分析体验",
+    "description": "交互式功能帮助您实时可视化和理解每次转化成本",
+    "hover_tip": "点击查看对比",
+    "slider_before_alt": "优化前",
+    "slider_after_alt": "优化后",
+    "slider_hover_title": "拖动比较",
+    "slider_hover_description": "左右拖动滑块查看前后效果对比",
+    "items": {
+      "calculate": {
+        "title": "快速计算",
+        "description": "即时计算 CPA 指标，清晰的分步分解"
+      },
+      "optimize": {
+        "title": "优化成本",
+        "description": "发现改进机会并降低获客成本"
+      },
+      "analyze": {
+        "title": "趋势分析",
+        "description": "可视化 CPA 趋势并比较场景以做出更好的决策"
+      },
+      "realtime": {
+        "title": "实时计算",
+        "description": "输入数据即可获得即时 CPA 计算，实时更新和可视化展示"
+      },
+      "comparison": {
+        "title": "活动对比",
+        "description": "并排比较多个活动的 CPA，识别表现最佳的营销活动"
+      },
+      "forecasting": {
+        "title": "CPA 预测",
+        "description": "基于历史数据和预算场景预测未来获客成本"
+      },
+      "insights": {
+        "title": "智能洞察",
+        "description": "AI 驱动的建议帮助您提高营销效率并优化获客成本"
+      }
+    }
   }
 }

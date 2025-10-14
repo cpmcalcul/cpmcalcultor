@@ -33,8 +33,10 @@ import { Menu } from "lucide-react";
 import SignToggle from "@/components/sign/toggle";
 import ThemeToggle from "@/components/theme/toggle";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export default function Header({ header }: { header: HeaderType }) {
+  const router = useRouter();
   if (header.disabled) {
     return null;
   }
@@ -170,6 +172,16 @@ export default function Header({ header }: { header: HeaderType }) {
                             onFocus={(event) =>
                               updateDropdownOffset(i, event.currentTarget)
                             }
+                            onClick={(e) => {
+                              // 点击标题触发跳转到父级链接
+                              if (item.url) {
+                                if (item.target === "_blank") {
+                                  window.open(item.url as string, "_blank");
+                                } else {
+                                  router.push(item.url as any);
+                                }
+                              }
+                            }}
                           >
                             {item.icon && (
                               <Icon
@@ -180,20 +192,20 @@ export default function Header({ header }: { header: HeaderType }) {
                             <span>{item.title}</span>
                           </NavigationMenuTrigger>
                           <NavigationMenuContent className="p-0">
-                            <div className="relative min-w-[320px] max-w-[520px] overflow-hidden rounded-2xl border border-white/10 bg-background/70 p-5 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.65)] backdrop-blur-xl supports-[backdrop-filter]:bg-background/55 dark:border-white/5">
+                            <div className="relative min-w-[320px] max-w-[520px] overflow-hidden rounded-2xl border border-white/10 bg-background/20 p-5 shadow-[0_24px_60px_-32px_rgba(15,23,42,0.65)] backdrop-blur-xl supports-[backdrop-filter]:bg-background/55 dark:border-white/5">
                               <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white/15 via-white/5 to-transparent opacity-80 dark:from-white/10 dark:via-white/5" />
                               <div className="relative grid gap-3 sm:grid-cols-2">
                                 {item.children.map((iitem, ii) => (
                                   <NavigationMenuLink key={ii} asChild>
                                     <Link
                                       className={cn(
-                                        "group relative flex h-full select-none items-start gap-3 rounded-xl border border-white/10 bg-background/50 p-4 text-left transition-all duration-200 ease-out no-underline outline-hidden backdrop-blur",
+                                        "group relative flex h-full select-none items-start gap-3 rounded-xl border border-white/10 bg-background/50 p-4 text-left transition-all duration-200 ease-out no-underline outline-hidden backdrop-blur overflow-hidden",
                                         "hover:-translate-y-1 hover:border-primary/40 hover:bg-primary/10 focus-visible:-translate-y-1 focus-visible:border-primary focus-visible:bg-primary/10 focus-visible:outline-none"
                                       )}
                                       href={iitem.url as any}
                                       target={iitem.target}
                                     >
-                                      <span className="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors duration-200 group-hover:bg-primary group-hover:text-primary-foreground">
+                                      <span className="flex size-10 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors duration-200 group-hover:bg-primary group-hover:text-primary-foreground overflow-hidden">
                                         {iitem.icon ? (
                                           <Icon
                                             name={iitem.icon}
@@ -203,12 +215,12 @@ export default function Header({ header }: { header: HeaderType }) {
                                           <span className="size-5" />
                                         )}
                                       </span>
-                                      <div className="space-y-1">
-                                        <span className="text-sm font-semibold text-foreground transition-colors duration-200 group-hover:text-primary">
+                                      <div className="space-y-1 min-w-0">
+                                        <span className="text-sm font-semibold text-foreground transition-colors duration-200 group-hover:text-primary line-clamp-1 break-words">
                                           {iitem.title}
                                         </span>
                                         {iitem.description && (
-                                          <p className="text-xs leading-snug text-muted-foreground line-clamp-2">
+                                          <p className="text-xs leading-snug text-muted-foreground line-clamp-2 break-words">
                                             {iitem.description}
                                           </p>
                                         )}

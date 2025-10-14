@@ -65,6 +65,7 @@ export function ToolsPagination({
         {/* Previous button */}
         <PaginationItem>
           <PaginationPrevious
+            size="sm"
             onClick={() => currentPage > 1 && onPageChange(currentPage - 1)}
             className={currentPage === 1 ? 'pointer-events-none opacity-50' : 'cursor-pointer'}
           />
@@ -77,8 +78,9 @@ export function ToolsPagination({
               <PaginationEllipsis />
             ) : (
               <PaginationLink
-                onClick={() => onPageChange(page)}
+                onClick={() => onPageChange(page as number)}
                 isActive={currentPage === page}
+                size="sm"
                 className="cursor-pointer"
               >
                 {page}
@@ -90,6 +92,7 @@ export function ToolsPagination({
         {/* Next button */}
         <PaginationItem>
           <PaginationNext
+            size="sm"
             onClick={() => currentPage < totalPages && onPageChange(currentPage + 1)}
             className={
               currentPage === totalPages ? 'pointer-events-none opacity-50' : 'cursor-pointer'
