@@ -14,6 +14,7 @@ export default function Feature2({ section }: { section: SectionType }) {
 
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
@@ -36,6 +37,7 @@ export default function Feature2({ section }: { section: SectionType }) {
 
   const handleItemClick = (index: number) => {
     setActiveIndex(index);
+    setExpandedIndex((prev) => (prev === index ? null : index));
     // 添加点击反馈
     const element = document.getElementById(`feature-item-${index}`);
     if (element) {
@@ -72,7 +74,7 @@ export default function Feature2({ section }: { section: SectionType }) {
                 <div
                   key={i}
                   id={`feature-item-${i}`}
-                  className={`p-4 rounded-lg border cursor-pointer transition-all duration-500 ease-out transform hover:scale-[1.02] ${
+                  className={`group p-4 rounded-lg border cursor-pointer transition-all duration-500 ease-out transform hover:scale-[1.02] overflow-hidden ${
                     activeIndex === i
                       ? "border-primary bg-primary/5 shadow-lg shadow-primary/20"
                       : hoveredIndex === i
@@ -105,6 +107,8 @@ export default function Feature2({ section }: { section: SectionType }) {
                       </div>
                     )}
                     <h3 className={`font-semibold lg:text-lg transition-all duration-300 ${
+                      expandedIndex === i ? "" : "line-clamp-1 group-hover:line-clamp-none"
+                    } ${
                       activeIndex === i ? "text-primary" : hoveredIndex === i ? "text-primary/80" : ""
                     }`}>
                       {item.title}
@@ -116,7 +120,10 @@ export default function Feature2({ section }: { section: SectionType }) {
                       </div>
                     )}
                   </div>
-                  <p className="text-muted-foreground text-sm lg:text-base ml-11 transition-all duration-300">
+                  <p className={`text-muted-foreground text-sm lg:text-base ml-11 transition-all duration-300 ${
+                    expandedIndex === i ? "" : "line-clamp-2 group-hover:line-clamp-none"
+                  }`} aria-expanded={expandedIndex === i}
+                  >
                     {item.description}
                   </p>
                   
