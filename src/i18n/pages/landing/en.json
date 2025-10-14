@@ -801,13 +801,13 @@
               "target": "_self"
             },
             {
-              "title": "Showcases",
-              "url": "/#showcase",
+              "title": "CPC Calculator",
+              "url": "/tools/cpc-calculator",
               "target": "_self"
             },
             {
-              "title": "Pricing",
-              "url": "/#pricing",
+              "title": "ROI Calculator",
+              "url": "/tools/roi-calculator",
               "target": "_self"
             }
           ]
@@ -816,38 +816,38 @@
           "title": "Resources",
           "children": [
             {
-              "title": "Documents",
-              "url": "https://docs.CPM Calculator.ai",
-              "target": "_blank"
+              "title": "Tools",
+              "url": "/tools",
+              "target": "_self"
             },
             {
               "title": "Components",
-              "url": "https://CPM Calculator.ai/components",
-              "target": "_blank"
+              "url": "/docs",
+              "target": "_self"
             },
             {
-              "title": "Templates",
-              "url": "https://CPM Calculator.ai/templates",
-              "target": "_blank"
+              "title": "Community",
+              "url": "/discord",
+              "target": "_self"
             }
           ]
         },
         {
-          "title": "Friends",
+          "title": "Trends Tools",
           "children": [
             {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
+              "title": "YouTube CPM Calculator",
+              "url": "/tools/youtube-cpm-calculator",
               "target": "_blank"
             },
             {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
+              "title": "CTR Calculator",
+              "url": "/tools/ctr-calculator",
               "target": "_blank"
             },
             {
-              "title": "Pagen",
-              "url": "https://pagen.so",
+              "title": "CPA Calculator",
+              "url": "/tools/ctr-calculator",
               "target": "_blank"
             }
           ]
@@ -869,15 +869,15 @@
           "target": "_blank"
         },
         {
-          "title": "Discord",
+          "title": "Marketing community",
           "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
+          "url": "https://discord.gg/WEWMqwb5",
           "target": "_blank"
         },
         {
           "title": "Email",
           "icon": "RiMailLine",
-          "url": "mailto:support@CPM Calculator.codes",
+          "url": "cpmcalcul@gmail.com",
           "target": "_self"
         }
       ]

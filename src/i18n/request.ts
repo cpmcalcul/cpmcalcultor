@@ -33,6 +33,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
       // Tools page translations
       const toolsCpmMessages = (await import(`./pages/tools/cpm/${locale.toLowerCase()}.json`)).default;
+      const toolsRoiMessages = (await import(`./pages/tools/roi/${locale.toLowerCase()}.json`)).default;
 
       pageTranslations = {
         pages: {
@@ -41,7 +42,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
           featuredCreations: featuredCreationsMessages
         },
         tools: {
-          cpm: toolsCpmMessages
+          cpm: toolsCpmMessages,
+          roi: toolsRoiMessages
         }
       };
     } catch (pageError) {
@@ -67,6 +69,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       const glossaryMessages = (await import(`./pages/glossary/en.json`)).default;
       const featuredCreationsMessages = (await import(`./pages/featured-creations/en.json`)).default;
       const toolsCpmMessages = (await import(`./pages/tools/cpm/en.json`)).default;
+      const toolsRoiMessages = (await import(`./pages/tools/roi/en.json`)).default;
 
       fallbackPageTranslations = {
         pages: {
@@ -75,7 +78,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
           featuredCreations: featuredCreationsMessages
         },
         tools: {
-          cpm: toolsCpmMessages
+          cpm: toolsCpmMessages,
+          roi: toolsRoiMessages
         }
       };
     } catch {

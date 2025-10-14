@@ -315,12 +315,27 @@
       "step2": "Number of Actions/Conversions"
     },
     "cpc": {
-      "title": "CPC Calculator", 
+      "title": "CPC Calculator",
       "description": "Calculate Cost Per Click for your advertising campaigns",
       "label": "Cost Per Click (CPC)",
       "calculation_description": "To calculate cost per click, enter:",
       "step1": "Total Ad Spend",
-      "step2": "Number of Clicks"
+      "step2": "Number of Clicks",
+      "card_title": "CPC Calculator",
+      "card_description": "Calculate cost per click, total cost, or number of clicks",
+      "total_cost_label": "Total Ad Spend",
+      "total_cost_description": "To calculate the total cost of your advertising campaign, enter:",
+      "total_cost_step1": "CPC (Cost Per Click)",
+      "total_cost_step2": "Number of Clicks",
+      "cpc_label": "Cost Per Click (CPC)",
+      "cpc_description": "To calculate the cost per click, enter:",
+      "cpc_step1": "Total Ad Spend",
+      "cpc_step2": "Number of Clicks",
+      "clicks_label": "Number of Clicks",
+      "clicks_description": "To calculate the number of clicks your ad received, enter:",
+      "clicks_step1": "Total Ad Spend",
+      "clicks_step2": "CPC (Cost Per Click)",
+      "error_min_fields": "Please fill in at least two fields"
     },
     "ctr": {
       "title": "CTR Calculator",

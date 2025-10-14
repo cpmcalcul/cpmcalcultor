@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -14,6 +15,8 @@ interface CalculatorValues {
 }
 
 export function ROICalculator() {
+  const t = useTranslations("tools.roi.calculator");
+
   const [values, setValues] = useState<CalculatorValues>({
     revenue: "",
     cost: "",
@@ -39,24 +42,24 @@ export function ROICalculator() {
     ].filter(Boolean);
 
     if (filledFields.length < 2) {
-      alert("请至少填写两个字段");
+      alert(t("error_min_fields"));
       return;
     }
 
     if (!values.roi) {
-      // 计算 ROI: ROI = ((Revenue - Cost) / Cost) × 100
+      // Calculate ROI: ROI = ((Revenue - Cost) / Cost) × 100
       if (costValue === 0) {
-        alert("投资成本不能为0");
+        alert(t("error_zero_cost"));
         return;
       }
       const newRoi = ((revenueValue - costValue) / costValue) * 100;
       setValues((prev) => ({ ...prev, roi: newRoi.toFixed(2) }));
     } else if (!values.revenue) {
-      // 计算收入: Revenue = Cost × (ROI / 100 + 1)
+      // Calculate Revenue: Revenue = Cost × (ROI / 100 + 1)
       const newRevenue = costValue * (roiValue / 100 + 1);
       setValues((prev) => ({ ...prev, revenue: newRevenue.toFixed(2) }));
     } else {
-      // 计算成本: Cost = Revenue / (ROI / 100 + 1)
+      // Calculate Cost: Cost = Revenue / (ROI / 100 + 1)
       const newCost = revenueValue / (roiValue / 100 + 1);
       setValues((prev) => ({ ...prev, cost: newCost.toFixed(2) }));
     }
@@ -71,28 +74,28 @@ export function ROICalculator() {
       <CardHeader>
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
-            <CardTitle className="text-3xl font-bold">ROI 计算器</CardTitle>
+            <CardTitle className="text-3xl font-bold">{t("card_title")}</CardTitle>
             <CardDescription className="text-base mt-2">
-              计算投资回报率、收入或成本
+              {t("card_description")}
             </CardDescription>
           </div>
           <CurrencySelector currency={currency} onCurrencyChange={setCurrency} />
         </div>
       </CardHeader>
       <CardContent className="space-y-8">
-        {/* 总收入 */}
+        {/* Total Revenue */}
         <div className="space-y-3">
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="revenue" className="text-lg font-semibold">
-                总收入
+                {t("revenue_label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                广告活动带来的总收入，请输入：
+                {t("revenue_description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>投资成本</li>
-                <li>投资回报率（ROI）</li>
+                <li>{t("revenue_hint_1")}</li>
+                <li>{t("revenue_hint_2")}</li>
               </ol>
             </div>
             <div className="w-40">
@@ -113,19 +116,19 @@ export function ROICalculator() {
           </div>
         </div>
 
-        {/* 投资成本 */}
+        {/* Investment Cost */}
         <div className="space-y-3">
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="cost" className="text-lg font-semibold">
-                投资成本
+                {t("cost_label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                广告活动的总投资成本，请输入：
+                {t("cost_description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>总收入</li>
-                <li>投资回报率（ROI）</li>
+                <li>{t("cost_hint_1")}</li>
+                <li>{t("cost_hint_2")}</li>
               </ol>
             </div>
             <div className="w-40">
@@ -151,17 +154,17 @@ export function ROICalculator() {
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-2">
               <Label htmlFor="roi" className="text-lg font-semibold">
-                投资回报率（ROI）
+                {t("roi_label")}
               </Label>
               <p className="text-sm text-muted-foreground">
-                计算投资回报率（百分比），请输入：
+                {t("roi_description")}
               </p>
               <ol className="text-sm text-muted-foreground list-decimal list-inside space-y-1">
-                <li>总收入</li>
-                <li>投资成本</li>
+                <li>{t("roi_hint_1")}</li>
+                <li>{t("roi_hint_2")}</li>
               </ol>
               <p className="text-xs text-muted-foreground mt-2">
-                公式：ROI = ((收入 - 成本) / 成本) × 100%
+                {t("roi_formula")}
               </p>
             </div>
             <div className="w-40">
@@ -182,7 +185,7 @@ export function ROICalculator() {
           </div>
         </div>
 
-        {/* 按钮 */}
+        {/* Buttons */}
         <div className="flex gap-4 pt-4">
           <Button
             onClick={reset}
@@ -190,14 +193,14 @@ export function ROICalculator() {
             size="lg"
             className="flex-1 h-12"
           >
-            重新开始
+            {t("reset_button")}
           </Button>
           <Button
             onClick={calculate}
             size="lg"
             className="flex-1 h-12 bg-orange-600 hover:bg-orange-700"
           >
-            计算
+            {t("calculate_button")}
           </Button>
         </div>
       </CardContent>

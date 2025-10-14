@@ -1,0 +1,57 @@
+{
+  "page": {
+    "title": "ROI 计算器 - 计算投资回报率",
+    "description": "计算营销活动的投资回报率 (ROI)。衡量营销活动盈利能力和营销效率的必备工具。"
+  },
+  "calculator": {
+    "card_title": "ROI 计算器",
+    "card_description": "计算投资回报率、收入或成本",
+    "revenue_label": "总收入",
+    "revenue_description": "广告活动带来的总收入,请输入:",
+    "revenue_hint_1": "投资成本",
+    "revenue_hint_2": "投资回报率 (ROI)",
+    "cost_label": "投资成本",
+    "cost_description": "广告活动的总投资成本,请输入:",
+    "cost_hint_1": "总收入",
+    "cost_hint_2": "投资回报率 (ROI)",
+    "roi_label": "投资回报率 (ROI)",
+    "roi_description": "计算投资回报率(百分比),请输入:",
+    "roi_hint_1": "总收入",
+    "roi_hint_2": "投资成本",
+    "roi_formula": "公式: ROI = ((收入 - 成本) / 成本) × 100%",
+    "error_min_fields": "请至少填写两个字段",
+    "error_zero_cost": "投资成本不能为 0",
+    "reset_button": "重新开始",
+    "calculate_button": "计算"
+  },
+  "faq": {
+    "title": "常见问题",
+    "description": "关于 ROI 计算和投资分析的常见问题",
+    "items": [
+      {
+        "title": "什么是营销中的 ROI?",
+        "description": "ROI(投资回报率)通过比较产生的收入和发生的成本来衡量营销投资的盈利能力。正的 ROI 意味着你赚的比花的多。"
+      },
+      {
+        "title": "如何计算 ROI?",
+        "description": "ROI 使用公式计算: ROI = ((收入 - 成本) / 成本) × 100%。例如,如果你花费 5,000 美元并产生 10,000 美元的收入,你的 ROI 是 100%。"
+      },
+      {
+        "title": "营销活动的良好 ROI 是多少?",
+        "description": "良好的 ROI 因行业和活动类型而异。一般来说,5:1 的比率(500% ROI)被认为是强劲的,意味着每花费 1 美元,你就能赚回 5 美元。然而,可接受的 ROI 取决于你的业务目标和利润率。"
+      },
+      {
+        "title": "为什么 ROI 对企业很重要?",
+        "description": "ROI 帮助企业评估营销投资的有效性,比较不同的活动,有效分配预算,并就未来的营销策略做出数据驱动的决策。"
+      },
+      {
+        "title": "ROI 和 ROAS 有什么区别?",
+        "description": "ROI 通过考虑所有成本和利润来衡量整体盈利能力,而 ROAS(广告支出回报率)专门关注广告支出每一美元产生的收入。ROAS 是专注于广告支出的 ROI 子集。"
+      },
+      {
+        "title": "如何提高营销 ROI?",
+        "description": "通过定位更合格的受众、优化转化率、降低获取成本、提高客户终身价值、测试不同渠道以及持续分析性能数据来提高 ROI。"
+      }
+    ]
+  }
+}

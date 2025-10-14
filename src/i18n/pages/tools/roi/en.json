@@ -1,0 +1,57 @@
+{
+  "page": {
+    "title": "ROI Calculator - Calculate Return on Investment",
+    "description": "Calculate Return on Investment (ROI) for your marketing campaigns. Essential tool for measuring campaign profitability and marketing efficiency."
+  },
+  "calculator": {
+    "card_title": "ROI Calculator",
+    "card_description": "Calculate return on investment, revenue, or cost",
+    "revenue_label": "Total Revenue",
+    "revenue_description": "Total revenue generated from the campaign, please enter:",
+    "revenue_hint_1": "Investment cost",
+    "revenue_hint_2": "Return on Investment (ROI)",
+    "cost_label": "Investment Cost",
+    "cost_description": "Total investment cost for the campaign, please enter:",
+    "cost_hint_1": "Total revenue",
+    "cost_hint_2": "Return on Investment (ROI)",
+    "roi_label": "Return on Investment (ROI)",
+    "roi_description": "Calculate return on investment (percentage), please enter:",
+    "roi_hint_1": "Total revenue",
+    "roi_hint_2": "Investment cost",
+    "roi_formula": "Formula: ROI = ((Revenue - Cost) / Cost) × 100%",
+    "error_min_fields": "Please fill in at least two fields",
+    "error_zero_cost": "Investment cost cannot be 0",
+    "reset_button": "Reset",
+    "calculate_button": "Calculate"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Common questions about ROI calculations and investment analysis",
+    "items": [
+      {
+        "title": "What is ROI in marketing?",
+        "description": "ROI (Return on Investment) measures the profitability of your marketing investments by comparing revenue generated to costs incurred. A positive ROI means you're earning more than you're spending."
+      },
+      {
+        "title": "How do you calculate ROI?",
+        "description": "ROI is calculated using the formula: ROI = ((Revenue - Cost) / Cost) × 100%. For example, if you spend $5,000 and generate $10,000 in revenue, your ROI is 100%."
+      },
+      {
+        "title": "What's a good ROI for marketing campaigns?",
+        "description": "A good ROI varies by industry and campaign type. Generally, a 5:1 ratio (500% ROI) is considered strong, meaning for every $1 spent, you earn $5 back. However, acceptable ROI depends on your business goals and profit margins."
+      },
+      {
+        "title": "Why is ROI important for businesses?",
+        "description": "ROI helps businesses evaluate the effectiveness of their marketing investments, compare different campaigns, allocate budgets efficiently, and make data-driven decisions about future marketing strategies."
+      },
+      {
+        "title": "What's the difference between ROI and ROAS?",
+        "description": "ROI measures overall profitability by considering all costs and profits, while ROAS (Return on Ad Spend) focuses specifically on revenue generated per dollar spent on advertising. ROAS is a subset of ROI focused on ad spending."
+      },
+      {
+        "title": "How can I improve my marketing ROI?",
+        "description": "Improve ROI by targeting more qualified audiences, optimizing conversion rates, reducing acquisition costs, improving customer lifetime value, testing different channels, and continuously analyzing performance data."
+      }
+    ]
+  }
+}

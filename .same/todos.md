@@ -110,6 +110,70 @@
 
 ---
 
+## 2025-10-14 (Session 5 - ROI Calculator i18n)
+
+### Plan
+
+- [x] Read ROICalculator.tsx and identify all hardcoded Chinese strings
+- [x] Create translation directory `src/i18n/pages/tools/roi/`
+- [x] Create English translation file `src/i18n/pages/tools/roi/en.json`
+- [x] Create Chinese translation file `src/i18n/pages/tools/roi/zh.json`
+- [x] Update `src/i18n/request.ts` to load ROI translations
+- [x] Update ROICalculator component to use `useTranslations` hook
+- [x] Replace all hardcoded strings with translation keys
+
+### Done
+
+- [x] Created complete translation files for ROI calculator (English and Chinese)
+- [x] Updated i18n request configuration to load ROI translations
+- [x] Refactored ROICalculator component to use `tools.roi.calculator` namespace
+- [x] Replaced all UI text with translation keys:
+  - Card title and description
+  - Revenue label, description, and hints
+  - Cost label, description, and hints
+  - ROI label, description, hints, and formula
+  - Button labels (reset and calculate)
+  - Error messages (min fields, zero cost)
+- [x] Updated code comments from Chinese to English
+- [x] Added comprehensive FAQ section in translation files
+
+**Modified Files**:
+
+- [src/i18n/pages/tools/roi/en.json](src/i18n/pages/tools/roi/en.json) - Created English translations
+- [src/i18n/pages/tools/roi/zh.json](src/i18n/pages/tools/roi/zh.json) - Created Chinese translations
+- [src/i18n/request.ts:36](src/i18n/request.ts#L36) - Added ROI translations import
+- [src/i18n/request.ts:46](src/i18n/request.ts#L46) - Added ROI to tools namespace
+- [src/i18n/request.ts:72](src/i18n/request.ts#L72) - Added ROI to fallback translations
+- [src/i18n/request.ts:82](src/i18n/request.ts#L82) - Added ROI to fallback namespace
+- [src/components/blocks/calculator/ROI/ROICalculator.tsx](src/components/blocks/calculator/ROI/ROICalculator.tsx) - Complete i18n refactor
+
+**Key Changes**:
+
+- ✅ Removed all hardcoded Chinese strings from ROICalculator component
+- ✅ Component now supports full English/Chinese language switching
+- ✅ Translation structure follows existing calculator patterns (CPM/CPA/CPC/CTR)
+- ✅ Added comprehensive FAQ content for both languages
+- ✅ Error messages now properly internationalized
+- ✅ Default language is English as requested
+
+**Translation Coverage**:
+
+- Card UI: title, description
+- Revenue field: label, description, 2 hints
+- Cost field: label, description, 2 hints
+- ROI field: label, description, 2 hints, formula
+- Buttons: reset, calculate
+- Errors: min fields, zero cost
+- FAQ: 6 questions with detailed answers
+
+### Next
+
+- [ ] Test ROI calculator in both English and Chinese locales
+- [ ] Consider applying same i18n pattern to remaining calculators (CPA/CPC)
+- [ ] Verify error messages display correctly in both languages
+
+---
+
 ## 2025-10-13 (Session 4 - CTR Calculator i18n)
 
 ### Plan
