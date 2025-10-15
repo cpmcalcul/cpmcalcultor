@@ -32,8 +32,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
       const featuredCreationsMessages = (await import(`./pages/featured-creations/${locale.toLowerCase()}.json`)).default;
 
       // Tools page translations
-      const toolsCpmMessages = (await import(`./pages/tools/cpm/${locale.toLowerCase()}.json`)).default;
-      const toolsCpcMessages = (await import(`./pages/tools/cpc/${locale.toLowerCase()}.json`)).default;
       const toolsRoiMessages = (await import(`./pages/tools/roi/${locale.toLowerCase()}.json`)).default;
 
       pageTranslations = {
@@ -43,8 +41,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
           featuredCreations: featuredCreationsMessages
         },
         tools: {
-          cpm: toolsCpmMessages,
-          cpc: toolsCpcMessages,
           roi: toolsRoiMessages
         }
       };
@@ -70,8 +66,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
       const discordMessages = (await import(`./pages/discord/en.json`)).default;
       const glossaryMessages = (await import(`./pages/glossary/en.json`)).default;
       const featuredCreationsMessages = (await import(`./pages/featured-creations/en.json`)).default;
-      const toolsCpmMessages = (await import(`./pages/tools/cpm/en.json`)).default;
-      const toolsCpcMessages = (await import(`./pages/tools/cpc/en.json`)).default;
       const toolsRoiMessages = (await import(`./pages/tools/roi/en.json`)).default;
 
       fallbackPageTranslations = {
@@ -81,8 +75,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
           featuredCreations: featuredCreationsMessages
         },
         tools: {
-          cpm: toolsCpmMessages,
-          cpc: toolsCpcMessages,
           roi: toolsRoiMessages
         }
       };

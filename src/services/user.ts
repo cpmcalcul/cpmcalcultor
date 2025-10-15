@@ -98,7 +98,7 @@ export async function getUserEmail() {
 }
 
 export async function getUserInfo() {
-  let user_uuid = await getUserUuid();
+  const user_uuid = await getUserUuid();
 
   if (!user_uuid) {
     return;

@@ -24,7 +24,7 @@ export enum CreditsAmount {
 }
 
 export async function getUserCredits(user_uuid: string): Promise<UserCredits> {
-  let user_credits: UserCredits = {
+  const user_credits: UserCredits = {
     left_credits: 0,
   };
 
