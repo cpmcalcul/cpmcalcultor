@@ -3,22 +3,11 @@
   "pages": [
     "index",
     "quickstart",
-    {
-      "title": "Calculators",
-      "pages": [
-        "calculators/cpm-calculator",
-        "calculators/cpc-calculator",
-        "calculators/ctr-calculator",
-        "calculators/roi-calculator",
-        "calculators/youtube-cpm-calculator"
-      ]
-    },
-    {
-      "title": "Reference",
-      "pages": [
-        "reference/cpm-formula"
-      ]
-    },
+    "---Calculators",
+    "calculators",
+    "---Reference",
+    "reference",
+    "---Getting Started",
     "getting-started",
     "features",
     "deployment"
