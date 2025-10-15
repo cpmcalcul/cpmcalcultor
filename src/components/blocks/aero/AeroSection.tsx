@@ -5,7 +5,7 @@ import AeroTabs from "./AeroTabs";
 import AeroContent from "./AeroContent";
 import AeroInput from "./AeroInput";
 import HintsSection from "./HintsSection";
-import VideoBackground from "./VideoBackground";
+import ColorBackground from "./ColorBackground";
 import { useActiveTab } from "@/hooks/useActiveTab";
 
 const AeroSection = () => {
@@ -15,7 +15,7 @@ const AeroSection = () => {
   return (
     <section className="min-h-screen relative overflow-hidden bg-gradient-to-b from-slate-900 via-purple-900 to-slate-900">
       {/* Video Background */}
-      <VideoBackground />
+      <ColorBackground />
       
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 pt-32 pb-16">
