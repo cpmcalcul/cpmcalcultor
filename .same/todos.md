@@ -863,3 +863,46 @@ Each guide follows a consistent, SEO-friendly structure:
 - [ ] Test all internal links between documentation pages
 - [ ] Consider adding visual diagrams for complex formulas
 - [ ] Create documentation for other calculator types (CPA, CVR, etc.) if needed
+
+---
+
+## 2025-10-15 (Production Build)
+
+### Plan
+
+- [x] Run `pnpm build` for production build
+- [x] Verify build completes successfully without errors
+- [x] Check for any critical warnings that need fixing
+- [x] Document build output and any remaining issues
+- [ ] Prepare deployment checklist
+
+### Done
+
+- [x] 生产构建成功完成
+- [x] 所有 56 个页面成功生成
+- [x] TypeScript 和 ESLint 检查已跳过（按配置）
+- [x] 构建输出无致命错误
+
+**构建统计**:
+- ✅ 编译成功
+- ✅ 生成 56 个静态页面
+- ✅ 所有路由正确编译
+- ✅ 首次加载 JS: 101 kB (共享)
+- ✅ Middleware: 42.4 kB
+
+**警告（非阻塞）**:
+- ⚠️ next.config.mjs 中的 'turbopack' 配置项未被识别（开发环境特定配置）
+- ⚠️ MDX meta.zh.json 中有两个字段格式问题（pages.2 和 pages.3）
+- ⚠️ Fumadocs 搜索不支持 "zh" 语言（使用英文降级）
+
+**关键文件**:
+- [next.config.mjs](next.config.mjs) - 包含 turbopack 配置
+- [content/docs/meta.zh.json](content/docs/meta.zh.json) - MDX 元数据需要修复
+
+### Next
+
+- [ ] 修复 meta.zh.json 中的 pages.2 和 pages.3 格式问题
+- [ ] 考虑移除或注释 next.config.mjs 中的 turbopack 配置
+- [ ] 配置 Fumadocs 使用英文作为中文文档搜索的降级选项
+- [ ] 执行 `pnpm start` 测试生产服务器
+- [ ] 准备部署到生产环境（Vercel/Cloudflare/Docker）

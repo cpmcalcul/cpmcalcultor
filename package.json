@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "author": "cpmcalcul",
-  "homepage": "https://cpmcalculator.ai",
+  "homepage": "https://cpmcalculator.site",
   "scripts": {
     "dev": "cross-env NODE_NO_WARNINGS=1 next dev --turbopack",
     "build": "next build",

@@ -1,55 +1,55 @@
-# https://mksaas.com llms.txt
+# https://cpmcalculator.site llms.txt
 
-- [cpm calculator Development](https://mksaas.com/): Create your cpm calculator product quickly with MkSaaS.
-- [SaaS Pricing Plans](https://mksaas.com/pricing): Affordable lifetime SaaS plans with extensive features and support.
-- [MkSaaS Blog](https://mksaas.com/blog): Latest updates and tutorials on building cpm calculator websites.
-- [MkSaaS Documentation](https://mksaas.com/docs): Comprehensive guide for building cpm calculator websites using MkSaaS.
-- [Contact Us](https://mksaas.com/contact): Get in touch for business plan inquiries and support.
-- [Join Our Newsletter](https://mksaas.com/waitlist): Subscribe for updates on product news and features.
-- [MkSaaS Changelog](https://mksaas.com/changelog): Stay updated with MkSaaS product changes and features.
-- [Privacy Policy Overview](https://mksaas.com/privacy): Comprehensive privacy policy detailing data collection and usage.
-- [Terms of Service](https://mksaas.com/terms): Comprehensive terms governing service usage and user responsibilities.
-- [Cookie Policy Overview](https://mksaas.com/cookie): Learn how we use cookies on our website effectively.
-- [User Login Page](https://mksaas.com/auth/login): Login page for returning users to access their accounts.
-- [Account Registration Page](https://mksaas.com/auth/register): Create an account to access MKSaaS services easily.
-- [MkSaaS Features](https://mksaas.com/blog/category/feature): Explore the latest features and updates from MkSaaS.
-- [MkSaaS Blog Updates](https://mksaas.com/blog/category/general): Latest updates and insights on MkSaaS and its features.
-- [MkSaaS Tutorials](https://mksaas.com/blog/category/tutorial): Explore various tutorials and guides on MkSaaS.
-- [MkSaaS FAQ Page](https://mksaas.com/blog/faq): Find answers to common questions about MkSaaS services.
-- [MkSaaS Overview](https://mksaas.com/blog/what-is-mksaas): Comprehensive guide to building cpm calculator websites with MkSaaS.
-- [AI Features Setup](https://mksaas.com/docs/ai): Guide to set up AI features with OpenAI and DeepSeek.
-- [MkSaaS Analytics Guide](https://mksaas.com/docs/analytics): Set up and use analytics tools for MkSaaS websites.
-- [MkSaaS Authentication Guide](https://mksaas.com/docs/auth): Comprehensive guide for setting up authentication in MkSaaS.
-- [Blog Management System](https://mksaas.com/docs/blog): Create and manage multi-language blog posts easily.
-- [MkSaaS UI Components](https://mksaas.com/docs/components): Explore MkSaaS components for UI development and customization.
-- [Avatar Button Configuration](https://mksaas.com/docs/config/avatar): Configure user avatar dropdown menu for quick access.
-- [Footer Menu Configuration](https://mksaas.com/docs/config/footer): Learn to configure footer links for your website.
-- [MkSaaS Configuration Guide](https://mksaas.com/docs/config): Comprehensive guide for configuring your MkSaaS website settings.
-- [Navbar Menu Configuration](https://mksaas.com/docs/config/navbar): Configure website header navigation menus with dropdown options.
-- [Price Plans Configuration](https://mksaas.com/docs/config/price): Explore and configure price plans with translations.
-- [Sidebar Menu Configuration](https://mksaas.com/docs/config/sidebar): Configure dashboard sidebar menus with role-based navigation.
-- [Social Media Configuration](https://mksaas.com/docs/config/social): Manage and configure social media links for your website.
-- [Website Configuration](https://mksaas.com/docs/config/website): Configure core settings for your MkSaaS website easily.
-- [Database Configuration Guide](https://mksaas.com/docs/database): Comprehensive guide on configuring databases with Drizzle ORM.
-- [Cloudflare Deployment Guide](https://mksaas.com/docs/deployment/cloudflare): Guide to deploying projects on Cloudflare platform.
-- [Deploying on Vercel](https://mksaas.com/docs/deployment/vercel): Guide to deploying Next.js projects on Vercel platform.
-- [Documentation Guide](https://mksaas.com/docs/docs): Comprehensive guide for creating and managing documentation.
-- [Email Setup Guide](https://mksaas.com/docs/email): Set up email functionality using Resend and React Email templates.
-- [Environment Variable Setup](https://mksaas.com/docs/env): Guide to configure environment variables for MkSaaS applications.
-- [MkSaaS Font Customization](https://mksaas.com/docs/fonts): Guide to customizing fonts in MkSaaS websites effectively.
-- [Internationalization Setup](https://mksaas.com/docs/i18n): Set up internationalization in Next.js with next-intl easily.
-- [IDE Setup Guide](https://mksaas.com/docs/ide): Set up IDEs like VSCode and Cursor for MkSaaS development.
-- [Customize MkSaaS Images](https://mksaas.com/docs/images): Guide to customize images for your MkSaaS website.
-- [Landing Page Guide](https://mksaas.com/docs/landingpage): Create responsive landing pages with customizable marketing blocks.
-- [Biome Code Quality Guide](https://mksaas.com/docs/lint): Guide for using Biome to ensure code quality in MkSaaS.
-- [MkSaaS Metadata Customization](https://mksaas.com/docs/metadata): Guide to customize metadata for MkSaaS websites effectively.
-- [Newsletter Management Guide](https://mksaas.com/docs/newsletter): Guide to setting up and managing newsletters with Resend.
-- [Custom Pages Guide](https://mksaas.com/docs/pages): Guide to customize and create pages in MkSaaS websites.
-- [Stripe Payment Integration](https://mksaas.com/docs/payment): Guide to integrate Stripe for payments and subscriptions.
-- [MkSaaS Setup Guide](https://mksaas.com/docs/start): Quickly set up and run your MkSaaS directory website.
-- [Cloud Storage Setup](https://mksaas.com/docs/storage): Setup and manage cloud storage for file handling.
-- [MkSaaS Project Structure](https://mksaas.com/docs/structure): Overview of MkSaaS project structure and best practices.
-- [MkSaaS Theme Customization](https://mksaas.com/docs/themes): Guide to customizing themes in MkSaaS websites effectively.
-- [MkSaaS Update Guide](https://mksaas.com/docs/updates): Guide to updating your MkSaaS project effectively and safely.
-- [Custom Pages Guide](https://mksaas.com/docs/pages): Guide to customize and create pages in MkSaaS websites.
-- [AI Features Setup](https://mksaas.com/docs/ai): Guide to set up AI features with OpenAI and DeepSeek.
+- [cpm calculator Development](https://cpmcalculator.site/): Create your cpm calculator product quickly with MkSaaS.
+- [SaaS Pricing Plans](https://cpmcalculator.site/pricing): Affordable lifetime SaaS plans with extensive features and support.
+- [MkSaaS Blog](https://cpmcalculator.site/blog): Latest updates and tutorials on building cpm calculator websites.
+- [MkSaaS Documentation](https://cpmcalculator.site/docs): Comprehensive guide for building cpm calculator websites using MkSaaS.
+- [Contact Us](https://cpmcalculator.site/contact): Get in touch for business plan inquiries and support.
+- [Join Our Newsletter](https://cpmcalculator.site/waitlist): Subscribe for updates on product news and features.
+- [MkSaaS Changelog](https://cpmcalculator.site/changelog): Stay updated with MkSaaS product changes and features.
+- [Privacy Policy Overview](https://cpmcalculator.site/privacy): Comprehensive privacy policy detailing data collection and usage.
+- [Terms of Service](https://cpmcalculator.site/terms): Comprehensive terms governing service usage and user responsibilities.
+- [Cookie Policy Overview](https://cpmcalculator.site/cookie): Learn how we use cookies on our website effectively.
+- [User Login Page](https://cpmcalculator.site/auth/login): Login page for returning users to access their accounts.
+- [Account Registration Page](https://cpmcalculator.site/auth/register): Create an account to access MKSaaS services easily.
+- [MkSaaS Features](https://cpmcalculator.site/blog/category/feature): Explore the latest features and updates from MkSaaS.
+- [MkSaaS Blog Updates](https://cpmcalculator.site/blog/category/general): Latest updates and insights on MkSaaS and its features.
+- [MkSaaS Tutorials](https://cpmcalculator.site/blog/category/tutorial): Explore various tutorials and guides on MkSaaS.
+- [MkSaaS FAQ Page](https://cpmcalculator.site/blog/faq): Find answers to common questions about MkSaaS services.
+- [MkSaaS Overview](https://cpmcalculator.site/blog/what-is-mksaas): Comprehensive guide to building cpm calculator websites with MkSaaS.
+- [AI Features Setup](https://cpmcalculator.site/docs/ai): Guide to set up AI features with OpenAI and DeepSeek.
+- [MkSaaS Analytics Guide](https://cpmcalculator.site/docs/analytics): Set up and use analytics tools for MkSaaS websites.
+- [MkSaaS Authentication Guide](https://cpmcalculator.site/docs/auth): Comprehensive guide for setting up authentication in MkSaaS.
+- [Blog Management System](https://cpmcalculator.site/docs/blog): Create and manage multi-language blog posts easily.
+- [MkSaaS UI Components](https://cpmcalculator.site/docs/components): Explore MkSaaS components for UI development and customization.
+- [Avatar Button Configuration](https://cpmcalculator.site/docs/config/avatar): Configure user avatar dropdown menu for quick access.
+- [Footer Menu Configuration](https://cpmcalculator.site/docs/config/footer): Learn to configure footer links for your website.
+- [MkSaaS Configuration Guide](https://cpmcalculator.site/docs/config): Comprehensive guide for configuring your MkSaaS website settings.
+- [Navbar Menu Configuration](https://cpmcalculator.site/docs/config/navbar): Configure website header navigation menus with dropdown options.
+- [Price Plans Configuration](https://cpmcalculator.site/docs/config/price): Explore and configure price plans with translations.
+- [Sidebar Menu Configuration](https://cpmcalculator.site/docs/config/sidebar): Configure dashboard sidebar menus with role-based navigation.
+- [Social Media Configuration](https://cpmcalculator.site/docs/config/social): Manage and configure social media links for your website.
+- [Website Configuration](https://cpmcalculator.site/docs/config/website): Configure core settings for your MkSaaS website easily.
+- [Database Configuration Guide](https://cpmcalculator.site/docs/database): Comprehensive guide on configuring databases with Drizzle ORM.
+- [Cloudflare Deployment Guide](https://cpmcalculator.site/docs/deployment/cloudflare): Guide to deploying projects on Cloudflare platform.
+- [Deploying on Vercel](https://cpmcalculator.site/docs/deployment/vercel): Guide to deploying Next.js projects on Vercel platform.
+- [Documentation Guide](https://cpmcalculator.site/docs/docs): Comprehensive guide for creating and managing documentation.
+- [Email Setup Guide](https://cpmcalculator.site/docs/email): Set up email functionality using Resend and React Email templates.
+- [Environment Variable Setup](https://cpmcalculator.site/docs/env): Guide to configure environment variables for MkSaaS applications.
+- [MkSaaS Font Customization](https://cpmcalculator.site/docs/fonts): Guide to customizing fonts in MkSaaS websites effectively.
+- [Internationalization Setup](https://cpmcalculator.site/docs/i18n): Set up internationalization in Next.js with next-intl easily.
+- [IDE Setup Guide](https://cpmcalculator.site/docs/ide): Set up IDEs like VSCode and Cursor for MkSaaS development.
+- [Customize MkSaaS Images](https://cpmcalculator.site/docs/images): Guide to customize images for your MkSaaS website.
+- [Landing Page Guide](https://cpmcalculator.site/docs/landingpage): Create responsive landing pages with customizable marketing blocks.
+- [Biome Code Quality Guide](https://cpmcalculator.site/docs/lint): Guide for using Biome to ensure code quality in MkSaaS.
+- [MkSaaS Metadata Customization](https://cpmcalculator.site/docs/metadata): Guide to customize metadata for MkSaaS websites effectively.
+- [Newsletter Management Guide](https://cpmcalculator.site/docs/newsletter): Guide to setting up and managing newsletters with Resend.
+- [Custom Pages Guide](https://cpmcalculator.site/docs/pages): Guide to customize and create pages in MkSaaS websites.
+- [Stripe Payment Integration](https://cpmcalculator.site/docs/payment): Guide to integrate Stripe for payments and subscriptions.
+- [MkSaaS Setup Guide](https://cpmcalculator.site/docs/start): Quickly set up and run your MkSaaS directory website.
+- [Cloud Storage Setup](https://cpmcalculator.site/docs/storage): Setup and manage cloud storage for file handling.
+- [MkSaaS Project Structure](https://cpmcalculator.site/docs/structure): Overview of MkSaaS project structure and best practices.
+- [MkSaaS Theme Customization](https://cpmcalculator.site/docs/themes): Guide to customizing themes in MkSaaS websites effectively.
+- [MkSaaS Update Guide](https://cpmcalculator.site/docs/updates): Guide to updating your MkSaaS project effectively and safely.
+- [Custom Pages Guide](https://cpmcalculator.site/docs/pages): Guide to customize and create pages in MkSaaS websites.
+- [AI Features Setup](https://cpmcalculator.site/docs/ai): Guide to set up AI features with OpenAI and DeepSeek.
