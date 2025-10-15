@@ -91,12 +91,12 @@
     "show_locale": false
   },
   "hero": {
-    "title": "cpm calculator AI Startups in hours, not days",
-    "highlight_text": "cpm calculator",
-    "description": "CPM Calculator is a NextJS boilerplate for building cpm calculator startups.<br/>Ship Fast with a variety of templates and components.",
+    "title": "Kickstart Your AI-Powered CPM Calculator Venture",
+    "highlight_text": "AI CPM Calculator",
+    "description": "Quickly launch and scale your CPM calculator startup with our AI-infused Next.js boilerplate, packed with business-ready templates and flexible components.",
     "announcement": {
       "label": "2025",
-      "title": "🎉 Happy New Year",
+      "title": "🎉 All-New Professional CPM Calculator",
       "url": "/pricing"
     },
     "tip": "🎁 50% off before 2025",
@@ -111,7 +111,7 @@
       {
         "title": "Read Document",
         "icon": "RiBookOpenLine",
-        "url": "https://docs.CPM Calculator.ai",
+        "url": "https://cpmcalculator.site/docs",
         "target": "_blank",
         "variant": "outline"
       }
