@@ -73,7 +73,7 @@ export default function CommunityGuidelines() {
       </div>
       <div className="text-center mt-12">
         <a
-          href="https://discord.gg/99nightsforest"
+          href="https://discord.gg/WEWMqwb5"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block px-8 py-3 bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold rounded-lg hover:opacity-90 transition-opacity"

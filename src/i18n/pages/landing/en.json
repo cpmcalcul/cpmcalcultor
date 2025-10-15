@@ -56,11 +56,6 @@
           ]
         },
         {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
-        },
-        {
           "title": "Blog",
           "url": "/posts",
           "icon": "RiArticleLine"
@@ -404,27 +399,27 @@
     "items": [
       {
         "title": "What exactly is CPM Calculator and how does it work?",
-        "description": "CPM Calculator is a comprehensive NextJS boilerplate designed specifically for building cpm calculator startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "description": "CPM Calculator is a complete tool designed to help you calculate the CPM, understand cpm calculation, and apply the cpm formula to your business needs. With step-by-step guides on how to calculate cpm, our solution makes it easy to calculate cpm for campaigns and quickly integrate accurate cpm formulas into your workflow."
       },
       {
         "title": "Do I need advanced technical skills to use CPM Calculator?",
-        "description": "While basic programming knowledge is helpful, CPM Calculator is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "description": "No advanced skills are required. CPM Calculator is developer-friendly, providing simple instructions on how to calculate cpm and use the cpm formula effectively. Whether you’re new or experienced, you can easily perform cpm calculation and calculate the cpm with our templates and easy-to-follow documentation."
       },
       {
         "title": "What types of cpm calculator can I build with CPM Calculator?",
-        "description": "CPM Calculator supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "description": "You can create a variety of cpm calculator tools to suit different industries and use cases. Our platform supports custom calculators for calculate cpm in marketing, advertising, AI applications, and more, each one allowing users to apply cpm calculation and the cpm formula to any scenario."
       },
       {
         "title": "How long does it typically take to launch with CPM Calculator?",
-        "description": "With CPM Calculator, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "description": "Launching with CPM Calculator is fast and efficient. With our pre-built templates, you can set up and start to calculate the cpm and utilize cpm formulas within hours. Our platform simplifies the cpm calculation process, drastically reducing your development and launch time."
       },
       {
         "title": "What's included in the CPM Calculator infrastructure?",
-        "description": "CPM Calculator provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "description": "CPM Calculator comes with everything needed to calculate cpm, including authentication, APIs, and deployment tools. It’s equipped for smooth cpm calculation, managing integrations, and automating the cpm formula in your workflow, all following best practices."
       },
       {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All CPM Calculator templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "Can I customize the CPM Calculator to match my brand?",
+        "description": "Yes! You can easily customize every CPM Calculator template to fit your brand, adjust the layout, features, and even tweak the cpm calculation logic or cpm formula. Personalize how users calculate cpm while relying on robust infrastructure."
       }
     ]
   },

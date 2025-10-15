@@ -25,7 +25,7 @@ export default function DiscordServers() {
       badge: t("badges.recommended"),
       members: "15,247",
       status: t("status.veryActive"),
-      link: "https://discord.gg/99nightsforest",
+      link: "https://discord.gg/WEWMqwb5",
     },
     {
       id: "scripts",
@@ -33,7 +33,7 @@ export default function DiscordServers() {
       badge: t("badges.scripts"),
       members: "8,932",
       status: t("status.active"),
-      link: "https://discord.gg/99nightsscripts",
+      link: "https://discord.gg/WEWMqwb5",
     },
     {
       id: "trading",
@@ -41,7 +41,7 @@ export default function DiscordServers() {
       badge: t("badges.trading"),
       members: "5,678",
       status: t("status.trading"),
-      link: "https://discord.gg/99nightstrading",
+      link: "https://discord.gg/WEWMqwb5",
     },
     {
       id: "competitive",
@@ -49,7 +49,7 @@ export default function DiscordServers() {
       badge: t("badges.competitive"),
       members: "3,421",
       status: t("status.competitive"),
-      link: "https://discord.gg/99nightscompetitive",
+      link: "https://discord.gg/WEWMqwb5",
     },
     {
       id: "roleplay",
@@ -57,7 +57,7 @@ export default function DiscordServers() {
       badge: t("badges.roleplay"),
       members: "2,156",
       status: t("status.roleplay"),
-      link: "https://discord.gg/99nightsroleplay",
+      link: "https://discord.gg/WEWMqwb5",
     },
     {
       id: "international",
@@ -65,7 +65,7 @@ export default function DiscordServers() {
       badge: t("badges.global"),
       members: "7,890",
       status: t("status.global"),
-      link: "https://discord.gg/99nightsinternational",
+      link: "https://discord.gg/WEWMqwb5",
     },
   ];
 

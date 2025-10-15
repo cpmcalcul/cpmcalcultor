@@ -192,7 +192,7 @@ export function ToolFeatures2({ namespace, items }: ToolFeatures2Props) {
           <div className={`flex items-center justify-center transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
             {items && items[activeIndex] && (
               <div className="relative group animate-float">
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                 <BeforeAfterSlider
                   beforeImage={items[activeIndex].beforeImage}
                   afterImage={items[activeIndex].afterImage}

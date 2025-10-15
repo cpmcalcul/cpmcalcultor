@@ -1,12 +1,12 @@
 {
   "discord": {
     "metadata": {
-      "title": "Join Our Discord Community - 99 Nights in the Forest",
+      "title": "Join Our Discord Community - CPM calculator",
       "description": "Connect with thousands of players, share strategies, get help, and stay updated with the latest news and events!"
     },
     "hero": {
       "title": "Join Our Discord Community",
-      "description": "Connect with thousands of 99 Nights in the Forest players, share strategies, get help, and stay updated with the latest news and events!"
+      "description": "Connect with thousands of CPM calculator players, share strategies, get help, and stay updated with the latest news and events!"
     },
     "servers": {
       "title": "Choose Your Discord Community",
@@ -174,7 +174,7 @@
         "4": "No real money trading (RMT)",
         "5": "No NSFW or inappropriate content"
       },
-      "joinButton": "Join 99 Nights in the Forest Discord Server Now!"
+      "joinButton": "Join CPM calculator Discord Server Now!"
     }
   }
 }

@@ -20,10 +20,10 @@ interface MobileNavigationProps {
 // 默认路由配置
 const defaultNavItems = [
   { id: 'home', icon: Home, label: '首页', path: '/' },
-  { id: 'search', icon: Search, label: '搜索', path: '/search' },
-  { id: 'create', icon: Plus, label: '创建', path: '/create' },
-  { id: 'favorites', icon: Heart, label: '收藏', path: '/favorites' },
-  { id: 'profile', icon: User, label: '我的', path: '/profile' }
+  { id: 'search', icon: Search, label: '社交', path: '/social' },
+  { id: 'create', icon: Plus, label: '工具', path: '/tools' },
+  { id: 'favorites', icon: Heart, label: '文章', path: '/blog' },
+  { id: 'profile', icon: User, label: '单词表', path: '/glossary' }
 ];
 
 // 社交应用路由配置

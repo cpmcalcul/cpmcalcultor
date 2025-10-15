@@ -19,7 +19,7 @@ export default function QuickRecommendations() {
       id: "newPlayers",
       icon: recommendationIcons.newPlayers,
       emoji: "🆕",
-      link: "https://discord.gg/99nightsforest",
+      link: "https://discord.gg/WEWMqwb5",
     },
     {
       id: "scriptUsers",
