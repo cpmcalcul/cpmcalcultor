@@ -6,7 +6,7 @@ export interface TabContent {
   description: string;
   placeholder: string;
   backgroundImage: string;
-  category: 'video' | 'image' | 'audio' | 'chat';
+  category: 'cpm' | 'cpc' | 'cpa' | 'ctr' | 'roi' | 'youtube';
 }
 
 /**
@@ -17,94 +17,64 @@ export interface TabContent {
 export const getTabContent = (t: (key: string) => string): TabContent[] => {
   return [
     {
-      id: "chat",
-      label: t('aero_section.tabs.chat'),
-      title: t('aero_section.content.chat.title'),
-      subtitle: t('aero_section.content.chat.subtitle'),
-      description: t('aero_section.content.chat.description'),
-      placeholder: t('aero_section.content.chat.placeholder'),
-      backgroundImage: "/src/assets/hero-background.jpg",
-      category: "chat" as const
+      id: "cpm",
+      label: t('aero_section.tabs.cpm'),
+      title: t('aero_section.content.cpm.title'),
+      subtitle: t('aero_section.content.cpm.subtitle'),
+      description: t('aero_section.content.cpm.description'),
+      placeholder: t('aero_section.content.cpm.placeholder'),
+      backgroundImage: "/src/assets/cpm-calculator-bg.jpg",
+      category: "cpm" as const
     },
     {
-      id: "veo",
-      label: t('aero_section.tabs.veo'),
-      title: t('aero_section.content.veo.title'),
-      subtitle: t('aero_section.content.veo.subtitle'),
-      description: t('aero_section.content.veo.description'),
-      placeholder: t('aero_section.content.veo.placeholder'),
-      backgroundImage: "/src/assets/veo-video-bg.jpg",
-      category: "video" as const
+      id: "cpc",
+      label: t('aero_section.tabs.cpc'),
+      title: t('aero_section.content.cpc.title'),
+      subtitle: t('aero_section.content.cpc.subtitle'),
+      description: t('aero_section.content.cpc.description'),
+      placeholder: t('aero_section.content.cpc.placeholder'),
+      backgroundImage: "/src/assets/cpc-calculator-bg.jpg",
+      category: "cpc" as const
     },
     {
-      id: "gemini",
-      label: t('aero_section.tabs.gemini'),
-      title: t('aero_section.content.gemini.title'),
-      subtitle: t('aero_section.content.gemini.subtitle'),
-      description: t('aero_section.content.gemini.description'),
-      placeholder: t('aero_section.content.gemini.placeholder'),
-      backgroundImage: "/src/assets/image-generation-bg.jpg",
-      category: "image" as const
+      id: "cpa",
+      label: t('aero_section.tabs.cpa'),
+      title: t('aero_section.content.cpa.title'),
+      subtitle: t('aero_section.content.cpa.subtitle'),
+      description: t('aero_section.content.cpa.description'),
+      placeholder: t('aero_section.content.cpa.placeholder'),
+      backgroundImage: "/src/assets/cpa-calculator-bg.jpg",
+      category: "cpa" as const
     },
     {
-      id: "text-video",
-      label: t('aero_section.tabs.text_video'),
-      title: t('aero_section.content.text_video.title'),
-      subtitle: t('aero_section.content.text_video.subtitle'),
-      description: t('aero_section.content.text_video.description'),
-      placeholder: t('aero_section.content.text_video.placeholder'),
-      backgroundImage: "/src/assets/veo-video-bg.jpg",
-      category: "video" as const
+      id: "ctr",
+      label: t('aero_section.tabs.ctr'),
+      title: t('aero_section.content.ctr.title'),
+      subtitle: t('aero_section.content.ctr.subtitle'),
+      description: t('aero_section.content.ctr.description'),
+      placeholder: t('aero_section.content.ctr.placeholder'),
+      backgroundImage: "/src/assets/ctr-calculator-bg.jpg",
+      category: "ctr" as const
     },
     {
-      id: "image-video",
-      label: t('aero_section.tabs.image_video'),
-      title: t('aero_section.content.image_video.title'),
-      subtitle: t('aero_section.content.image_video.subtitle'),
-      description: t('aero_section.content.image_video.description'),
-      placeholder: t('aero_section.content.image_video.placeholder'),
-      backgroundImage: "/src/assets/veo-video-bg.jpg",
-      category: "video" as const
+      id: "roi",
+      label: t('aero_section.tabs.roi'),
+      title: t('aero_section.content.roi.title'),
+      subtitle: t('aero_section.content.roi.subtitle'),
+      description: t('aero_section.content.roi.description'),
+      placeholder: t('aero_section.content.roi.placeholder'),
+      backgroundImage: "/src/assets/roi-calculator-bg.jpg",
+      category: "roi" as const
     },
     {
-      id: "text-image",
-      label: t('aero_section.tabs.text_image'),
-      title: t('aero_section.content.text_image.title'),
-      subtitle: t('aero_section.content.text_image.subtitle'),
-      description: t('aero_section.content.text_image.description'),
-      placeholder: t('aero_section.content.text_image.placeholder'),
-      backgroundImage: "/src/assets/image-generation-bg.jpg",
-      category: "image" as const
-    },
-    {
-      id: "image-image",
-      label: t('aero_section.tabs.image_image'),
-      title: t('aero_section.content.image_image.title'),
-      subtitle: t('aero_section.content.image_image.subtitle'),
-      description: t('aero_section.content.image_image.description'),
-      placeholder: t('aero_section.content.image_image.placeholder'),
-      backgroundImage: "/src/assets/image-generation-bg.jpg",
-      category: "image" as const
-    },
-    {
-      id: "text-music",
-      label: t('aero_section.tabs.text_music'),
-      title: t('aero_section.content.text_music.title'),
-      subtitle: t('aero_section.content.text_music.subtitle'),
-      description: t('aero_section.content.text_music.description'),
-      placeholder: t('aero_section.content.text_music.placeholder'),
-      backgroundImage: "/src/assets/music-generation-bg.jpg",
-      category: "audio" as const
-    },
-    {
-      id: "text-speech",
-      label: t('aero_section.tabs.text_speech'),
-      title: t('aero_section.content.text_speech.title'),
-      subtitle: t('aero_section.content.text_speech.subtitle'),
-      description: t('aero_section.content.text_speech.description'),
-      placeholder: t('aero_section.content.text_speech.placeholder'),
-      backgroundImage: "/src/assets/music-generation-bg.jpg",
-      category: "audio" as const
+      id: "youtube",
+      label: t('aero_section.tabs.youtube'),
+      title: t('aero_section.content.youtube.title'),
+      subtitle: t('aero_section.content.youtube.subtitle'),
+      description: t('aero_section.content.youtube.description'),
+      placeholder: t('aero_section.content.youtube.placeholder'),
+      backgroundImage: "/src/assets/youtube-cpm-bg.jpg",
+      category: "youtube" as const
     }
   ];
 };

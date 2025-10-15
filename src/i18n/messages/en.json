@@ -441,70 +441,49 @@
   },
   "aero_section": {
     "tabs": {
-      "chat": "Chat Mode",
-      "veo": "Veo 3 Video",
-      "gemini": "Gemini Flash Image",
-      "text_video": "Text to Video",
-      "image_video": "Image to Video",
-      "text_image": "Text to Image",
-      "image_image": "Image to Image",
-      "text_music": "Text to Music",
-      "text_speech": "Text to Speech"
+      "cpm": "CPM Calculator",
+      "cpc": "CPC Calculator",
+      "cpa": "CPA Calculator",
+      "ctr": "CTR Calculator",
+      "roi": "ROI Calculator",
+      "youtube": "YouTube CPM"
     },
     "content": {
-      "chat": {
-        "title": "Professional CPM Calculator",
-        "subtitle": "Intelligent Conversations with Advanced AI Technology",
-        "description": "Experience next-generation AI conversations. Get creative assistance, technical guidance, and innovative solutions through our advanced AI chat interface.",
-        "placeholder": "Ask me anything about your creative projects..."
+      "cpm": {
+        "title": "CPM Calculator",
+        "subtitle": "Calculate Cost Per Mille with Precision",
+        "description": "Calculate Cost Per Mille (CPM) for your advertising campaigns with professional accuracy. Essential tool for digital marketers to optimize ad spend and measure campaign performance.",
+        "placeholder": "Enter your ad spend and impressions to calculate CPM..."
       },
-      "veo": {
-        "title": "Veo 3 AI Video Generator",
-        "subtitle": "Create Professional Videos with Google's Latest AI Model",
-        "description": "Generate stunning, high-quality videos using Google's breakthrough Veo 3 model. Transform your ideas into cinematic masterpieces with unprecedented realism.",
-        "placeholder": "Describe the video you want to create with Veo 3..."
+      "cpc": {
+        "title": "CPC Calculator",
+        "subtitle": "Calculate Cost Per Click for Your Campaigns",
+        "description": "Determine the cost per click for your pay-per-click advertising campaigns. Optimize your bidding strategy and maximize ROI with accurate CPC calculations.",
+        "placeholder": "Enter your total ad spend and number of clicks..."
       },
-      "gemini": {
-        "title": "Gemini Flash Image Generator",
-        "subtitle": "Lightning-Fast Image Creation with Google's Gemini",
-        "description": "Create, edit, and enhance images at blazing speed with Gemini Flash. Experience the perfect blend of quality and speed in AI image generation.",
-        "placeholder": "Describe the image you want to generate with Gemini Flash..."
+      "cpa": {
+        "title": "CPA Calculator",
+        "subtitle": "Calculate Cost Per Action/Acquisition",
+        "description": "Calculate the cost per action or acquisition for your marketing campaigns. Track conversion costs and optimize your customer acquisition strategy.",
+        "placeholder": "Enter your ad spend and number of conversions..."
       },
-      "text_video": {
-        "title": "AI Text-to-Video Generator",
-        "subtitle": "Transform Words into Cinematic Experiences",
-        "description": "Convert your written ideas into compelling video content. Our advanced AI understands context and creates videos that perfectly match your vision.",
-        "placeholder": "Write a story or scene you want to turn into a video..."
+      "ctr": {
+        "title": "CTR Calculator",
+        "subtitle": "Calculate Click-Through Rate Performance",
+        "description": "Measure your ad performance with click-through rate calculations. Understand how effectively your ads are engaging your target audience.",
+        "placeholder": "Enter your clicks and impressions to calculate CTR..."
       },
-      "image_video": {
-        "title": "AI Image-to-Video Generator",
-        "subtitle": "Bring Static Images to Life with Motion",
-        "description": "Animate your images with realistic motion and effects. Transform still photographs into dynamic video content with intelligent movement prediction.",
-        "placeholder": "Describe how you want your image to move and animate..."
+      "roi": {
+        "title": "ROI Calculator",
+        "subtitle": "Calculate Return on Investment",
+        "description": "Calculate the return on investment for your marketing campaigns. Measure profitability and make data-driven decisions for your advertising budget.",
+        "placeholder": "Enter your revenue and investment to calculate ROI..."
       },
-      "text_image": {
-        "title": "AI Text-to-Image Generator",
-        "subtitle": "Create Stunning Visuals from Text Descriptions",
-        "description": "Generate beautiful, high-resolution images from simple text prompts. From photorealistic scenes to artistic illustrations, bring your imagination to life.",
-        "placeholder": "Describe the image you want to create in detail..."
-      },
-      "image_image": {
-        "title": "AI Image-to-Image Generator",
-        "subtitle": "Transform and Enhance Your Images with AI",
-        "description": "Edit, transform, and enhance existing images using advanced AI. Change styles, modify content, or completely reimagine your visual assets.",
-        "placeholder": "Describe how you want to transform your image..."
-      },
-      "text_music": {
-        "title": "AI Music Generator",
-        "subtitle": "Compose Original Music from Text Descriptions",
-        "description": "Create custom soundtracks, melodies, and complete musical compositions. From ambient soundscapes to full orchestral pieces, compose with AI.",
-        "placeholder": "Describe the music style, mood, and instruments you want..."
-      },
-      "text_speech": {
-        "title": "AI Voice Generator",
-        "subtitle": "Natural-Sounding Voice Synthesis from Text",
-        "description": "Convert text into lifelike speech with emotion and expression. Choose from various voices and languages for narration, dialogue, and voiceovers.",
-        "placeholder": "Enter the text you want to convert to natural speech..."
+      "youtube": {
+        "title": "YouTube CPM Calculator",
+        "subtitle": "Calculate YouTube Ad Revenue",
+        "description": "Calculate CPM specifically for YouTube advertising and monetization. Optimize your YouTube ad strategy and maximize revenue from your content.",
+        "placeholder": "Enter your YouTube ad metrics to calculate CPM..."
       }
     },
     "ui": {

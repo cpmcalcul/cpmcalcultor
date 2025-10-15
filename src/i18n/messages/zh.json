@@ -426,70 +426,49 @@
   },
   "aero_section": {
     "tabs": {
-      "chat": "聊天模式",
-      "veo": "Veo 3 视频",
-      "gemini": "Gemini Flash 图像",
-      "text_video": "文本转视频",
-      "image_video": "图像转视频",
-      "text_image": "文本转图像",
-      "image_image": "图像转图像",
-      "text_music": "文本转音乐",
-      "text_speech": "文本转语音"
+      "cpm": "CPM 计算器",
+      "cpc": "CPC 计算器",
+      "cpa": "CPA 计算器",
+      "ctr": "CTR 计算器",
+      "roi": "ROI 计算器",
+      "youtube": "YouTube CPM"
     },
     "content": {
-      "chat": {
-        "title": "SuperMaker AI 助手",
-        "subtitle": "使用先进AI技术的智能对话",
-        "description": "体验下一代AI对话。通过我们先进的AI聊天界面获得创意协助、技术指导和创新解决方案。",
-        "placeholder": "询问我任何关于您创意项目的问题..."
+      "cpm": {
+        "title": "CPM 计算器",
+        "subtitle": "精确计算每千次展示成本",
+        "description": "以专业精度计算广告活动的每千次展示成本（CPM）。数字营销人员优化广告支出和衡量活动效果的重要工具。",
+        "placeholder": "输入您的广告支出和展示次数来计算 CPM..."
       },
-      "veo": {
-        "title": "Veo 3 AI 视频生成器",
-        "subtitle": "使用Google最新AI模型创建专业视频",
-        "description": "使用Google突破性的Veo 3模型生成令人惊叹的高质量视频。以前所未有的真实感将您的想法转化为电影杰作。",
-        "placeholder": "描述您想要使用Veo 3创建的视频..."
+      "cpc": {
+        "title": "CPC 计算器",
+        "subtitle": "计算每次点击成本",
+        "description": "确定按点击付费广告活动的每次点击成本。通过准确的 CPC 计算优化您的出价策略并最大化投资回报率。",
+        "placeholder": "输入您的总广告支出和点击次数..."
       },
-      "gemini": {
-        "title": "Gemini Flash 图像生成器",
-        "subtitle": "使用Google Gemini进行闪电般快速的图像创建",
-        "description": "使用Gemini Flash以闪电般的速度创建、编辑和增强图像。体验AI图像生成中质量与速度的完美结合。",
-        "placeholder": "描述您想要使用Gemini Flash生成的图像..."
+      "cpa": {
+        "title": "CPA 计算器",
+        "subtitle": "计算每次行动/获客成本",
+        "description": "计算营销活动的每次行动或获客成本。跟踪转化成本并优化您的客户获取策略。",
+        "placeholder": "输入您的广告支出和转化次数..."
       },
-      "text_video": {
-        "title": "AI 文本转视频生成器",
-        "subtitle": "将文字转化为电影体验",
-        "description": "将您的书面想法转化为引人入胜的视频内容。我们先进的AI理解上下文并创建完美匹配您愿景的视频。",
-        "placeholder": "写下您想要转化为视频的故事或场景..."
+      "ctr": {
+        "title": "CTR 计算器",
+        "subtitle": "计算点击率表现",
+        "description": "通过点击率计算衡量您的广告表现。了解您的广告如何有效地吸引目标受众。",
+        "placeholder": "输入您的点击次数和展示次数来计算 CTR..."
       },
-      "image_video": {
-        "title": "AI 图像转视频生成器",
-        "subtitle": "用运动为静态图像注入生命",
-        "description": "用真实的运动和效果为您的图像制作动画。通过智能运动预测将静态照片转化为动态视频内容。",
-        "placeholder": "描述您希望图像如何移动和制作动画..."
+      "roi": {
+        "title": "ROI 计算器",
+        "subtitle": "计算投资回报率",
+        "description": "计算营销活动的投资回报率。衡量盈利能力并为您的广告预算做出数据驱动的决策。",
+        "placeholder": "输入您的收入和投资来计算 ROI..."
       },
-      "text_image": {
-        "title": "AI 文本转图像生成器",
-        "subtitle": "从文本描述创建令人惊叹的视觉效果",
-        "description": "从简单的文本提示生成美丽、高分辨率的图像。从照片般真实的场景到艺术插图，让您的想象力变为现实。",
-        "placeholder": "详细描述您想要创建的图像..."
-      },
-      "image_image": {
-        "title": "AI 图像转图像生成器",
-        "subtitle": "使用AI转换和增强您的图像",
-        "description": "使用先进的AI编辑、转换和增强现有图像。改变风格、修改内容或完全重新想象您的视觉资产。",
-        "placeholder": "描述您希望如何转换图像..."
-      },
-      "text_music": {
-        "title": "AI 音乐生成器",
-        "subtitle": "从文本描述创作原创音乐",
-        "description": "创建自定义配乐、旋律和完整的音乐作品。从环境音景到完整的管弦乐作品，使用AI进行创作。",
-        "placeholder": "描述您想要的音乐风格、情绪和乐器..."
-      },
-      "text_speech": {
-        "title": "AI 语音生成器",
-        "subtitle": "从文本进行自然语音合成",
-        "description": "将文本转换为具有情感和表现力的逼真语音。为叙述、对话和配音选择各种语音和语言。",
-        "placeholder": "输入您想要转换为自然语音的文本..."
+      "youtube": {
+        "title": "YouTube CPM 计算器",
+        "subtitle": "计算 YouTube 广告收入",
+        "description": "专门计算 YouTube 广告和变现的 CPM。优化您的 YouTube 广告策略并最大化内容收入。",
+        "placeholder": "输入您的 YouTube 广告指标来计算 CPM..."
       }
     },
     "ui": {

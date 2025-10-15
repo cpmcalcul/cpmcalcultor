@@ -149,8 +149,8 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
             size="sm"
             className="text-white/70 hover:text-white hover:bg-white/20 transition-colors duration-200"
           >
-            <Image className="w-4 h-4 mr-2" />
-            {locale === 'zh' ? '添加图像' : 'Add Image'}
+            {/* <Image className="w-4 h-4 mr-2" /> */}
+            {/* {locale === 'zh' ? '添加图像' : 'Add Image'} */}
           </Button>
           
           <div className="relative">
@@ -162,7 +162,7 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
               className="relative bg-gradient-to-r from-amber-400 to-orange-500 text-white hover:from-amber-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-heartbeat"
             >
               <Send className="w-4 h-4 mr-2" />
-              {locale === 'zh' ? '免费生成' : 'Free Generate'}
+              {locale === 'zh' ? '开始计算' : 'Calculate'}
             </Button>
           </div>
         </div>

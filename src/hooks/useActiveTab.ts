@@ -4,7 +4,7 @@ import { TabContent, getTabContent } from '@/types/aero';
 
 export const useActiveTab = () => {
   const t = useTranslations();
-  const [activeTabId, setActiveTabId] = useState<string>('chat');
+  const [activeTabId, setActiveTabId] = useState<string>('cpm');
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const tabsContent = useMemo(() => getTabContent(t), [t]);
