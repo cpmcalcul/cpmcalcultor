@@ -1,9 +1,26 @@
 {
+  "title": "文档",
   "pages": [
     "index",
     "quickstart",
+    {
+      "title": "计算器",
+      "pages": [
+        "calculators/cpm-calculator",
+        "calculators/cpc-calculator",
+        "calculators/ctr-calculator",
+        "calculators/roi-calculator",
+        "calculators/youtube-cpm-calculator"
+      ]
+    },
+    {
+      "title": "参考",
+      "pages": [
+        "reference/cpm-formula"
+      ]
+    },
     "getting-started",
     "features",
     "deployment"
-]
+  ]
 }

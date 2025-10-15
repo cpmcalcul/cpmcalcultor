@@ -677,6 +677,29 @@ const items = [
 
 ### Next
 
+## 2025-01-27
+
+### Plan
+- [x] 将 ComponentTwo.tsx 的样式选择功能替换为 CPM 计算器
+- [x] 保持原有的玻璃态容器样式、动画效果和布局结构
+- [x] 更新导入语句和翻译命名空间
+- [x] 适配表单样式以匹配容器风格
+- [x] 测试计算功能和响应式布局
+
+### Done
+- [x] 成功替换 ComponentTwo.tsx 为 CPM 计算器功能
+- [x] 保留了所有装饰性元素：流动高光、角落光晕、磨砂颗粒动画
+- [x] 更新了导入语句：移除 Badge/ChevronDown/Link，添加 Input/Label/Button/CurrencySelector
+- [x] 实现了完整的 CPM 计算逻辑：总成本、CPM、展示次数三字段计算
+- [x] 适配了玻璃态风格：半透明输入框、白色文字、黄色计算按钮
+- [x] 添加了货币选择器和结果显示区域
+- [x] 构建测试通过，无 linting 错误
+- [x] 翻译命名空间从 "select_style" 改为 "calculator"
+
+### Next
+
+---
+
 **Deployment Ready**: The application is now ready for production deployment.
 
 **Recommended Follow-ups**:
@@ -685,3 +708,130 @@ const items = [
 3. Replace `<img>` tags with Next.js `<Image />` for better performance
 4. Consider adding Chinese language support to fumadocs search
 5. Test production build locally with `pnpm start`
+
+---
+
+## 2025-10-15 (Session 10 - Documentation Files Creation)
+
+### Plan
+
+- [x] Create CPC Calculator documentation file (content/docs/calculators/cpc-calculator.mdx)
+- [x] Create CTR Calculator documentation file (content/docs/calculators/ctr-calculator.mdx)
+- [x] Create ROI Calculator documentation file (content/docs/calculators/roi-calculator.mdx)
+- [x] Create YouTube CPM Calculator documentation file (content/docs/calculators/youtube-cpm-calculator.mdx)
+- [x] Create Formula Reference documentation file (content/docs/reference/cpm-formula.mdx)
+- [x] Each file should include: formulas, examples, benchmarks, optimization tips, and SEO-friendly content
+- [x] Follow the same structure and quality as the existing CPM calculator guide
+
+### Done
+
+- [x] Created comprehensive CPC Calculator guide with formulas, examples, and optimization strategies
+- [x] Created detailed CTR Calculator guide with benchmarks by platform and industry
+- [x] Created extensive ROI Calculator guide with profitability analysis and advanced metrics
+- [x] Created YouTube CPM Calculator guide with niche-specific rates and monetization tips
+- [x] Created Formula Reference documentation with all advertising formulas in one place
+
+**Created Files**:
+
+- [content/docs/calculators/cpc-calculator.mdx](content/docs/calculators/cpc-calculator.mdx) - CPC calculation guide (2,000+ words)
+- [content/docs/calculators/ctr-calculator.mdx](content/docs/calculators/ctr-calculator.mdx) - CTR optimization guide (2,500+ words)
+- [content/docs/calculators/roi-calculator.mdx](content/docs/calculators/roi-calculator.mdx) - ROI analysis guide (3,000+ words)
+- [content/docs/calculators/youtube-cpm-calculator.mdx](content/docs/calculators/youtube-cpm-calculator.mdx) - YouTube earnings guide (3,500+ words)
+- [content/docs/reference/cpm-formula.mdx](content/docs/reference/cpm-formula.mdx) - Complete formula reference (2,500+ words)
+
+**Content Quality Standards Met**:
+
+✅ **Comprehensive Coverage**: Each guide includes formulas, step-by-step examples, and real-world scenarios
+✅ **Industry Benchmarks**: Platform-specific, industry-specific, and country-specific benchmarks included
+✅ **Optimization Tips**: 10+ actionable strategies per guide for improving metrics
+✅ **SEO-Friendly**: Natural keyword integration throughout content
+✅ **Cross-Linking**: All guides link to related calculators and formula reference
+✅ **Practical Examples**: Multiple calculation examples with different scenarios
+✅ **Best Practices**: Advanced strategies, common questions, and troubleshooting
+✅ **Visual Structure**: Tables for benchmarks, code blocks for formulas, clear sections
+✅ **Tool Integration**: Links to calculator tools at the end of each guide
+
+**Key Features by Document**:
+
+**1. CPC Calculator Guide** (cpc-calculator.mdx):
+- CPC formula and reverse calculations
+- Platform-specific CPC benchmarks (Google, Facebook, LinkedIn, etc.)
+- Industry-specific average CPC rates
+- 7 optimization strategies (Quality Score, keywords, ad copy, etc.)
+- CPC vs CPM vs CPA comparison
+- Advanced bidding strategies
+
+**2. CTR Calculator Guide** (ctr-calculator.mdx):
+- CTR formula and calculation examples
+- Platform, industry, and ad format benchmarks
+- Why CTR matters for Quality Score and costs
+- 10 proven CTR improvement tactics
+- Platform-specific optimization (Google, Facebook, LinkedIn)
+- CTR vs conversion rate relationship
+
+**3. ROI Calculator Guide** (roi-calculator.mdx):
+- ROI formula with multiple variations
+- Marketing ROI by channel and industry
+- ROI vs ROAS comparison and when to use each
+- 7 strategies to improve ROI
+- Customer Lifetime Value (LTV) integration
+- Advanced attribution modeling
+- Break-even analysis
+
+**4. YouTube CPM Calculator Guide** (youtube-cpm-calculator.mdx):
+- YouTube earnings formula
+- CPM rates by niche (finance $15-25, gaming $2-5, etc.)
+- CPM by country (Tier 1, 2, 3 breakdown)
+- Seasonal CPM variations (Q4 +50-100%)
+- CPM vs RPM explanation and conversion
+- 10 strategies to increase YouTube CPM
+- YouTube monetization requirements
+
+**5. Formula Reference** (cpm-formula.mdx):
+- All core advertising formulas (CPM, CPC, CTR, CPA, ROI, ROAS)
+- Conversion metrics (conversion rate, CPL, engagement rate)
+- Revenue metrics (AOV, LTV, LTV:CAC ratio)
+- YouTube metrics (earnings, RPM)
+- Email marketing metrics
+- Social media and SEO metrics
+- Formula relationships and conversions
+- Quick reference table
+- Break-even calculations
+
+**SEO Keywords Integrated**:
+
+- **CPC Calculator**: "CPC calculator", "cost per click", "calculate CPC", "Google Ads CPC", "Facebook CPC"
+- **CTR Calculator**: "CTR calculator", "click-through rate", "calculate CTR", "improve CTR", "CTR benchmarks"
+- **ROI Calculator**: "ROI calculator", "return on investment", "calculate ROI", "marketing ROI", "ROAS vs ROI"
+- **YouTube CPM**: "YouTube CPM calculator", "YouTube earnings", "YouTube ad revenue", "CPM by niche", "RPM vs CPM"
+- **Formula Reference**: "CPM formula", "CPC formula", "advertising formulas", "marketing metrics", "ROI formula"
+
+**Content Structure**:
+
+Each guide follows a consistent, SEO-friendly structure:
+1. Introduction and definition
+2. Formula with components
+3. Step-by-step calculation guide
+4. Multiple practical examples
+5. Industry and platform benchmarks
+6. Optimization strategies (7-10 tactics)
+7. Comparison with related metrics
+8. Common questions (FAQ-style)
+9. Advanced strategies
+10. Cross-links to related calculators
+11. Call-to-action to use calculator tool
+
+**Word Count Summary**:
+- CPC Calculator: ~2,000 words
+- CTR Calculator: ~2,500 words
+- ROI Calculator: ~3,000 words
+- YouTube CPM: ~3,500 words
+- Formula Reference: ~2,500 words
+- **Total**: ~13,500 words of high-quality documentation
+
+### Next
+
+- [ ] Verify all documentation files render correctly in the docs site
+- [ ] Test all internal links between documentation pages
+- [ ] Consider adding visual diagrams for complex formulas
+- [ ] Create documentation for other calculator types (CPA, CVR, etc.) if needed

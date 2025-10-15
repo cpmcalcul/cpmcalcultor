@@ -1,9 +1,26 @@
 {
+  "title": "Documentation",
   "pages": [
     "index",
     "quickstart",
+    {
+      "title": "Calculators",
+      "pages": [
+        "calculators/cpm-calculator",
+        "calculators/cpc-calculator",
+        "calculators/ctr-calculator",
+        "calculators/roi-calculator",
+        "calculators/youtube-cpm-calculator"
+      ]
+    },
+    {
+      "title": "Reference",
+      "pages": [
+        "reference/cpm-formula"
+      ]
+    },
     "getting-started",
     "features",
     "deployment"
-]
+  ]
 }
