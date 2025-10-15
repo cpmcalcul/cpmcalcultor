@@ -10,15 +10,7 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import { Input } from "@/components/ui/input";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-import { Plus, Edit, Search, Filter } from "lucide-react";
+import { Plus, Edit } from "lucide-react";
 import GlossaryFilters from "@/components/admin/glossary/GlossaryFilters";
 
 interface PageProps {

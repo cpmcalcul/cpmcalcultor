@@ -7,7 +7,6 @@ import {
   findCategoryByName,
 } from "@/models/category";
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/i18n/navigation";
 
 export async function generateMetadata({
   params,
@@ -70,8 +69,8 @@ export default async function PostsPage({
     <div className="container py-6 md:py-8">
       <Blog
         blog={blog}
-        categories={categories as any}
-        category={category as any}
+        categories={categories}
+        category={category}
       />
     </div>
   );

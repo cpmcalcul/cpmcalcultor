@@ -4,7 +4,7 @@ import { Table as TableSlotType } from "@/types/slots/table";
 import { getUsers } from "@/models/user";
 import moment from "moment";
 
-export default async function () {
+export default async function AdminUsersPage() {
   const users = await getUsers(1, 50);
 
   const columns: TableColumn[] = [

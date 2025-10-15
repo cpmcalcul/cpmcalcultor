@@ -7,7 +7,7 @@ import { getNonceStr } from "@/lib/hash";
 import { getTranslations } from "next-intl/server";
 import { getUserUuid } from "@/services/user";
 
-export default async function () {
+export default async function CreateApiKeyPage() {
   const t = await getTranslations();
 
   const user_uuid = await getUserUuid();
@@ -48,7 +48,7 @@ export default async function () {
         title: t("api_keys.form.submit"),
         icon: "RiCheckLine",
       },
-      handler: async (data: FormData, passby: any) => {
+      handler: async (data: FormData, passby: { user_uuid: string }) => {
         "use server";
 
         const { user_uuid } = passby;
@@ -79,9 +79,10 @@ export default async function () {
             message: "apikey created",
             redirect_url: "/api-keys",
           };
-        } catch (e: any) {
-          console.error(e);
-          throw new Error("create api key failed: " + e.message);
+        } catch (e: unknown) {
+          const error = e as Error;
+          console.error(error);
+          throw new Error("create api key failed: " + error.message);
         }
       },
     },

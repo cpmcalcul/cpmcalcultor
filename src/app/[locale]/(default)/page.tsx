@@ -15,8 +15,6 @@ import FeaturedCreations from "@/components/blocks/featured-creations";
 import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
-import { CPMCalculator } from "@/components/blocks/calculator/CPM/CPMCalculator";
-import { CPMFeatures } from "@/components/blocks/calculator/CPM/CPMFeatures";
 import { getLandingPage } from "@/services/page";
 import { setRequestLocale } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
@@ -53,7 +51,6 @@ export default async function LandingPage({
   setRequestLocale(locale);
 
   const page = await getLandingPage(locale);
-  const t = await getTranslations({ locale, namespace: "calculator" });
 
   // 可以通过环境变量或配置来切换Hero组件
   const useNewHero = process.env.NODE_ENV === 'development'; // 开发环境使用新Hero组件

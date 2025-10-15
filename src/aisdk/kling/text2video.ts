@@ -1,4 +1,4 @@
-import { Config, Response, baseUrl, getToken } from "./client";
+import { Config, KlingResponse, baseUrl, getToken } from "./client";
 
 class Client {
   private token: string;
@@ -31,7 +31,7 @@ class Client {
     callback_url?: string;
     external_task_id?: string;
     [key: string]: unknown;
-  }): Promise<Response> {
+  }): Promise<KlingResponse> {
     try {
       const uri = `${baseUrl}/v1/videos/text2video`;
       const req = {
@@ -63,14 +63,14 @@ class Client {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      return await response.json();
+      return (await response.json()) as KlingResponse;
     } catch (error) {
       console.error("Text2Video API call failed:", error);
       throw error;
     }
   }
 
-  async queryTask({ task_id }: { task_id: string }): Promise<Response> {
+  async queryTask({ task_id }: { task_id: string }): Promise<KlingResponse> {
     try {
       const uri = `${baseUrl}/v1/videos/text2video/${task_id}`;
       console.log("query task:", uri);
@@ -85,7 +85,7 @@ class Client {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      return await response.json();
+      return (await response.json()) as KlingResponse;
     } catch (e) {
       console.error("Text2Video API call failed:", e);
       throw e;

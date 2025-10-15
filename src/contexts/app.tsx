@@ -22,11 +22,12 @@ const AppContext = createContext({} as ContextValue);
 export const useAppContext = () => useContext(AppContext);
 
 export const AppContextProvider = ({ children }: { children: ReactNode }) => {
-  if (isAuthEnabled() && isGoogleOneTapEnabled()) {
-    useOneTapLogin();
-  }
+  // Call hooks unconditionally at the top
+  const authEnabled = isAuthEnabled();
 
-  const { data: session } = isAuthEnabled() ? useSession() : { data: null };
+  // Always call hooks, but conditionally use their results
+  useOneTapLogin();
+  const { data: session } = useSession();
 
   const [showSignModal, setShowSignModal] = useState<boolean>(false);
   const [user, setUser] = useState<User | null>(null);
@@ -109,10 +110,11 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
   };
 
   useEffect(() => {
-    if (session && session.user) {
+    if (authEnabled && session && session.user) {
       fetchUserInfo();
     }
-  }, [session]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [session, authEnabled]);
 
   return (
     <AppContext.Provider

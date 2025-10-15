@@ -4,13 +4,11 @@ import { localeNames, locales } from "@/i18n/locale";
 import Empty from "@/components/blocks/empty";
 import FormSlot from "@/components/dashboard/slots/form";
 import { Form as FormSlotType } from "@/types/slots/form";
-import { Post } from "@/types/post";
-import { getIsoTimestr } from "@/lib/time";
 import { getUserInfo } from "@/services/user";
 import { getUuid } from "@/lib/hash";
 import { CategoryStatus, getCategories } from "@/models/category";
 
-export default async function () {
+export default async function AdminAddPostPage() {
   const user = await getUserInfo();
   if (!user || !user.uuid) {
     return <Empty message="no auth" />;
@@ -124,7 +122,7 @@ export default async function () {
       button: {
         title: "Submit",
       },
-      handler: async (data: FormData, passby: any) => {
+      handler: async (data: FormData) => {
         "use server";
 
         const title = data.get("title") as string;
@@ -177,8 +175,9 @@ export default async function () {
             message: "Post added",
             redirect_url: "/admin/posts",
           };
-        } catch (err: any) {
-          throw new Error(err.message);
+        } catch (err: unknown) {
+          const error = err as Error;
+          throw new Error(error.message);
         }
       },
     },

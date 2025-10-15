@@ -147,7 +147,7 @@ export default function ToolsPage() {
             {/* Results count */}
             {searchQuery && (
               <div className="mb-4 text-sm text-muted-foreground">
-                Found {filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'} matching "{searchQuery}"
+                Found {filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'} matching &quot;{searchQuery}&quot;
               </div>
             )}
 

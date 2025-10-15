@@ -29,7 +29,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function ({
+export default async function PostDetailPage({
   params,
 }: {
   params: Promise<{ locale: string; slug: string }>;
@@ -54,7 +54,7 @@ export default async function ({
   return (
     <BlogDetail
       post={post as unknown as Post}
-      categories={categories as any}
+      categories={categories}
       category={category}
     />
   );

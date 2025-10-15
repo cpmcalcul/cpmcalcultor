@@ -2,7 +2,7 @@ import { i18n } from "@/lib/source";
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 import Image from "next/image";
 
-export function baseOptions(locale: string): BaseLayoutProps {
+export function baseOptions(_locale: string): BaseLayoutProps {
   return {
     links: [],
     nav: {

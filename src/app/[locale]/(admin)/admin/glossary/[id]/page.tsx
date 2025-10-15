@@ -21,7 +21,6 @@ import {
 } from "@/components/ui/tabs";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Save, Trash2, Eye, ExternalLink } from "lucide-react";
-import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 

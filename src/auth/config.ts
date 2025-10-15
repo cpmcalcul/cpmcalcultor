@@ -5,7 +5,7 @@ import { NextAuthConfig } from "next-auth";
 import { Provider } from "next-auth/providers/index";
 import { handleSignInUser } from "./handler";
 
-let providers: Provider[] = [];
+const providers: Provider[] = [];
 
 // Google One Tap Auth
 if (
@@ -21,7 +21,7 @@ if (
         credential: { type: "text" },
       },
 
-      async authorize(credentials, req) {
+      async authorize(credentials) {
         const googleClientId = process.env.NEXT_PUBLIC_AUTH_GOOGLE_ID;
         if (!googleClientId) {
           console.log("invalid google auth config");
@@ -134,7 +134,7 @@ export const authOptions: NextAuthConfig = {
       else if (new URL(url).origin === baseUrl) return url;
       return baseUrl;
     },
-    async session({ session, token, user }) {
+    async session({ session, token }) {
       if (token && token.user && token.user) {
         session.user = token.user;
       }

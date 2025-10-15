@@ -12,7 +12,7 @@ import { Form as FormSlotType } from "@/types/slots/form";
 import { getUserInfo } from "@/services/user";
 import { CategoryStatus, getCategories } from "@/models/category";
 
-export default async function ({
+export default async function AdminEditPostPage({
   params,
 }: {
   params: Promise<{ uuid: string }>;
@@ -141,7 +141,7 @@ export default async function ({
       button: {
         title: "Submit",
       },
-      handler: async (data: FormData, passby: any) => {
+      handler: async (data: FormData, passby: { user: { uuid?: string }; post: { uuid?: string } }) => {
         "use server";
 
         const { user, post } = passby;
@@ -198,8 +198,9 @@ export default async function ({
             message: "Post updated",
             redirect_url: "/admin/posts",
           };
-        } catch (err: any) {
-          throw new Error(err.message);
+        } catch (err: unknown) {
+          const error = err as Error;
+          throw new Error(error.message);
         }
       },
     },

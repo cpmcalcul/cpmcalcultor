@@ -2,7 +2,7 @@ import { respErr, respData } from "@/lib/resp";
 import { getUserCredits } from "@/services/credit";
 import { getUserUuid } from "@/services/user";
 
-export async function POST(_req: Request) {
+export async function POST() {
   try {
     const user_uuid = await getUserUuid();
     if (!user_uuid) {

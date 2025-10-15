@@ -10,7 +10,7 @@ import { redirect } from "next/navigation";
 import Link from "next/link";
 import { getStripeBilling } from "@/services/order";
 
-export default async function () {
+export default async function MyOrdersPage() {
   const t = await getTranslations();
 
   const user_uuid = await getUserUuid();
@@ -33,7 +33,7 @@ export default async function () {
     {
       name: "amount",
       title: t("my_orders.table.amount"),
-      callback: (item: any) =>
+      callback: (item: { currency: string; amount: number }) =>
         `${item.currency.toUpperCase() === "CNY" ? "¥" : "$"} ${
           item.amount / 100
         }`,
@@ -41,7 +41,7 @@ export default async function () {
     {
       name: "interval",
       title: t("my_orders.table.interval"),
-      callback: async (item: any) => {
+      callback: async (item: { interval: string }) => {
         if (item.interval === "month") {
           return t("my_orders.table.interval_month");
         }
@@ -56,11 +56,11 @@ export default async function () {
     {
       name: "paid_at",
       title: t("my_orders.table.paid_at"),
-      callback: (item: any) =>
+      callback: (item: { paid_at: Date }) =>
         moment(item.paid_at).format("YYYY-MM-DD HH:mm:ss"),
     },
     {
-      callback: async (item: any) => {
+      callback: async (item: { stripe_session_id?: string; sub_id?: string; paid_detail?: string }) => {
         if (
           !item.stripe_session_id ||
           !item.stripe_session_id.startsWith("cs_")

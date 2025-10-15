@@ -1,4 +1,4 @@
-import { RiDiscordFill, RiEmotionSadFill, RiGithubFill } from "react-icons/ri";
+import { RiDiscordFill, RiEmotionSadFill } from "react-icons/ri";
 import {
   getAffiliatesByUserUuid,
   getAffiliateSummary,
@@ -16,7 +16,7 @@ import { getTranslations } from "next-intl/server";
 import moment from "moment";
 import { redirect } from "next/navigation";
 
-export default async function () {
+export default async function MyInvitesPage() {
   const t = await getTranslations();
 
   const user_uuid = await getUserUuid();

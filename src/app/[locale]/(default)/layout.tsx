@@ -4,7 +4,6 @@ import { MobileNavigation } from "@/components/navigation/mobile-navigation";
 // import Sidebar from "@/components/blocks/siderbar";
 import { ReactNode } from "react";
 import { getLandingPage } from "@/services/page";
-import Feedback from "@/components/feedback";
 
 export default async function DefaultLayout({
   children,

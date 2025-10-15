@@ -89,21 +89,25 @@ export class KlingImageModel implements ImageModelV1 {
       while (attempts < maxAttempts) {
         const result = await client.queryTask({ task_id: taskId });
 
-        if (!result.data || !result.data.task_status) {
+        if (!result.data || !(result.data as { task_status?: string }).task_status) {
           continue;
         }
 
-        if (result.data.task_status === "succeed") {
-          if (result.data.task_result && result.data.task_result.images) {
-            const taskResult = result.data.task_result as { images: Array<{ url: string }> };
-            taskResult.images.forEach((img) => {
+        const taskData = result.data as {
+          task_status?: string;
+          task_status_msg?: string;
+          task_result?: { images?: Array<{ url: string }> };
+        };
+
+        if (taskData.task_status === "succeed") {
+          if (taskData.task_result && taskData.task_result.images) {
+            taskData.task_result.images.forEach((img) => {
               imgUrls.push(img.url);
             });
           }
           break;
-        } else if (result.data.task_status === "failed") {
-          const taskStatusMsg = result.data.task_status_msg as string | undefined;
-          throw new Error(taskStatusMsg || "Task failed");
+        } else if (taskData.task_status === "failed") {
+          throw new Error(taskData.task_status_msg || "Task failed");
         }
 
         if (abortSignal?.aborted) {

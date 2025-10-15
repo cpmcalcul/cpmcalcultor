@@ -1,4 +1,4 @@
-import { Config, Response, baseUrl, getToken } from "./client";
+import { Config, KlingResponse, baseUrl, getToken } from "./client";
 
 class Client {
   private token: string;
@@ -27,7 +27,7 @@ class Client {
     aspect_ratio?: string;
     callback_url?: string;
     [key: string]: unknown;
-  }): Promise<Response> {
+  }): Promise<KlingResponse> {
     try {
       const uri = `${baseUrl}/v1/images/generations`;
       const req = {
@@ -57,14 +57,14 @@ class Client {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      return await response.json();
+      return (await response.json()) as KlingResponse;
     } catch (error) {
       console.error("Image Generation API call failed:", error);
       throw error;
     }
   }
 
-  async queryTask({ task_id }: { task_id: string }): Promise<Response> {
+  async queryTask({ task_id }: { task_id: string }): Promise<KlingResponse> {
     try {
       const uri = `${baseUrl}/v1/images/generations/${task_id}`;
       const response = await fetch(uri, {
@@ -78,7 +78,7 @@ class Client {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      return await response.json();
+      return (await response.json()) as KlingResponse;
     } catch (e) {
       console.error("Image Generation Query Task API call failed:", e);
       throw e;
@@ -91,7 +91,7 @@ class Client {
   }: {
     page?: number;
     limit?: number;
-  }): Promise<Response> {
+  }): Promise<KlingResponse> {
     try {
       if (page < 1 || page > 1000) {
         throw new Error("invalid page");
@@ -112,7 +112,7 @@ class Client {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      return await response.json();
+      return (await response.json()) as KlingResponse;
     } catch (e) {
       console.error("Image Generation Query Tasks API call failed:", e);
       throw e;

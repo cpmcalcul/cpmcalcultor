@@ -7,7 +7,7 @@ import { getUserCredits } from "@/services/credit";
 import { getUserUuid } from "@/services/user";
 import moment from "moment";
 
-export default async function () {
+export default async function MyCreditsPage() {
   const t = await getTranslations();
 
   const user_uuid = await getUserUuid();
@@ -53,14 +53,14 @@ export default async function () {
       {
         title: t("my_credits.table.created_at"),
         name: "created_at",
-        callback: (v: any) => {
+        callback: (v: { created_at: Date }) => {
           return moment(v.created_at).format("YYYY-MM-DD HH:mm:ss");
         },
       },
       {
         title: t("my_credits.table.expired_at"),
         name: "expired_at",
-        callback: (v: any) => {
+        callback: (v: { expired_at?: Date }) => {
           if (!v.expired_at) {
             return "-";
           }

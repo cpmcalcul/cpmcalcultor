@@ -5,7 +5,7 @@ import { getUserUuid } from "@/services/user";
 import { getUserCredits } from "@/services/credit";
 import { User } from "@/types/user";
 
-export async function POST(_req: Request) {
+export async function POST() {
   try {
     const user_uuid = await getUserUuid();
     if (!user_uuid) {

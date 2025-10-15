@@ -1,5 +1,5 @@
-import { db } from "@/db/db";
-import { glossaryTerm, glossaryTermLocale } from "@/db/schema/glossary";
+import { db } from "@/db";
+import { glossaryTerm, glossaryTermLocale } from "@/db/schema";
 
 const sampleTerms = [
   {
@@ -35,7 +35,7 @@ async function seedGlossary() {
         : "#";
 
       // Insert term
-      const [term] = await db
+      const [term] = await db()
         .insert(glossaryTerm)
         .values({
           slug: termData.slug,
@@ -45,7 +45,7 @@ async function seedGlossary() {
         .returning();
 
       // Insert English locale
-      await db.insert(glossaryTermLocale).values({
+      await db().insert(glossaryTermLocale).values({
         termId: term.id,
         locale: "en",
         title: termData.title,
@@ -53,7 +53,7 @@ async function seedGlossary() {
       });
 
       // Insert Chinese locale
-      await db.insert(glossaryTermLocale).values({
+      await db().insert(glossaryTermLocale).values({
         termId: term.id,
         locale: "zh",
         title: termData.titleZh,

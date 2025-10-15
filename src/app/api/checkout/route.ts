@@ -42,7 +42,8 @@ export async function POST(req: Request) {
       return respErr("invalid checkout params");
     }
 
-    let { amount, interval, valid_months, credits, product_name } = item;
+    const { amount: itemAmount, interval, valid_months, credits, product_name } = item;
+    let amount = itemAmount;
 
     if (!["year", "month", "one-time"].includes(interval)) {
       return respErr("invalid interval");
@@ -188,7 +189,7 @@ async function stripeCheckout({
 
   const client = newStripeClient();
 
-  let options: Stripe.Checkout.SessionCreateParams = {
+  const options: Stripe.Checkout.SessionCreateParams = {
     payment_method_types: ["card"],
     line_items: [
       {
@@ -256,7 +257,6 @@ async function stripeCheckout({
 async function creemCheckout({
   order,
   locale,
-  cancel_url,
 }: {
   order: Order;
   locale: string;
@@ -310,8 +310,6 @@ async function creemCheckout({
 
 async function paypalCheckout({
   order,
-  locale,
-  cancel_url,
 }: {
   order: Order;
   locale: string;

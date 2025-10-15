@@ -5,7 +5,6 @@ import { AffiliateRewardPercent } from "./constant";
 import { AffiliateStatus } from "./constant";
 import { Order } from "@/types/order";
 import { findUserByUuid } from "@/models/user";
-import { getIsoTimestr } from "@/lib/time";
 
 export async function updateAffiliateForOrder(order: Order) {
   try {

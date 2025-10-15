@@ -3,7 +3,7 @@ export interface Config {
   secretKey: string;
 }
 
-export interface Response {
+export interface KlingResponse {
   code: number;
   message: string;
   request_id: string;

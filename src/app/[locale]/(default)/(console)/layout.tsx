@@ -5,7 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { getUserInfo } from "@/services/user";
 import { redirect } from "next/navigation";
 
-export default async function ({ children }: { children: ReactNode }) {
+export default async function ConsolePageLayout({ children }: { children: ReactNode }) {
   const userInfo = await getUserInfo();
   if (!userInfo || !userInfo.email) {
     redirect("/auth/signin");

@@ -2,12 +2,11 @@ import Empty from "@/components/blocks/empty";
 import TableSlot from "@/components/console/slots/table";
 import { Table as TableSlotType } from "@/types/slots/table";
 import { getTranslations } from "next-intl/server";
-import { getUserApikeys, ApikeyStatus } from "@/models/apikey";
+import { getUserApikeys } from "@/models/apikey";
 import { getUserUuid } from "@/services/user";
 import moment from "moment";
-import { Badge } from "@/components/ui/badge";
 
-export default async function () {
+export default async function ApiKeysPage() {
   const t = await getTranslations();
 
   const user_uuid = await getUserUuid();
@@ -40,14 +39,14 @@ export default async function () {
         title: t("api_keys.table.key"),
         name: "api_key",
         type: "copy",
-        callback: (item: any) => {
+        callback: (item: { api_key: string }) => {
           return item.api_key.slice(0, 4) + "..." + item.api_key.slice(-4);
         },
       },
       {
         title: t("api_keys.table.created_at"),
         name: "created_at",
-        callback: (item: any) => {
+        callback: (item: { created_at: Date }) => {
           return moment(item.created_at).fromNow();
         },
       },

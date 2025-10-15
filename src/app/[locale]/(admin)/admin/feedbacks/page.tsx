@@ -4,7 +4,7 @@ import { Table as TableSlotType } from "@/types/slots/table";
 import { getFeedbacks } from "@/models/feedback";
 import moment from "moment";
 
-export default async function () {
+export default async function AdminFeedbacksPage() {
   const feedbacks = await getFeedbacks(1, 50);
 
   const columns: TableColumn[] = [

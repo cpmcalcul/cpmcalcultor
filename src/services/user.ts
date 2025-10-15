@@ -3,7 +3,7 @@ import { findUserByEmail, findUserByUuid, insertUser } from "@/models/user";
 
 import { User } from "@/types/user";
 import { auth } from "@/auth";
-import { getIsoTimestr, getOneYearLaterTimestr } from "@/lib/time";
+import { getOneYearLaterTimestr } from "@/lib/time";
 import { getUserUuidByApiKey } from "@/models/apikey";
 import { headers } from "next/headers";
 import { increaseCredits } from "./credit";
@@ -98,7 +98,7 @@ export async function getUserEmail() {
 }
 
 export async function getUserInfo() {
-  let user_uuid = await getUserUuid();
+  const user_uuid = await getUserUuid();
 
   if (!user_uuid) {
     return;
