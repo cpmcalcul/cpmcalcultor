@@ -1,200 +1,255 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React, { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Search, TrendingUp, Globe, Building2 } from 'lucide-react';
 import { PreviewCarouselProps } from '@/types/hero';
 import { cn } from '@/lib/utils';
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Button } from "@/components/ui/button";
 
-// 创建默认示例图片的函数，支持多语言
-const createDefaultImages = (t: any) => [
-  {
-    id: 1,
-    src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=400&fit=crop&crop=face',
-    alt: t('alt_text.professional_headshot_1'),
-    title: t('image_titles.convert_linkedin')
-  },
-  {
-    id: 2,
-    src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=400&fit=crop&crop=face',
-    alt: t('alt_text.professional_headshot_2'),
-    title: t('image_titles.professional_portrait')
-  },
-  {
-    id: 3,
-    src: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=400&fit=crop&crop=face',
-    alt: t('alt_text.professional_headshot_3'),
-    title: t('image_titles.business_headshot')
-  }
+// CPM 数据配置
+interface CPMData {
+  country: string;
+  industry: string;
+  cpm: number;
+  currency: string;
+  trend: 'up' | 'down' | 'stable';
+}
+
+const countries = [
+  'United States', 'China', 'Japan', 'Germany', 'United Kingdom', 
+  'India', 'France', 'Brazil', 'Italy', 'Canada', 'South Korea', 'Australia'
 ];
 
-/**
- * PreviewCarousel - 图片轮播组件
- *
- * 支持手动和自动轮播，完全可配置
- * 可以传入自定义图片数组或使用默认示例
- */
-export default function PreviewCarousel({
-  images,
-  className,
-  showControls = true,
-  autoSlide = false,
-  slideInterval = 3000,
-}: PreviewCarouselProps) {
-  const t = useTranslations('hero_switcher.preview_carousel');
-  const defaultImages = createDefaultImages(t);
-  const displayImages = images || defaultImages;
+const industries = [
+  'Technology', 'Finance', 'Healthcare', 'E-commerce', 'Education',
+  'Entertainment', 'Automotive', 'Real Estate', 'Travel', 'Food & Beverage',
+  'Fashion', 'Sports', 'Gaming', 'Media', 'Telecommunications'
+];
+
+// 模拟 CPM 数据
+const generateCPMData = (): CPMData[] => {
+  const data: CPMData[] = [];
+  const currencies = ['USD', 'CNY', 'JPY', 'EUR', 'GBP'];
+  const trends: ('up' | 'down' | 'stable')[] = ['up', 'down', 'stable'];
   
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  countries.forEach(country => {
+    industries.forEach(industry => {
+      data.push({
+        country,
+        industry,
+        cpm: Math.floor(Math.random() * 50) + 5, // 5-55 范围
+        currency: currencies[Math.floor(Math.random() * currencies.length)],
+        trend: trends[Math.floor(Math.random() * trends.length)]
+      });
+    });
+  });
+  
+  return data;
+};
 
-  // 自动轮播
-  useEffect(() => {
-    if (!autoSlide || displayImages.length <= 1) return;
+/**
+ * CPMDataSelector - CPM 数据选择器组件
+ *
+ * 支持按国家和行业筛选 CPM 数据
+ * 提供搜索、排序和趋势分析功能
+ */
+export default function CPMDataSelector({
+  className,
+}: PreviewCarouselProps) {
+  const t = useTranslations('cpm_data_selector');
+  
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCountry, setSelectedCountry] = useState('');
+  const [selectedIndustry, setSelectedIndustry] = useState('');
+  const [sortBy, setSortBy] = useState<'cpm' | 'country' | 'industry'>('cpm');
+  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
+  
+  const cpmData = generateCPMData();
 
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % displayImages.length);
-    }, slideInterval);
+  // 筛选和排序数据
+  const filteredData = cpmData
+    .filter(item => {
+      const matchesSearch = searchTerm === '' || 
+        item.country.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        item.industry.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesCountry = selectedCountry === '' || item.country === selectedCountry;
+      const matchesIndustry = selectedIndustry === '' || item.industry === selectedIndustry;
+      return matchesSearch && matchesCountry && matchesIndustry;
+    })
+    .sort((a, b) => {
+      let aValue: string | number = a[sortBy];
+      let bValue: string | number = b[sortBy];
+      
+      if (sortBy === 'cpm') {
+        aValue = a.cpm;
+        bValue = b.cpm;
+      }
+      
+      if (sortOrder === 'asc') {
+        return aValue > bValue ? 1 : -1;
+      } else {
+        return aValue < bValue ? 1 : -1;
+      }
+    })
+    .slice(0, 12); // 限制显示数量
 
-    return () => clearInterval(interval);
-  }, [autoSlide, slideInterval, displayImages.length]);
-
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % displayImages.length);
+  const getTrendIcon = (trend: string) => {
+    switch (trend) {
+      case 'up': return <TrendingUp className="w-4 h-4 text-green-400" />;
+      case 'down': return <TrendingUp className="w-4 h-4 text-red-400 rotate-180" />;
+      default: return <div className="w-4 h-4 bg-gray-400 rounded-full" />;
+    }
   };
-
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + displayImages.length) % displayImages.length);
-  };
-
-  const goToImage = (index: number) => {
-    setCurrentImageIndex(index);
-  };
-
-  if (displayImages.length === 0) {
-    return (
-      <div className={cn(
-        "rounded-2xl p-6 bg-gradient-to-br from-gray-900 to-black text-white shadow-xl h-full flex items-center justify-center",
-        className
-      )}>
-        <p className="text-gray-400">{t('no_images')}</p>
-      </div>
-    );
-  }
-
-  const currentImage = displayImages[currentImageIndex];
 
   return (
     <div className={cn(
-      "rounded-2xl p-6 bg-gradient-to-br from-gray-900 to-black text-white shadow-xl h-full flex flex-col",
+      "rounded-2xl p-8 bg-gradient-to-br from-gray-900 to-black text-white shadow-2xl h-full flex flex-col relative overflow-hidden",
       className
     )}>
-      {/* 标题区域 */}
-      <div className="mb-6">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-2xl font-bold">{t('title')}</h2>
-          <div className="text-yellow-400 text-6xl font-bold">{t('number')}</div>
-        </div>
-        <p className="text-gray-300">
-          {t('description')}
-        </p>
+      {/* 科技感装饰效果 */}
+      <div className="absolute inset-0 rounded-2xl overflow-hidden pointer-events-none">
+        {/* 流动的边缘高光效果 */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-400/60 to-transparent animate-pulse"></div>
+        <div className="absolute top-0 right-0 w-1 h-full bg-gradient-to-b from-transparent via-cyan-400/60 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-0 right-0 w-full h-1 bg-gradient-to-l from-transparent via-cyan-400/60 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-0 left-0 w-1 h-full bg-gradient-to-t from-transparent via-cyan-400/60 to-transparent animate-pulse" style={{ animationDelay: '3s' }}></div>
+        
+        {/* 角落科技光点 */}
+        <div className="absolute top-2 left-2 w-2 h-2 bg-cyan-400 rounded-full animate-ping"></div>
+        <div className="absolute top-2 right-2 w-2 h-2 bg-blue-400 rounded-full animate-ping" style={{ animationDelay: '0.5s' }}></div>
+        <div className="absolute bottom-2 right-2 w-2 h-2 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-2 left-2 w-2 h-2 bg-green-400 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
       </div>
 
-      {/* 图片轮播区域 */}
-      <div className="flex-1 flex flex-col justify-center min-h-0">
-        <div className="relative flex-1 max-h-[60vh] lg:max-h-[500px]">
-          {/* 主图片显示 */}
-          <div className="relative h-full w-full rounded-xl overflow-hidden bg-gray-800"
-               style={{ aspectRatio: 'auto' }}>
-            <Image
-              src={currentImage.src}
-              alt={currentImage.alt}
-              fill
-              className="object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
+      {/* 标题区域 */}
+      <div className="mb-8 relative z-10">
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex items-center gap-4">
+            <div className="p-3 bg-cyan-400/20 rounded-xl">
+              <TrendingUp className="w-8 h-8 text-cyan-400" />
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">{t('title')}</h2>
+              <p className="text-lg text-gray-300 mt-1">{t('description')}</p>
+            </div>
+          </div>
+          <div className="text-right">
+            <div className="text-4xl font-bold text-yellow-400">{filteredData.length}</div>
+            <div className="text-sm text-gray-400">{t('results_count')}</div>
+          </div>
+        </div>
+      </div>
 
-            {/* 图片标题覆盖层 */}
-            {currentImage.title && (
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <p className="text-white font-medium">
-                  {currentImage.title}
-                </p>
-              </div>
-            )}
-
-            {/* 导航按钮 */}
-            {showControls && displayImages.length > 1 && (
-              <>
-                <button
-                  onClick={prevImage}
-                  className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full p-2 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
-                  aria-label="Previous image"
-                >
-                  <ChevronLeft className="w-5 h-5 text-white" />
-                </button>
-
-                <button
-                  onClick={nextImage}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full p-2 transition-colors focus:outline-none focus:ring-2 focus:ring-white/50"
-                  aria-label="Next image"
-                >
-                  <ChevronRight className="w-5 h-5 text-white" />
-                </button>
-              </>
-            )}
+      {/* 搜索和筛选区域 */}
+      <div className="mb-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          {/* 搜索框 */}
+          <div className="md:col-span-2">
+            <Label htmlFor="search" className="text-sm font-medium text-cyan-400 mb-2 block">
+              {t('search_placeholder')}
+            </Label>
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <Input
+                id="search"
+                type="text"
+                placeholder={t('search_placeholder')}
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="h-12 pl-10 bg-gray-800/50 border-gray-600 text-white placeholder:text-gray-400 focus:border-cyan-400 focus:ring-cyan-400/20"
+              />
+            </div>
           </div>
 
-          {/* 指示器dots */}
-          {displayImages.length > 1 && (
-            <div className="flex justify-center gap-2 mt-4">
-              {displayImages.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToImage(index)}
-                  className={cn(
-                    "w-2 h-2 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-white/50",
-                    index === currentImageIndex
-                      ? 'bg-yellow-400'
-                      : 'bg-gray-600 hover:bg-gray-500'
-                  )}
-                  aria-label={`Go to image ${index + 1}`}
-                />
+          {/* 国家选择 */}
+          <div>
+            <Label htmlFor="country" className="text-sm font-medium text-blue-400 mb-2 block">
+              <Globe className="w-4 h-4 inline mr-2" />
+              {t('country_label')}
+            </Label>
+            <select
+              id="country"
+              value={selectedCountry}
+              onChange={(e) => setSelectedCountry(e.target.value)}
+              className="w-full h-12 px-3 bg-gray-800/50 border border-gray-600 text-white rounded-lg focus:border-blue-400 focus:ring-blue-400/20"
+            >
+              <option value="">{t('all_countries')}</option>
+              {countries.map(country => (
+                <option key={country} value={country}>{country}</option>
               ))}
+            </select>
+          </div>
+
+          {/* 行业选择 */}
+          <div>
+            <Label htmlFor="industry" className="text-sm font-medium text-purple-400 mb-2 block">
+              <Building2 className="w-4 h-4 inline mr-2" />
+              {t('industry_label')}
+            </Label>
+            <select
+              id="industry"
+              value={selectedIndustry}
+              onChange={(e) => setSelectedIndustry(e.target.value)}
+              className="w-full h-12 px-3 bg-gray-800/50 border border-gray-600 text-white rounded-lg focus:border-purple-400 focus:ring-purple-400/20"
+            >
+              <option value="">{t('all_industries')}</option>
+              {industries.map(industry => (
+                <option key={industry} value={industry}>{industry}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+      </div>
+
+      {/* 数据展示区域 */}
+      <div className="flex-1 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-h-[400px] overflow-y-auto custom-scrollbar">
+          {filteredData.map((item, index) => (
+            <div key={index} className="bg-gray-800/30 rounded-xl p-4 border border-gray-600/50 hover:border-cyan-400/50 transition-colors">
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                  <span className="text-sm font-medium text-gray-300">{item.country}</span>
+                </div>
+                {getTrendIcon(item.trend)}
+              </div>
+              
+              <div className="mb-3">
+                <h3 className="text-lg font-semibold text-white mb-1">{item.industry}</h3>
+                <div className="flex items-center gap-2">
+                  <span className="text-2xl font-bold text-cyan-300">{item.cpm}</span>
+                  <span className="text-sm text-gray-400">{item.currency}</span>
+                </div>
+              </div>
+              
+              <div className="text-xs text-gray-400">
+                CPM • {item.trend === 'up' ? t('trend_up') : item.trend === 'down' ? t('trend_down') : t('trend_stable')}
+              </div>
             </div>
-          )}
+          ))}
         </div>
       </div>
 
       {/* 底部操作区域 */}
-      <div className="mt-4 space-y-3 flex-shrink-0">
-        <button className="w-full bg-yellow-400 text-black font-semibold py-2.5 rounded-xl hover:bg-yellow-300 transition-colors focus:outline-none focus:ring-2 focus:ring-yellow-500 text-sm">
-          {t('download_all')}
-        </button>
-
-        <div className="flex gap-2">
-          <button className="flex-1 bg-gray-800 hover:bg-gray-700 py-2 rounded-lg transition-colors text-xs focus:outline-none focus:ring-2 focus:ring-gray-500">
-            {t('share')}
-          </button>
-          <button className="flex-1 bg-gray-800 hover:bg-gray-700 py-2 rounded-lg transition-colors text-xs focus:outline-none focus:ring-2 focus:ring-gray-500">
-            {t('save_gallery')}
-          </button>
+      <div className="mt-6 relative z-10">
+        <div className="flex gap-4">
+          <Button className="flex-1 h-12 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold">
+            {t('export_data')}
+          </Button>
+          <Button variant="outline" className="h-12 bg-gray-800/50 border-gray-600 text-gray-300 hover:bg-gray-700/50">
+            {t('view_details')}
+          </Button>
         </div>
       </div>
-
-      {/* 图片计数显示 */}
-      {displayImages.length > 1 && (
-        <div className="mt-1 text-center text-xs text-gray-400 flex-shrink-0">
-          {t('image_count', { current: currentImageIndex + 1, total: displayImages.length })}
-        </div>
-      )}
     </div>
   );
 }
 
 // 预设配置
-export const PreviewCarouselConfigs = {
+export const CPMDataSelectorConfigs = {
   default: {
     showControls: true,
     autoSlide: false,

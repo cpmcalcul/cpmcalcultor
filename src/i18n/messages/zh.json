@@ -389,6 +389,21 @@
       "impressions_label": "展示次数"
     }
   },
+  "cpm_data_selector": {
+    "title": "CPM 数据探索器",
+    "description": "按国家和行业的全球 CPM 洞察",
+    "search_placeholder": "搜索国家和行业...",
+    "country_label": "国家",
+    "industry_label": "行业",
+    "all_countries": "所有国家",
+    "all_industries": "所有行业",
+    "export_data": "导出数据",
+    "view_details": "查看详情",
+    "trend_up": "上升",
+    "trend_down": "下降",
+    "trend_stable": "稳定",
+    "results_count": "结果"
+  },
   "cpm_features": {
     "title": "强大的CPM计算功能",
     "description": "您需要的一切功能，用于计算、分析和优化数字广告活动。",

@@ -404,6 +404,21 @@
       "impressions_label": "Impressions"
     }
   },
+  "cpm_data_selector": {
+    "title": "CPM Data Explorer",
+    "description": "Global CPM insights by country & industry",
+    "search_placeholder": "Search countries & industries...",
+    "country_label": "Country",
+    "industry_label": "Industry",
+    "all_countries": "All Countries",
+    "all_industries": "All Industries",
+    "export_data": "Export Data",
+    "view_details": "View Details",
+    "trend_up": "Rising",
+    "trend_down": "Falling", 
+    "trend_stable": "Stable",
+    "results_count": "Results"
+  },
   "cpm_features": {
     "title": "Powerful CPM Calculation Features",
     "description": "Everything you need to calculate, analyze, and optimize your digital advertising campaigns.",
