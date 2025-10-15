@@ -53,7 +53,8 @@ export default async function LandingPage({
   const page = await getLandingPage(locale);
 
   // 可以通过环境变量或配置来切换Hero组件
-  const useNewHero = process.env.NODE_ENV === 'development'; // 开发环境使用新Hero组件
+  // 现在无论线上还是本地，都统一使用新版Hero组件
+  const useNewHero = true;
 
   return (
     <>
