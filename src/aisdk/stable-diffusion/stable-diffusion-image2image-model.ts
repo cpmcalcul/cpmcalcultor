@@ -53,8 +53,8 @@ export class StableDiffusionImage2ImageModel implements Image2ImageModelV1 {
     seed,
     size,
     providerOptions,
-    headers,
-    abortSignal,
+    // headers,
+    // abortSignal,
   }: Parameters<Image2ImageModelV1["doGenerate"]>[0]): Promise<
     Awaited<ReturnType<Image2ImageModelV1["doGenerate"]>>
   > {
@@ -121,11 +121,12 @@ export class StableDiffusionImage2ImageModel implements Image2ImageModelV1 {
         });
       }
 
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       console.error("Stable Diffusion image generation failed:", error);
       warnings.push({
         type: "other",
-        message: error.message,
+        message: errorMessage,
       });
     }
 

@@ -25,7 +25,7 @@ interface Image2ImageRequest {
   width?: number;
   height?: number;
   scheduler?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 class StableDiffusionClient {
@@ -62,26 +62,32 @@ class StableDiffusionClient {
         throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
       }
 
-      const data = await response.json();
-      
+      const data = await response.json() as Record<string, unknown>;
+
       // Handle different API response formats
-      if (data.artifacts) {
+      if (data.artifacts && Array.isArray(data.artifacts)) {
         // Stability AI format
         return {
           success: true,
-          images: data.artifacts.map((artifact: any) => artifact.base64),
+          images: data.artifacts.map((artifact: unknown) => {
+            const art = artifact as { base64: string };
+            return art.base64;
+          }),
         };
-      } else if (data.images) {
+      } else if (data.images && Array.isArray(data.images)) {
         // Generic format
         return {
           success: true,
-          images: data.images,
+          images: data.images as string[],
         };
-      } else if (data.data) {
+      } else if (data.data && Array.isArray(data.data)) {
         // OpenAI-style format
         return {
           success: true,
-          images: data.data.map((item: any) => item.b64_json || item.url),
+          images: data.data.map((item: unknown) => {
+            const imgItem = item as { b64_json?: string; url?: string };
+            return imgItem.b64_json || imgItem.url || '';
+          }),
         };
       } else {
         return {
@@ -89,11 +95,12 @@ class StableDiffusionClient {
           error: "Unknown response format",
         };
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       console.error("Stable Diffusion API call failed:", error);
       return {
         success: false,
-        error: error.message,
+        error: errorMessage,
       };
     }
   }
@@ -116,23 +123,29 @@ class StableDiffusionClient {
         throw new Error(`HTTP error! status: ${response.status}, message: ${errorText}`);
       }
 
-      const data = await response.json();
-      
+      const data = await response.json() as Record<string, unknown>;
+
       // Handle different API response formats (same as image2image)
-      if (data.artifacts) {
+      if (data.artifacts && Array.isArray(data.artifacts)) {
         return {
           success: true,
-          images: data.artifacts.map((artifact: any) => artifact.base64),
+          images: data.artifacts.map((artifact: unknown) => {
+            const art = artifact as { base64: string };
+            return art.base64;
+          }),
         };
-      } else if (data.images) {
+      } else if (data.images && Array.isArray(data.images)) {
         return {
           success: true,
-          images: data.images,
+          images: data.images as string[],
         };
-      } else if (data.data) {
+      } else if (data.data && Array.isArray(data.data)) {
         return {
           success: true,
-          images: data.data.map((item: any) => item.b64_json || item.url),
+          images: data.data.map((item: unknown) => {
+            const imgItem = item as { b64_json?: string; url?: string };
+            return imgItem.b64_json || imgItem.url || '';
+          }),
         };
       } else {
         return {
@@ -140,11 +153,12 @@ class StableDiffusionClient {
           error: "Unknown response format",
         };
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       console.error("Stable Diffusion text-to-image API call failed:", error);
       return {
         success: false,
-        error: error.message,
+        error: errorMessage,
       };
     }
   }

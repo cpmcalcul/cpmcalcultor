@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { db } from "@/db";
 import { glossaryTerm, glossaryTermLocale } from "@/db/schema/glossary";
-import { and, eq, like, sql, desc, asc } from "drizzle-orm";
+import { and, eq, sql, asc } from "drizzle-orm";
 
 export async function GET(request: Request) {
   try {
@@ -12,7 +12,7 @@ export async function GET(request: Request) {
     const includeDrafts = searchParams.get("includeDrafts") === "1";
     const limit = parseInt(searchParams.get("limit") || "200");
 
-    const conditions: any[] = [];
+    const conditions: unknown[] = [];
 
     if (!includeDrafts) {
       conditions.push(eq(glossaryTerm.status, "published"));
@@ -98,7 +98,7 @@ export async function POST(request: Request) {
 
     if (locales.length > 0) {
       await db().insert(glossaryTermLocale).values(
-        locales.map((l: any) => ({
+        locales.map((l: {locale: string; title: string; definition: string; synonyms?: string | null; seoTitle?: string | null; seoDescription?: string | null}) => ({
           termId: newTerm.id,
           locale: l.locale,
           title: l.title,

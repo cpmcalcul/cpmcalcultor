@@ -2,7 +2,6 @@ import "@/app/globals.css";
 
 import { getLocale, setRequestLocale } from "next-intl/server";
 import { locales } from "@/i18n/locale";
-import { cn } from "@/lib/utils";
 import Script from "next/script";
 
 export default async function RootLayout({

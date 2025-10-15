@@ -484,3 +484,131 @@ const items = [
 - [ ] 验证英文页面不再显示任何中文内容
 - [ ] 测试计算器功能在两种语言下都正常工作
 - [ ] 考虑对其他计算器页面（CPA/CPC/ROI）进行相同处理
+
+---
+
+## 2025-10-14 (Session 8 - TypeScript/ESLint Errors Fix)
+
+### Plan
+
+- [x] **CRITICAL**: Fix React Hooks violations in 5 files (hooks-of-hooks)
+  - [x] feature2/index.tsx - Move hooks before conditional return
+  - [x] header/index.tsx - Move hooks before conditional return
+  - [x] pricing/index.tsx - Move hooks before conditional return
+  - [x] showcase1/index.tsx - Move hooks before conditional return
+  - [x] testimonial/index.tsx - Move hooks before conditional return
+- [x] **HIGH PRIORITY**: Fix common issues across multiple files
+  - [x] Remove unused imports/variables (@typescript-eslint/no-unused-vars)
+  - [x] Change `let` to `const` where appropriate (prefer-const)
+  - [x] Replace `any` types with proper types (@typescript-eslint/no-explicit-any)
+  - [ ] Add display names to anonymous default exports (react/display-name)
+  - [ ] Replace `<a>` with `<Link>` for internal navigation (@next/next/no-html-link-for-pages)
+- [ ] Run build to verify all fixes work correctly
+- [ ] Document any breaking changes or patterns used
+
+### Done
+
+- [x] Fixed all 5 critical React Hooks violations by moving hooks to top level
+- [x] Translated Chinese comments to English in feature2, header, pricing, AeroInput
+- [x] Replaced hardcoded Chinese text "人民币支付 👉" with "Pay in CNY" in pricing
+- [x] Fixed component-specific issues:
+  - AeroInput.tsx - Removed unused `isTyping` state, translated all Chinese comments to English
+  - blog-detail/crumb.tsx - Removed unused `BlogItem` import
+  - blog-detail/index.tsx - Removed unused `categories` parameter
+  - YoutubeCpmCalculator.tsx - Removed unused `useEffect` import, escaped apostrophes with &apos;
+- [x] Fixed API routes TypeScript/ESLint errors:
+  - src/app/api/add-feedback/route.ts - Changed `let` to `const`
+  - src/app/api/checkout/route.ts - Fixed prefer-const, replaced all `any` types with proper types
+  - src/app/api/get-user-credits/route.ts - Prefixed unused `req` param with `_`
+  - src/app/api/get-user-info/route.ts - Prefixed unused `req` param with `_`
+  - src/app/api/glossary/route.ts - Removed unused imports (like, desc), replaced `any[]` with `unknown[]`, added proper type for locales map
+  - src/app/api/pay/notify/creem/route.ts - Replaced `any` with `unknown` and proper error type
+  - src/app/api/pay/notify/stripe/route.ts - Replaced `any` with `unknown` and proper error type
+  - src/app/api/posts/[uuid]/comments/route.ts - Removed unused import, replaced `any` with proper type
+  - src/app/api/update-invite/route.ts - Removed unused import (getIsoTimestr)
+  - src/app/api/user/credits/route.ts - Removed unused import (NextRequest)
+- [x] Fixed auth files:
+  - src/auth/config.ts - Removed unused imports (User, getClientIp, getIsoTimestr, getUuid, saveUser), removed unused params in signIn callback
+- [x] Fixed layout file:
+  - src/app/layout.tsx - Removed unused import (cn)
+
+**Key Patterns Used**:
+- Changed `let` to `const` where variables are not reassigned
+- Prefixed unused but required parameters with `_` (e.g., `_req`)
+- Replaced `any` types with `unknown` for error handling, then cast to proper type
+- Replaced `any` with specific types (e.g., `Record<string, string>`, proper object types)
+- Removed truly unused imports
+- Replaced `as any` with proper type assertions (e.g., `as Order`, `as "month" | "year"`)
+
+**Summary of Critical Fixes (Session 8)**:
+- ✅ All 5 React Hooks violations fixed (BREAKING: these would crash the app)
+- ✅ Hooks now called unconditionally at top level in: feature2, header, pricing, showcase1, testimonial
+- ✅ Components will render correctly even when disabled prop is true
+- ✅ Chinese comments and hardcoded text translated to English
+- ✅ Several unused imports/variables removed
+- ✅ Escaped apostrophes for JSX compliance
+
+**Files Modified in Session 8** (9 component files):
+- src/components/blocks/feature2/index.tsx
+- src/components/blocks/header/index.tsx
+- src/components/blocks/pricing/index.tsx
+- src/components/blocks/showcase1/index.tsx
+- src/components/blocks/testimonial/index.tsx
+- src/components/blocks/aero/AeroInput.tsx
+- src/components/blocks/blog-detail/crumb.tsx
+- src/components/blocks/blog-detail/index.tsx
+- src/components/blocks/calculator/youtubeCPM/YoutubeCpmCalculator.tsx
+
+**Remaining Issues** (372 total errors):
+- Most are warnings about `<img>` tags (should use Next.js `<Image>`)
+- Many `any` types in aisdk directory (AI SDK integrations)
+- Display name warnings for anonymous exports
+- `<a>` tag warnings (should use Next.js `<Link>`)
+- Unused variables in various files
+
+### Next
+
+- [ ] Fix remaining AI SDK TypeScript/ESLint errors
+- [ ] Test build after all fixes are applied
+
+---
+
+## 2025-10-14 (Session 9 - AI SDK TypeScript/ESLint Errors)
+
+### Plan
+
+- [ ] Fix all TypeScript/ESLint errors in src/aisdk directory (16 files)
+- [ ] Remove unused imports in generate-text2image and replicate-text2image-model
+- [ ] Prefix unused parameters with `_` (maxRetries, headers, abortSignal, seed, settings)
+- [ ] Replace all `any` types with proper types:
+  - Use `unknown` for error handling and JSON responses
+  - Use `Record<string, unknown>` for generic objects
+  - Create proper interfaces for typed objects
+- [ ] Ensure all functionality is preserved
+- [ ] Run lint check to verify all errors are fixed
+
+### Done
+
+### Next
+
+---
+
+## 2025-10-15 (Final Production Build & Deployment)
+
+### Plan
+
+- [ ] Fix critical build-blocking errors (React Hooks violations, missing display names)
+- [ ] Fix ESLint errors that prevent production build:
+  - [ ] contexts/app.tsx - Fix conditional React Hooks usage (CRITICAL)
+  - [ ] Remove unused imports across all files
+  - [ ] Fix escape characters in JSX (&quot; for quotes, &apos; for apostrophes)
+  - [ ] Prefix unused parameters with underscore
+  - [ ] Replace `any` types with proper types where critical
+- [ ] Run `pnpm lint` to verify all critical errors are fixed
+- [ ] Run `pnpm build` for production build
+- [ ] Verify build completes successfully
+- [ ] Document any remaining non-critical warnings
+
+### Done
+
+### Next

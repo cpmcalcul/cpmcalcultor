@@ -45,9 +45,9 @@ export class KlingImageModel implements ImageModelV1 {
     n,
     aspectRatio,
     size,
-    seed,
+    // seed,
     providerOptions,
-    headers,
+    // headers,
     abortSignal,
   }: Parameters<ImageModelV1["doGenerate"]>[0]): Promise<
     Awaited<ReturnType<ImageModelV1["doGenerate"]>>
@@ -95,13 +95,15 @@ export class KlingImageModel implements ImageModelV1 {
 
         if (result.data.task_status === "succeed") {
           if (result.data.task_result && result.data.task_result.images) {
-            result.data.task_result.images.forEach((img: any) => {
+            const taskResult = result.data.task_result as { images: Array<{ url: string }> };
+            taskResult.images.forEach((img) => {
               imgUrls.push(img.url);
             });
           }
           break;
         } else if (result.data.task_status === "failed") {
-          throw new Error(result.data.task_status_msg || "Task failed");
+          const taskStatusMsg = result.data.task_status_msg as string | undefined;
+          throw new Error(taskStatusMsg || "Task failed");
         }
 
         if (abortSignal?.aborted) {
@@ -115,10 +117,11 @@ export class KlingImageModel implements ImageModelV1 {
       if (attempts >= maxAttempts) {
         throw new Error("Task timed out");
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       warnings.push({
         type: "other",
-        message: error.message,
+        message: errorMessage,
       });
     }
 

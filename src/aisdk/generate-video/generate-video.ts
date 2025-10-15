@@ -13,7 +13,7 @@ export async function generateVideo({
   prompt,
   n = 1,
   providerOptions,
-  maxRetries,
+  // maxRetries,
   abortSignal,
   headers,
 }: {

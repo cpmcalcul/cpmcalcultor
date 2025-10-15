@@ -58,7 +58,7 @@ export function createKling(
         fetch: options.fetch,
       });
     },
-    video: (modelId: KlingVideoModelId, settings?: KlingVideoSettings) => {
+    video: (modelId: KlingVideoModelId /* settings?: KlingVideoSettings */) => {
       return new KlingVideoModel(
         modelId,
         {

@@ -25,12 +25,12 @@ class Client {
     negative_prompt?: string;
     cfg_scale?: number;
     mode?: "std" | "pro";
-    camera_control?: any;
+    camera_control?: Record<string, unknown>;
     aspect_ratio?: "16:9" | "9:16" | "1:1";
     duration?: 5 | 10;
     callback_url?: string;
     external_task_id?: string;
-    [key: string]: any;
+    [key: string]: unknown;
   }): Promise<Response> {
     try {
       const uri = `${baseUrl}/v1/videos/text2video`;

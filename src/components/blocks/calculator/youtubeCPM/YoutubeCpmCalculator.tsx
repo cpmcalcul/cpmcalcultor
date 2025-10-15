@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -125,7 +125,7 @@ export default function YoutubeCpmCalculator() {
           </h2>
           <div className="text-sm text-gray-500 space-y-1">
             <p>• Fill out any two of the metric boxes. Filling out all three will show an error.</p>
-            <p>• Don't enter special characters (like $ ! % etc).</p>
+            <p>• Don&apos;t enter special characters (like $ ! % etc).</p>
           </div>
         </div>
 
@@ -317,7 +317,7 @@ export default function YoutubeCpmCalculator() {
         <p className="text-gray-600">The difference between the two is due to:</p>
         <ul className="list-disc list-inside space-y-2 mt-2 text-gray-600">
           <li>
-            <strong>The revenue split with YouTube.</strong> Advertisers aren't
+            <strong>The revenue split with YouTube.</strong> Advertisers aren&apos;t
             just paying you, they are paying YouTube as well. This means they
             keep between 45%-60% of the amount advertisers pay.
           </li>

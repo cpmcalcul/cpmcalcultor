@@ -21,24 +21,25 @@ export class ReplicateClient {
 
   async run(
     model: string,
-    input: Record<string, any>,
+    input: Record<string, unknown>,
     options?: {
       wait?: { interval?: number };
       webhook?: string;
       webhook_events_filter?: string[];
     }
-  ): Promise<any> {
+  ): Promise<unknown> {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     return this.client.run(model as any, { input }, options);
   }
 
   async create(
     model: string,
-    input: Record<string, any>,
+    input: Record<string, unknown>,
     options?: {
       webhook?: string;
       webhook_events_filter?: string[];
     }
-  ): Promise<any> {
+  ): Promise<unknown> {
     return this.client.predictions.create({
       version: model,
       input,
@@ -46,11 +47,11 @@ export class ReplicateClient {
     });
   }
 
-  async get(id: string): Promise<any> {
+  async get(id: string): Promise<unknown> {
     return this.client.predictions.get(id);
   }
 
-  async cancel(id: string): Promise<any> {
+  async cancel(id: string): Promise<unknown> {
     return this.client.predictions.cancel(id);
   }
 }

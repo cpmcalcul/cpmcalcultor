@@ -26,7 +26,7 @@ class Client {
     n?: number;
     aspect_ratio?: string;
     callback_url?: string;
-    [key: string]: any;
+    [key: string]: unknown;
   }): Promise<Response> {
     try {
       const uri = `${baseUrl}/v1/images/generations`;

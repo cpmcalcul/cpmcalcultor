@@ -14,10 +14,9 @@ interface AeroInputProps {
   onInputChange?: (value: string) => void;
 }
 
-// 打字机效果组件
+// Typewriter effect component
 const TypewriterPlaceholder = ({ text, isActive }: { text: string; isActive: boolean }) => {
   const [displayText, setDisplayText] = useState('');
-  const [isTyping, setIsTyping] = useState(false);
   const [showCursor, setShowCursor] = useState(true);
   const timeoutRef = useRef<NodeJS.Timeout>();
 
@@ -29,29 +28,28 @@ const TypewriterPlaceholder = ({ text, isActive }: { text: string; isActive: boo
     
     const typeText = () => {
       if (isDeleting) {
-        // 删除文字
+        // Delete text
         if (currentIndex > 0) {
           currentIndex--;
           setDisplayText(text.slice(0, currentIndex));
           timeoutRef.current = setTimeout(typeText, 100);
         } else {
           isDeleting = false;
-          timeoutRef.current = setTimeout(typeText, 1000); // 停顿1秒
+          timeoutRef.current = setTimeout(typeText, 1000); // Pause 1 second
         }
       } else {
-        // 输入文字
+        // Type text
         if (currentIndex < text.length) {
           currentIndex++;
           setDisplayText(text.slice(0, currentIndex));
           timeoutRef.current = setTimeout(typeText, 150);
         } else {
           isDeleting = true;
-          timeoutRef.current = setTimeout(typeText, 2000); // 停顿2秒
+          timeoutRef.current = setTimeout(typeText, 2000); // Pause 2 seconds
         }
       }
     };
 
-    setIsTyping(true);
     typeText();
 
     return () => {
@@ -61,10 +59,10 @@ const TypewriterPlaceholder = ({ text, isActive }: { text: string; isActive: boo
     };
   }, [text, isActive]);
 
-  // 光标闪烁效果
+  // Cursor blinking effect
   useEffect(() => {
     if (!isActive) return;
-    
+
     const cursorInterval = setInterval(() => {
       setShowCursor(prev => !prev);
     }, 600);
@@ -99,7 +97,7 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
     }
   }, [inputValue]);
 
-  // 当用户开始输入时，停止打字机效果
+  // When user starts typing, stop typewriter effect
   useEffect(() => {
     if (localValue.length > 0) {
       setIsPlaceholderActive(false);
@@ -108,13 +106,13 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
     }
   }, [localValue]);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextareaElement>) => {
     const value = e.target.value;
     setLocalValue(value);
     onInputChange?.(value);
   };
 
-  // 当切换标签时，重新激活打字机效果
+  // When switching tabs, reactivate typewriter effect
   useEffect(() => {
     setIsPlaceholderActive(true);
   }, [activeTab.id]);
@@ -134,11 +132,11 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
             className="w-full min-h-[120px] bg-transparent border-0 text-lg resize-none focus-visible:ring-0 focus-visible:ring-offset-0 transition-all duration-300 text-white"
           />
           
-          {/* 打字机效果的placeholder */}
+          {/* Typewriter effect placeholder */}
           {localValue.length === 0 && (
             <div className="absolute top-0 left-0 pointer-events-none text-lg text-white/60">
-              <TypewriterPlaceholder 
-                text={activeTab.placeholder} 
+              <TypewriterPlaceholder
+                text={activeTab.placeholder}
                 isActive={isPlaceholderActive}
               />
             </div>
@@ -156,10 +154,10 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
           </Button>
           
           <div className="relative">
-            {/* 外圈脉冲动画 */}
+            {/* Outer pulse ring animation */}
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-amber-400 to-orange-500 opacity-20 animate-pulse-ring"></div>
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-amber-400 to-orange-500 opacity-10 animate-pulse-ring-delayed"></div>
-            
+
             <Button
               className="relative bg-gradient-to-r from-amber-400 to-orange-500 text-white hover:from-amber-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-heartbeat"
             >

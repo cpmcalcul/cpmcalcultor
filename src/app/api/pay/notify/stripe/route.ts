@@ -50,10 +50,11 @@ export async function POST(req: Request) {
     }
 
     return respOk();
-  } catch (e: any) {
+  } catch (e: unknown) {
+    const error = e as Error;
     console.log("stripe notify failed: ", e);
     return Response.json(
-      { error: `handle stripe notify failed: ${e.message}` },
+      { error: `handle stripe notify failed: ${error.message}` },
       { status: 500 }
     );
   }

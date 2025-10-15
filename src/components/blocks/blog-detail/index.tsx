@@ -19,7 +19,6 @@ type SidebarCategory = {
 
 export default function BlogDetail({
   post,
-  categories,
   category,
 }: {
   post: Post;

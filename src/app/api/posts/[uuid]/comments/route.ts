@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server";
-import { getCommentsForPost, createComment, getCommentStats } from "@/models/comment";
+import { getCommentsForPost, createComment } from "@/models/comment";
 import { findPostByUuid } from "@/models/post";
 import { getClientIp } from "@/lib/ip";
 import { auth } from "@/auth";
@@ -60,7 +60,7 @@ export async function POST(
 
     // Get user info if authenticated
     const session = await auth();
-    const user = session?.user as any;
+    const user = session?.user as {uuid?: string} | undefined;
 
     // If user is not authenticated, require guest info
     if (!user) {

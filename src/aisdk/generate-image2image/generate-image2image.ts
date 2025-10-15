@@ -1,4 +1,4 @@
-import { GenerateImage2ImageResult, GeneratedImage2Image } from "./generate-image2image-result";
+import { GenerateImage2ImageResult } from "./generate-image2image-result";
 import {
   DefaultGenerateImage2ImageResult,
   DefaultGeneratedImage2Image,
@@ -20,7 +20,7 @@ export async function generateImage2Image({
   seed,
   size,
   providerOptions,
-  maxRetries,
+  // maxRetries,
   abortSignal,
   headers,
 }: {

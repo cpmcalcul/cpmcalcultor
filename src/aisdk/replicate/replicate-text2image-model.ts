@@ -1,9 +1,8 @@
 import { ReplicateModelId, ReplicateText2ImageSettings } from "./replicate-settings";
 import type { Text2ImageModelV1, Text2ImageModelV1CallWarning } from "@/aisdk/provider";
-import { ReplicateClient, ReplicateClientConfig } from "./replicate-client";
+import { ReplicateClient } from "./replicate-client";
 import { extractImageUrls, handleReplicateError } from "./replicate-error";
 import type { FetchFunction } from "@ai-sdk/provider-utils";
-import type { Resolvable } from "@ai-sdk/provider-utils";
 
 interface ReplicateText2ImageModelConfig {
   apiToken: string;
@@ -58,8 +57,8 @@ export class ReplicateText2ImageModel implements Text2ImageModelV1 {
     aspectRatio,
     outputFormat,
     providerOptions,
-    headers,
-    abortSignal,
+    // headers,
+    // abortSignal,
   }: Parameters<Text2ImageModelV1["doGenerate"]>[0]): Promise<
     Awaited<ReturnType<Text2ImageModelV1["doGenerate"]>>
   > {
@@ -76,7 +75,7 @@ export class ReplicateText2ImageModel implements Text2ImageModelV1 {
 
     try {
       // Prepare input parameters
-      const input: Record<string, any> = {
+      const input: Record<string, unknown> = {
         prompt: prompt || "Generate a creative image",
         ...(this.settings.outputFormat || outputFormat) && {
           output_format: this.settings.outputFormat || outputFormat || "jpg"
@@ -85,9 +84,9 @@ export class ReplicateText2ImageModel implements Text2ImageModelV1 {
         ...(seed !== undefined && { seed }),
         ...(steps !== undefined && { num_inference_steps: steps }),
         ...(guidanceScale !== undefined && { guidance_scale: guidanceScale }),
-        ...(size && { 
+        ...(size && {
           width: size.width,
-          height: size.height 
+          height: size.height
         }),
         ...(aspectRatio && { aspect_ratio: aspectRatio }),
         // Add any provider-specific options
@@ -99,12 +98,12 @@ export class ReplicateText2ImageModel implements Text2ImageModelV1 {
 
       // Call Replicate API
       const output = await this.client.run(this.modelId, input);
-      
+
       console.log("✅ Replicate API response:", output);
 
       // Extract image URLs from response
       const imageUrls = extractImageUrls(output);
-      
+
       if (imageUrls.length === 0) {
         warnings.push({
           type: "other",
@@ -119,9 +118,9 @@ export class ReplicateText2ImageModel implements Text2ImageModelV1 {
 
       console.log(`📸 Generated ${images.length} image(s)`);
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error("❌ Replicate API error:", error);
-      
+
       const errorMessage = handleReplicateError(error);
       warnings.push({
         type: "other",

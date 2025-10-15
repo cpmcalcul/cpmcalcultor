@@ -25,8 +25,8 @@ export interface StableDiffusionProvider {
    */
   textToImage?: (
     modelId: StableDiffusionModelId,
-    settings?: any
-  ) => any; // Placeholder for future text-to-image implementation
+    settings?: Record<string, unknown>
+  ) => Record<string, unknown>; // Placeholder for future text-to-image implementation
 }
 
 export function createStableDiffusion(

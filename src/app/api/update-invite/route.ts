@@ -10,7 +10,6 @@ import {
 } from "@/models/user";
 import { respData, respErr } from "@/lib/resp";
 
-import { getIsoTimestr } from "@/lib/time";
 import { insertAffiliate } from "@/models/affiliate";
 
 export async function POST(req: Request) {

@@ -44,7 +44,7 @@ export class KlingVideoModel implements VideoModelV1 {
     prompt,
     n,
     providerOptions,
-    headers,
+    // headers,
     abortSignal,
   }: Parameters<VideoModelV1["doGenerate"]>[0]): Promise<
     Awaited<ReturnType<VideoModelV1["doGenerate"]>>
@@ -99,15 +99,17 @@ export class KlingVideoModel implements VideoModelV1 {
 
         if (result.data.task_status === "succeed") {
           if (result.data.task_result && result.data.task_result.videos) {
-            result.data.task_result.videos.forEach((video: any) => {
+            const taskResult = result.data.task_result as { videos: Array<{ url: string }> };
+            taskResult.videos.forEach((video) => {
               videoUrls.push(video.url);
             });
           }
           break;
         } else if (result.data.task_status === "failed") {
+          const taskStatusMsg = result.data.task_status_msg as string | undefined;
           warnings.push({
             type: "other",
-            message: result.data.task_status_msg || "Task failed",
+            message: taskStatusMsg || "Task failed",
           });
           break;
         }
@@ -126,11 +128,12 @@ export class KlingVideoModel implements VideoModelV1 {
           message: "Task timed out",
         });
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : String(error);
       console.error("Kling generate video failed:", error);
       warnings.push({
         type: "other",
-        message: error.message,
+        message: errorMessage,
       });
     }
 

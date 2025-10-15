@@ -7,7 +7,7 @@ export interface Response {
   code: number;
   message: string;
   request_id: string;
-  data?: any;
+  data?: Record<string, unknown>;
 }
 
 export const baseUrl = "https://api.klingai.com";

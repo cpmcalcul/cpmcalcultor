@@ -37,10 +37,6 @@ import { useRouter } from "next/navigation";
 
 export default function Header({ header }: { header: HeaderType }) {
   const router = useRouter();
-  if (header.disabled) {
-    return null;
-  }
-
   const [activeDropdown, setActiveDropdown] = useState<{
     index: number;
     offset: number;
@@ -89,6 +85,10 @@ export default function Header({ header }: { header: HeaderType }) {
       "--menu-dropdown-offset": `${activeDropdown.offset}px`,
     } as CSSProperties;
   }, [activeDropdown]);
+
+  if (header.disabled) {
+    return null;
+  }
 
   const registerTriggerRef = (index: number, node: HTMLButtonElement | null) => {
     triggerRefs.current[index] = node;
@@ -172,13 +172,13 @@ export default function Header({ header }: { header: HeaderType }) {
                             onFocus={(event) =>
                               updateDropdownOffset(i, event.currentTarget)
                             }
-                            onClick={(e) => {
-                              // 点击标题触发跳转到父级链接
+                            onClick={() => {
+                              // Clicking title triggers navigation to parent link
                               if (item.url) {
                                 if (item.target === "_blank") {
                                   window.open(item.url as string, "_blank");
                                 } else {
-                                  router.push(item.url as any);
+                                  router.push(item.url as string);
                                 }
                               }
                             }}

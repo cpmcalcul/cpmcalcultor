@@ -8,37 +8,37 @@ import Icon from "@/components/icon";
 import { Section as SectionType } from "@/types/blocks/section";
 
 export default function Feature2({ section }: { section: SectionType }) {
-  if (section.disabled) {
-    return null;
-  }
-
   const [activeIndex, setActiveIndex] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [showContent, setShowContent] = useState(false);
 
-  // 渐进式展示内容
+  // Progressive content display
   useEffect(() => {
     setIsVisible(true);
     const timer = setTimeout(() => setShowContent(true), 300);
     return () => clearTimeout(timer);
   }, []);
 
-  // 自动轮播功能（可选）
+  // Auto-rotation feature (optional)
   useEffect(() => {
     if (section.items && section.items.length > 1) {
       const interval = setInterval(() => {
         setActiveIndex((prev) => (prev + 1) % (section.items?.length || 1));
-      }, 8000); // 8秒切换一次
+      }, 8000);
       return () => clearInterval(interval);
     }
   }, [section.items]);
 
+  if (section.disabled) {
+    return null;
+  }
+
   const handleItemClick = (index: number) => {
     setActiveIndex(index);
     setExpandedIndex((prev) => (prev === index ? null : index));
-    // 添加点击反馈
+    // Add click feedback
     const element = document.getElementById(`feature-item-${index}`);
     if (element) {
       element.style.transform = "scale(0.95)";
@@ -113,7 +113,7 @@ export default function Feature2({ section }: { section: SectionType }) {
                     }`}>
                       {item.title}
                     </h3>
-                    {/* 活跃状态指示器 */}
+                    {/* Active state indicator */}
                     {activeIndex === i && (
                       <div className="ml-auto">
                         <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
@@ -127,17 +127,17 @@ export default function Feature2({ section }: { section: SectionType }) {
                     {item.description}
                   </p>
                   
-                  {/* 悬停时的额外信息提示 */}
+                  {/* Hover hint for additional information */}
                   {hoveredIndex === i && (
                     <div className="mt-3 ml-11 p-2 bg-muted/50 rounded text-xs text-muted-foreground animate-in slide-in-from-top-2 duration-200">
-                      点击查看效果对比
+                      Click to see the comparison
                     </div>
                   )}
                 </div>
               ))}
             </div>
 
-            {/* 进度指示器 */}
+            {/* Progress indicator */}
             {section.items && section.items.length > 1 && (
               <div className={`mt-8 flex justify-center gap-2 transition-all duration-700 delay-1000 ${showContent ? "opacity-100" : "opacity-0"}`}>
                 {section.items.map((_, i) => (
@@ -145,11 +145,11 @@ export default function Feature2({ section }: { section: SectionType }) {
                     key={i}
                     onClick={() => setActiveIndex(i)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      activeIndex === i 
-                        ? "bg-primary scale-125" 
+                      activeIndex === i
+                        ? "bg-primary scale-125"
                         : "bg-muted hover:bg-primary/50 hover:scale-110"
                     }`}
-                    aria-label={`切换到功能 ${i + 1}`}
+                    aria-label={`Switch to feature ${i + 1}`}
                   />
                 ))}
               </div>
@@ -168,7 +168,7 @@ export default function Feature2({ section }: { section: SectionType }) {
                   className="w-full h-96 lg:h-[500px] transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02]"
                 />
                 
-                {/* 悬停时的操作提示 */}
+                {/* Hover operation hint */}
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
                   <div className="text-white text-center p-4">
                     <p className="text-lg font-semibold mb-2">Drag to Compare</p>
@@ -176,7 +176,7 @@ export default function Feature2({ section }: { section: SectionType }) {
                   </div>
                 </div>
 
-                {/* 当前功能标签 */}
+                {/* Current feature label */}
                 <div className="absolute top-4 left-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium shadow-lg animate-in slide-in-from-top-2 duration-300">
                   {section.items[activeIndex].title}
                 </div>

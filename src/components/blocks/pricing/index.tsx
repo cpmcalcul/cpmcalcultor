@@ -14,12 +14,7 @@ import { useAppContext } from "@/contexts/app";
 import { useLocale } from "next-intl";
 
 export default function Pricing({ pricing }: { pricing: PricingType }) {
-  if (pricing.disabled) {
-    return null;
-  }
-
   const locale = useLocale();
-
   const { user, setShowSignModal } = useAppContext();
 
   const [group, setGroup] = useState(() => {
@@ -93,6 +88,10 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
       setIsLoading(false);
     }
   }, [pricing.items]);
+
+  if (pricing.disabled) {
+    return null;
+  }
 
   return (
     <section id={pricing.name} className="py-16">
@@ -228,7 +227,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                     <div className="flex flex-col gap-2">
                       {item.cn_amount && item.cn_amount > 0 ? (
                         <div className="flex items-center gap-x-2 mt-2">
-                          <span className="text-sm">人民币支付 👉</span>
+                          <span className="text-sm">Pay in CNY</span>
                           <div
                             className="inline-block p-2 hover:cursor-pointer hover:bg-base-200 rounded-md"
                             onClick={() => {

@@ -1,4 +1,3 @@
-import { NextRequest } from "next/server";
 import { respData, respErr } from "@/lib/resp";
 import { getUserInfo } from "@/services/user";
 import { getUserCredits } from "@/services/credit";

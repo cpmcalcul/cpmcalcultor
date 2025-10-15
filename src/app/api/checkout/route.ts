@@ -14,7 +14,7 @@ import { newPayPalClient } from "@/integrations/paypal";
 
 export async function POST(req: Request) {
   try {
-    let { product_id, currency, locale, provider: requestProvider } = await req.json();
+    const { product_id, currency, locale, provider: requestProvider } = await req.json();
 
     let cancel_url = `${
       process.env.NEXT_PUBLIC_PAY_CANCEL_URL || process.env.NEXT_PUBLIC_WEB_URL
@@ -140,7 +140,7 @@ export async function POST(req: Request) {
     if (provider === "creem") {
       // checkout with creem
       const result = await creemCheckout({
-        order: order as any,
+        order: order as Order,
         locale,
         cancel_url,
       });
@@ -151,7 +151,7 @@ export async function POST(req: Request) {
     if (provider === "paypal") {
       // checkout with paypal
       const result = await paypalCheckout({
-        order: order as any,
+        order: order as Order,
         locale,
         cancel_url,
       });
@@ -161,15 +161,16 @@ export async function POST(req: Request) {
 
     // checkout with stripe (default)
     const result = await stripeCheckout({
-      order: order as any,
+      order: order as Order,
       locale,
       cancel_url,
     });
 
     return respData(result);
-  } catch (e: any) {
+  } catch (e: unknown) {
+    const error = e as Error;
     console.log("checkout failed: ", e);
-    return respErr("checkout failed: " + e.message);
+    return respErr("checkout failed: " + error.message);
   }
 }
 
@@ -199,7 +200,7 @@ async function stripeCheckout({
           unit_amount: order.amount,
           recurring: is_subscription
             ? {
-                interval: order.interval as any,
+                interval: order.interval as "month" | "year",
               }
             : undefined,
         },
@@ -263,9 +264,10 @@ async function creemCheckout({
 }) {
   const client = newCreemClient();
 
-  let products = (process.env.CREEM_PRODUCTS as any) || {};
-  if (typeof products === "string") {
-    products = JSON.parse(products);
+  let products: Record<string, string> = {};
+  const productsEnv = process.env.CREEM_PRODUCTS;
+  if (productsEnv) {
+    products = typeof productsEnv === "string" ? JSON.parse(productsEnv) : productsEnv;
   }
   console.log("creem products: ", products);
 
@@ -318,9 +320,10 @@ async function paypalCheckout({
   const client = newPayPalClient();
 
   // For PayPal, we need to check if we have a PayPal plan mapping
-  let paypalPlans = (process.env.PAYPAL_PLANS as any) || {};
-  if (typeof paypalPlans === "string") {
-    paypalPlans = JSON.parse(paypalPlans);
+  let paypalPlans: Record<string, string> = {};
+  const plansEnv = process.env.PAYPAL_PLANS;
+  if (plansEnv) {
+    paypalPlans = typeof plansEnv === "string" ? JSON.parse(plansEnv) : plansEnv;
   }
 
   const paypal_plan_id = paypalPlans[order.product_id || ""] || "";
@@ -349,7 +352,7 @@ async function paypalCheckout({
 
     // Find the approval link
     const approvalLink = subscription.links?.find(
-      (link: any) => link.rel === "approve"
+      (link: {rel: string; href?: string}) => link.rel === "approve"
     );
 
     return {

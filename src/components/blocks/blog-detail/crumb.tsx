@@ -6,7 +6,6 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-import { BlogItem } from "@/types/blocks/blog";
 import { Home } from "lucide-react";
 import { Post } from "@/types/post";
 import { useTranslations } from "next-intl";

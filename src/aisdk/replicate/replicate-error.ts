@@ -1,8 +1,8 @@
 /**
  * Handle Replicate API errors and convert to user-friendly messages
  */
-export function handleReplicateError(error: any): string {
-  if (error.message) {
+export function handleReplicateError(error: unknown): string {
+  if (error instanceof Error && error.message) {
     if (error.message.includes("401")) {
       return "API认证失败，请检查API token";
     } else if (error.message.includes("422")) {
@@ -13,14 +13,14 @@ export function handleReplicateError(error: any): string {
       return "服务器内部错误，请稍后重试";
     }
   }
-  
+
   return "Replicate API调用失败，请稍后重试";
 }
 
 /**
  * Extract image URLs from Replicate API response
  */
-export function extractImageUrls(output: any): string[] {
+export function extractImageUrls(output: unknown): string[] {
   // Handle array output
   if (Array.isArray(output)) {
     return output.filter(item => typeof item === 'string' && item.startsWith('http'));

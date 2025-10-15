@@ -1,8 +1,4 @@
-import { GenerateText2ImageResult, GeneratedImage, DefaultGeneratedImage } from "./generate-text2image-result";
-import {
-  convertBase64ToUint8Array,
-  convertUint8ArrayToBase64,
-} from "@ai-sdk/provider-utils";
+import { GenerateText2ImageResult, GeneratedImage, DefaultGeneratedImage, ImageGenerationWarning } from "./generate-text2image-result";
 
 import { JSONValue } from "@ai-sdk/provider";
 import { Text2ImageModelV1 } from "@/aisdk/provider";
@@ -19,7 +15,7 @@ export async function generateText2Image({
   aspectRatio,
   outputFormat,
   providerOptions,
-  maxRetries,
+  // maxRetries,
   abortSignal,
   headers,
 }: {
@@ -73,7 +69,7 @@ export async function generateText2Image({
   );
 
   const images: Array<DefaultGeneratedImage> = [];
-  const warnings: Array<any> = [];
+  const warnings: Array<ImageGenerationWarning> = [];
 
   for (const result of results) {
     images.push(
@@ -94,11 +90,11 @@ export async function generateText2Image({
 
 class DefaultGenerateText2ImageResult implements GenerateText2ImageResult {
   readonly images: Array<GeneratedImage>;
-  readonly warnings: Array<any>;
+  readonly warnings: Array<ImageGenerationWarning>;
 
   constructor(options: {
     images: Array<DefaultGeneratedImage>;
-    warnings: Array<any>;
+    warnings: Array<ImageGenerationWarning>;
   }) {
     this.images = options.images;
     this.warnings = options.warnings;

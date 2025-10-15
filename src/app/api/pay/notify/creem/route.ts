@@ -50,10 +50,11 @@ export async function POST(req: Request) {
     }
 
     return respOk();
-  } catch (e: any) {
+  } catch (e: unknown) {
+    const error = e as Error;
     console.log("creem notify failed: ", e);
     return Response.json(
-      { error: `handle creem notify failed: ${e.message}` },
+      { error: `handle creem notify failed: ${error.message}` },
       { status: 500 }
     );
   }
@@ -82,7 +83,8 @@ async function generateSignature(
     return Array.from(signatureArray)
       .map((b) => b.toString(16).padStart(2, "0"))
       .join("");
-  } catch (error: any) {
-    throw new Error(`Failed to generate signature: ${error.message}`);
+  } catch (error: unknown) {
+    const err = error as Error;
+    throw new Error(`Failed to generate signature: ${err.message}`);
   }
 }

@@ -3,6 +3,11 @@ import {
   convertUint8ArrayToBase64,
 } from "@ai-sdk/provider-utils";
 
+export interface ImageGenerationWarning {
+  type: string;
+  message: string;
+}
+
 export interface GeneratedImage {
   readonly base64: string;
   readonly uint8Array: Uint8Array;
@@ -11,7 +16,7 @@ export interface GeneratedImage {
 
 export interface GenerateText2ImageResult {
   readonly images: Array<GeneratedImage>;
-  readonly warnings: Array<any>;
+  readonly warnings: Array<ImageGenerationWarning>;
   readonly image: GeneratedImage; // First image for convenience
 }
 
