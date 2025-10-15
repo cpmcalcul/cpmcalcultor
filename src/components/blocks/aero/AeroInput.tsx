@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Send, Image } from "lucide-react";
 import { TabContent } from "@/types/aero";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useLocale } from "next-intl";
 
 interface AeroInputProps {
@@ -106,7 +106,7 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
     }
   }, [localValue]);
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLTextareaElement>) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
     setLocalValue(value);
     onInputChange?.(value);
@@ -134,7 +134,7 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
           
           {/* Typewriter effect placeholder */}
           {localValue.length === 0 && (
-            <div className="absolute top-0 left-0 pointer-events-none text-lg text-white/60">
+            <div className="absolute top-3 left-3 pointer-events-none text-lg text-white/60 leading-6">
               <TypewriterPlaceholder
                 text={activeTab.placeholder}
                 isActive={isPlaceholderActive}
