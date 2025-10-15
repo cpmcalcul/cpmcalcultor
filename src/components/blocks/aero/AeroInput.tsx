@@ -12,6 +12,7 @@ interface AeroInputProps {
   isTransitioning: boolean;
   inputValue?: string;
   onInputChange?: (value: string) => void;
+  onCalculate?: () => void;
 }
 
 // Typewriter effect component
@@ -86,7 +87,7 @@ const TypewriterPlaceholder = ({ text, isActive }: { text: string; isActive: boo
   );
 };
 
-const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: AeroInputProps) => {
+const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange, onCalculate }: AeroInputProps) => {
   const locale = useLocale();
   const [localValue, setLocalValue] = useState(inputValue || "");
   const [isPlaceholderActive, setIsPlaceholderActive] = useState(true);
@@ -159,6 +160,7 @@ const AeroInput = ({ activeTab, isTransitioning, inputValue, onInputChange }: Ae
             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-amber-400 to-orange-500 opacity-10 animate-pulse-ring-delayed"></div>
 
             <Button
+              onClick={onCalculate}
               className="relative bg-gradient-to-r from-amber-400 to-orange-500 text-white hover:from-amber-500 hover:to-orange-600 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-heartbeat"
             >
               <Send className="w-4 h-4 mr-2" />

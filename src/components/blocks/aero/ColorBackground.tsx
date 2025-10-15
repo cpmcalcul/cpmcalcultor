@@ -13,7 +13,11 @@ interface ColorPreset {
   animation?: string;
 }
 
-const ColorBackground = () => {
+interface ColorBackgroundProps {
+  presetId?: string;
+}
+
+const ColorBackground = ({ presetId }: ColorBackgroundProps) => {
   const locale = useLocale();
   
   const colorPresets: ColorPreset[] = [
@@ -57,9 +61,28 @@ const ColorBackground = () => {
     }
   ];
 
-  const [activePreset, setActivePreset] = useState<ColorPreset>(colorPresets[0]);
+  // 根据 presetId 选择对应的预设，如果没有指定则使用第一个
+  const getInitialPreset = () => {
+    if (presetId) {
+      const preset = colorPresets.find(p => p.id === presetId);
+      return preset || colorPresets[0];
+    }
+    return colorPresets[0];
+  };
+
+  const [activePreset, setActivePreset] = useState<ColorPreset>(getInitialPreset());
   const [showControls, setShowControls] = useState(false);
   const [animationSpeed, setAnimationSpeed] = useState(1);
+
+  // 当 presetId 变化时更新活跃预设
+  useEffect(() => {
+    if (presetId) {
+      const preset = colorPresets.find(p => p.id === presetId);
+      if (preset) {
+        setActivePreset(preset);
+      }
+    }
+  }, [presetId]);
 
   const getBackgroundStyle = (preset: ColorPreset) => {
     const baseStyle = {

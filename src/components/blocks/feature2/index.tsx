@@ -168,11 +168,11 @@ export default function Feature2({ section }: { section: SectionType }) {
                   className="w-full h-96 lg:h-[500px] transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02]"
                 />
                 
-                {/* Hover operation hint */}
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <div className="text-white text-center p-4">
-                    <p className="text-lg font-semibold mb-2">Drag to Compare</p>
-                    <p className="text-sm opacity-90">Drag the slider left and right to see before and after effects</p>
+                {/* Hover operation hint - positioned to not block interaction */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-lg text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none backdrop-blur-sm">
+                  <div className="text-center">
+                    <p className="font-semibold">Drag to Compare</p>
+                    <p className="text-xs opacity-90 mt-1">Use the slider to see before and after</p>
                   </div>
                 </div>
 

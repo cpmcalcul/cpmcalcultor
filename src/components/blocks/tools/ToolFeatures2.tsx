@@ -201,15 +201,13 @@ export function ToolFeatures2({ namespace, items }: ToolFeatures2Props) {
                   className="relative w-full h-96 lg:h-[500px] transition-all duration-500 group-hover:shadow-2xl group-hover:scale-[1.02] rounded-xl overflow-hidden border border-border/50 backdrop-blur-sm"
                 />
 
-                {/* 悬停时的操作提示 */}
+                {/* 悬停时的操作提示 - 不阻止交互 */}
                 {t.has("slider_hover_title") && (
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center backdrop-blur-sm">
-                    <div className="text-white text-center p-6">
-                      <p className="text-xl font-semibold mb-3">{t("slider_hover_title")}</p>
-                      {t.has("slider_hover_description") && (
-                        <p className="text-base opacity-90 leading-relaxed">{t("slider_hover_description")}</p>
-                      )}
-                    </div>
+                  <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-black/80 to-black/60 text-white px-6 py-3 rounded-xl text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none backdrop-blur-sm max-w-sm">
+                    <p className="text-lg font-semibold mb-2">{t("slider_hover_title")}</p>
+                    {t.has("slider_hover_description") && (
+                      <p className="text-sm opacity-90 leading-relaxed">{t("slider_hover_description")}</p>
+                    )}
                   </div>
                 )}
 

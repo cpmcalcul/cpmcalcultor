@@ -10,69 +10,82 @@ interface CardData {
   title: string;
   image: string;
   alt: string;
+  link?: string;
 }
 
 // 卡片数据
 const getCardData = (locale: string): CardData[] => [
   { 
     id: 1, 
-    title: locale === 'zh' ? "赛博战士" : "Cyber Warrior", 
-    image: "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI生成的赛博朋克风格战士角色，展示人工智能艺术创作能力" : "AI-generated cyberpunk warrior character showcasing artificial intelligence art creation capabilities"
+    title: locale === 'zh' ? "CPM计算器" : "CPM Calculator", 
+    image: "/imgs/features0/tools-01.jpg",
+    alt: locale === 'zh' ? "计算营销活动的投资回报率 (ROI)。衡量营销活动盈利能力和营销效率的必备工具。" : "Calculate the return on investment (ROI) for your marketing campaigns. Essential tool for measuring marketing profitability and efficiency.",
+    link: "/tools/cpm-calculator"
   },
   { 
     id: 2, 
-    title: locale === 'zh' ? "动漫风格" : "Anime Style", 
-    image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI生成的动漫风格人物插画，体现机器学习图像生成技术" : "AI-generated anime style character illustration demonstrating machine learning image generation technology"
+    title: locale === 'zh' ? "CPC计算器" : "CPC Calculator", 
+    image: "/imgs/features0/tools-02.jpg",
+    alt: locale === 'zh' ? "计算每次点击成本 (CPC) 的工具。帮助分析广告支出效率，优化广告投放策略。" : "Tool for calculating the cost per click (CPC). Helps analyze ad spend efficiency and optimize ad placement strategy.",
+    link: "/tools/cpc-calculator"
   },
   { 
     id: 3, 
-    title: locale === 'zh' ? "肖像网格" : "Portrait Grid", 
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI肖像生成网格展示，人工智能面部合成和编辑工具演示" : "AI portrait generation grid showcase for artificial intelligence face synthesis and editing tools"
+    title: locale === 'zh' ? "CPA计算器" : "CPA Calculator", 
+    image: "/imgs/features0/tools-03.jpg",
+    alt: locale === 'zh' ? "计算每次行动成本 (CPA) 的专业工具。用于评估广告投资带来实际转化的效果。" : "Professional tool for calculating the cost per action (CPA). Used to assess the effectiveness of advertising investments in driving real conversions.",
+    link: "/tools/cpa-calculator"
   },
   { 
     id: 4, 
-    title: locale === 'zh' ? "时尚系列" : "Fashion Collection", 
-    image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI驱动的时尚设计作品集，展示创意AI在服装设计中的应用" : "AI-powered fashion design collection showcasing creative AI applications in clothing design"
+    title: locale === 'zh' ? "CTR计算器" : "CTR Calculator", 
+    image: "/imgs/features0/tools-04.jpg",
+    alt: locale === 'zh' ? "便捷的点击率 (CTR) 计算工具，分析广告表现和用户互动情况。" : "Convenient click-through rate (CTR) calculator for analyzing ad performance and user interaction.",
+    link: "/tools/ctr-calculator"
   },
   { 
     id: 5, 
-    title: locale === 'zh' ? "都市艺术" : "Urban Art", 
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI生成的城市街头艺术风格作品，数字艺术创作工具展示" : "AI-generated urban street art style artwork demonstrating digital art creation tools"
+    title: locale === 'zh' ? "ROI计算器" : "ROI Calculator", 
+    image: "/imgs/features0/tools-05.jpg",
+    alt: locale === 'zh' ? "精准计算广告投入回报率 (ROI)，协助决策和项目优化。" : "Accurately calculate the return on investment (ROI) for ads, assisting decision making and project optimization.",
+    link: "/tools/roi-calculator"
   },
   { 
     id: 6, 
-    title: locale === 'zh' ? "数字设计" : "Digital Design", 
-    image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI辅助数字设计作品，展示人工智能在视觉设计领域的创新应用" : "AI-assisted digital design artwork showcasing artificial intelligence innovation in visual design"
+    title: locale === 'zh' ? "YouTube CPM计算器" : "YouTube CPM Calculator", 
+    image: "/imgs/features0/tools-06.jpg",
+    alt: locale === 'zh' ? "针对YouTube视频广告CPM的计算工具，帮助内容创作者和广告主分析收益情况。" : "Calculation tool for YouTube video ad CPM, helping creators and advertisers analyze revenue.",
+    link: "/tools/youtube-cpm-calculator"
   },
   { 
     id: 7, 
-    title: locale === 'zh' ? "创意作品" : "Creative Work", 
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI创意艺术作品展示，体现机器学习在艺术创作中的无限可能" : "AI creative artwork showcase demonstrating machine learning unlimited possibilities in art creation"
+    title: locale === 'zh' ? "计算CPM" : "calculate the cpm", 
+    image: "/imgs/features0/tools-07.jpg",
+    alt: locale === 'zh' ? "深入讲解CPM的计算方法及实用技巧，助力广告投放决策。" : "In-depth explanation of CPM calculation methods and practical tips to aid advertising decisions."
   },
   { 
     id: 8, 
-    title: locale === 'zh' ? "现代艺术" : "Modern Art", 
-    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI现代艺术风格创作，展示深度学习在当代艺术表现中的应用" : "AI modern art style creation showcasing deep learning applications in contemporary art expression"
+    title: locale === 'zh' ? "如何计算CPM" : "How to Calculate CPM", 
+    image: "/imgs/features0/tools-08.jpg",
+    alt: locale === 'zh' 
+      ? "详细介绍如何计算CPM，包括公式、步骤和实际案例，帮助用户直观理解成本计算方法。"
+      : "Detailed explanation on how to calculate CPM, including formulas, steps, and practical examples to help users easily understand the cost calculation method."
   },
   { 
     id: 9, 
-    title: locale === 'zh' ? "创新" : "Innovation", 
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "AI技术创新概念图，展示人工智能在创意产业的突破性应用" : "AI technology innovation concept showcasing artificial intelligence breakthrough applications in creative industries"
+    title: locale === 'zh' ? "计算CPM" : "Calculate CPM", 
+    image: "/imgs/features0/tools-09.jpg",
+    alt: locale === 'zh' 
+      ? "教你用简单公式快速计算CPM，助力广告主高效管理广告支出及收益。"
+      : "Teaches you to quickly calculate CPM using simple formulas, helping advertisers efficiently manage ad spending and returns."
   },
   { 
     id: 10, 
-    title: locale === 'zh' ? "未来科技" : "Future Tech", 
-    image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=500&fit=crop&q=80",
-    alt: locale === 'zh' ? "未来科技AI概念设计，展示先进人工智能系统的视觉表现能力" : "Future tech AI concept design demonstrating advanced artificial intelligence system visual capabilities"
+    title: locale === 'zh' ? "计算CPM" : "CPM Calculation", 
+    image: "/imgs/features0/tools-10.jpg",
+    alt: locale === 'zh' 
+      ? "通俗易懂地讲解CPM的计算逻辑和实用场景，使广告效果分析更直观。"
+      : "Clear and understandable explanation of CPM calculation logic and practical scenarios, making ad performance analysis more intuitive."
   }
 ];
 
