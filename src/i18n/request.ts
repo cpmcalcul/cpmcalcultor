@@ -24,7 +24,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     try {
       // Discord page translations
       const discordMessages = (await import(`./pages/discord/${locale.toLowerCase()}.json`)).default;
-
+      const comingsoonMessages = (await import(`./pages/comingsoon/${locale.toLowerCase()}.json`)).default;
       // Glossary page translations
       const glossaryMessages = (await import(`./pages/glossary/${locale.toLowerCase()}.json`)).default;
 
@@ -41,6 +41,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       pageTranslations = {
         pages: {
           discord: discordMessages,
+          comingsoon: comingsoonMessages,
           glossary: glossaryMessages,
           featuredCreations: featuredCreationsMessages
         },
@@ -73,6 +74,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     let fallbackPageTranslations: any = {};
     try {
       const discordMessages = (await import(`./pages/discord/en.json`)).default;
+      const comingsoonMessages = (await import(`./pages/comingsoon/en.json`)).default;
       const glossaryMessages = (await import(`./pages/glossary/en.json`)).default;
       const featuredCreationsMessages = (await import(`./pages/featured-creations/en.json`)).default;
       const toolsCpmMessages = (await import(`./pages/tools/cpm/en.json`)).default;
@@ -84,6 +86,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       fallbackPageTranslations = {
         pages: {
           discord: discordMessages,
+          comingsoon: comingsoonMessages,
           glossary: glossaryMessages,
           featuredCreations: featuredCreationsMessages
         },
